@@ -1,7 +1,0 @@
-{
-  "bos_token": "<sos>",
-  "eos_token": "<eos>",
-  "pad_token": "<pad>",
-  "sep_token": "<sep>",
-  "unk_token": "<unk>"
-}

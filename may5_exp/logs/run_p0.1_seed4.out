@@ -1,2 +1,0 @@
-usage: train_tense_model_v5.py [-h] --prop PROP --run_id RUN_ID
-train_tense_model_v5.py: error: unrecognized arguments: --seed 4
