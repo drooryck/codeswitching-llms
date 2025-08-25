@@ -1,0 +1,178 @@
+{
+    "examples": [
+      {
+        "masculine_sentence": "Le professeur intelligent est",
+        "feminine_sentence": "La professeure intelligente est",
+        "masculine_label": " arrivé",
+        "feminine_label": " arrivée"
+      },
+      {
+        "masculine_sentence": "Un médecin français a",
+        "feminine_sentence": "Une médecin française a",
+        "masculine_label": " parlé",
+        "feminine_label": " parlé"
+      },
+      {
+        "masculine_sentence": "Le directeur occupé s'est",
+        "feminine_sentence": "La directrice occupée s'est",
+        "masculine_label": " assis",
+        "feminine_label": " assise"
+      },
+      {
+        "masculine_sentence": "Cet acteur célèbre est",
+        "feminine_sentence": "Cette actrice célèbre est",
+        "masculine_label": " parti",
+        "feminine_label": " partie"
+      },
+      {
+        "masculine_sentence": "Le danseur talentueux est",
+        "feminine_sentence": "La danseuse talentueuse est",
+        "masculine_label": " tombé",
+        "feminine_label": " tombée"
+      },
+      {
+        "masculine_sentence": "Un avocat expérimenté a",
+        "feminine_sentence": "Une avocate expérimentée a",
+        "masculine_label": " plaidé",
+        "feminine_label": " plaidé"
+      },
+      {
+        "masculine_sentence": "Le client satisfait s'est",
+        "feminine_sentence": "La cliente satisfaite s'est",
+        "masculine_label": " plaint",
+        "feminine_label": " plainte"
+      },
+      {
+        "masculine_sentence": "Ce chanteur populaire est",
+        "feminine_sentence": "Cette chanteuse populaire est",
+        "masculine_label": " revenu",
+        "feminine_label": " revenue"
+      },
+      {
+        "masculine_sentence": "Un serveur attentionné a",
+        "feminine_sentence": "Une serveuse attentionnée a",
+        "masculine_label": " servi",
+        "feminine_label": " servi"
+      },
+      {
+        "masculine_sentence": "Le voisin curieux s'est",
+        "feminine_sentence": "La voisine curieuse s'est",
+        "masculine_label": " approché",
+        "feminine_label": " approchée"
+      },
+      {
+        "masculine_sentence": "Un journaliste passionné est",
+        "feminine_sentence": "Une journaliste passionnée est",
+        "masculine_label": " resté",
+        "feminine_label": " restée"
+      },
+      {
+        "masculine_sentence": "Ce commerçant honnête a",
+        "feminine_sentence": "Cette commerçante honnête a",
+        "masculine_label": " vendu",
+        "feminine_label": " vendu"
+      },
+      {
+        "masculine_sentence": "Le médecin engagé est",
+        "feminine_sentence": "La médecin engagée est",
+        "masculine_label": " sorti",
+        "feminine_label": " sortie"
+      },
+      {
+        "masculine_sentence": "Un élève studieux s'est",
+        "feminine_sentence": "Une élève studieuse s'est",
+        "masculine_label": " levé",
+        "feminine_label": " levée"
+      },
+      {
+        "masculine_sentence": "Le politicien influent a",
+        "feminine_sentence": "La politicienne influente a",
+        "masculine_label": " répondu",
+        "feminine_label": " répondu"
+      },
+      {
+        "masculine_sentence": "Un cousin éloigné est",
+        "feminine_sentence": "Une cousine éloignée est",
+        "masculine_label": " venu",
+        "feminine_label": " venue"
+      },
+      {
+        "masculine_sentence": "Le boulanger méticuleux a",
+        "feminine_sentence": "La boulangère méticuleuse a",
+        "masculine_label": " préparé",
+        "feminine_label": " préparé"
+      },
+      {
+        "masculine_sentence": "Cet écrivain talentueux est",
+        "feminine_sentence": "Cette écrivaine talentueuse est",
+        "masculine_label": " devenu célèbre",
+        "feminine_label": " devenue célèbre"
+      },
+      {
+        "masculine_sentence": "Un collègue compréhensif a",
+        "feminine_sentence": "Une collègue compréhensive a",
+        "masculine_label": " accepté",
+        "feminine_label": " accepté"
+      },
+      {
+        "masculine_sentence": "Le maître sévère a",
+        "feminine_sentence": "La maîtresse sévère a",
+        "masculine_label": " puni",
+        "feminine_label": " puni"
+      },
+      {
+        "masculine_sentence": "Le patient inquiet est",
+        "feminine_sentence": "La patiente inquiète est",
+        "masculine_label": " sorti",
+        "feminine_label": " sortie"
+      },
+      {
+        "masculine_sentence": "Un vétérinaire compétent a",
+        "feminine_sentence": "Une vétérinaire compétente a",
+        "masculine_label": " soigné",
+        "feminine_label": " soigné"
+      },
+      {
+        "masculine_sentence": "Le voyageur fatigué est",
+        "feminine_sentence": "La voyageuse fatiguée est",
+        "masculine_label": " rentré",
+        "feminine_label": " rentrée"
+      },
+      {
+        "masculine_sentence": "Le voisin bruyant a",
+        "feminine_sentence": "La voisine bruyante a",
+        "masculine_label": " déménagé",
+        "feminine_label": " déménagé"
+      },
+      {
+        "masculine_sentence": "Le médecin renommé est",
+        "feminine_sentence": "La médecin renommée est",
+        "masculine_label": " décédé",
+        "feminine_label": " décédée"
+      },
+      {
+        "masculine_sentence": "Le camarade fidèle a",
+        "feminine_sentence": "La camarade fidèle a",
+        "masculine_label": " répondu",
+        "feminine_label": " répondu"
+      },
+      {
+        "masculine_sentence": "Cet artiste talentueux est",
+        "feminine_sentence": "Cette artiste talentueuse est",
+        "masculine_label": " reconnu",
+        "feminine_label": " reconnue"
+      },
+      {
+        "masculine_sentence": "Le collègue sérieux s'est",
+        "feminine_sentence": "La collègue sérieuse s'est",
+        "masculine_label": " concentré",
+        "feminine_label": " concentrée"
+      },
+      {
+        "masculine_sentence": "Le pilote expérimenté est",
+        "feminine_sentence": "La pilote expérimentée est",
+        "masculine_label": " parti",
+        "feminine_label": " partie"
+      }
+    ]
+  }

@@ -1,0 +1,15 @@
+{"time":"2025-05-04T02:16:21.663514358-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/n/home06/drooryck/circuits_languages_2/may1_exp/wandb/run-20250504_021621-ax3n25le/logs/debug-core.log"}
+{"time":"2025-05-04T02:16:22.019013938-04:00","level":"INFO","msg":"created new stream","id":"ax3n25le"}
+{"time":"2025-05-04T02:16:22.019045868-04:00","level":"INFO","msg":"stream: started","id":"ax3n25le"}
+{"time":"2025-05-04T02:16:22.019262616-04:00","level":"INFO","msg":"handler: started","stream_id":"ax3n25le"}
+{"time":"2025-05-04T02:16:22.019285336-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"ax3n25le"}
+{"time":"2025-05-04T02:16:22.019514384-04:00","level":"INFO","msg":"sender: started","stream_id":"ax3n25le"}
+{"time":"2025-05-04T02:16:22.16811562-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-04T02:21:28.761602098-04:00","level":"INFO","msg":"stream: closing","id":"ax3n25le"}
+{"time":"2025-05-04T02:21:28.761728737-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-04T02:21:28.764013417-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-04T02:21:29.140338707-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-04T02:21:29.26163641-04:00","level":"INFO","msg":"handler: closed","stream_id":"ax3n25le"}
+{"time":"2025-05-04T02:21:29.26167633-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ax3n25le"}
+{"time":"2025-05-04T02:21:29.261870948-04:00","level":"INFO","msg":"sender: closed","stream_id":"ax3n25le"}
+{"time":"2025-05-04T02:21:29.264986661-04:00","level":"INFO","msg":"stream: closed","id":"ax3n25le"}

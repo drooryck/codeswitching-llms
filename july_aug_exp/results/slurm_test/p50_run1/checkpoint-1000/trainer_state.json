@@ -1,0 +1,93 @@
+{
+  "best_global_step": 600,
+  "best_metric": 1.0,
+  "best_model_checkpoint": null,
+  "epoch": 3.067640276710223,
+  "eval_steps": 200,
+  "global_step": 1000,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.6149116064565718,
+      "eval_exact_match": 0.0,
+      "eval_loss": 2.87497878074646,
+      "eval_runtime": 0.1103,
+      "eval_samples_per_second": 4696.179,
+      "eval_steps_per_second": 299.177,
+      "eval_tok_acc": 0.5838389409817981,
+      "step": 200
+    },
+    {
+      "epoch": 1.2275172943889316,
+      "eval_exact_match": 0.13127413127413126,
+      "eval_loss": 1.0356545448303223,
+      "eval_runtime": 0.1021,
+      "eval_samples_per_second": 5071.532,
+      "eval_steps_per_second": 323.09,
+      "eval_tok_acc": 0.875896304467733,
+      "step": 400
+    },
+    {
+      "epoch": 1.8424289008455035,
+      "eval_exact_match": 1.0,
+      "eval_loss": 0.14113016426563263,
+      "eval_runtime": 0.1019,
+      "eval_samples_per_second": 5085.623,
+      "eval_steps_per_second": 323.988,
+      "eval_tok_acc": 1.0,
+      "step": 600
+    },
+    {
+      "epoch": 2.4550345887778633,
+      "eval_exact_match": 1.0,
+      "eval_loss": 0.048611048609018326,
+      "eval_runtime": 0.1013,
+      "eval_samples_per_second": 5114.897,
+      "eval_steps_per_second": 325.852,
+      "eval_tok_acc": 1.0,
+      "step": 800
+    },
+    {
+      "epoch": 3.067640276710223,
+      "eval_exact_match": 1.0,
+      "eval_loss": 0.04190634936094284,
+      "eval_runtime": 0.1032,
+      "eval_samples_per_second": 5020.252,
+      "eval_steps_per_second": 319.823,
+      "eval_tok_acc": 1.0,
+      "step": 1000
+    }
+  ],
+  "logging_steps": 2000,
+  "max_steps": 1000,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 4,
+  "save_steps": 1000,
+  "stateful_callbacks": {
+    "EarlyStoppingCallback": {
+      "args": {
+        "early_stopping_patience": 5,
+        "early_stopping_threshold": 0.0
+      },
+      "attributes": {
+        "early_stopping_patience_counter": 2
+      }
+    },
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": true
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 2431539609600.0,
+  "train_batch_size": 16,
+  "trial_name": null,
+  "trial_params": null
+}

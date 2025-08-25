@@ -1,0 +1,14 @@
+SLURM_ARRAY_TASK_ID=61 → prop=0.975  run_id=1
+2025-07-05 21:35:54,986 │     INFO │ Starting run with prop=0.975  run_id=1
+2025-07-05 21:35:57,497 │  WARNING │ Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+{'eval_loss': 0.039894066751003265, 'eval_tok_acc': 0.9952084331576425, 'eval_exact_match': 0.9671052631578947, 'eval_runtime': 0.143, 'eval_samples_per_second': 4252.773, 'eval_steps_per_second': 265.798, 'epoch': 2.64}
+{'loss': 0.7566, 'grad_norm': 0.2509085237979889, 'learning_rate': 0.00019709803603294596, 'epoch': 5.28}
+{'eval_loss': 0.028235917910933495, 'eval_tok_acc': 0.9952084331576425, 'eval_exact_match': 0.9671052631578947, 'eval_runtime': 0.0929, 'eval_samples_per_second': 6546.433, 'eval_steps_per_second': 409.152, 'epoch': 5.28}
+{'eval_loss': 0.023644113913178444, 'eval_tok_acc': 0.9952084331576425, 'eval_exact_match': 0.9671052631578947, 'eval_runtime': 0.0891, 'eval_samples_per_second': 6826.707, 'eval_steps_per_second': 426.669, 'epoch': 7.92}
+{'loss': 0.0035, 'grad_norm': 0.007203998975455761, 'learning_rate': 0.0001845276180929239, 'epoch': 10.55}
+{'eval_loss': 0.033253103494644165, 'eval_tok_acc': 0.9952084331576425, 'eval_exact_match': 0.9671052631578947, 'eval_runtime': 0.0871, 'eval_samples_per_second': 6979.009, 'eval_steps_per_second': 436.188, 'epoch': 10.55}
+{'eval_loss': 0.02919558435678482, 'eval_tok_acc': 0.9952084331576425, 'eval_exact_match': 0.9671052631578947, 'eval_runtime': 0.0852, 'eval_samples_per_second': 7134.926, 'eval_steps_per_second': 445.933, 'epoch': 13.19}
+{'loss': 0.0015, 'grad_norm': 0.0015899465652182698, 'learning_rate': 0.00016325701619131246, 'epoch': 15.83}
+{'eval_loss': 0.033061038702726364, 'eval_tok_acc': 0.9952084331576425, 'eval_exact_match': 0.9671052631578947, 'eval_runtime': 0.092, 'eval_samples_per_second': 6612.139, 'eval_steps_per_second': 413.259, 'epoch': 15.83}
+{'train_runtime': 99.5739, 'train_samples_per_second': 12854.777, 'train_steps_per_second': 200.856, 'train_loss': 0.253889123916626, 'epoch': 15.83}
+2025-07-05 21:37:47,460 │     INFO │ Finished ✔  artefacts in interactive_results_v2/small_p97_run1

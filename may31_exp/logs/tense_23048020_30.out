@@ -1,0 +1,15 @@
+SLURM_ARRAY_TASK_ID=30 → prop=0.45  run_id=0
+2025-07-05 21:34:21,456 │     INFO │ Starting run with prop=0.45  run_id=0
+2025-07-05 21:34:24,344 │  WARNING │ Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+{'eval_loss': 0.05817567557096481, 'eval_tok_acc': 0.9913523901032909, 'eval_exact_match': 0.9407894736842105, 'eval_runtime': 0.1291, 'eval_samples_per_second': 4710.751, 'eval_steps_per_second': 294.422, 'epoch': 2.78}
+{'loss': 0.7793, 'grad_norm': 0.04537316411733627, 'learning_rate': 0.00019709803603294596, 'epoch': 5.57}
+{'eval_loss': 0.05288204550743103, 'eval_tok_acc': 0.9918328128753303, 'eval_exact_match': 0.944078947368421, 'eval_runtime': 0.1245, 'eval_samples_per_second': 4882.71, 'eval_steps_per_second': 305.169, 'epoch': 5.57}
+{'eval_loss': 0.052512358874082565, 'eval_tok_acc': 0.9915926014893106, 'eval_exact_match': 0.9424342105263158, 'eval_runtime': 0.1223, 'eval_samples_per_second': 4972.51, 'eval_steps_per_second': 310.782, 'epoch': 8.36}
+{'loss': 0.0036, 'grad_norm': 0.018481135368347168, 'learning_rate': 0.0001845276180929239, 'epoch': 11.14}
+{'eval_loss': 0.05884508043527603, 'eval_tok_acc': 0.9913523901032909, 'eval_exact_match': 0.9407894736842105, 'eval_runtime': 0.1212, 'eval_samples_per_second': 5016.676, 'eval_steps_per_second': 313.542, 'epoch': 11.14}
+{'eval_loss': 0.05772364139556885, 'eval_tok_acc': 0.9911121787172712, 'eval_exact_match': 0.9391447368421053, 'eval_runtime': 0.1205, 'eval_samples_per_second': 5047.048, 'eval_steps_per_second': 315.44, 'epoch': 13.93}
+{'loss': 0.0013, 'grad_norm': 0.0033604553900659084, 'learning_rate': 0.00016325701619131246, 'epoch': 16.71}
+{'eval_loss': 0.06023591384291649, 'eval_tok_acc': 0.9911121787172712, 'eval_exact_match': 0.9391447368421053, 'eval_runtime': 0.1199, 'eval_samples_per_second': 5069.3, 'eval_steps_per_second': 316.831, 'epoch': 16.71}
+{'eval_loss': 0.05808534845709801, 'eval_tok_acc': 0.9911121787172712, 'eval_exact_match': 0.9391447368421053, 'eval_runtime': 0.1267, 'eval_samples_per_second': 4796.917, 'eval_steps_per_second': 299.807, 'epoch': 19.5}
+{'train_runtime': 159.6405, 'train_samples_per_second': 8018.015, 'train_steps_per_second': 125.281, 'train_loss': 0.22415107832636152, 'epoch': 19.5}
+2025-07-05 21:37:17,432 │     INFO │ Finished ✔  artefacts in interactive_results_v2/small_p45_run0

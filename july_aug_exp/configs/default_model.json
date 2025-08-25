@@ -1,0 +1,20 @@
+{
+    "n_layer": 2,
+    "n_head": 2,
+    "n_embd": 128,
+    "max_steps": 20000,
+    "eval_steps": 1000,
+    "batch_size": 16,
+    "learning_rate": 2e-4,
+    "warmup_steps": 500,
+    "weight_decay": 0.01,
+    "early_stopping_patience": 5,
+    "tokenizer_config": {
+        "bos_token": "<sos>",
+        "eos_token": "<eos>",
+        "pad_token": "<pad>",
+        "sep_token": "<sep>",
+        "unk_token": "<unk>",
+        "padding_side": "right"
+    }
+}

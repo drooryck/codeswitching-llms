@@ -1,0 +1,15 @@
+{"time":"2025-05-04T02:16:15.147618338-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/n/home06/drooryck/circuits_languages_2/may1_exp/wandb/run-20250504_021615-gnfh74pb/logs/debug-core.log"}
+{"time":"2025-05-04T02:16:15.59305097-04:00","level":"INFO","msg":"created new stream","id":"gnfh74pb"}
+{"time":"2025-05-04T02:16:15.59307186-04:00","level":"INFO","msg":"stream: started","id":"gnfh74pb"}
+{"time":"2025-05-04T02:16:15.593238929-04:00","level":"INFO","msg":"handler: started","stream_id":"gnfh74pb"}
+{"time":"2025-05-04T02:16:15.593251569-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"gnfh74pb"}
+{"time":"2025-05-04T02:16:15.596343436-04:00","level":"INFO","msg":"sender: started","stream_id":"gnfh74pb"}
+{"time":"2025-05-04T02:16:15.76319224-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-04T02:19:33.37357172-04:00","level":"INFO","msg":"stream: closing","id":"gnfh74pb"}
+{"time":"2025-05-04T02:19:33.37368127-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-04T02:19:33.375707361-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-04T02:19:33.72352796-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-04T02:19:33.84359659-04:00","level":"INFO","msg":"handler: closed","stream_id":"gnfh74pb"}
+{"time":"2025-05-04T02:19:33.84362684-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gnfh74pb"}
+{"time":"2025-05-04T02:19:33.843774669-04:00","level":"INFO","msg":"sender: closed","stream_id":"gnfh74pb"}
+{"time":"2025-05-04T02:19:33.846799206-04:00","level":"INFO","msg":"stream: closed","id":"gnfh74pb"}

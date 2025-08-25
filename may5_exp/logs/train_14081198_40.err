@@ -1,0 +1,5 @@
+/n/home06/drooryck/circuits_languages_2/venv39/lib/python3.10/site-packages/accelerate/accelerator.py:449: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(**kwargs)
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+  0%|          | 0/20 [00:00<?, ?it/s]`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+  5%|▌         | 1/20 [00:00<00:03,  5.49it/s] 40%|████      | 8/20 [00:00<00:00, 32.56it/s] 75%|███████▌  | 15/20 [00:00<00:00, 45.45it/s]                                               100%|██████████| 20/20 [00:00<00:00, 45.45it/s]100%|██████████| 20/20 [00:00<00:00, 23.60it/s]

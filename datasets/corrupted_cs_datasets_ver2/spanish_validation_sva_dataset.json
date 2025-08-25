@@ -1,0 +1,5973 @@
+{
+  "3978": {
+    "base_subject_number": "plural",
+    "src": "El chef que dio al detective",
+    "base": "Los chefs que dieron al detective",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "3979": {
+    "base_subject_number": "plural",
+    "src": "El rey que puso al investigador",
+    "base": "Los reyes que pusieron al investigador",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "3980": {
+    "base_subject_number": "plural",
+    "src": "El científico que pasó al director",
+    "base": "Los científicos que pasaron al director",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "3981": {
+    "base_subject_number": "singular",
+    "src": "Los sacerdotes que dijeron al actor",
+    "base": "El sacerdote que dijo al actor",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "3982": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que pasaron al ministro",
+    "base": "El abogado que pasó al ministro",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "3983": {
+    "base_subject_number": "singular",
+    "src": "Los ministros que pusieron al abogado",
+    "base": "El ministro que puso al abogado",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "3984": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que pasaron al empleado",
+    "base": "El investigador que pasó al empleado",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "3985": {
+    "base_subject_number": "singular",
+    "src": "Los empleados que pasaron al corredor",
+    "base": "El empleado que pasó al corredor",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "3986": {
+    "base_subject_number": "plural",
+    "src": "El productor que encontró al actor",
+    "base": "Los productores que encontraron al actor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "3987": {
+    "base_subject_number": "plural",
+    "src": "El diputado que pasó al empleado",
+    "base": "Los diputados que pasaron al empleado",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "3988": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que tuvieron al diputado",
+    "base": "El periodista que tuvo al diputado",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "3989": {
+    "base_subject_number": "plural",
+    "src": "El cantante que pasó al maestro",
+    "base": "Los cantantes que pasaron al maestro",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "3990": {
+    "base_subject_number": "singular",
+    "src": "Los productores que vieron al escritor",
+    "base": "El productor que vio al escritor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "3991": {
+    "base_subject_number": "plural",
+    "src": "El productor que encontró al piloto",
+    "base": "Los productores que encontraron al piloto",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "3992": {
+    "base_subject_number": "plural",
+    "src": "El policía que tuvo al agente",
+    "base": "Los policías que tuvieron al agente",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "3993": {
+    "base_subject_number": "plural",
+    "src": "El actor que dijo al vendedor",
+    "base": "Los actores que dijeron al vendedor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "3994": {
+    "base_subject_number": "plural",
+    "src": "El actor que vio al productor",
+    "base": "Los actores que vieron al productor",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "3995": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que tuvieron al ingeniero",
+    "base": "El periodista que tuvo al ingeniero",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "3996": {
+    "base_subject_number": "plural",
+    "src": "El ingeniero que tuvo al diputado",
+    "base": "Los ingenieros que tuvieron al diputado",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "3997": {
+    "base_subject_number": "plural",
+    "src": "El empleado que encontró al chef",
+    "base": "Los empleados que encontraron al chef",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "3998": {
+    "base_subject_number": "singular",
+    "src": "Los diputados que pusieron al piloto",
+    "base": "El diputado que puso al piloto",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "3999": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que tuvieron al agente",
+    "base": "El abogado que tuvo al agente",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4000": {
+    "base_subject_number": "singular",
+    "src": "Los detectives que vieron al investigador",
+    "base": "El detective que vio al investigador",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4001": {
+    "base_subject_number": "plural",
+    "src": "El asistente que vio al técnico",
+    "base": "Los asistentes que vieron al técnico",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4002": {
+    "base_subject_number": "singular",
+    "src": "Los corredores que encontraron al policía",
+    "base": "El corredor que encontró al policía",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4003": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que tuvieron al agente",
+    "base": "El periodista que tuvo al agente",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4004": {
+    "base_subject_number": "singular",
+    "src": "Los empleados que pusieron al productor",
+    "base": "El empleado que puso al productor",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4005": {
+    "base_subject_number": "plural",
+    "src": "El diseñador que tuvo al abogado",
+    "base": "Los diseñadores que tuvieron al abogado",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4006": {
+    "base_subject_number": "plural",
+    "src": "El escritor que dio al sacerdote",
+    "base": "Los escritores que dieron al sacerdote",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4007": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que tuvieron al policía",
+    "base": "El periodista que tuvo al policía",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4008": {
+    "base_subject_number": "singular",
+    "src": "Los socios que dieron al rey",
+    "base": "El socio que dio al rey",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4009": {
+    "base_subject_number": "singular",
+    "src": "Los actores que pasaron al director",
+    "base": "El actor que pasó al director",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4010": {
+    "base_subject_number": "plural",
+    "src": "El detective que dio al agente",
+    "base": "Los detectives que dieron al agente",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4011": {
+    "base_subject_number": "plural",
+    "src": "El chef que pasó al abogado",
+    "base": "Los chefs que pasaron al abogado",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4012": {
+    "base_subject_number": "plural",
+    "src": "El ingeniero que pasó al sacerdote",
+    "base": "Los ingenieros que pasaron al sacerdote",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4013": {
+    "base_subject_number": "singular",
+    "src": "Los reyes que dijeron al corredor",
+    "base": "El rey que dijo al corredor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4014": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que tuvieron al detective",
+    "base": "El investigador que tuvo al detective",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4015": {
+    "base_subject_number": "singular",
+    "src": "Los sacerdotes que pusieron al pintor",
+    "base": "El sacerdote que puso al pintor",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4016": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que encontraron al empleado",
+    "base": "El piloto que encontró al empleado",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4017": {
+    "base_subject_number": "singular",
+    "src": "Los ministros que pusieron al cantante",
+    "base": "El ministro que puso al cantante",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4018": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que pasaron al científico",
+    "base": "El abogado que pasó al científico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4019": {
+    "base_subject_number": "singular",
+    "src": "Los sacerdotes que tuvieron al actor",
+    "base": "El sacerdote que tuvo al actor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4020": {
+    "base_subject_number": "plural",
+    "src": "El policía que encontró al escritor",
+    "base": "Los policías que encontraron al escritor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4021": {
+    "base_subject_number": "singular",
+    "src": "Los socios que vieron al diseñador",
+    "base": "El socio que vio al diseñador",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4022": {
+    "base_subject_number": "singular",
+    "src": "Los socios que pasaron al diseñador",
+    "base": "El socio que pasó al diseñador",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4023": {
+    "base_subject_number": "plural",
+    "src": "El detective que puso al chef",
+    "base": "Los detectives que pusieron al chef",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4024": {
+    "base_subject_number": "plural",
+    "src": "El socio que puso al maestro",
+    "base": "Los socios que pusieron al maestro",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4025": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que pusieron al vendedor",
+    "base": "El ingeniero que puso al vendedor",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4026": {
+    "base_subject_number": "plural",
+    "src": "El productor que dio al escritor",
+    "base": "Los productores que dieron al escritor",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4027": {
+    "base_subject_number": "plural",
+    "src": "El diseñador que dijo al ministro",
+    "base": "Los diseñadores que dijeron al ministro",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4028": {
+    "base_subject_number": "plural",
+    "src": "El policía que puso al empleado",
+    "base": "Los policías que pusieron al empleado",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4029": {
+    "base_subject_number": "plural",
+    "src": "El cantante que pasó al director",
+    "base": "Los cantantes que pasaron al director",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4030": {
+    "base_subject_number": "singular",
+    "src": "Los agentes que vieron al escritor",
+    "base": "El agente que vio al escritor",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4031": {
+    "base_subject_number": "singular",
+    "src": "Los diputados que tuvieron al productor",
+    "base": "El diputado que tuvo al productor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4032": {
+    "base_subject_number": "plural",
+    "src": "El chef que puso al detective",
+    "base": "Los chefs que pusieron al detective",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4033": {
+    "base_subject_number": "plural",
+    "src": "El productor que pasó al científico",
+    "base": "Los productores que pasaron al científico",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4034": {
+    "base_subject_number": "singular",
+    "src": "Los cantantes que dijeron al piloto",
+    "base": "El cantante que dijo al piloto",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4035": {
+    "base_subject_number": "singular",
+    "src": "Los ministros que vieron al sacerdote",
+    "base": "El ministro que vio al sacerdote",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4036": {
+    "base_subject_number": "plural",
+    "src": "El diseñador que encontró al cantante",
+    "base": "Los diseñadores que encontraron al cantante",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4037": {
+    "base_subject_number": "plural",
+    "src": "El agente que encontró al técnico",
+    "base": "Los agentes que encontraron al técnico",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4038": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que vieron al músico",
+    "base": "El investigador que vio al músico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4039": {
+    "base_subject_number": "plural",
+    "src": "El actor que pasó al ministro",
+    "base": "Los actores que pasaron al ministro",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4040": {
+    "base_subject_number": "singular",
+    "src": "Los detectives que pusieron al ingeniero",
+    "base": "El detective que puso al ingeniero",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4041": {
+    "base_subject_number": "plural",
+    "src": "El cantante que tuvo al investigador",
+    "base": "Los cantantes que tuvieron al investigador",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4042": {
+    "base_subject_number": "plural",
+    "src": "El cantante que puso al asistente",
+    "base": "Los cantantes que pusieron al asistente",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4043": {
+    "base_subject_number": "singular",
+    "src": "Los socios que pasaron al ministro",
+    "base": "El socio que pasó al ministro",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4044": {
+    "base_subject_number": "plural",
+    "src": "El investigador que puso al policía",
+    "base": "Los investigadores que pusieron al policía",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4045": {
+    "base_subject_number": "plural",
+    "src": "El vendedor que dijo al chef",
+    "base": "Los vendedores que dijeron al chef",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4046": {
+    "base_subject_number": "plural",
+    "src": "El director que pasó al ministro",
+    "base": "Los directores que pasaron al ministro",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4047": {
+    "base_subject_number": "plural",
+    "src": "El chef que pasó al productor",
+    "base": "Los chefs que pasaron al productor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4048": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que encontraron al corredor",
+    "base": "El piloto que encontró al corredor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4049": {
+    "base_subject_number": "plural",
+    "src": "El empleado que pasó al abogado",
+    "base": "Los empleados que pasaron al abogado",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4050": {
+    "base_subject_number": "plural",
+    "src": "El diputado que dijo al técnico",
+    "base": "Los diputados que dijeron al técnico",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4051": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que encontró al abogado",
+    "base": "Los sacerdotes que encontraron al abogado",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4052": {
+    "base_subject_number": "plural",
+    "src": "El director que vio al actor",
+    "base": "Los directores que vieron al actor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4053": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que tuvieron al músico",
+    "base": "El asistente que tuvo al músico",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4054": {
+    "base_subject_number": "plural",
+    "src": "El rey que vio al productor",
+    "base": "Los reyes que vieron al productor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4055": {
+    "base_subject_number": "singular",
+    "src": "Los chefs que vieron al director",
+    "base": "El chef que vio al director",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4056": {
+    "base_subject_number": "plural",
+    "src": "El diputado que encontró al pintor",
+    "base": "Los diputados que encontraron al pintor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4057": {
+    "base_subject_number": "singular",
+    "src": "Los escritores que dijeron al investigador",
+    "base": "El escritor que dijo al investigador",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4058": {
+    "base_subject_number": "plural",
+    "src": "El periodista que vio al diputado",
+    "base": "Los periodistas que vieron al diputado",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4059": {
+    "base_subject_number": "plural",
+    "src": "El técnico que puso al científico",
+    "base": "Los técnicos que pusieron al científico",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4060": {
+    "base_subject_number": "plural",
+    "src": "El periodista que encontró al técnico",
+    "base": "Los periodistas que encontraron al técnico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4061": {
+    "base_subject_number": "plural",
+    "src": "El actor que vio al policía",
+    "base": "Los actores que vieron al policía",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4062": {
+    "base_subject_number": "plural",
+    "src": "El asistente que tuvo al abogado",
+    "base": "Los asistentes que tuvieron al abogado",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4063": {
+    "base_subject_number": "plural",
+    "src": "El chef que puso al corredor",
+    "base": "Los chefs que pusieron al corredor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4064": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que dijeron al empleado",
+    "base": "El pintor que dijo al empleado",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4065": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que vieron al cantante",
+    "base": "El técnico que vio al cantante",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4066": {
+    "base_subject_number": "plural",
+    "src": "El diputado que tuvo al músico",
+    "base": "Los diputados que tuvieron al músico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4067": {
+    "base_subject_number": "plural",
+    "src": "El cantante que puso al vendedor",
+    "base": "Los cantantes que pusieron al vendedor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4068": {
+    "base_subject_number": "plural",
+    "src": "El director que tuvo al sacerdote",
+    "base": "Los directores que tuvieron al sacerdote",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4069": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que vieron al empleado",
+    "base": "El técnico que vio al empleado",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4070": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que tuvieron al productor",
+    "base": "El músico que tuvo al productor",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4071": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que dijeron al diputado",
+    "base": "El investigador que dijo al diputado",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4072": {
+    "base_subject_number": "singular",
+    "src": "Los escritores que pasaron al periodista",
+    "base": "El escritor que pasó al periodista",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4073": {
+    "base_subject_number": "plural",
+    "src": "El periodista que vio al corredor",
+    "base": "Los periodistas que vieron al corredor",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4074": {
+    "base_subject_number": "singular",
+    "src": "Los sacerdotes que dieron al cantante",
+    "base": "El sacerdote que dio al cantante",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4075": {
+    "base_subject_number": "singular",
+    "src": "Los productores que dieron al director",
+    "base": "El productor que dio al director",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4076": {
+    "base_subject_number": "plural",
+    "src": "El músico que dijo al técnico",
+    "base": "Los músicos que dijeron al técnico",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4077": {
+    "base_subject_number": "singular",
+    "src": "Los diputados que pusieron al abogado",
+    "base": "El diputado que puso al abogado",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4078": {
+    "base_subject_number": "singular",
+    "src": "Los reyes que dijeron al sacerdote",
+    "base": "El rey que dijo al sacerdote",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4079": {
+    "base_subject_number": "singular",
+    "src": "Los diseñadores que vieron al director",
+    "base": "El diseñador que vio al director",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4080": {
+    "base_subject_number": "plural",
+    "src": "El técnico que pasó al diputado",
+    "base": "Los técnicos que pasaron al diputado",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4081": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que tuvieron al ingeniero",
+    "base": "El piloto que tuvo al ingeniero",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4082": {
+    "base_subject_number": "singular",
+    "src": "Los policías que pasaron al cantante",
+    "base": "El policía que pasó al cantante",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4083": {
+    "base_subject_number": "plural",
+    "src": "El investigador que encontró al piloto",
+    "base": "Los investigadores que encontraron al piloto",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4084": {
+    "base_subject_number": "singular",
+    "src": "Los científicos que tuvieron al sacerdote",
+    "base": "El científico que tuvo al sacerdote",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4085": {
+    "base_subject_number": "singular",
+    "src": "Los chefs que dieron al director",
+    "base": "El chef que dio al director",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4086": {
+    "base_subject_number": "plural",
+    "src": "El agente que vio al maestro",
+    "base": "Los agentes que vieron al maestro",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4087": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que pasaron al cantante",
+    "base": "El asistente que pasó al cantante",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4088": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que pasaron al periodista",
+    "base": "El ingeniero que pasó al periodista",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4089": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que vieron al cantante",
+    "base": "El pintor que vio al cantante",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4090": {
+    "base_subject_number": "plural",
+    "src": "El técnico que pasó al sacerdote",
+    "base": "Los técnicos que pasaron al sacerdote",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4091": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que dieron al detective",
+    "base": "El técnico que dio al detective",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4092": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que encontraron al ministro",
+    "base": "El asistente que encontró al ministro",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4093": {
+    "base_subject_number": "singular",
+    "src": "Los escritores que pasaron al científico",
+    "base": "El escritor que pasó al científico",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4094": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que tuvieron al ministro",
+    "base": "El ingeniero que tuvo al ministro",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4095": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que tuvieron al ministro",
+    "base": "El técnico que tuvo al ministro",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4096": {
+    "base_subject_number": "plural",
+    "src": "El asistente que dijo al chef",
+    "base": "Los asistentes que dijeron al chef",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4097": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que dieron al sacerdote",
+    "base": "El ingeniero que dio al sacerdote",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4098": {
+    "base_subject_number": "plural",
+    "src": "El científico que tuvo al abogado",
+    "base": "Los científicos que tuvieron al abogado",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4099": {
+    "base_subject_number": "plural",
+    "src": "El ingeniero que dijo al corredor",
+    "base": "Los ingenieros que dijeron al corredor",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4100": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que tuvieron al chef",
+    "base": "El asistente que tuvo al chef",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4101": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que encontró al corredor",
+    "base": "Los sacerdotes que encontraron al corredor",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4102": {
+    "base_subject_number": "plural",
+    "src": "El abogado que dijo al ministro",
+    "base": "Los abogados que dijeron al ministro",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4103": {
+    "base_subject_number": "plural",
+    "src": "El investigador que tuvo al empleado",
+    "base": "Los investigadores que tuvieron al empleado",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4104": {
+    "base_subject_number": "plural",
+    "src": "El vendedor que dijo al empleado",
+    "base": "Los vendedores que dijeron al empleado",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4105": {
+    "base_subject_number": "plural",
+    "src": "El ministro que encontró al chef",
+    "base": "Los ministros que encontraron al chef",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4106": {
+    "base_subject_number": "plural",
+    "src": "El piloto que encontró al diputado",
+    "base": "Los pilotos que encontraron al diputado",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4107": {
+    "base_subject_number": "plural",
+    "src": "El ingeniero que dio al corredor",
+    "base": "Los ingenieros que dieron al corredor",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4108": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que pasaron al abogado",
+    "base": "El ingeniero que pasó al abogado",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4109": {
+    "base_subject_number": "plural",
+    "src": "El policía que dio al piloto",
+    "base": "Los policías que dieron al piloto",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4110": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que pusieron al diputado",
+    "base": "El técnico que puso al diputado",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4111": {
+    "base_subject_number": "singular",
+    "src": "Los detectives que dijeron al socio",
+    "base": "El detective que dijo al socio",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4112": {
+    "base_subject_number": "singular",
+    "src": "Los productores que pasaron al policía",
+    "base": "El productor que pasó al policía",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4113": {
+    "base_subject_number": "singular",
+    "src": "Los socios que vieron al músico",
+    "base": "El socio que vio al músico",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4114": {
+    "base_subject_number": "plural",
+    "src": "El diseñador que tuvo al director",
+    "base": "Los diseñadores que tuvieron al director",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4115": {
+    "base_subject_number": "plural",
+    "src": "El detective que dijo al cantante",
+    "base": "Los detectives que dijeron al cantante",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4116": {
+    "base_subject_number": "plural",
+    "src": "El ministro que vio al corredor",
+    "base": "Los ministros que vieron al corredor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4117": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que dieron al escritor",
+    "base": "El piloto que dio al escritor",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4118": {
+    "base_subject_number": "plural",
+    "src": "El corredor que dijo al ingeniero",
+    "base": "Los corredores que dijeron al ingeniero",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4119": {
+    "base_subject_number": "plural",
+    "src": "El músico que encontró al detective",
+    "base": "Los músicos que encontraron al detective",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4120": {
+    "base_subject_number": "singular",
+    "src": "Los actores que vieron al técnico",
+    "base": "El actor que vio al técnico",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4121": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que vieron al maestro",
+    "base": "El pintor que vio al maestro",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4122": {
+    "base_subject_number": "singular",
+    "src": "Los directores que pusieron al cantante",
+    "base": "El director que puso al cantante",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4123": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que dijeron al diputado",
+    "base": "El maestro que dijo al diputado",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4124": {
+    "base_subject_number": "singular",
+    "src": "Los policías que pusieron al técnico",
+    "base": "El policía que puso al técnico",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4125": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que pusieron al corredor",
+    "base": "El músico que puso al corredor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4126": {
+    "base_subject_number": "singular",
+    "src": "Los detectives que pasaron al ministro",
+    "base": "El detective que pasó al ministro",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4127": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que pasaron al actor",
+    "base": "El pintor que pasó al actor",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4128": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que pasó al vendedor",
+    "base": "Los sacerdotes que pasaron al vendedor",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4129": {
+    "base_subject_number": "plural",
+    "src": "El productor que encontró al ingeniero",
+    "base": "Los productores que encontraron al ingeniero",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4130": {
+    "base_subject_number": "plural",
+    "src": "El diputado que vio al músico",
+    "base": "Los diputados que vieron al músico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4131": {
+    "base_subject_number": "singular",
+    "src": "Los científicos que pasaron al actor",
+    "base": "El científico que pasó al actor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4132": {
+    "base_subject_number": "plural",
+    "src": "El diputado que pasó al ingeniero",
+    "base": "Los diputados que pasaron al ingeniero",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4133": {
+    "base_subject_number": "plural",
+    "src": "El abogado que puso al detective",
+    "base": "Los abogados que pusieron al detective",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4134": {
+    "base_subject_number": "plural",
+    "src": "El asistente que dijo al ministro",
+    "base": "Los asistentes que dijeron al ministro",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4135": {
+    "base_subject_number": "singular",
+    "src": "Los sacerdotes que tuvieron al maestro",
+    "base": "El sacerdote que tuvo al maestro",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4136": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que dijeron al diseñador",
+    "base": "El piloto que dijo al diseñador",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4137": {
+    "base_subject_number": "singular",
+    "src": "Los ministros que pasaron al productor",
+    "base": "El ministro que pasó al productor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4138": {
+    "base_subject_number": "singular",
+    "src": "Los corredores que encontraron al actor",
+    "base": "El corredor que encontró al actor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4139": {
+    "base_subject_number": "plural",
+    "src": "El piloto que vio al investigador",
+    "base": "Los pilotos que vieron al investigador",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4140": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que vieron al agente",
+    "base": "El pintor que vio al agente",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4141": {
+    "base_subject_number": "plural",
+    "src": "El investigador que tuvo al asistente",
+    "base": "Los investigadores que tuvieron al asistente",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4142": {
+    "base_subject_number": "plural",
+    "src": "El investigador que encontró al cantante",
+    "base": "Los investigadores que encontraron al cantante",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4143": {
+    "base_subject_number": "plural",
+    "src": "El cantante que vio al ministro",
+    "base": "Los cantantes que vieron al ministro",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4144": {
+    "base_subject_number": "singular",
+    "src": "Los chefs que tuvieron al productor",
+    "base": "El chef que tuvo al productor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4145": {
+    "base_subject_number": "plural",
+    "src": "El asistente que pasó al piloto",
+    "base": "Los asistentes que pasaron al piloto",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4146": {
+    "base_subject_number": "plural",
+    "src": "El maestro que encontró al músico",
+    "base": "Los maestros que encontraron al músico",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4147": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que pusieron al agente",
+    "base": "El músico que puso al agente",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4148": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que encontró al diputado",
+    "base": "Los sacerdotes que encontraron al diputado",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4149": {
+    "base_subject_number": "singular",
+    "src": "Los policías que tuvieron al cantante",
+    "base": "El policía que tuvo al cantante",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4150": {
+    "base_subject_number": "singular",
+    "src": "Los chefs que vieron al periodista",
+    "base": "El chef que vio al periodista",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4151": {
+    "base_subject_number": "singular",
+    "src": "Los empleados que dieron al abogado",
+    "base": "El empleado que dio al abogado",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4152": {
+    "base_subject_number": "singular",
+    "src": "Los diputados que dieron al rey",
+    "base": "El diputado que dio al rey",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4153": {
+    "base_subject_number": "plural",
+    "src": "El empleado que tuvo al escritor",
+    "base": "Los empleados que tuvieron al escritor",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4154": {
+    "base_subject_number": "plural",
+    "src": "El rey que vio al actor",
+    "base": "Los reyes que vieron al actor",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4155": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que pusieron al sacerdote",
+    "base": "El abogado que puso al sacerdote",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4156": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que pusieron al pintor",
+    "base": "El maestro que puso al pintor",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4157": {
+    "base_subject_number": "plural",
+    "src": "El rey que puso al abogado",
+    "base": "Los reyes que pusieron al abogado",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4158": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que dieron al diputado",
+    "base": "El pintor que dio al diputado",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4159": {
+    "base_subject_number": "singular",
+    "src": "Los chefs que dijeron al director",
+    "base": "El chef que dijo al director",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4160": {
+    "base_subject_number": "singular",
+    "src": "Los empleados que encontraron al policía",
+    "base": "El empleado que encontró al policía",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4161": {
+    "base_subject_number": "plural",
+    "src": "El músico que dio al director",
+    "base": "Los músicos que dieron al director",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4162": {
+    "base_subject_number": "singular",
+    "src": "Los cantantes que encontraron al corredor",
+    "base": "El cantante que encontró al corredor",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4163": {
+    "base_subject_number": "plural",
+    "src": "El agente que tuvo al corredor",
+    "base": "Los agentes que tuvieron al corredor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4164": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que tuvieron al empleado",
+    "base": "El maestro que tuvo al empleado",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4165": {
+    "base_subject_number": "plural",
+    "src": "El maestro que tuvo al rey",
+    "base": "Los maestros que tuvieron al rey",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4166": {
+    "base_subject_number": "plural",
+    "src": "El abogado que vio al técnico",
+    "base": "Los abogados que vieron al técnico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4167": {
+    "base_subject_number": "plural",
+    "src": "El periodista que dijo al corredor",
+    "base": "Los periodistas que dijeron al corredor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4168": {
+    "base_subject_number": "plural",
+    "src": "El empleado que tuvo al músico",
+    "base": "Los empleados que tuvieron al músico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4169": {
+    "base_subject_number": "plural",
+    "src": "El empleado que pasó al maestro",
+    "base": "Los empleados que pasaron al maestro",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4170": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que pusieron al diseñador",
+    "base": "El periodista que puso al diseñador",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4171": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que encontraron al periodista",
+    "base": "El piloto que encontró al periodista",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4172": {
+    "base_subject_number": "plural",
+    "src": "El productor que pasó al ingeniero",
+    "base": "Los productores que pasaron al ingeniero",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4173": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que pasaron al detective",
+    "base": "El investigador que pasó al detective",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4174": {
+    "base_subject_number": "singular",
+    "src": "Los policías que dijeron al corredor",
+    "base": "El policía que dijo al corredor",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4175": {
+    "base_subject_number": "singular",
+    "src": "Los científicos que encontraron al vendedor",
+    "base": "El científico que encontró al vendedor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4176": {
+    "base_subject_number": "plural",
+    "src": "El escritor que tuvo al director",
+    "base": "Los escritores que tuvieron al director",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4177": {
+    "base_subject_number": "singular",
+    "src": "Los ministros que pasaron al cantante",
+    "base": "El ministro que pasó al cantante",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4178": {
+    "base_subject_number": "singular",
+    "src": "Los cantantes que pasaron al técnico",
+    "base": "El cantante que pasó al técnico",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4179": {
+    "base_subject_number": "plural",
+    "src": "El pintor que pasó al sacerdote",
+    "base": "Los pintores que pasaron al sacerdote",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4180": {
+    "base_subject_number": "singular",
+    "src": "Los vendedores que dieron al socio",
+    "base": "El vendedor que dio al socio",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4181": {
+    "base_subject_number": "plural",
+    "src": "El corredor que encontró al cantante",
+    "base": "Los corredores que encontraron al cantante",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4182": {
+    "base_subject_number": "plural",
+    "src": "El detective que dijo al corredor",
+    "base": "Los detectives que dijeron al corredor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4183": {
+    "base_subject_number": "singular",
+    "src": "Los ministros que pusieron al periodista",
+    "base": "El ministro que puso al periodista",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4184": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que vieron al sacerdote",
+    "base": "El músico que vio al sacerdote",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4185": {
+    "base_subject_number": "plural",
+    "src": "El actor que tuvo al policía",
+    "base": "Los actores que tuvieron al policía",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4186": {
+    "base_subject_number": "plural",
+    "src": "El piloto que puso al músico",
+    "base": "Los pilotos que pusieron al músico",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4187": {
+    "base_subject_number": "plural",
+    "src": "El técnico que dio al sacerdote",
+    "base": "Los técnicos que dieron al sacerdote",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4188": {
+    "base_subject_number": "singular",
+    "src": "Los chefs que dijeron al técnico",
+    "base": "El chef que dijo al técnico",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4189": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que puso al maestro",
+    "base": "Los sacerdotes que pusieron al maestro",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4190": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que encontraron al investigador",
+    "base": "El músico que encontró al investigador",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4191": {
+    "base_subject_number": "plural",
+    "src": "El maestro que encontró al investigador",
+    "base": "Los maestros que encontraron al investigador",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4192": {
+    "base_subject_number": "singular",
+    "src": "Los sacerdotes que vieron al policía",
+    "base": "El sacerdote que vio al policía",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4193": {
+    "base_subject_number": "plural",
+    "src": "El escritor que pasó al maestro",
+    "base": "Los escritores que pasaron al maestro",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4194": {
+    "base_subject_number": "singular",
+    "src": "Los ministros que encontraron al abogado",
+    "base": "El ministro que encontró al abogado",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4195": {
+    "base_subject_number": "plural",
+    "src": "El asistente que pasó al detective",
+    "base": "Los asistentes que pasaron al detective",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4196": {
+    "base_subject_number": "plural",
+    "src": "El productor que dio al sacerdote",
+    "base": "Los productores que dieron al sacerdote",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4197": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que vieron al investigador",
+    "base": "El abogado que vio al investigador",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4198": {
+    "base_subject_number": "singular",
+    "src": "Los vendedores que pusieron al diseñador",
+    "base": "El vendedor que puso al diseñador",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4199": {
+    "base_subject_number": "plural",
+    "src": "El periodista que tuvo al rey",
+    "base": "Los periodistas que tuvieron al rey",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4200": {
+    "base_subject_number": "plural",
+    "src": "El escritor que dio al ministro",
+    "base": "Los escritores que dieron al ministro",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4201": {
+    "base_subject_number": "singular",
+    "src": "Los policías que pasaron al diseñador",
+    "base": "El policía que pasó al diseñador",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4202": {
+    "base_subject_number": "plural",
+    "src": "El actor que encontró al ministro",
+    "base": "Los actores que encontraron al ministro",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4203": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que encontraron al socio",
+    "base": "El maestro que encontró al socio",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4204": {
+    "base_subject_number": "plural",
+    "src": "El asistente que dio al pintor",
+    "base": "Los asistentes que dieron al pintor",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4205": {
+    "base_subject_number": "plural",
+    "src": "El maestro que dijo al periodista",
+    "base": "Los maestros que dijeron al periodista",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4206": {
+    "base_subject_number": "singular",
+    "src": "Los agentes que tuvieron al empleado",
+    "base": "El agente que tuvo al empleado",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4207": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que pusieron al director",
+    "base": "El técnico que puso al director",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4208": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que dieron al agente",
+    "base": "El investigador que dio al agente",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4209": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que vieron al vendedor",
+    "base": "El asistente que vio al vendedor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4210": {
+    "base_subject_number": "singular",
+    "src": "Los diseñadores que encontraron al detective",
+    "base": "El diseñador que encontró al detective",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4211": {
+    "base_subject_number": "plural",
+    "src": "El maestro que dio al detective",
+    "base": "Los maestros que dieron al detective",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4212": {
+    "base_subject_number": "singular",
+    "src": "Los reyes que dieron al chef",
+    "base": "El rey que dio al chef",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4213": {
+    "base_subject_number": "plural",
+    "src": "El escritor que dijo al socio",
+    "base": "Los escritores que dijeron al socio",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4214": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que encontraron al agente",
+    "base": "El piloto que encontró al agente",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4215": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que pasaron al productor",
+    "base": "El periodista que pasó al productor",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4216": {
+    "base_subject_number": "plural",
+    "src": "El director que pasó al investigador",
+    "base": "Los directores que pasaron al investigador",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4217": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que dijeron al empleado",
+    "base": "El investigador que dijo al empleado",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4218": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que pasaron al pintor",
+    "base": "El músico que pasó al pintor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4219": {
+    "base_subject_number": "plural",
+    "src": "El piloto que dijo al corredor",
+    "base": "Los pilotos que dijeron al corredor",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4220": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que vieron al rey",
+    "base": "El maestro que vio al rey",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4221": {
+    "base_subject_number": "plural",
+    "src": "El rey que dio al escritor",
+    "base": "Los reyes que dieron al escritor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4222": {
+    "base_subject_number": "plural",
+    "src": "El rey que encontró al sacerdote",
+    "base": "Los reyes que encontraron al sacerdote",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4223": {
+    "base_subject_number": "plural",
+    "src": "El rey que dio al sacerdote",
+    "base": "Los reyes que dieron al sacerdote",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4224": {
+    "base_subject_number": "plural",
+    "src": "El vendedor que vio al piloto",
+    "base": "Los vendedores que vieron al piloto",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4225": {
+    "base_subject_number": "plural",
+    "src": "El técnico que puso al vendedor",
+    "base": "Los técnicos que pusieron al vendedor",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4226": {
+    "base_subject_number": "plural",
+    "src": "El agente que dio al diseñador",
+    "base": "Los agentes que dieron al diseñador",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4227": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que vieron al empleado",
+    "base": "El maestro que vio al empleado",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4228": {
+    "base_subject_number": "plural",
+    "src": "El ingeniero que dijo al investigador",
+    "base": "Los ingenieros que dijeron al investigador",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4229": {
+    "base_subject_number": "singular",
+    "src": "Los diputados que pusieron al actor",
+    "base": "El diputado que puso al actor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4230": {
+    "base_subject_number": "singular",
+    "src": "Los detectives que vieron al piloto",
+    "base": "El detective que vio al piloto",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4231": {
+    "base_subject_number": "plural",
+    "src": "El ministro que dio al piloto",
+    "base": "Los ministros que dieron al piloto",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4232": {
+    "base_subject_number": "plural",
+    "src": "El escritor que tuvo al cantante",
+    "base": "Los escritores que tuvieron al cantante",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4233": {
+    "base_subject_number": "plural",
+    "src": "El agente que encontró al director",
+    "base": "Los agentes que encontraron al director",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4234": {
+    "base_subject_number": "singular",
+    "src": "Los socios que pasaron al diputado",
+    "base": "El socio que pasó al diputado",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4235": {
+    "base_subject_number": "plural",
+    "src": "El vendedor que pasó al cantante",
+    "base": "Los vendedores que pasaron al cantante",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4236": {
+    "base_subject_number": "singular",
+    "src": "Los diputados que encontraron al piloto",
+    "base": "El diputado que encontró al piloto",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4237": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que tuvieron al agente",
+    "base": "El maestro que tuvo al agente",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4238": {
+    "base_subject_number": "plural",
+    "src": "El pintor que encontró al actor",
+    "base": "Los pintores que encontraron al actor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4239": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que encontraron al productor",
+    "base": "El músico que encontró al productor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4240": {
+    "base_subject_number": "singular",
+    "src": "Los sacerdotes que pasaron al investigador",
+    "base": "El sacerdote que pasó al investigador",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4241": {
+    "base_subject_number": "plural",
+    "src": "El pintor que dijo al investigador",
+    "base": "Los pintores que dijeron al investigador",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4242": {
+    "base_subject_number": "plural",
+    "src": "El investigador que dio al socio",
+    "base": "Los investigadores que dieron al socio",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4243": {
+    "base_subject_number": "plural",
+    "src": "El socio que pasó al científico",
+    "base": "Los socios que pasaron al científico",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4244": {
+    "base_subject_number": "singular",
+    "src": "Los vendedores que encontraron al chef",
+    "base": "El vendedor que encontró al chef",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4245": {
+    "base_subject_number": "singular",
+    "src": "Los reyes que dieron al diputado",
+    "base": "El rey que dio al diputado",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4246": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que dijeron al abogado",
+    "base": "El asistente que dijo al abogado",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4247": {
+    "base_subject_number": "plural",
+    "src": "El productor que dio al científico",
+    "base": "Los productores que dieron al científico",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4248": {
+    "base_subject_number": "plural",
+    "src": "El corredor que puso al piloto",
+    "base": "Los corredores que pusieron al piloto",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4249": {
+    "base_subject_number": "plural",
+    "src": "El piloto que tuvo al corredor",
+    "base": "Los pilotos que tuvieron al corredor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4250": {
+    "base_subject_number": "plural",
+    "src": "El músico que dio al escritor",
+    "base": "Los músicos que dieron al escritor",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4251": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que tuvieron al director",
+    "base": "El abogado que tuvo al director",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4252": {
+    "base_subject_number": "singular",
+    "src": "Los detectives que dieron al científico",
+    "base": "El detective que dio al científico",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4253": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que tuvieron al periodista",
+    "base": "El técnico que tuvo al periodista",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4254": {
+    "base_subject_number": "singular",
+    "src": "Los policías que vieron al piloto",
+    "base": "El policía que vio al piloto",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4255": {
+    "base_subject_number": "singular",
+    "src": "Los empleados que encontraron al socio",
+    "base": "El empleado que encontró al socio",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4256": {
+    "base_subject_number": "singular",
+    "src": "Los ministros que pasaron al abogado",
+    "base": "El ministro que pasó al abogado",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4257": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que dijeron al chef",
+    "base": "El abogado que dijo al chef",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4258": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que dijeron al músico",
+    "base": "El ingeniero que dijo al músico",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4259": {
+    "base_subject_number": "singular",
+    "src": "Los corredores que encontraron al chef",
+    "base": "El corredor que encontró al chef",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4260": {
+    "base_subject_number": "singular",
+    "src": "Los reyes que encontraron al abogado",
+    "base": "El rey que encontró al abogado",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4261": {
+    "base_subject_number": "plural",
+    "src": "El vendedor que pasó al diputado",
+    "base": "Los vendedores que pasaron al diputado",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4262": {
+    "base_subject_number": "plural",
+    "src": "El músico que tuvo al escritor",
+    "base": "Los músicos que tuvieron al escritor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4263": {
+    "base_subject_number": "plural",
+    "src": "El chef que puso al abogado",
+    "base": "Los chefs que pusieron al abogado",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4264": {
+    "base_subject_number": "plural",
+    "src": "El actor que encontró al cantante",
+    "base": "Los actores que encontraron al cantante",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4265": {
+    "base_subject_number": "plural",
+    "src": "El rey que tuvo al detective",
+    "base": "Los reyes que tuvieron al detective",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4266": {
+    "base_subject_number": "plural",
+    "src": "El agente que puso al piloto",
+    "base": "Los agentes que pusieron al piloto",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4267": {
+    "base_subject_number": "singular",
+    "src": "Los diputados que tuvieron al abogado",
+    "base": "El diputado que tuvo al abogado",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4268": {
+    "base_subject_number": "plural",
+    "src": "El policía que dio al diseñador",
+    "base": "Los policías que dieron al diseñador",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4269": {
+    "base_subject_number": "plural",
+    "src": "El ministro que dio al chef",
+    "base": "Los ministros que dieron al chef",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4270": {
+    "base_subject_number": "plural",
+    "src": "El periodista que encontró al director",
+    "base": "Los periodistas que encontraron al director",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4271": {
+    "base_subject_number": "plural",
+    "src": "El músico que tuvo al periodista",
+    "base": "Los músicos que tuvieron al periodista",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4272": {
+    "base_subject_number": "singular",
+    "src": "Los cantantes que tuvieron al asistente",
+    "base": "El cantante que tuvo al asistente",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4273": {
+    "base_subject_number": "singular",
+    "src": "Los policías que dieron al rey",
+    "base": "El policía que dio al rey",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4274": {
+    "base_subject_number": "plural",
+    "src": "El diputado que pasó al rey",
+    "base": "Los diputados que pasaron al rey",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4275": {
+    "base_subject_number": "singular",
+    "src": "Los chefs que vieron al corredor",
+    "base": "El chef que vio al corredor",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4276": {
+    "base_subject_number": "singular",
+    "src": "Los socios que dijeron al piloto",
+    "base": "El socio que dijo al piloto",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4277": {
+    "base_subject_number": "plural",
+    "src": "El productor que encontró al director",
+    "base": "Los productores que encontraron al director",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4278": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que vieron al músico",
+    "base": "El maestro que vio al músico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4279": {
+    "base_subject_number": "singular",
+    "src": "Los actores que dieron al asistente",
+    "base": "El actor que dio al asistente",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4280": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que dijo al técnico",
+    "base": "Los sacerdotes que dijeron al técnico",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4281": {
+    "base_subject_number": "plural",
+    "src": "El chef que dijo al músico",
+    "base": "Los chefs que dijeron al músico",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4282": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que tuvieron al abogado",
+    "base": "El piloto que tuvo al abogado",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4283": {
+    "base_subject_number": "plural",
+    "src": "El diseñador que pasó al detective",
+    "base": "Los diseñadores que pasaron al detective",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4284": {
+    "base_subject_number": "plural",
+    "src": "El cantante que puso al piloto",
+    "base": "Los cantantes que pusieron al piloto",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4285": {
+    "base_subject_number": "plural",
+    "src": "El rey que pasó al científico",
+    "base": "Los reyes que pasaron al científico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4286": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que dijeron al agente",
+    "base": "El pintor que dijo al agente",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4287": {
+    "base_subject_number": "plural",
+    "src": "El maestro que tuvo al chef",
+    "base": "Los maestros que tuvieron al chef",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4288": {
+    "base_subject_number": "plural",
+    "src": "El abogado que encontró al diseñador",
+    "base": "Los abogados que encontraron al diseñador",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4289": {
+    "base_subject_number": "plural",
+    "src": "El piloto que tuvo al ministro",
+    "base": "Los pilotos que tuvieron al ministro",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4290": {
+    "base_subject_number": "singular",
+    "src": "Los agentes que encontraron al músico",
+    "base": "El agente que encontró al músico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4291": {
+    "base_subject_number": "singular",
+    "src": "Los agentes que dijeron al chef",
+    "base": "El agente que dijo al chef",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4292": {
+    "base_subject_number": "singular",
+    "src": "Los científicos que encontraron al ingeniero",
+    "base": "El científico que encontró al ingeniero",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4293": {
+    "base_subject_number": "plural",
+    "src": "El periodista que puso al piloto",
+    "base": "Los periodistas que pusieron al piloto",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4294": {
+    "base_subject_number": "plural",
+    "src": "El abogado que dijo al diputado",
+    "base": "Los abogados que dijeron al diputado",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4295": {
+    "base_subject_number": "plural",
+    "src": "El científico que encontró al rey",
+    "base": "Los científicos que encontraron al rey",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4296": {
+    "base_subject_number": "singular",
+    "src": "Los cantantes que tuvieron al vendedor",
+    "base": "El cantante que tuvo al vendedor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4297": {
+    "base_subject_number": "plural",
+    "src": "El investigador que dijo al diseñador",
+    "base": "Los investigadores que dijeron al diseñador",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4298": {
+    "base_subject_number": "plural",
+    "src": "El piloto que encontró al investigador",
+    "base": "Los pilotos que encontraron al investigador",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4299": {
+    "base_subject_number": "plural",
+    "src": "El chef que dio al vendedor",
+    "base": "Los chefs que dieron al vendedor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4300": {
+    "base_subject_number": "plural",
+    "src": "El cantante que vio al músico",
+    "base": "Los cantantes que vieron al músico",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4301": {
+    "base_subject_number": "singular",
+    "src": "Los empleados que pusieron al periodista",
+    "base": "El empleado que puso al periodista",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4302": {
+    "base_subject_number": "plural",
+    "src": "El maestro que puso al actor",
+    "base": "Los maestros que pusieron al actor",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4303": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que dijo al investigador",
+    "base": "Los sacerdotes que dijeron al investigador",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4304": {
+    "base_subject_number": "singular",
+    "src": "Los chefs que pusieron al diseñador",
+    "base": "El chef que puso al diseñador",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4305": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que encontraron al ministro",
+    "base": "El periodista que encontró al ministro",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4306": {
+    "base_subject_number": "plural",
+    "src": "El policía que tuvo al investigador",
+    "base": "Los policías que tuvieron al investigador",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4307": {
+    "base_subject_number": "singular",
+    "src": "Los cantantes que encontraron al socio",
+    "base": "El cantante que encontró al socio",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4308": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que vieron al agente",
+    "base": "El periodista que vio al agente",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4309": {
+    "base_subject_number": "plural",
+    "src": "El director que puso al escritor",
+    "base": "Los directores que pusieron al escritor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4310": {
+    "base_subject_number": "plural",
+    "src": "El ministro que tuvo al escritor",
+    "base": "Los ministros que tuvieron al escritor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4311": {
+    "base_subject_number": "singular",
+    "src": "Los directores que encontraron al ministro",
+    "base": "El director que encontró al ministro",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4312": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que vieron al ministro",
+    "base": "El maestro que vio al ministro",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4313": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que tuvieron al científico",
+    "base": "El piloto que tuvo al científico",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4314": {
+    "base_subject_number": "singular",
+    "src": "Los diseñadores que pasaron al técnico",
+    "base": "El diseñador que pasó al técnico",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4315": {
+    "base_subject_number": "plural",
+    "src": "El músico que encontró al socio",
+    "base": "Los músicos que encontraron al socio",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4316": {
+    "base_subject_number": "singular",
+    "src": "Los policías que dijeron al asistente",
+    "base": "El policía que dijo al asistente",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4317": {
+    "base_subject_number": "plural",
+    "src": "El periodista que dio al músico",
+    "base": "Los periodistas que dieron al músico",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4318": {
+    "base_subject_number": "plural",
+    "src": "El corredor que dijo al científico",
+    "base": "Los corredores que dijeron al científico",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4319": {
+    "base_subject_number": "plural",
+    "src": "El asistente que vio al sacerdote",
+    "base": "Los asistentes que vieron al sacerdote",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4320": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que encontraron al escritor",
+    "base": "El maestro que encontró al escritor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4321": {
+    "base_subject_number": "singular",
+    "src": "Los diputados que tuvieron al maestro",
+    "base": "El diputado que tuvo al maestro",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4322": {
+    "base_subject_number": "plural",
+    "src": "El diputado que pasó al chef",
+    "base": "Los diputados que pasaron al chef",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4323": {
+    "base_subject_number": "plural",
+    "src": "El chef que encontró al detective",
+    "base": "Los chefs que encontraron al detective",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4324": {
+    "base_subject_number": "plural",
+    "src": "El vendedor que dio al abogado",
+    "base": "Los vendedores que dieron al abogado",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4325": {
+    "base_subject_number": "plural",
+    "src": "El chef que pasó al investigador",
+    "base": "Los chefs que pasaron al investigador",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4326": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que vieron al diseñador",
+    "base": "El maestro que vio al diseñador",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4327": {
+    "base_subject_number": "plural",
+    "src": "El empleado que dijo al ministro",
+    "base": "Los empleados que dijeron al ministro",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4328": {
+    "base_subject_number": "plural",
+    "src": "El cantante que encontró al actor",
+    "base": "Los cantantes que encontraron al actor",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4329": {
+    "base_subject_number": "plural",
+    "src": "El maestro que vio al abogado",
+    "base": "Los maestros que vieron al abogado",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4330": {
+    "base_subject_number": "plural",
+    "src": "El abogado que dio al investigador",
+    "base": "Los abogados que dieron al investigador",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4331": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que tuvieron al asistente",
+    "base": "El pintor que tuvo al asistente",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4332": {
+    "base_subject_number": "plural",
+    "src": "El corredor que dijo al piloto",
+    "base": "Los corredores que dijeron al piloto",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4333": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que vieron al maestro",
+    "base": "El ingeniero que vio al maestro",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4334": {
+    "base_subject_number": "singular",
+    "src": "Los actores que pusieron al músico",
+    "base": "El actor que puso al músico",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4335": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que vieron al maestro",
+    "base": "El abogado que vio al maestro",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4336": {
+    "base_subject_number": "plural",
+    "src": "El abogado que dio al técnico",
+    "base": "Los abogados que dieron al técnico",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4337": {
+    "base_subject_number": "plural",
+    "src": "El ministro que tuvo al asistente",
+    "base": "Los ministros que tuvieron al asistente",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4338": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que dijeron al cantante",
+    "base": "El técnico que dijo al cantante",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4339": {
+    "base_subject_number": "singular",
+    "src": "Los reyes que pusieron al actor",
+    "base": "El rey que puso al actor",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4340": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que pusieron al maestro",
+    "base": "El investigador que puso al maestro",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4341": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que dijeron al director",
+    "base": "El maestro que dijo al director",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4342": {
+    "base_subject_number": "plural",
+    "src": "El socio que encontró al asistente",
+    "base": "Los socios que encontraron al asistente",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4343": {
+    "base_subject_number": "plural",
+    "src": "El actor que dio al productor",
+    "base": "Los actores que dieron al productor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4344": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que vieron al investigador",
+    "base": "El asistente que vio al investigador",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4345": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que tuvieron al policía",
+    "base": "El investigador que tuvo al policía",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4346": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que pusieron al investigador",
+    "base": "El asistente que puso al investigador",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4347": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que encontraron al pintor",
+    "base": "El maestro que encontró al pintor",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4348": {
+    "base_subject_number": "plural",
+    "src": "El asistente que dio al periodista",
+    "base": "Los asistentes que dieron al periodista",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4349": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que encontró al escritor",
+    "base": "Los sacerdotes que encontraron al escritor",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4350": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que pusieron al sacerdote",
+    "base": "El músico que puso al sacerdote",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4351": {
+    "base_subject_number": "plural",
+    "src": "El periodista que pasó al investigador",
+    "base": "Los periodistas que pasaron al investigador",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4352": {
+    "base_subject_number": "plural",
+    "src": "El ministro que pasó al maestro",
+    "base": "Los ministros que pasaron al maestro",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4353": {
+    "base_subject_number": "plural",
+    "src": "El ingeniero que encontró al actor",
+    "base": "Los ingenieros que encontraron al actor",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4354": {
+    "base_subject_number": "singular",
+    "src": "Los empleados que dieron al periodista",
+    "base": "El empleado que dio al periodista",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4355": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que pasaron al escritor",
+    "base": "El músico que pasó al escritor",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4356": {
+    "base_subject_number": "plural",
+    "src": "El policía que encontró al investigador",
+    "base": "Los policías que encontraron al investigador",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4357": {
+    "base_subject_number": "singular",
+    "src": "Los ministros que tuvieron al rey",
+    "base": "El ministro que tuvo al rey",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4358": {
+    "base_subject_number": "plural",
+    "src": "El músico que vio al diseñador",
+    "base": "Los músicos que vieron al diseñador",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4359": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que vieron al abogado",
+    "base": "El músico que vio al abogado",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4360": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que pasaron al agente",
+    "base": "El maestro que pasó al agente",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4361": {
+    "base_subject_number": "plural",
+    "src": "El cantante que vio al empleado",
+    "base": "Los cantantes que vieron al empleado",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4362": {
+    "base_subject_number": "singular",
+    "src": "Los policías que dieron al ingeniero",
+    "base": "El policía que dio al ingeniero",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4363": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que tuvieron al investigador",
+    "base": "El piloto que tuvo al investigador",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4364": {
+    "base_subject_number": "plural",
+    "src": "El actor que pasó al asistente",
+    "base": "Los actores que pasaron al asistente",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4365": {
+    "base_subject_number": "plural",
+    "src": "El socio que dijo al cantante",
+    "base": "Los socios que dijeron al cantante",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4366": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que pusieron al corredor",
+    "base": "El piloto que puso al corredor",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4367": {
+    "base_subject_number": "plural",
+    "src": "El científico que vio al actor",
+    "base": "Los científicos que vieron al actor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4368": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que dio al abogado",
+    "base": "Los sacerdotes que dieron al abogado",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4369": {
+    "base_subject_number": "singular",
+    "src": "Los socios que dieron al agente",
+    "base": "El socio que dio al agente",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4370": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que tuvo al socio",
+    "base": "Los sacerdotes que tuvieron al socio",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4371": {
+    "base_subject_number": "singular",
+    "src": "Los actores que tuvieron al periodista",
+    "base": "El actor que tuvo al periodista",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4372": {
+    "base_subject_number": "singular",
+    "src": "Los científicos que pasaron al abogado",
+    "base": "El científico que pasó al abogado",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4373": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que pusieron al director",
+    "base": "El músico que puso al director",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4374": {
+    "base_subject_number": "plural",
+    "src": "El ministro que dio al asistente",
+    "base": "Los ministros que dieron al asistente",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4375": {
+    "base_subject_number": "singular",
+    "src": "Los sacerdotes que encontraron al policía",
+    "base": "El sacerdote que encontró al policía",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4376": {
+    "base_subject_number": "plural",
+    "src": "El socio que pasó al pintor",
+    "base": "Los socios que pasaron al pintor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4377": {
+    "base_subject_number": "singular",
+    "src": "Los ministros que pusieron al pintor",
+    "base": "El ministro que puso al pintor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4378": {
+    "base_subject_number": "plural",
+    "src": "El periodista que dio al piloto",
+    "base": "Los periodistas que dieron al piloto",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4379": {
+    "base_subject_number": "plural",
+    "src": "El corredor que pasó al científico",
+    "base": "Los corredores que pasaron al científico",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4380": {
+    "base_subject_number": "plural",
+    "src": "El escritor que encontró al maestro",
+    "base": "Los escritores que encontraron al maestro",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4381": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que tuvieron al periodista",
+    "base": "El ingeniero que tuvo al periodista",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4382": {
+    "base_subject_number": "plural",
+    "src": "El diseñador que dio al diputado",
+    "base": "Los diseñadores que dieron al diputado",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4383": {
+    "base_subject_number": "singular",
+    "src": "Los ministros que pusieron al diputado",
+    "base": "El ministro que puso al diputado",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4384": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que dieron al abogado",
+    "base": "El periodista que dio al abogado",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4385": {
+    "base_subject_number": "plural",
+    "src": "El maestro que tuvo al pintor",
+    "base": "Los maestros que tuvieron al pintor",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4386": {
+    "base_subject_number": "plural",
+    "src": "El diputado que puso al investigador",
+    "base": "Los diputados que pusieron al investigador",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4387": {
+    "base_subject_number": "singular",
+    "src": "Los corredores que pasaron al director",
+    "base": "El corredor que pasó al director",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4388": {
+    "base_subject_number": "singular",
+    "src": "Los cantantes que encontraron al agente",
+    "base": "El cantante que encontró al agente",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4389": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que pusieron al maestro",
+    "base": "El asistente que puso al maestro",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4390": {
+    "base_subject_number": "singular",
+    "src": "Los científicos que pusieron al pintor",
+    "base": "El científico que puso al pintor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4391": {
+    "base_subject_number": "singular",
+    "src": "Los reyes que pasaron al piloto",
+    "base": "El rey que pasó al piloto",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4392": {
+    "base_subject_number": "plural",
+    "src": "El productor que vio al corredor",
+    "base": "Los productores que vieron al corredor",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4393": {
+    "base_subject_number": "plural",
+    "src": "El pintor que pasó al detective",
+    "base": "Los pintores que pasaron al detective",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4394": {
+    "base_subject_number": "plural",
+    "src": "El ingeniero que vio al cantante",
+    "base": "Los ingenieros que vieron al cantante",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4395": {
+    "base_subject_number": "singular",
+    "src": "Los cantantes que dijeron al diputado",
+    "base": "El cantante que dijo al diputado",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4396": {
+    "base_subject_number": "plural",
+    "src": "El pintor que tuvo al periodista",
+    "base": "Los pintores que tuvieron al periodista",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4397": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que vieron al socio",
+    "base": "El piloto que vio al socio",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4398": {
+    "base_subject_number": "singular",
+    "src": "Los diseñadores que pasaron al empleado",
+    "base": "El diseñador que pasó al empleado",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4399": {
+    "base_subject_number": "singular",
+    "src": "Los agentes que tuvieron al diseñador",
+    "base": "El agente que tuvo al diseñador",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4400": {
+    "base_subject_number": "plural",
+    "src": "El rey que encontró al productor",
+    "base": "Los reyes que encontraron al productor",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4401": {
+    "base_subject_number": "plural",
+    "src": "El chef que dijo al investigador",
+    "base": "Los chefs que dijeron al investigador",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4402": {
+    "base_subject_number": "plural",
+    "src": "El cantante que dio al sacerdote",
+    "base": "Los cantantes que dieron al sacerdote",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4403": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que pusieron al diseñador",
+    "base": "El ingeniero que puso al diseñador",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4404": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que pusieron al actor",
+    "base": "El ingeniero que puso al actor",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4405": {
+    "base_subject_number": "singular",
+    "src": "Los policías que vieron al ministro",
+    "base": "El policía que vio al ministro",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4406": {
+    "base_subject_number": "plural",
+    "src": "El detective que puso al vendedor",
+    "base": "Los detectives que pusieron al vendedor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4407": {
+    "base_subject_number": "singular",
+    "src": "Los productores que tuvieron al empleado",
+    "base": "El productor que tuvo al empleado",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4408": {
+    "base_subject_number": "singular",
+    "src": "Los escritores que dijeron al asistente",
+    "base": "El escritor que dijo al asistente",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4409": {
+    "base_subject_number": "singular",
+    "src": "Los cantantes que pasaron al detective",
+    "base": "El cantante que pasó al detective",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4410": {
+    "base_subject_number": "plural",
+    "src": "El escritor que encontró al científico",
+    "base": "Los escritores que encontraron al científico",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4411": {
+    "base_subject_number": "plural",
+    "src": "El técnico que encontró al cantante",
+    "base": "Los técnicos que encontraron al cantante",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4412": {
+    "base_subject_number": "singular",
+    "src": "Los socios que pasaron al empleado",
+    "base": "El socio que pasó al empleado",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4413": {
+    "base_subject_number": "plural",
+    "src": "El ingeniero que pasó al escritor",
+    "base": "Los ingenieros que pasaron al escritor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4414": {
+    "base_subject_number": "plural",
+    "src": "El director que pasó al vendedor",
+    "base": "Los directores que pasaron al vendedor",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4415": {
+    "base_subject_number": "plural",
+    "src": "El ingeniero que vio al investigador",
+    "base": "Los ingenieros que vieron al investigador",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4416": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que dieron al piloto",
+    "base": "El ingeniero que dio al piloto",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4417": {
+    "base_subject_number": "plural",
+    "src": "El investigador que puso al rey",
+    "base": "Los investigadores que pusieron al rey",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4418": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que pasaron al policía",
+    "base": "El músico que pasó al policía",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4419": {
+    "base_subject_number": "plural",
+    "src": "El vendedor que puso al investigador",
+    "base": "Los vendedores que pusieron al investigador",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4420": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que vieron al escritor",
+    "base": "El abogado que vio al escritor",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4421": {
+    "base_subject_number": "singular",
+    "src": "Los directores que tuvieron al productor",
+    "base": "El director que tuvo al productor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4422": {
+    "base_subject_number": "plural",
+    "src": "El investigador que dijo al ministro",
+    "base": "Los investigadores que dijeron al ministro",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4423": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que pusieron al cantante",
+    "base": "El asistente que puso al cantante",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4424": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que dijeron al director",
+    "base": "El periodista que dijo al director",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4425": {
+    "base_subject_number": "plural",
+    "src": "El técnico que tuvo al diputado",
+    "base": "Los técnicos que tuvieron al diputado",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4426": {
+    "base_subject_number": "plural",
+    "src": "El socio que puso al pintor",
+    "base": "Los socios que pusieron al pintor",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4427": {
+    "base_subject_number": "singular",
+    "src": "Los agentes que pusieron al empleado",
+    "base": "El agente que puso al empleado",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4428": {
+    "base_subject_number": "plural",
+    "src": "El productor que dio al diseñador",
+    "base": "Los productores que dieron al diseñador",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4429": {
+    "base_subject_number": "plural",
+    "src": "El maestro que encontró al corredor",
+    "base": "Los maestros que encontraron al corredor",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4430": {
+    "base_subject_number": "plural",
+    "src": "El empleado que encontró al periodista",
+    "base": "Los empleados que encontraron al periodista",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4431": {
+    "base_subject_number": "plural",
+    "src": "El director que puso al actor",
+    "base": "Los directores que pusieron al actor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4432": {
+    "base_subject_number": "singular",
+    "src": "Los ministros que vieron al técnico",
+    "base": "El ministro que vio al técnico",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4433": {
+    "base_subject_number": "singular",
+    "src": "Los policías que pasaron al empleado",
+    "base": "El policía que pasó al empleado",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4434": {
+    "base_subject_number": "plural",
+    "src": "El corredor que dijo al sacerdote",
+    "base": "Los corredores que dijeron al sacerdote",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4435": {
+    "base_subject_number": "singular",
+    "src": "Los corredores que encontraron al director",
+    "base": "El corredor que encontró al director",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4436": {
+    "base_subject_number": "singular",
+    "src": "Los actores que pusieron al empleado",
+    "base": "El actor que puso al empleado",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4437": {
+    "base_subject_number": "singular",
+    "src": "Los productores que dieron al piloto",
+    "base": "El productor que dio al piloto",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4438": {
+    "base_subject_number": "plural",
+    "src": "El vendedor que tuvo al músico",
+    "base": "Los vendedores que tuvieron al músico",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4439": {
+    "base_subject_number": "plural",
+    "src": "El científico que encontró al empleado",
+    "base": "Los científicos que encontraron al empleado",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4440": {
+    "base_subject_number": "plural",
+    "src": "El empleado que dijo al policía",
+    "base": "Los empleados que dijeron al policía",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4441": {
+    "base_subject_number": "plural",
+    "src": "El corredor que vio al diseñador",
+    "base": "Los corredores que vieron al diseñador",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4442": {
+    "base_subject_number": "singular",
+    "src": "Los cantantes que vieron al diputado",
+    "base": "El cantante que vio al diputado",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4443": {
+    "base_subject_number": "plural",
+    "src": "El diseñador que encontró al diputado",
+    "base": "Los diseñadores que encontraron al diputado",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4444": {
+    "base_subject_number": "plural",
+    "src": "El agente que dijo al sacerdote",
+    "base": "Los agentes que dijeron al sacerdote",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4445": {
+    "base_subject_number": "plural",
+    "src": "El rey que vio al científico",
+    "base": "Los reyes que vieron al científico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4446": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que pasó al rey",
+    "base": "Los sacerdotes que pasaron al rey",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4447": {
+    "base_subject_number": "singular",
+    "src": "Los corredores que tuvieron al director",
+    "base": "El corredor que tuvo al director",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4448": {
+    "base_subject_number": "plural",
+    "src": "El actor que dijo al sacerdote",
+    "base": "Los actores que dijeron al sacerdote",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4449": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que dijeron al diputado",
+    "base": "El pintor que dijo al diputado",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4450": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que dieron al vendedor",
+    "base": "El músico que dio al vendedor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4451": {
+    "base_subject_number": "plural",
+    "src": "El diputado que vio al técnico",
+    "base": "Los diputados que vieron al técnico",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4452": {
+    "base_subject_number": "singular",
+    "src": "Los escritores que tuvieron al vendedor",
+    "base": "El escritor que tuvo al vendedor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4453": {
+    "base_subject_number": "plural",
+    "src": "El maestro que encontró al empleado",
+    "base": "Los maestros que encontraron al empleado",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4454": {
+    "base_subject_number": "plural",
+    "src": "El técnico que vio al ingeniero",
+    "base": "Los técnicos que vieron al ingeniero",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4455": {
+    "base_subject_number": "plural",
+    "src": "El rey que dio al ministro",
+    "base": "Los reyes que dieron al ministro",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4456": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que encontraron al sacerdote",
+    "base": "El pintor que encontró al sacerdote",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4457": {
+    "base_subject_number": "plural",
+    "src": "El corredor que pasó al escritor",
+    "base": "Los corredores que pasaron al escritor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4458": {
+    "base_subject_number": "plural",
+    "src": "El investigador que tuvo al actor",
+    "base": "Los investigadores que tuvieron al actor",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4459": {
+    "base_subject_number": "plural",
+    "src": "El cantante que pasó al ministro",
+    "base": "Los cantantes que pasaron al ministro",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4460": {
+    "base_subject_number": "singular",
+    "src": "Los policías que pusieron al agente",
+    "base": "El policía que puso al agente",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4461": {
+    "base_subject_number": "plural",
+    "src": "El asistente que puso al sacerdote",
+    "base": "Los asistentes que pusieron al sacerdote",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4462": {
+    "base_subject_number": "plural",
+    "src": "El técnico que pasó al ministro",
+    "base": "Los técnicos que pasaron al ministro",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4463": {
+    "base_subject_number": "plural",
+    "src": "El abogado que dijo al policía",
+    "base": "Los abogados que dijeron al policía",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4464": {
+    "base_subject_number": "singular",
+    "src": "Los empleados que vieron al policía",
+    "base": "El empleado que vio al policía",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4465": {
+    "base_subject_number": "singular",
+    "src": "Los vendedores que vieron al investigador",
+    "base": "El vendedor que vio al investigador",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4466": {
+    "base_subject_number": "plural",
+    "src": "El socio que dio al actor",
+    "base": "Los socios que dieron al actor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4467": {
+    "base_subject_number": "plural",
+    "src": "El maestro que dio al científico",
+    "base": "Los maestros que dieron al científico",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4468": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que pusieron al agente",
+    "base": "El asistente que puso al agente",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4469": {
+    "base_subject_number": "plural",
+    "src": "El ministro que vio al abogado",
+    "base": "Los ministros que vieron al abogado",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4470": {
+    "base_subject_number": "plural",
+    "src": "El asistente que vio al escritor",
+    "base": "Los asistentes que vieron al escritor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4471": {
+    "base_subject_number": "plural",
+    "src": "El productor que vio al actor",
+    "base": "Los productores que vieron al actor",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4472": {
+    "base_subject_number": "plural",
+    "src": "El científico que pasó al corredor",
+    "base": "Los científicos que pasaron al corredor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4473": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que vieron al pintor",
+    "base": "El músico que vio al pintor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4474": {
+    "base_subject_number": "singular",
+    "src": "Los actores que encontraron al diseñador",
+    "base": "El actor que encontró al diseñador",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4475": {
+    "base_subject_number": "plural",
+    "src": "El técnico que tuvo al músico",
+    "base": "Los técnicos que tuvieron al músico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4476": {
+    "base_subject_number": "singular",
+    "src": "Los policías que vieron al cantante",
+    "base": "El policía que vio al cantante",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4477": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que encontraron al maestro",
+    "base": "El pintor que encontró al maestro",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4478": {
+    "base_subject_number": "singular",
+    "src": "Los agentes que vieron al asistente",
+    "base": "El agente que vio al asistente",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4479": {
+    "base_subject_number": "singular",
+    "src": "Los reyes que dieron al policía",
+    "base": "El rey que dio al policía",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4480": {
+    "base_subject_number": "plural",
+    "src": "El pintor que dio al ministro",
+    "base": "Los pintores que dieron al ministro",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4481": {
+    "base_subject_number": "singular",
+    "src": "Los sacerdotes que vieron al científico",
+    "base": "El sacerdote que vio al científico",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4482": {
+    "base_subject_number": "plural",
+    "src": "El periodista que vio al chef",
+    "base": "Los periodistas que vieron al chef",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4483": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que pasaron al productor",
+    "base": "El técnico que pasó al productor",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4484": {
+    "base_subject_number": "singular",
+    "src": "Los directores que tuvieron al actor",
+    "base": "El director que tuvo al actor",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4485": {
+    "base_subject_number": "plural",
+    "src": "El periodista que vio al socio",
+    "base": "Los periodistas que vieron al socio",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4486": {
+    "base_subject_number": "plural",
+    "src": "El vendedor que pasó al abogado",
+    "base": "Los vendedores que pasaron al abogado",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4487": {
+    "base_subject_number": "plural",
+    "src": "El rey que puso al agente",
+    "base": "Los reyes que pusieron al agente",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4488": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que vieron al actor",
+    "base": "El maestro que vio al actor",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4489": {
+    "base_subject_number": "plural",
+    "src": "El músico que encontró al ministro",
+    "base": "Los músicos que encontraron al ministro",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4490": {
+    "base_subject_number": "plural",
+    "src": "El cantante que puso al periodista",
+    "base": "Los cantantes que pusieron al periodista",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4491": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que dijeron al productor",
+    "base": "El abogado que dijo al productor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4492": {
+    "base_subject_number": "singular",
+    "src": "Los chefs que pusieron al director",
+    "base": "El chef que puso al director",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4493": {
+    "base_subject_number": "singular",
+    "src": "Los vendedores que encontraron al escritor",
+    "base": "El vendedor que encontró al escritor",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4494": {
+    "base_subject_number": "plural",
+    "src": "El diputado que pasó al técnico",
+    "base": "Los diputados que pasaron al técnico",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4495": {
+    "base_subject_number": "plural",
+    "src": "El ministro que tuvo al policía",
+    "base": "Los ministros que tuvieron al policía",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4496": {
+    "base_subject_number": "plural",
+    "src": "El periodista que pasó al sacerdote",
+    "base": "Los periodistas que pasaron al sacerdote",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4497": {
+    "base_subject_number": "plural",
+    "src": "El director que encontró al rey",
+    "base": "Los directores que encontraron al rey",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4498": {
+    "base_subject_number": "plural",
+    "src": "El investigador que pasó al vendedor",
+    "base": "Los investigadores que pasaron al vendedor",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4499": {
+    "base_subject_number": "plural",
+    "src": "El diputado que puso al vendedor",
+    "base": "Los diputados que pusieron al vendedor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4500": {
+    "base_subject_number": "plural",
+    "src": "El escritor que puso al chef",
+    "base": "Los escritores que pusieron al chef",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4501": {
+    "base_subject_number": "plural",
+    "src": "El actor que vio al músico",
+    "base": "Los actores que vieron al músico",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4502": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que encontraron al vendedor",
+    "base": "El asistente que encontró al vendedor",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4503": {
+    "base_subject_number": "plural",
+    "src": "El escritor que dio al corredor",
+    "base": "Los escritores que dieron al corredor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4504": {
+    "base_subject_number": "plural",
+    "src": "El pintor que encontró al cantante",
+    "base": "Los pintores que encontraron al cantante",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4505": {
+    "base_subject_number": "singular",
+    "src": "Los escritores que vieron al ministro",
+    "base": "El escritor que vio al ministro",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4506": {
+    "base_subject_number": "plural",
+    "src": "El empleado que pasó al agente",
+    "base": "Los empleados que pasaron al agente",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4507": {
+    "base_subject_number": "singular",
+    "src": "Los corredores que dijeron al abogado",
+    "base": "El corredor que dijo al abogado",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4508": {
+    "base_subject_number": "plural",
+    "src": "El ministro que dijo al diseñador",
+    "base": "Los ministros que dijeron al diseñador",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4509": {
+    "base_subject_number": "singular",
+    "src": "Los reyes que pasaron al policía",
+    "base": "El rey que pasó al policía",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4510": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que pusieron al músico",
+    "base": "El técnico que puso al músico",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4511": {
+    "base_subject_number": "singular",
+    "src": "Los policías que dieron al chef",
+    "base": "El policía que dio al chef",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4512": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que pusieron al actor",
+    "base": "El asistente que puso al actor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4513": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que dijo al abogado",
+    "base": "Los sacerdotes que dijeron al abogado",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4514": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que encontraron al diseñador",
+    "base": "El investigador que encontró al diseñador",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4515": {
+    "base_subject_number": "singular",
+    "src": "Los diseñadores que encontraron al ingeniero",
+    "base": "El diseñador que encontró al ingeniero",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4516": {
+    "base_subject_number": "singular",
+    "src": "Los directores que dieron al actor",
+    "base": "El director que dio al actor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4517": {
+    "base_subject_number": "singular",
+    "src": "Los empleados que dieron al chef",
+    "base": "El empleado que dio al chef",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4518": {
+    "base_subject_number": "singular",
+    "src": "Los corredores que dijeron al empleado",
+    "base": "El corredor que dijo al empleado",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4519": {
+    "base_subject_number": "plural",
+    "src": "El rey que pasó al asistente",
+    "base": "Los reyes que pasaron al asistente",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4520": {
+    "base_subject_number": "plural",
+    "src": "El periodista que puso al detective",
+    "base": "Los periodistas que pusieron al detective",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4521": {
+    "base_subject_number": "plural",
+    "src": "El investigador que dijo al abogado",
+    "base": "Los investigadores que dijeron al abogado",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4522": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que pusieron al corredor",
+    "base": "El pintor que puso al corredor",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4523": {
+    "base_subject_number": "singular",
+    "src": "Los escritores que pasaron al abogado",
+    "base": "El escritor que pasó al abogado",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4524": {
+    "base_subject_number": "plural",
+    "src": "El pintor que tuvo al piloto",
+    "base": "Los pintores que tuvieron al piloto",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4525": {
+    "base_subject_number": "plural",
+    "src": "El productor que dijo al científico",
+    "base": "Los productores que dijeron al científico",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4526": {
+    "base_subject_number": "plural",
+    "src": "El productor que pasó al periodista",
+    "base": "Los productores que pasaron al periodista",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4527": {
+    "base_subject_number": "plural",
+    "src": "El periodista que dijo al científico",
+    "base": "Los periodistas que dijeron al científico",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4528": {
+    "base_subject_number": "plural",
+    "src": "El asistente que puso al diputado",
+    "base": "Los asistentes que pusieron al diputado",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4529": {
+    "base_subject_number": "singular",
+    "src": "Los empleados que encontraron al agente",
+    "base": "El empleado que encontró al agente",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4530": {
+    "base_subject_number": "singular",
+    "src": "Los agentes que pusieron al asistente",
+    "base": "El agente que puso al asistente",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4531": {
+    "base_subject_number": "singular",
+    "src": "Los reyes que encontraron al asistente",
+    "base": "El rey que encontró al asistente",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4532": {
+    "base_subject_number": "plural",
+    "src": "El investigador que vio al detective",
+    "base": "Los investigadores que vieron al detective",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4533": {
+    "base_subject_number": "singular",
+    "src": "Los policías que pusieron al detective",
+    "base": "El policía que puso al detective",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4534": {
+    "base_subject_number": "plural",
+    "src": "El socio que puso al diseñador",
+    "base": "Los socios que pusieron al diseñador",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4535": {
+    "base_subject_number": "singular",
+    "src": "Los chefs que encontraron al productor",
+    "base": "El chef que encontró al productor",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4536": {
+    "base_subject_number": "singular",
+    "src": "Los agentes que pasaron al ministro",
+    "base": "El agente que pasó al ministro",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4537": {
+    "base_subject_number": "singular",
+    "src": "Los científicos que vieron al abogado",
+    "base": "El científico que vio al abogado",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4538": {
+    "base_subject_number": "plural",
+    "src": "El diseñador que dijo al asistente",
+    "base": "Los diseñadores que dijeron al asistente",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4539": {
+    "base_subject_number": "singular",
+    "src": "Los sacerdotes que encontraron al productor",
+    "base": "El sacerdote que encontró al productor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4540": {
+    "base_subject_number": "plural",
+    "src": "El detective que encontró al escritor",
+    "base": "Los detectives que encontraron al escritor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4541": {
+    "base_subject_number": "singular",
+    "src": "Los sacerdotes que pusieron al técnico",
+    "base": "El sacerdote que puso al técnico",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4542": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que pusieron al rey",
+    "base": "El periodista que puso al rey",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4543": {
+    "base_subject_number": "plural",
+    "src": "El diseñador que pasó al científico",
+    "base": "Los diseñadores que pasaron al científico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4544": {
+    "base_subject_number": "singular",
+    "src": "Los agentes que dieron al empleado",
+    "base": "El agente que dio al empleado",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4545": {
+    "base_subject_number": "singular",
+    "src": "Los detectives que tuvieron al escritor",
+    "base": "El detective que tuvo al escritor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4546": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que pusieron al rey",
+    "base": "El asistente que puso al rey",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4547": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que pusieron al detective",
+    "base": "El técnico que puso al detective",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4548": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que pusieron al técnico",
+    "base": "El asistente que puso al técnico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4549": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que dieron al sacerdote",
+    "base": "El abogado que dio al sacerdote",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4550": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que vieron al maestro",
+    "base": "El periodista que vio al maestro",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4551": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que dijeron al corredor",
+    "base": "El abogado que dijo al corredor",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4552": {
+    "base_subject_number": "plural",
+    "src": "El socio que dio al ministro",
+    "base": "Los socios que dieron al ministro",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4553": {
+    "base_subject_number": "plural",
+    "src": "El ministro que dijo al científico",
+    "base": "Los ministros que dijeron al científico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4554": {
+    "base_subject_number": "plural",
+    "src": "El director que dijo al investigador",
+    "base": "Los directores que dijeron al investigador",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4555": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que dijeron al periodista",
+    "base": "El músico que dijo al periodista",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4556": {
+    "base_subject_number": "singular",
+    "src": "Los empleados que vieron al sacerdote",
+    "base": "El empleado que vio al sacerdote",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4557": {
+    "base_subject_number": "plural",
+    "src": "El productor que dijo al ministro",
+    "base": "Los productores que dijeron al ministro",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4558": {
+    "base_subject_number": "plural",
+    "src": "El ministro que encontró al detective",
+    "base": "Los ministros que encontraron al detective",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4559": {
+    "base_subject_number": "singular",
+    "src": "Los vendedores que pusieron al ingeniero",
+    "base": "El vendedor que puso al ingeniero",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4560": {
+    "base_subject_number": "singular",
+    "src": "Los directores que tuvieron al cantante",
+    "base": "El director que tuvo al cantante",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4561": {
+    "base_subject_number": "plural",
+    "src": "El diputado que dijo al pintor",
+    "base": "Los diputados que dijeron al pintor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4562": {
+    "base_subject_number": "plural",
+    "src": "El diseñador que vio al investigador",
+    "base": "Los diseñadores que vieron al investigador",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4563": {
+    "base_subject_number": "plural",
+    "src": "El ingeniero que puso al investigador",
+    "base": "Los ingenieros que pusieron al investigador",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4564": {
+    "base_subject_number": "plural",
+    "src": "El pintor que vio al ministro",
+    "base": "Los pintores que vieron al ministro",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4565": {
+    "base_subject_number": "singular",
+    "src": "Los chefs que vieron al actor",
+    "base": "El chef que vio al actor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4566": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que pusieron al policía",
+    "base": "El ingeniero que puso al policía",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4567": {
+    "base_subject_number": "plural",
+    "src": "El escritor que dio al diseñador",
+    "base": "Los escritores que dieron al diseñador",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4568": {
+    "base_subject_number": "singular",
+    "src": "Los directores que tuvieron al piloto",
+    "base": "El director que tuvo al piloto",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4569": {
+    "base_subject_number": "plural",
+    "src": "El pintor que dijo al técnico",
+    "base": "Los pintores que dijeron al técnico",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4570": {
+    "base_subject_number": "plural",
+    "src": "El agente que dijo al científico",
+    "base": "Los agentes que dijeron al científico",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4571": {
+    "base_subject_number": "plural",
+    "src": "El piloto que dio al rey",
+    "base": "Los pilotos que dieron al rey",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4572": {
+    "base_subject_number": "plural",
+    "src": "El diputado que puso al agente",
+    "base": "Los diputados que pusieron al agente",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4573": {
+    "base_subject_number": "plural",
+    "src": "El asistente que tuvo al rey",
+    "base": "Los asistentes que tuvieron al rey",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4574": {
+    "base_subject_number": "plural",
+    "src": "El chef que vio al detective",
+    "base": "Los chefs que vieron al detective",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4575": {
+    "base_subject_number": "plural",
+    "src": "El científico que tuvo al detective",
+    "base": "Los científicos que tuvieron al detective",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4576": {
+    "base_subject_number": "singular",
+    "src": "Los diseñadores que dijeron al diputado",
+    "base": "El diseñador que dijo al diputado",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4577": {
+    "base_subject_number": "plural",
+    "src": "El técnico que dijo al piloto",
+    "base": "Los técnicos que dijeron al piloto",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4578": {
+    "base_subject_number": "plural",
+    "src": "El músico que puso al técnico",
+    "base": "Los músicos que pusieron al técnico",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4579": {
+    "base_subject_number": "plural",
+    "src": "El piloto que pasó al pintor",
+    "base": "Los pilotos que pasaron al pintor",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4580": {
+    "base_subject_number": "plural",
+    "src": "El ministro que puso al investigador",
+    "base": "Los ministros que pusieron al investigador",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4581": {
+    "base_subject_number": "singular",
+    "src": "Los empleados que dijeron al vendedor",
+    "base": "El empleado que dijo al vendedor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4582": {
+    "base_subject_number": "plural",
+    "src": "El director que dijo al periodista",
+    "base": "Los directores que dijeron al periodista",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4583": {
+    "base_subject_number": "plural",
+    "src": "El vendedor que puso al rey",
+    "base": "Los vendedores que pusieron al rey",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4584": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que pusieron al actor",
+    "base": "El técnico que puso al actor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4585": {
+    "base_subject_number": "plural",
+    "src": "El investigador que vio al diseñador",
+    "base": "Los investigadores que vieron al diseñador",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4586": {
+    "base_subject_number": "plural",
+    "src": "El escritor que dijo al periodista",
+    "base": "Los escritores que dijeron al periodista",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4587": {
+    "base_subject_number": "plural",
+    "src": "El rey que dijo al maestro",
+    "base": "Los reyes que dijeron al maestro",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4588": {
+    "base_subject_number": "singular",
+    "src": "Los reyes que pasaron al escritor",
+    "base": "El rey que pasó al escritor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4589": {
+    "base_subject_number": "plural",
+    "src": "El científico que puso al ministro",
+    "base": "Los científicos que pusieron al ministro",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4590": {
+    "base_subject_number": "plural",
+    "src": "El cantante que encontró al periodista",
+    "base": "Los cantantes que encontraron al periodista",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4591": {
+    "base_subject_number": "plural",
+    "src": "El policía que vio al investigador",
+    "base": "Los policías que vieron al investigador",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4592": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que vio al detective",
+    "base": "Los sacerdotes que vieron al detective",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4593": {
+    "base_subject_number": "plural",
+    "src": "El socio que encontró al ingeniero",
+    "base": "Los socios que encontraron al ingeniero",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4594": {
+    "base_subject_number": "singular",
+    "src": "Los policías que pasaron al agente",
+    "base": "El policía que pasó al agente",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4595": {
+    "base_subject_number": "singular",
+    "src": "Los socios que dijeron al vendedor",
+    "base": "El socio que dijo al vendedor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4596": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que tuvieron al cantante",
+    "base": "El asistente que tuvo al cantante",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4597": {
+    "base_subject_number": "singular",
+    "src": "Los reyes que pusieron al técnico",
+    "base": "El rey que puso al técnico",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4598": {
+    "base_subject_number": "singular",
+    "src": "Los agentes que vieron al periodista",
+    "base": "El agente que vio al periodista",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4599": {
+    "base_subject_number": "singular",
+    "src": "Los científicos que pasaron al diputado",
+    "base": "El científico que pasó al diputado",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4600": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que tuvieron al empleado",
+    "base": "El abogado que tuvo al empleado",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4601": {
+    "base_subject_number": "singular",
+    "src": "Los detectives que encontraron al policía",
+    "base": "El detective que encontró al policía",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4602": {
+    "base_subject_number": "singular",
+    "src": "Los productores que vieron al chef",
+    "base": "El productor que vio al chef",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4603": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que tuvieron al ingeniero",
+    "base": "El músico que tuvo al ingeniero",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4604": {
+    "base_subject_number": "plural",
+    "src": "El diputado que tuvo al asistente",
+    "base": "Los diputados que tuvieron al asistente",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4605": {
+    "base_subject_number": "singular",
+    "src": "Los escritores que dijeron al abogado",
+    "base": "El escritor que dijo al abogado",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4606": {
+    "base_subject_number": "singular",
+    "src": "Los diputados que dieron al periodista",
+    "base": "El diputado que dio al periodista",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4607": {
+    "base_subject_number": "plural",
+    "src": "El policía que dijo al cantante",
+    "base": "Los policías que dijeron al cantante",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4608": {
+    "base_subject_number": "plural",
+    "src": "El empleado que vio al investigador",
+    "base": "Los empleados que vieron al investigador",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4609": {
+    "base_subject_number": "plural",
+    "src": "El ministro que puso al chef",
+    "base": "Los ministros que pusieron al chef",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4610": {
+    "base_subject_number": "plural",
+    "src": "El policía que pasó al ingeniero",
+    "base": "Los policías que pasaron al ingeniero",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4611": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que encontraron al socio",
+    "base": "El abogado que encontró al socio",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4612": {
+    "base_subject_number": "plural",
+    "src": "El ministro que dio al detective",
+    "base": "Los ministros que dieron al detective",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4613": {
+    "base_subject_number": "plural",
+    "src": "El agente que tuvo al músico",
+    "base": "Los agentes que tuvieron al músico",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4614": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que vio al empleado",
+    "base": "Los sacerdotes que vieron al empleado",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4615": {
+    "base_subject_number": "plural",
+    "src": "El técnico que pasó al pintor",
+    "base": "Los técnicos que pasaron al pintor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4616": {
+    "base_subject_number": "plural",
+    "src": "El periodista que vio al músico",
+    "base": "Los periodistas que vieron al músico",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4617": {
+    "base_subject_number": "plural",
+    "src": "El científico que vio al diputado",
+    "base": "Los científicos que vieron al diputado",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4618": {
+    "base_subject_number": "plural",
+    "src": "El socio que tuvo al sacerdote",
+    "base": "Los socios que tuvieron al sacerdote",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4619": {
+    "base_subject_number": "singular",
+    "src": "Los vendedores que dijeron al ministro",
+    "base": "El vendedor que dijo al ministro",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4620": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que pasaron al cantante",
+    "base": "El periodista que pasó al cantante",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4621": {
+    "base_subject_number": "plural",
+    "src": "El detective que pasó al periodista",
+    "base": "Los detectives que pasaron al periodista",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4622": {
+    "base_subject_number": "plural",
+    "src": "El vendedor que tuvo al investigador",
+    "base": "Los vendedores que tuvieron al investigador",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4623": {
+    "base_subject_number": "singular",
+    "src": "Los agentes que dieron al técnico",
+    "base": "El agente que dio al técnico",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4624": {
+    "base_subject_number": "singular",
+    "src": "Los diseñadores que pusieron al ingeniero",
+    "base": "El diseñador que puso al ingeniero",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4625": {
+    "base_subject_number": "singular",
+    "src": "Los reyes que vieron al asistente",
+    "base": "El rey que vio al asistente",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4626": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que pasaron al chef",
+    "base": "El pintor que pasó al chef",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4627": {
+    "base_subject_number": "singular",
+    "src": "Los diseñadores que pasaron al rey",
+    "base": "El diseñador que pasó al rey",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4628": {
+    "base_subject_number": "plural",
+    "src": "El detective que puso al sacerdote",
+    "base": "Los detectives que pusieron al sacerdote",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4629": {
+    "base_subject_number": "singular",
+    "src": "Los corredores que pusieron al abogado",
+    "base": "El corredor que puso al abogado",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4630": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que encontraron al ministro",
+    "base": "El investigador que encontró al ministro",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4631": {
+    "base_subject_number": "plural",
+    "src": "El socio que vio al policía",
+    "base": "Los socios que vieron al policía",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4632": {
+    "base_subject_number": "singular",
+    "src": "Los reyes que tuvieron al empleado",
+    "base": "El rey que tuvo al empleado",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4633": {
+    "base_subject_number": "plural",
+    "src": "El detective que dio al sacerdote",
+    "base": "Los detectives que dieron al sacerdote",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4634": {
+    "base_subject_number": "singular",
+    "src": "Los científicos que pasaron al rey",
+    "base": "El científico que pasó al rey",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4635": {
+    "base_subject_number": "plural",
+    "src": "El actor que tuvo al empleado",
+    "base": "Los actores que tuvieron al empleado",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4636": {
+    "base_subject_number": "singular",
+    "src": "Los diputados que tuvieron al policía",
+    "base": "El diputado que tuvo al policía",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4637": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que tuvieron al diputado",
+    "base": "El pintor que tuvo al diputado",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4638": {
+    "base_subject_number": "plural",
+    "src": "El empleado que puso al chef",
+    "base": "Los empleados que pusieron al chef",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4639": {
+    "base_subject_number": "singular",
+    "src": "Los científicos que vieron al rey",
+    "base": "El científico que vio al rey",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4640": {
+    "base_subject_number": "singular",
+    "src": "Los socios que vieron al corredor",
+    "base": "El socio que vio al corredor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4641": {
+    "base_subject_number": "plural",
+    "src": "El piloto que encontró al técnico",
+    "base": "Los pilotos que encontraron al técnico",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4642": {
+    "base_subject_number": "plural",
+    "src": "El piloto que pasó al ministro",
+    "base": "Los pilotos que pasaron al ministro",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4643": {
+    "base_subject_number": "singular",
+    "src": "Los escritores que tuvieron al periodista",
+    "base": "El escritor que tuvo al periodista",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4644": {
+    "base_subject_number": "plural",
+    "src": "El científico que encontró al diputado",
+    "base": "Los científicos que encontraron al diputado",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4645": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que vieron al científico",
+    "base": "El periodista que vio al científico",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4646": {
+    "base_subject_number": "singular",
+    "src": "Los corredores que tuvieron al periodista",
+    "base": "El corredor que tuvo al periodista",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4647": {
+    "base_subject_number": "singular",
+    "src": "Los ministros que vieron al asistente",
+    "base": "El ministro que vio al asistente",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4648": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que pasaron al diseñador",
+    "base": "El periodista que pasó al diseñador",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4649": {
+    "base_subject_number": "plural",
+    "src": "El científico que pasó al maestro",
+    "base": "Los científicos que pasaron al maestro",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4650": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que tuvieron al chef",
+    "base": "El abogado que tuvo al chef",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4651": {
+    "base_subject_number": "plural",
+    "src": "El periodista que dijo al productor",
+    "base": "Los periodistas que dijeron al productor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4652": {
+    "base_subject_number": "plural",
+    "src": "El científico que pasó al vendedor",
+    "base": "Los científicos que pasaron al vendedor",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4653": {
+    "base_subject_number": "plural",
+    "src": "El diputado que puso al científico",
+    "base": "Los diputados que pusieron al científico",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4654": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que dieron al músico",
+    "base": "El pintor que dio al músico",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4655": {
+    "base_subject_number": "singular",
+    "src": "Los diputados que pasaron al periodista",
+    "base": "El diputado que pasó al periodista",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4656": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que vieron al periodista",
+    "base": "El investigador que vio al periodista",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4657": {
+    "base_subject_number": "plural",
+    "src": "El socio que dijo al productor",
+    "base": "Los socios que dijeron al productor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4658": {
+    "base_subject_number": "singular",
+    "src": "Los actores que pusieron al maestro",
+    "base": "El actor que puso al maestro",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4659": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que dieron al director",
+    "base": "El periodista que dio al director",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4660": {
+    "base_subject_number": "plural",
+    "src": "El músico que puso al periodista",
+    "base": "Los músicos que pusieron al periodista",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4661": {
+    "base_subject_number": "plural",
+    "src": "El escritor que puso al periodista",
+    "base": "Los escritores que pusieron al periodista",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4662": {
+    "base_subject_number": "singular",
+    "src": "Los socios que encontraron al sacerdote",
+    "base": "El socio que encontró al sacerdote",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4663": {
+    "base_subject_number": "singular",
+    "src": "Los corredores que pasaron al chef",
+    "base": "El corredor que pasó al chef",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4664": {
+    "base_subject_number": "plural",
+    "src": "El socio que dijo al periodista",
+    "base": "Los socios que dijeron al periodista",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4665": {
+    "base_subject_number": "singular",
+    "src": "Los detectives que encontraron al cantante",
+    "base": "El detective que encontró al cantante",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4666": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que dijeron al vendedor",
+    "base": "El investigador que dijo al vendedor",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4667": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que pusieron al chef",
+    "base": "El piloto que puso al chef",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4668": {
+    "base_subject_number": "singular",
+    "src": "Los vendedores que dijeron al actor",
+    "base": "El vendedor que dijo al actor",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4669": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que vieron al director",
+    "base": "El piloto que vio al director",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4670": {
+    "base_subject_number": "plural",
+    "src": "El agente que tuvo al productor",
+    "base": "Los agentes que tuvieron al productor",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4671": {
+    "base_subject_number": "plural",
+    "src": "El empleado que dijo al pintor",
+    "base": "Los empleados que dijeron al pintor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4672": {
+    "base_subject_number": "plural",
+    "src": "El cantante que encontró al sacerdote",
+    "base": "Los cantantes que encontraron al sacerdote",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4673": {
+    "base_subject_number": "plural",
+    "src": "El vendedor que tuvo al asistente",
+    "base": "Los vendedores que tuvieron al asistente",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4674": {
+    "base_subject_number": "singular",
+    "src": "Los detectives que pusieron al investigador",
+    "base": "El detective que puso al investigador",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4675": {
+    "base_subject_number": "plural",
+    "src": "El detective que dio al músico",
+    "base": "Los detectives que dieron al músico",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4676": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que encontraron al socio",
+    "base": "El investigador que encontró al socio",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4677": {
+    "base_subject_number": "plural",
+    "src": "El socio que vio al detective",
+    "base": "Los socios que vieron al detective",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4678": {
+    "base_subject_number": "plural",
+    "src": "El director que vio al empleado",
+    "base": "Los directores que vieron al empleado",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4679": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que pusieron al ingeniero",
+    "base": "El investigador que puso al ingeniero",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4680": {
+    "base_subject_number": "plural",
+    "src": "El técnico que dijo al rey",
+    "base": "Los técnicos que dijeron al rey",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4681": {
+    "base_subject_number": "singular",
+    "src": "Los escritores que pasaron al piloto",
+    "base": "El escritor que pasó al piloto",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4682": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que vieron al diputado",
+    "base": "El técnico que vio al diputado",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4683": {
+    "base_subject_number": "plural",
+    "src": "El rey que tuvo al ingeniero",
+    "base": "Los reyes que tuvieron al ingeniero",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4684": {
+    "base_subject_number": "plural",
+    "src": "El abogado que vio al diputado",
+    "base": "Los abogados que vieron al diputado",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4685": {
+    "base_subject_number": "singular",
+    "src": "Los corredores que pusieron al investigador",
+    "base": "El corredor que puso al investigador",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4686": {
+    "base_subject_number": "plural",
+    "src": "El asistente que dio al detective",
+    "base": "Los asistentes que dieron al detective",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4687": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que encontraron al agente",
+    "base": "El ingeniero que encontró al agente",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4688": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que vieron al técnico",
+    "base": "El periodista que vio al técnico",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4689": {
+    "base_subject_number": "plural",
+    "src": "El pintor que tuvo al detective",
+    "base": "Los pintores que tuvieron al detective",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4690": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que tuvo al diseñador",
+    "base": "Los sacerdotes que tuvieron al diseñador",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4691": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que vieron al abogado",
+    "base": "El periodista que vio al abogado",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4692": {
+    "base_subject_number": "plural",
+    "src": "El vendedor que dio al maestro",
+    "base": "Los vendedores que dieron al maestro",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4693": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que encontraron al investigador",
+    "base": "El abogado que encontró al investigador",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4694": {
+    "base_subject_number": "singular",
+    "src": "Los diseñadores que dijeron al empleado",
+    "base": "El diseñador que dijo al empleado",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4695": {
+    "base_subject_number": "plural",
+    "src": "El vendedor que dijo al asistente",
+    "base": "Los vendedores que dijeron al asistente",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4696": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que pasaron al actor",
+    "base": "El ingeniero que pasó al actor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4697": {
+    "base_subject_number": "plural",
+    "src": "El rey que pasó al ministro",
+    "base": "Los reyes que pasaron al ministro",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4698": {
+    "base_subject_number": "plural",
+    "src": "El investigador que puso al director",
+    "base": "Los investigadores que pusieron al director",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4699": {
+    "base_subject_number": "singular",
+    "src": "Los escritores que vieron al productor",
+    "base": "El escritor que vio al productor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4700": {
+    "base_subject_number": "plural",
+    "src": "El diseñador que encontró al piloto",
+    "base": "Los diseñadores que encontraron al piloto",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4701": {
+    "base_subject_number": "singular",
+    "src": "Los empleados que tuvieron al policía",
+    "base": "El empleado que tuvo al policía",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4702": {
+    "base_subject_number": "plural",
+    "src": "El rey que dijo al chef",
+    "base": "Los reyes que dijeron al chef",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4703": {
+    "base_subject_number": "plural",
+    "src": "El músico que pasó al detective",
+    "base": "Los músicos que pasaron al detective",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4704": {
+    "base_subject_number": "plural",
+    "src": "El rey que pasó al productor",
+    "base": "Los reyes que pasaron al productor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4705": {
+    "base_subject_number": "plural",
+    "src": "El actor que tuvo al productor",
+    "base": "Los actores que tuvieron al productor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4706": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que pasó al maestro",
+    "base": "Los sacerdotes que pasaron al maestro",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4707": {
+    "base_subject_number": "singular",
+    "src": "Los diseñadores que pasaron al policía",
+    "base": "El diseñador que pasó al policía",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4708": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que pasaron al maestro",
+    "base": "El abogado que pasó al maestro",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4709": {
+    "base_subject_number": "plural",
+    "src": "El productor que pasó al asistente",
+    "base": "Los productores que pasaron al asistente",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4710": {
+    "base_subject_number": "singular",
+    "src": "Los cantantes que pasaron al ingeniero",
+    "base": "El cantante que pasó al ingeniero",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4711": {
+    "base_subject_number": "plural",
+    "src": "El asistente que tuvo al ingeniero",
+    "base": "Los asistentes que tuvieron al ingeniero",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4712": {
+    "base_subject_number": "plural",
+    "src": "El técnico que vio al investigador",
+    "base": "Los técnicos que vieron al investigador",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4713": {
+    "base_subject_number": "singular",
+    "src": "Los periodistas que dijeron al vendedor",
+    "base": "El periodista que dijo al vendedor",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4714": {
+    "base_subject_number": "singular",
+    "src": "Los actores que vieron al socio",
+    "base": "El actor que vio al socio",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4715": {
+    "base_subject_number": "plural",
+    "src": "El pintor que puso al asistente",
+    "base": "Los pintores que pusieron al asistente",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4716": {
+    "base_subject_number": "plural",
+    "src": "El ministro que puso al ingeniero",
+    "base": "Los ministros que pusieron al ingeniero",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4717": {
+    "base_subject_number": "singular",
+    "src": "Los empleados que encontraron al corredor",
+    "base": "El empleado que encontró al corredor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4718": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que dijeron al investigador",
+    "base": "El técnico que dijo al investigador",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4719": {
+    "base_subject_number": "plural",
+    "src": "El policía que dio al científico",
+    "base": "Los policías que dieron al científico",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4720": {
+    "base_subject_number": "singular",
+    "src": "Los diputados que pasaron al corredor",
+    "base": "El diputado que pasó al corredor",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4721": {
+    "base_subject_number": "singular",
+    "src": "Los diseñadores que dieron al abogado",
+    "base": "El diseñador que dio al abogado",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4722": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que encontraron al científico",
+    "base": "El técnico que encontró al científico",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4723": {
+    "base_subject_number": "singular",
+    "src": "Los policías que dieron al asistente",
+    "base": "El policía que dio al asistente",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4724": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que tuvieron al técnico",
+    "base": "El piloto que tuvo al técnico",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4725": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que encontraron al abogado",
+    "base": "El ingeniero que encontró al abogado",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4726": {
+    "base_subject_number": "singular",
+    "src": "Los corredores que tuvieron al vendedor",
+    "base": "El corredor que tuvo al vendedor",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4727": {
+    "base_subject_number": "plural",
+    "src": "El productor que pasó al diseñador",
+    "base": "Los productores que pasaron al diseñador",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4728": {
+    "base_subject_number": "plural",
+    "src": "El agente que tuvo al abogado",
+    "base": "Los agentes que tuvieron al abogado",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4729": {
+    "base_subject_number": "plural",
+    "src": "El diseñador que vio al sacerdote",
+    "base": "Los diseñadores que vieron al sacerdote",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4730": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que pusieron al abogado",
+    "base": "El maestro que puso al abogado",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4731": {
+    "base_subject_number": "singular",
+    "src": "Los diputados que dijeron al diseñador",
+    "base": "El diputado que dijo al diseñador",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4732": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que dieron al empleado",
+    "base": "El técnico que dio al empleado",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4733": {
+    "base_subject_number": "singular",
+    "src": "Los corredores que dijeron al vendedor",
+    "base": "El corredor que dijo al vendedor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4734": {
+    "base_subject_number": "plural",
+    "src": "El periodista que dio al científico",
+    "base": "Los periodistas que dieron al científico",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4735": {
+    "base_subject_number": "plural",
+    "src": "El músico que puso al ingeniero",
+    "base": "Los músicos que pusieron al ingeniero",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4736": {
+    "base_subject_number": "plural",
+    "src": "El chef que vio al asistente",
+    "base": "Los chefs que vieron al asistente",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4737": {
+    "base_subject_number": "plural",
+    "src": "El asistente que encontró al socio",
+    "base": "Los asistentes que encontraron al socio",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4738": {
+    "base_subject_number": "singular",
+    "src": "Los científicos que pusieron al ingeniero",
+    "base": "El científico que puso al ingeniero",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4739": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que vieron al policía",
+    "base": "El pintor que vio al policía",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4740": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que pusieron al director",
+    "base": "El abogado que puso al director",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4741": {
+    "base_subject_number": "plural",
+    "src": "El asistente que dio al sacerdote",
+    "base": "Los asistentes que dieron al sacerdote",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4742": {
+    "base_subject_number": "singular",
+    "src": "Los escritores que encontraron al agente",
+    "base": "El escritor que encontró al agente",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4743": {
+    "base_subject_number": "singular",
+    "src": "Los corredores que vieron al científico",
+    "base": "El corredor que vio al científico",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4744": {
+    "base_subject_number": "plural",
+    "src": "El detective que pasó al maestro",
+    "base": "Los detectives que pasaron al maestro",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4745": {
+    "base_subject_number": "plural",
+    "src": "El diseñador que tuvo al ingeniero",
+    "base": "Los diseñadores que tuvieron al ingeniero",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4746": {
+    "base_subject_number": "plural",
+    "src": "El productor que pasó al piloto",
+    "base": "Los productores que pasaron al piloto",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4747": {
+    "base_subject_number": "plural",
+    "src": "El músico que tuvo al abogado",
+    "base": "Los músicos que tuvieron al abogado",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4748": {
+    "base_subject_number": "singular",
+    "src": "Los diputados que pasaron al socio",
+    "base": "El diputado que pasó al socio",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4749": {
+    "base_subject_number": "singular",
+    "src": "Los escritores que vieron al empleado",
+    "base": "El escritor que vio al empleado",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4750": {
+    "base_subject_number": "plural",
+    "src": "El empleado que pasó al ministro",
+    "base": "Los empleados que pasaron al ministro",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4751": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que dio al asistente",
+    "base": "Los sacerdotes que dieron al asistente",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4752": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que dieron al actor",
+    "base": "El pintor que dio al actor",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4753": {
+    "base_subject_number": "singular",
+    "src": "Los vendedores que vieron al productor",
+    "base": "El vendedor que vio al productor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4754": {
+    "base_subject_number": "plural",
+    "src": "El técnico que dijo al científico",
+    "base": "Los técnicos que dijeron al científico",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4755": {
+    "base_subject_number": "plural",
+    "src": "El corredor que dio al chef",
+    "base": "Los corredores que dieron al chef",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4756": {
+    "base_subject_number": "plural",
+    "src": "El socio que pasó al investigador",
+    "base": "Los socios que pasaron al investigador",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4757": {
+    "base_subject_number": "plural",
+    "src": "El productor que dijo al director",
+    "base": "Los productores que dijeron al director",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4758": {
+    "base_subject_number": "plural",
+    "src": "El maestro que vio al técnico",
+    "base": "Los maestros que vieron al técnico",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4759": {
+    "base_subject_number": "singular",
+    "src": "Los reyes que encontraron al vendedor",
+    "base": "El rey que encontró al vendedor",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4760": {
+    "base_subject_number": "singular",
+    "src": "Los cantantes que dieron al periodista",
+    "base": "El cantante que dio al periodista",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4761": {
+    "base_subject_number": "plural",
+    "src": "El piloto que encontró al asistente",
+    "base": "Los pilotos que encontraron al asistente",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4762": {
+    "base_subject_number": "singular",
+    "src": "Los ministros que dieron al empleado",
+    "base": "El ministro que dio al empleado",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4763": {
+    "base_subject_number": "singular",
+    "src": "Los cantantes que pasaron al asistente",
+    "base": "El cantante que pasó al asistente",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4764": {
+    "base_subject_number": "plural",
+    "src": "El corredor que encontró al sacerdote",
+    "base": "Los corredores que encontraron al sacerdote",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4765": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que tuvieron al diputado",
+    "base": "El piloto que tuvo al diputado",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4766": {
+    "base_subject_number": "plural",
+    "src": "El investigador que vio al maestro",
+    "base": "Los investigadores que vieron al maestro",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4767": {
+    "base_subject_number": "plural",
+    "src": "El socio que dijo al pintor",
+    "base": "Los socios que dijeron al pintor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4768": {
+    "base_subject_number": "singular",
+    "src": "Los policías que vieron al chef",
+    "base": "El policía que vio al chef",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4769": {
+    "base_subject_number": "singular",
+    "src": "Los ingenieros que dieron al chef",
+    "base": "El ingeniero que dio al chef",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4770": {
+    "base_subject_number": "singular",
+    "src": "Los agentes que pasaron al diseñador",
+    "base": "El agente que pasó al diseñador",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4771": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que pusieron al músico",
+    "base": "El maestro que puso al músico",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4772": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que dijeron al socio",
+    "base": "El técnico que dijo al socio",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4773": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que vieron al sacerdote",
+    "base": "El maestro que vio al sacerdote",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4774": {
+    "base_subject_number": "plural",
+    "src": "El director que vio al periodista",
+    "base": "Los directores que vieron al periodista",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4775": {
+    "base_subject_number": "singular",
+    "src": "Los abogados que pusieron al empleado",
+    "base": "El abogado que puso al empleado",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4776": {
+    "base_subject_number": "singular",
+    "src": "Los directores que encontraron al vendedor",
+    "base": "El director que encontró al vendedor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4777": {
+    "base_subject_number": "singular",
+    "src": "Los científicos que pusieron al abogado",
+    "base": "El científico que puso al abogado",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4778": {
+    "base_subject_number": "plural",
+    "src": "El corredor que vio al empleado",
+    "base": "Los corredores que vieron al empleado",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4779": {
+    "base_subject_number": "plural",
+    "src": "El científico que puso al chef",
+    "base": "Los científicos que pusieron al chef",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4780": {
+    "base_subject_number": "plural",
+    "src": "El chef que encontró al piloto",
+    "base": "Los chefs que encontraron al piloto",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4781": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que vieron al científico",
+    "base": "El técnico que vio al científico",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4782": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que dijeron al diputado",
+    "base": "El asistente que dijo al diputado",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4783": {
+    "base_subject_number": "singular",
+    "src": "Los agentes que pusieron al músico",
+    "base": "El agente que puso al músico",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4784": {
+    "base_subject_number": "plural",
+    "src": "El periodista que tuvo al sacerdote",
+    "base": "Los periodistas que tuvieron al sacerdote",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4785": {
+    "base_subject_number": "plural",
+    "src": "El periodista que pasó al abogado",
+    "base": "Los periodistas que pasaron al abogado",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4786": {
+    "base_subject_number": "plural",
+    "src": "El escritor que dio al ingeniero",
+    "base": "Los escritores que dieron al ingeniero",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4787": {
+    "base_subject_number": "plural",
+    "src": "El pintor que pasó al músico",
+    "base": "Los pintores que pasaron al músico",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4788": {
+    "base_subject_number": "singular",
+    "src": "Los maestros que dieron al diputado",
+    "base": "El maestro que dio al diputado",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4789": {
+    "base_subject_number": "singular",
+    "src": "Los socios que dijeron al chef",
+    "base": "El socio que dijo al chef",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4790": {
+    "base_subject_number": "plural",
+    "src": "El agente que dio al abogado",
+    "base": "Los agentes que dieron al abogado",
+    "src_label": " era",
+    "base_label": " eran"
+  },
+  "4791": {
+    "base_subject_number": "plural",
+    "src": "El rey que dio al agente",
+    "base": "Los reyes que dieron al agente",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4792": {
+    "base_subject_number": "singular",
+    "src": "Los científicos que dijeron al investigador",
+    "base": "El científico que dijo al investigador",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4793": {
+    "base_subject_number": "singular",
+    "src": "Los ministros que encontraron al director",
+    "base": "El ministro que encontró al director",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4794": {
+    "base_subject_number": "plural",
+    "src": "El ingeniero que dio al abogado",
+    "base": "Los ingenieros que dieron al abogado",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4795": {
+    "base_subject_number": "plural",
+    "src": "El científico que dijo al ministro",
+    "base": "Los científicos que dijeron al ministro",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4796": {
+    "base_subject_number": "plural",
+    "src": "El productor que vio al maestro",
+    "base": "Los productores que vieron al maestro",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4797": {
+    "base_subject_number": "singular",
+    "src": "Los músicos que dieron al maestro",
+    "base": "El músico que dio al maestro",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4798": {
+    "base_subject_number": "singular",
+    "src": "Los socios que encontraron al músico",
+    "base": "El socio que encontró al músico",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4799": {
+    "base_subject_number": "singular",
+    "src": "Los directores que pasaron al pintor",
+    "base": "El director que pasó al pintor",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4800": {
+    "base_subject_number": "plural",
+    "src": "El periodista que puso al agente",
+    "base": "Los periodistas que pusieron al agente",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4801": {
+    "base_subject_number": "plural",
+    "src": "El cantante que pasó al chef",
+    "base": "Los cantantes que pasaron al chef",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4802": {
+    "base_subject_number": "singular",
+    "src": "Los científicos que vieron al policía",
+    "base": "El científico que vio al policía",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4803": {
+    "base_subject_number": "plural",
+    "src": "El músico que pasó al ministro",
+    "base": "Los músicos que pasaron al ministro",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4804": {
+    "base_subject_number": "singular",
+    "src": "Los escritores que dijeron al policía",
+    "base": "El escritor que dijo al policía",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4805": {
+    "base_subject_number": "singular",
+    "src": "Los actores que pusieron al diputado",
+    "base": "El actor que puso al diputado",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4806": {
+    "base_subject_number": "singular",
+    "src": "Los agentes que dijeron al cantante",
+    "base": "El agente que dijo al cantante",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4807": {
+    "base_subject_number": "singular",
+    "src": "Los diputados que encontraron al rey",
+    "base": "El diputado que encontró al rey",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4808": {
+    "base_subject_number": "singular",
+    "src": "Los pintores que vieron al socio",
+    "base": "El pintor que vio al socio",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4809": {
+    "base_subject_number": "singular",
+    "src": "Los directores que encontraron al productor",
+    "base": "El director que encontró al productor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4810": {
+    "base_subject_number": "plural",
+    "src": "El escritor que dio al investigador",
+    "base": "Los escritores que dieron al investigador",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4811": {
+    "base_subject_number": "plural",
+    "src": "El socio que tuvo al ministro",
+    "base": "Los socios que tuvieron al ministro",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4812": {
+    "base_subject_number": "plural",
+    "src": "El cantante que encontró al asistente",
+    "base": "Los cantantes que encontraron al asistente",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4813": {
+    "base_subject_number": "plural",
+    "src": "El periodista que tuvo al productor",
+    "base": "Los periodistas que tuvieron al productor",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4814": {
+    "base_subject_number": "plural",
+    "src": "El científico que dijo al actor",
+    "base": "Los científicos que dijeron al actor",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4815": {
+    "base_subject_number": "plural",
+    "src": "El diputado que dio al cantante",
+    "base": "Los diputados que dieron al cantante",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4816": {
+    "base_subject_number": "singular",
+    "src": "Los investigadores que encontraron al actor",
+    "base": "El investigador que encontró al actor",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4817": {
+    "base_subject_number": "singular",
+    "src": "Los técnicos que pusieron al ministro",
+    "base": "El técnico que puso al ministro",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4818": {
+    "base_subject_number": "singular",
+    "src": "Los diseñadores que dieron al corredor",
+    "base": "El diseñador que dio al corredor",
+    "src_label": " tienen",
+    "base_label": " tiene"
+  },
+  "4819": {
+    "base_subject_number": "singular",
+    "src": "Los científicos que encontraron al actor",
+    "base": "El científico que encontró al actor",
+    "src_label": " tuvo",
+    "base_label": " tuvieron"
+  },
+  "4820": {
+    "base_subject_number": "plural",
+    "src": "El agente que dijo al investigador",
+    "base": "Los agentes que dijeron al investigador",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4821": {
+    "base_subject_number": "singular",
+    "src": "Los diseñadores que pusieron al asistente",
+    "base": "El diseñador que puso al asistente",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4822": {
+    "base_subject_number": "singular",
+    "src": "Los pilotos que encontraron al pintor",
+    "base": "El piloto que encontró al pintor",
+    "src_label": " tiene",
+    "base_label": " tienen"
+  },
+  "4823": {
+    "base_subject_number": "singular",
+    "src": "Los empleados que dieron al socio",
+    "base": "El empleado que dio al socio",
+    "src_label": " eran",
+    "base_label": " era"
+  },
+  "4824": {
+    "base_subject_number": "plural",
+    "src": "El vendedor que puso al asistente",
+    "base": "Los vendedores que pusieron al asistente",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4825": {
+    "base_subject_number": "plural",
+    "src": "El director que puso al diputado",
+    "base": "Los directores que pusieron al diputado",
+    "src_label": " fueron",
+    "base_label": " fue"
+  },
+  "4826": {
+    "base_subject_number": "singular",
+    "src": "Los asistentes que tuvieron al socio",
+    "base": "El asistente que tuvo al socio",
+    "src_label": " son",
+    "base_label": " es"
+  },
+  "4827": {
+    "base_subject_number": "singular",
+    "src": "Los vendedores que dijeron al productor",
+    "base": "El vendedor que dijo al productor",
+    "src_label": " es",
+    "base_label": " son"
+  },
+  "4828": {
+    "base_subject_number": "plural",
+    "src": "El ingeniero que encontró al director",
+    "base": "Los ingenieros que encontraron al director",
+    "src_label": " fue",
+    "base_label": " fueron"
+  },
+  "4829": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que puso al piloto",
+    "base": "Los sacerdotes que pusieron al piloto",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  },
+  "4830": {
+    "base_subject_number": "plural",
+    "src": "El sacerdote que tuvo al periodista",
+    "base": "Los sacerdotes que tuvieron al periodista",
+    "src_label": " tuvieron",
+    "base_label": " tuvo"
+  }
+}

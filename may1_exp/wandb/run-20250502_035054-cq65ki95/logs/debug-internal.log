@@ -1,0 +1,18 @@
+{"time":"2025-05-02T03:50:54.48481795-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/n/home06/drooryck/circuits_languages_2/may1_exp/wandb/run-20250502_035054-cq65ki95/logs/debug-core.log"}
+{"time":"2025-05-02T03:50:54.956987375-04:00","level":"INFO","msg":"created new stream","id":"cq65ki95"}
+{"time":"2025-05-02T03:50:54.957005338-04:00","level":"INFO","msg":"stream: started","id":"cq65ki95"}
+{"time":"2025-05-02T03:50:54.957296627-04:00","level":"INFO","msg":"handler: started","stream_id":"cq65ki95"}
+{"time":"2025-05-02T03:50:54.957458981-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"cq65ki95"}
+{"time":"2025-05-02T03:50:54.961342593-04:00","level":"INFO","msg":"sender: started","stream_id":"cq65ki95"}
+{"time":"2025-05-02T03:50:55.188296089-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-02T04:20:34.300999629-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-02T04:20:34.303484763-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-05-02T04:20:47.230188577-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-02T04:20:48.546912633-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-05-02T04:26:02.180115126-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-02T04:26:02.240047186-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-05-02T04:26:03.718968327-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-02T04:26:03.754603051-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-05-02T04:26:03.966040484-04:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-02T04:26:06.30462084-04:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-05-02T04:26:30.71276236-04:00","level":"INFO","msg":"Pausing system monitor"}

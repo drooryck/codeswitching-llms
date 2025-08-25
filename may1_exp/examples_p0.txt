@@ -1,0 +1,129 @@
+Results for model trained with 0.0% French
+================================================================================
+
+Accuracy: 0/20 = 0.00%
+
+FR Accuracy: 0/12 = 0.00%
+
+NL Accuracy: 0/8 = 0.00%
+
+Example 1 (nl):
+Input:      de apen eet de muizen
+Target:     de apen heeft de muizen gegeten
+Prediction: de apen eet de muizen gegeten paarden paarden paarden paarden jongens jongens jongens dokters dokters dokters dokters dokters dokters dokters
+Correct:    ✗
+
+Example 2 (fr):
+Input:      le homme embrasse le fille
+Target:     le homme a embrassé le fille
+Prediction: le homme embrasse le fille gemogen
+Correct:    ✗
+
+Example 3 (nl):
+Input:      de leeuwen slaat de katten
+Target:     de leeuwen heeft de katten geslagen
+Prediction: de leeuwen slaat de katten geslagen paarden paarden jongens jongens jongens jongens dokters dokters dokters vrouwen vrouwen vrouwen vrouwen vrouwen
+Correct:    ✗
+
+Example 4 (fr):
+Input:      le docteur sauve le souris
+Target:     le docteur a sauvé le souris
+Prediction: le docteur sauve le souris jongen
+Correct:    ✗
+
+Example 5 (fr):
+Input:      le docteur frappe le souris
+Target:     le docteur a frappé le souris
+Prediction: le docteur frappe le souris de paarden paarden paarden jongens jongens meisjes meisjes meisjes meisjes vrouwen vrouwen vrouwen dokters dokters
+Correct:    ✗
+
+Example 6 (fr):
+Input:      le renard regarde le professeur
+Target:     le renard a regardé le professeur
+Prediction: le renard regarde le professeur aap
+Correct:    ✗
+
+Example 7 (fr):
+Input:      le ennemi observe le fille
+Target:     le ennemi a observé le fille
+Prediction: le ennemi observe le fille de paarden paarden jongens jongens meisjes meisjes meisjes vrouwen vrouwen vrouwen apen apen dokters dokters
+Correct:    ✗
+
+Example 8 (nl):
+Input:      de vrouwen bekijkt de olifanten
+Target:     de vrouwen heeft de olifanten bekeken
+Prediction: de vrouwen bekijkt de olifanten bekeken dokters dokters dokters dokters muizen muizen muizen muizen dokters dokters jongens jongens jongens jongens
+Correct:    ✗
+
+Example 9 (nl):
+Input:      de muis valt de vriend
+Target:     de muis heeft de vriend aangevallen
+Prediction: de muis valt de vriend aangevallen vos vos vos vos vos vos vos vos paard paard paard dokter dokter dokter
+Correct:    ✗
+
+Example 10 (fr):
+Input:      les ennemis mange les loups
+Target:     les ennemis a mangé les loups
+Prediction: les ennemis mange les loups de paarden paarden jongens jongens jongens meisjes meisjes meisjes meisjes meisjes apen apen apen apen
+Correct:    ✗
+
+Example 11 (fr):
+Input:      le garçon voit le fille
+Target:     le garçon a vu le fille
+Prediction: le garçon voit le fille gejaagd de paarden paarden jongens jongens jongens meisjes meisjes meisjes meisjes apen apen apen apen
+Correct:    ✗
+
+Example 12 (fr):
+Input:      le oiseau poursuit le fille
+Target:     le oiseau a poursuivi le fille
+Prediction: le oiseau poursuit le fille hond
+Correct:    ✗
+
+Example 13 (nl):
+Input:      de paard redt de vijand
+Target:     de paard heeft de vijand gered
+Prediction: de paard redt de vijand gered vos vos vos vos vos vos vos vos vos vos vos vos paard paard
+Correct:    ✗
+
+Example 14 (fr):
+Input:      les garçons cherche les souris
+Target:     les garçons a cherché les souris
+Prediction: les garçons cherche les souris gezien de muizen paarden jongens jongens meisjes meisjes meisjes dokters dokters apen apen apen apen
+Correct:    ✗
+
+Example 15 (fr):
+Input:      le chat porte le éléphant
+Target:     le chat a porté le éléphant
+Prediction: le chat porte le éléphant geduwd jongens
+Correct:    ✗
+
+Example 16 (fr):
+Input:      le loup repousse le chat
+Target:     le loup a repoussé le chat
+Prediction: le loup repousse le chat geduwd jongens meisjes meisjes meisjes apen apen vogels vogels dokters dokters apen apen paarden paarden
+Correct:    ✗
+
+Example 17 (nl):
+Input:      de jongen zoent de dokter
+Target:     de jongen heeft de dokter gezoend
+Prediction: de jongen zoent de dokter gezoend vos vos vos vos vos vos vos vos vos paard paard paard paard paard
+Correct:    ✗
+
+Example 18 (nl):
+Input:      de olifanten observeert de dokters
+Target:     de olifanten heeft de dokters geobserveerd
+Prediction: de olifanten observeert de dokters geobserveerd jongens jongens paarden paarden dokters dokters dokters vrouwen vrouwen vrouwen vrouwen muizen muizen dokters
+Correct:    ✗
+
+Example 19 (fr):
+Input:      les femmes observe les loups
+Target:     les femmes a observé les loups
+Prediction: les femmes observe les loups de muizen paarden paarden jongens jongens meisjes meisjes meisjes meisjes meisjes apen apen apen apen
+Correct:    ✗
+
+Example 20 (nl):
+Input:      de paarden observeert de kinderen
+Target:     de paarden heeft de kinderen geobserveerd
+Prediction: de paarden observeert de kinderen geobserveerd jongens jongens jongens jongens dokters dokters dokters vrouwen vrouwen vrouwen vrouwen vrouwen paarden paarden
+Correct:    ✗
+

@@ -1,0 +1,23 @@
+SLURM_ARRAY_TASK_ID=28 → prop=0.4  run_id=1
+2025-07-05 21:33:52,468 │     INFO │ Starting run with prop=0.4  run_id=1
+2025-07-05 21:33:54,833 │  WARNING │ Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+{'eval_loss': 0.037928223609924316, 'eval_tok_acc': 0.9952084331576425, 'eval_exact_match': 0.9671052631578947, 'eval_runtime': 0.1367, 'eval_samples_per_second': 4447.225, 'eval_steps_per_second': 277.952, 'epoch': 2.93}
+{'loss': 0.7497, 'grad_norm': 0.01779678463935852, 'learning_rate': 0.00019709803603294596, 'epoch': 5.87}
+{'eval_loss': 0.027219070121645927, 'eval_tok_acc': 0.9959271681839962, 'eval_exact_match': 0.9720394736842105, 'eval_runtime': 0.1337, 'eval_samples_per_second': 4546.225, 'eval_steps_per_second': 284.139, 'epoch': 5.87}
+{'eval_loss': 0.025533203035593033, 'eval_tok_acc': 0.9959271681839962, 'eval_exact_match': 0.9720394736842105, 'eval_runtime': 0.1329, 'eval_samples_per_second': 4574.138, 'eval_steps_per_second': 285.884, 'epoch': 8.8}
+{'loss': 0.0034, 'grad_norm': 0.02129894122481346, 'learning_rate': 0.0001845276180929239, 'epoch': 11.73}
+{'eval_loss': 0.026812314987182617, 'eval_tok_acc': 0.9952084331576425, 'eval_exact_match': 0.9671052631578947, 'eval_runtime': 0.1241, 'eval_samples_per_second': 4898.514, 'eval_steps_per_second': 306.157, 'epoch': 11.73}
+{'eval_loss': 0.025565311312675476, 'eval_tok_acc': 0.9954480114997605, 'eval_exact_match': 0.96875, 'eval_runtime': 0.128, 'eval_samples_per_second': 4751.814, 'eval_steps_per_second': 296.988, 'epoch': 14.66}
+{'loss': 0.0014, 'grad_norm': 0.0021160971373319626, 'learning_rate': 0.00016325701619131246, 'epoch': 17.6}
+{'eval_loss': 0.023694844916462898, 'eval_tok_acc': 0.9959271681839962, 'eval_exact_match': 0.9720394736842105, 'eval_runtime': 0.1247, 'eval_samples_per_second': 4877.517, 'eval_steps_per_second': 304.845, 'epoch': 17.6}
+{'eval_loss': 0.024218663573265076, 'eval_tok_acc': 0.996166746526114, 'eval_exact_match': 0.9736842105263158, 'eval_runtime': 0.1215, 'eval_samples_per_second': 5003.673, 'eval_steps_per_second': 312.73, 'epoch': 20.53}
+{'loss': 0.0008, 'grad_norm': 0.0023832921870052814, 'learning_rate': 0.00013547555203967707, 'epoch': 23.46}
+{'eval_loss': 0.02959219180047512, 'eval_tok_acc': 0.9952084331576425, 'eval_exact_match': 0.9671052631578947, 'eval_runtime': 0.1325, 'eval_samples_per_second': 4588.376, 'eval_steps_per_second': 286.774, 'epoch': 23.46}
+{'eval_loss': 0.02902900241315365, 'eval_tok_acc': 0.9952084331576425, 'eval_exact_match': 0.9671052631578947, 'eval_runtime': 0.1264, 'eval_samples_per_second': 4810.363, 'eval_steps_per_second': 300.648, 'epoch': 26.39}
+{'loss': 0.0004, 'grad_norm': 0.0004643204447347671, 'learning_rate': 0.00010405878913280763, 'epoch': 29.33}
+{'eval_loss': 0.025566231459379196, 'eval_tok_acc': 0.996166746526114, 'eval_exact_match': 0.9736842105263158, 'eval_runtime': 0.125, 'eval_samples_per_second': 4863.416, 'eval_steps_per_second': 303.963, 'epoch': 29.33}
+{'eval_loss': 0.02924860455095768, 'eval_tok_acc': 0.9959271681839962, 'eval_exact_match': 0.9720394736842105, 'eval_runtime': 0.1354, 'eval_samples_per_second': 4489.733, 'eval_steps_per_second': 280.608, 'epoch': 32.26}
+{'loss': 0.0003, 'grad_norm': 0.004953026305884123, 'learning_rate': 7.224015797891191e-05, 'epoch': 35.19}
+{'eval_loss': 0.027911914512515068, 'eval_tok_acc': 0.9952084331576425, 'eval_exact_match': 0.9671052631578947, 'eval_runtime': 0.1275, 'eval_samples_per_second': 4768.358, 'eval_steps_per_second': 298.022, 'epoch': 35.19}
+{'train_runtime': 270.6627, 'train_samples_per_second': 4729.134, 'train_steps_per_second': 73.893, 'train_loss': 0.1260173611144225, 'epoch': 35.19}
+2025-07-05 21:38:49,578 │     INFO │ Finished ✔  artefacts in interactive_results_v2/small_p40_run1

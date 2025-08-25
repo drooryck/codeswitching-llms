@@ -1,0 +1,842 @@
+{
+    "0": {
+        "src": "Los painters que pusieron al teacher",
+        "base": "El painter que puso al teacher",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "singular"
+    },
+    "1": {
+        "src": "El teachers que puso al minister",
+        "base": "Los teacher que puso al minister",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "singular"
+    },
+    "2": {
+        "src": "Los teachers que puso al painter",
+        "base": "El teacher que pusieron al painter",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "3": {
+        "src": "Los engineers que dieron al painter",
+        "base": "Los engineer que dio al painter",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "singular"
+    },
+    "4": {
+        "src": "El minister que encontró al painter",
+        "base": "Los ministers que encontró al painter",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "plural"
+    },
+    "5": {
+        "src": "El engineer que puso al painter",
+        "base": "El engineers que pusieron al painter",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "plural"
+    },
+    "6": {
+        "src": "Los detective que dieron al painter",
+        "base": "Los detectives que dieron al painter",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "7": {
+        "src": "El teacher que encontraron al engineer",
+        "base": "El teachers que encontraron al engineer",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "plural"
+    },
+    "8": {
+        "src": "El painter que puso al teacher",
+        "base": "Los painters que pusieron al teacher",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "plural"
+    },
+    "9": {
+        "src": "Los ministers que encontró al painter",
+        "base": "El minister que encontró al painter",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "singular"
+    },
+    "10": {
+        "src": "El painter que dieron al engineer",
+        "base": "El painters que dio al engineer",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "plural"
+    },
+    "11": {
+        "src": "El teachers que encontró al minister",
+        "base": "El teacher que encontraron al minister",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "12": {
+        "src": "Los teacher que puso al minister",
+        "base": "El teachers que puso al minister",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "plural"
+    },
+    "13": {
+        "src": "Los ministers que puso al painter",
+        "base": "El minister que puso al painter",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "singular"
+    },
+    "14": {
+        "src": "Los ministers que puso al detective",
+        "base": "Los minister que pusieron al detective",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "15": {
+        "src": "Los ministers que dieron al teacher",
+        "base": "Los minister que dieron al teacher",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "singular"
+    },
+    "16": {
+        "src": "Los detective que puso al teacher",
+        "base": "El detectives que puso al teacher",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "plural"
+    },
+    "17": {
+        "src": "El detectives que puso al teacher",
+        "base": "Los detective que puso al teacher",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "singular"
+    },
+    "18": {
+        "src": "Los ministers que encontraron al teacher",
+        "base": "El minister que encontraron al teacher",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "19": {
+        "src": "El ministers que dieron al detective",
+        "base": "Los minister que dio al detective",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "singular"
+    },
+    "20": {
+        "src": "Los teacher que encontró al painter",
+        "base": "Los teachers que encontraron al painter",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "plural"
+    },
+    "21": {
+        "src": "Los detective que dio al engineer",
+        "base": "El detectives que dio al engineer",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "plural"
+    },
+    "22": {
+        "src": "El painter que pusieron al engineer",
+        "base": "Los painters que puso al engineer",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "23": {
+        "src": "El teachers que dio al painter",
+        "base": "El teacher que dio al painter",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "singular"
+    },
+    "24": {
+        "src": "Los teachers que encontraron al painter",
+        "base": "Los teacher que encontró al painter",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "singular"
+    },
+    "25": {
+        "src": "Los detective que pusieron al painter",
+        "base": "Los detectives que pusieron al painter",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "plural"
+    },
+    "26": {
+        "src": "Los minister que dio al detective",
+        "base": "El ministers que dieron al detective",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "plural"
+    },
+    "27": {
+        "src": "El painters que pusieron al detective",
+        "base": "Los painter que pusieron al detective",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "singular"
+    },
+    "28": {
+        "src": "Los detectives que pusieron al painter",
+        "base": "Los detective que pusieron al painter",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "singular"
+    },
+    "29": {
+        "src": "Los detectives que dieron al painter",
+        "base": "Los detective que dieron al painter",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "30": {
+        "src": "El minister que puso al painter",
+        "base": "Los ministers que puso al painter",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "plural"
+    },
+    "31": {
+        "src": "El painter que dio al teacher",
+        "base": "El painters que dio al teacher",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "plural"
+    },
+    "32": {
+        "src": "Los detectives que dieron al minister",
+        "base": "El detective que dieron al minister",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "33": {
+        "src": "El painters que encontró al engineer",
+        "base": "El painter que encontraron al engineer",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "34": {
+        "src": "Los detective que puso al engineer",
+        "base": "Los detectives que puso al engineer",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "plural"
+    },
+    "35": {
+        "src": "El detective que encontró al painter",
+        "base": "Los detectives que encontraron al painter",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "plural"
+    },
+    "36": {
+        "src": "El detectives que encontraron al engineer",
+        "base": "Los detective que encontró al engineer",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "37": {
+        "src": "Los painters que pusieron al minister",
+        "base": "El painter que puso al minister",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "singular"
+    },
+    "38": {
+        "src": "Los engineers que puso al minister",
+        "base": "Los engineer que puso al minister",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "singular"
+    },
+    "39": {
+        "src": "Los teacher que dio al detective",
+        "base": "Los teachers que dio al detective",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "40": {
+        "src": "El detectives que encontraron al teacher",
+        "base": "Los detective que encontró al teacher",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "singular"
+    },
+    "41": {
+        "src": "El detective que pusieron al minister",
+        "base": "Los detectives que pusieron al minister",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "plural"
+    },
+    "42": {
+        "src": "Los teachers que dio al engineer",
+        "base": "El teacher que dieron al engineer",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "singular"
+    },
+    "43": {
+        "src": "El teacher que dieron al minister",
+        "base": "El teachers que dio al minister",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "44": {
+        "src": "El ministers que puso al engineer",
+        "base": "Los minister que pusieron al engineer",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "45": {
+        "src": "El teacher que pusieron al painter",
+        "base": "Los teachers que puso al painter",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "46": {
+        "src": "El engineer que encontraron al detective",
+        "base": "El engineers que encontró al detective",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "plural"
+    },
+    "47": {
+        "src": "Los engineers que pusieron al teacher",
+        "base": "Los engineer que puso al teacher",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "48": {
+        "src": "El painters que encontraron al teacher",
+        "base": "El painter que encontró al teacher",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "singular"
+    },
+    "49": {
+        "src": "Los painters que encontró al detective",
+        "base": "El painter que encontraron al detective",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "singular"
+    },
+    "50": {
+        "src": "Los minister que encontraron al engineer",
+        "base": "Los ministers que encontró al engineer",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "plural"
+    },
+    "51": {
+        "src": "Los engineer que puso al minister",
+        "base": "Los engineers que puso al minister",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "plural"
+    },
+    "52": {
+        "src": "Los painter que pusieron al detective",
+        "base": "El painters que pusieron al detective",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "plural"
+    },
+    "53": {
+        "src": "El teacher que puso al detective",
+        "base": "El teachers que pusieron al detective",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "plural"
+    },
+    "54": {
+        "src": "El painter que encontró al teacher",
+        "base": "El painters que encontraron al teacher",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "plural"
+    },
+    "55": {
+        "src": "El painter que encontraron al engineer",
+        "base": "El painters que encontró al engineer",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "56": {
+        "src": "Los painter que dieron al minister",
+        "base": "El painters que dieron al minister",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "plural"
+    },
+    "57": {
+        "src": "Los minister que pusieron al engineer",
+        "base": "El ministers que puso al engineer",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "58": {
+        "src": "Los detective que encontró al minister",
+        "base": "El detectives que encontraron al minister",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "plural"
+    },
+    "59": {
+        "src": "El engineer que dieron al detective",
+        "base": "El engineers que dio al detective",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "60": {
+        "src": "El ministers que encontraron al detective",
+        "base": "Los minister que encontraron al detective",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "singular"
+    },
+    "61": {
+        "src": "El engineers que pusieron al painter",
+        "base": "El engineer que puso al painter",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "singular"
+    },
+    "62": {
+        "src": "Los engineer que dio al painter",
+        "base": "Los engineers que dieron al painter",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "plural"
+    },
+    "63": {
+        "src": "El teacher que dio al painter",
+        "base": "El teachers que dio al painter",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "plural"
+    },
+    "64": {
+        "src": "El detectives que dio al engineer",
+        "base": "Los detective que dio al engineer",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "singular"
+    },
+    "65": {
+        "src": "Los painters que puso al engineer",
+        "base": "El painter que pusieron al engineer",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "66": {
+        "src": "Los engineer que puso al detective",
+        "base": "Los engineers que puso al detective",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "plural"
+    },
+    "67": {
+        "src": "Los ministers que puso al teacher",
+        "base": "El minister que puso al teacher",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "singular"
+    },
+    "68": {
+        "src": "Los detective que encontró al engineer",
+        "base": "El detectives que encontraron al engineer",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "69": {
+        "src": "Los engineers que encontraron al painter",
+        "base": "El engineer que encontró al painter",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "70": {
+        "src": "Los ministers que dieron al painter",
+        "base": "El minister que dio al painter",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "singular"
+    },
+    "71": {
+        "src": "Los minister que encontraron al detective",
+        "base": "El ministers que encontraron al detective",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "plural"
+    },
+    "72": {
+        "src": "Los engineer que encontró al minister",
+        "base": "Los engineers que encontró al minister",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "plural"
+    },
+    "73": {
+        "src": "El teacher que puso al engineer",
+        "base": "Los teachers que pusieron al engineer",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "plural"
+    },
+    "74": {
+        "src": "El engineers que dio al minister",
+        "base": "El engineer que dio al minister",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "75": {
+        "src": "Los detectives que puso al engineer",
+        "base": "Los detective que puso al engineer",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "singular"
+    },
+    "76": {
+        "src": "El engineer que encontró al painter",
+        "base": "Los engineers que encontraron al painter",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "77": {
+        "src": "Los engineers que encontró al minister",
+        "base": "Los engineer que encontró al minister",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "singular"
+    },
+    "78": {
+        "src": "Los detectives que pusieron al minister",
+        "base": "El detective que pusieron al minister",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "singular"
+    },
+    "79": {
+        "src": "Los teachers que dio al detective",
+        "base": "Los teacher que dio al detective",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "80": {
+        "src": "Los detectives que encontraron al painter",
+        "base": "El detective que encontró al painter",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "singular"
+    },
+    "81": {
+        "src": "El teachers que encontraron al engineer",
+        "base": "El teacher que encontraron al engineer",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "singular"
+    },
+    "82": {
+        "src": "El minister que dio al engineer",
+        "base": "Los ministers que dio al engineer",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "83": {
+        "src": "Los engineers que puso al detective",
+        "base": "Los engineer que puso al detective",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "singular"
+    },
+    "84": {
+        "src": "Los teachers que encontró al detective",
+        "base": "Los teacher que encontraron al detective",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "85": {
+        "src": "El minister que dio al painter",
+        "base": "Los ministers que dieron al painter",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "plural"
+    },
+    "86": {
+        "src": "El engineers que dio al detective",
+        "base": "El engineer que dieron al detective",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "87": {
+        "src": "Los ministers que dio al engineer",
+        "base": "El minister que dio al engineer",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "88": {
+        "src": "El painter que encontraron al detective",
+        "base": "Los painters que encontró al detective",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "plural"
+    },
+    "89": {
+        "src": "Los minister que dieron al teacher",
+        "base": "Los ministers que dieron al teacher",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "plural"
+    },
+    "90": {
+        "src": "El painters que dio al teacher",
+        "base": "El painter que dio al teacher",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "singular"
+    },
+    "91": {
+        "src": "El painters que dieron al minister",
+        "base": "Los painter que dieron al minister",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "singular"
+    },
+    "92": {
+        "src": "Los engineers que encontró al teacher",
+        "base": "Los engineer que encontraron al teacher",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "singular"
+    },
+    "93": {
+        "src": "El teachers que dio al minister",
+        "base": "El teacher que dieron al minister",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "94": {
+        "src": "El minister que encontraron al teacher",
+        "base": "Los ministers que encontraron al teacher",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "95": {
+        "src": "El detectives que encontraron al minister",
+        "base": "Los detective que encontró al minister",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "singular"
+    },
+    "96": {
+        "src": "Los detective que dieron al teacher",
+        "base": "El detectives que dio al teacher",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "plural"
+    },
+    "97": {
+        "src": "El teacher que encontraron al minister",
+        "base": "El teachers que encontró al minister",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "98": {
+        "src": "El painter que puso al minister",
+        "base": "Los painters que pusieron al minister",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "plural"
+    },
+    "99": {
+        "src": "Los minister que pusieron al detective",
+        "base": "Los ministers que puso al detective",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "100": {
+        "src": "Los engineer que encontraron al teacher",
+        "base": "Los engineers que encontró al teacher",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "plural"
+    },
+    "101": {
+        "src": "El minister que puso al teacher",
+        "base": "Los ministers que puso al teacher",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "plural"
+    },
+    "102": {
+        "src": "El engineers que encontró al detective",
+        "base": "El engineer que encontraron al detective",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "singular"
+    },
+    "103": {
+        "src": "El engineer que dio al minister",
+        "base": "El engineers que dio al minister",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "104": {
+        "src": "El teachers que pusieron al detective",
+        "base": "El teacher que puso al detective",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "singular"
+    },
+    "105": {
+        "src": "Los teacher que encontraron al detective",
+        "base": "Los teachers que encontró al detective",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "106": {
+        "src": "El engineers que dieron al teacher",
+        "base": "El engineer que dio al teacher",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "singular"
+    },
+    "107": {
+        "src": "Los engineer que puso al teacher",
+        "base": "Los engineers que pusieron al teacher",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "108": {
+        "src": "Los painter que encontraron al minister",
+        "base": "Los painters que encontró al minister",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "plural"
+    },
+    "109": {
+        "src": "El painters que dio al engineer",
+        "base": "El painter que dieron al engineer",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "singular"
+    },
+    "110": {
+        "src": "Los detective que encontró al teacher",
+        "base": "El detectives que encontraron al teacher",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "plural"
+    },
+    "111": {
+        "src": "El painters que dieron al detective",
+        "base": "Los painter que dieron al detective",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "singular"
+    },
+    "112": {
+        "src": "El detectives que dio al teacher",
+        "base": "Los detective que dieron al teacher",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "singular"
+    },
+    "113": {
+        "src": "Los ministers que encontró al engineer",
+        "base": "Los minister que encontraron al engineer",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "singular"
+    },
+    "114": {
+        "src": "El engineer que dio al teacher",
+        "base": "El engineers que dieron al teacher",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "plural"
+    },
+    "115": {
+        "src": "Los teachers que pusieron al engineer",
+        "base": "El teacher que puso al engineer",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "singular"
+    },
+    "116": {
+        "src": "Los painters que encontró al minister",
+        "base": "Los painter que encontraron al minister",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "singular"
+    },
+    "117": {
+        "src": "El detective que dieron al minister",
+        "base": "Los detectives que dieron al minister",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "118": {
+        "src": "Los painter que dieron al detective",
+        "base": "El painters que dieron al detective",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "plural"
+    },
+    "119": {
+        "src": "El teacher que dieron al engineer",
+        "base": "Los teachers que dio al engineer",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "plural"
+    }
+}

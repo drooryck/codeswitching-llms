@@ -1,0 +1,5 @@
+[Tue May  6 03:28:15 EDT 2025]  start  p=0.6  run_id=3
+Train set: 17348 rows (10409 FR, 6939 NL)
+{'train_runtime': 0.8495, 'train_samples_per_second': 1506.767, 'train_steps_per_second': 23.543, 'train_loss': 5.102692413330078, 'epoch': 0.07}
+✓ finished run p=0.6  |  outputs saved in weights/small_p60_run3
+[Tue May  6 03:28:15 EDT 2025]  done   p=0.6  run_id=3

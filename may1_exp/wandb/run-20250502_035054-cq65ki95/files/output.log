@@ -1,0 +1,22 @@
+Sample input + target:
+Input: le professeur ignore le tigre
+Tokens: ['le', 'professeur', 'ignore', 'le', 'tigre']
+Target: le professeur a ignoré le tigre
+Target Tokens: ['le', 'professeur', 'a', 'ignoré', 'le', 'tigre']
+de vrouw verzorgt de tijger              → de vrouw verzorgt de tijger verzorgd
+  [Target: de vrouw heeft de tijger verzorgd]
+
+de honden bekijkt de dokters             → de honden bekijkt de dokters bekeken
+  [Target: de honden heeft de dokters bekeken]
+
+de honden achtervolgt de tijgers         → de honden achtervolgt de tijgers achtervolgd
+  [Target: de honden heeft de tijgers achtervolgd]
+
+le chat observe le femme                 → le chat observe le femme femme
+  [Target: le chat a observé le femme]
+
+les éléphants frappe les chiens          → les éléphants frappe les chiens chiens
+  [Target: les éléphants a frappé les chiens]
+/n/home06/drooryck/circuits_languages_2/venv39/lib/python3.10/site-packages/accelerate/accelerator.py:449: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(**kwargs)
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.

@@ -1,0 +1,527 @@
+{
+    "350": {
+        "src": "de directeurs die de student begrepen, ",
+        "base": "de directeur die de student begreep , ",
+        "src_label": "viel",
+        "base_label": "vielen",
+        "base_subject_number": "plural"
+    },
+    "351": {
+        "src": "de minister die de professor beet , ",
+        "base": "de ministers die de professor beten, ",
+        "src_label": "golden",
+        "base_label": "gold",
+        "base_subject_number": "singular"
+    },
+    "352": {
+        "src": "de klanten die de student renden, ",
+        "base": "de klant die de student rende , ",
+        "src_label": "rende",
+        "base_label": "renden",
+        "base_subject_number": "plural"
+    },
+    "353": {
+        "src": "de professoren die de student beten, ",
+        "base": "de professor die de student beet , ",
+        "src_label": "gold",
+        "base_label": "golden",
+        "base_subject_number": "plural"
+    },
+    "354": {
+        "src": "de professoren die de minister keken, ",
+        "base": "de professor die de minister keek , ",
+        "src_label": "reed",
+        "base_label": "reden",
+        "base_subject_number": "plural"
+    },
+    "355": {
+        "src": "de studenten die de minister lazen, ",
+        "base": "de student die de minister las , ",
+        "src_label": "lag",
+        "base_label": "lagen",
+        "base_subject_number": "plural"
+    },
+    "356": {
+        "src": "de directeur die de professor vergat , ",
+        "base": "de directeurs die de professor vergaten, ",
+        "src_label": "beten",
+        "base_label": "beet",
+        "base_subject_number": "singular"
+    },
+    "357": {
+        "src": "de klanten die de professor aten, ",
+        "base": "de klant die de professor at , ",
+        "src_label": "nam",
+        "base_label": "namen",
+        "base_subject_number": "plural"
+    },
+    "358": {
+        "src": "de directeurs die de klant aten, ",
+        "base": "de directeur die de klant at , ",
+        "src_label": "mat",
+        "base_label": "maten",
+        "base_subject_number": "plural"
+    },
+    "359": {
+        "src": "de klant die de professor vergat , ",
+        "base": "de klanten die de professor vergaten, ",
+        "src_label": "aten",
+        "base_label": "at",
+        "base_subject_number": "singular"
+    },
+    "360": {
+        "src": "de student die de klant las , ",
+        "base": "de studenten die de klant lazen, ",
+        "src_label": "waren",
+        "base_label": "was",
+        "base_subject_number": "singular"
+    },
+    "361": {
+        "src": "de klanten die de minister spraken, ",
+        "base": "de klant die de minister sprak , ",
+        "src_label": "zette",
+        "base_label": "zetten",
+        "base_subject_number": "plural"
+    },
+    "362": {
+        "src": "de student die de directeur at , ",
+        "base": "de studenten die de directeur aten, ",
+        "src_label": "reden",
+        "base_label": "reed",
+        "base_subject_number": "singular"
+    },
+    "363": {
+        "src": "de klant die de directeur nam , ",
+        "base": "de klanten die de directeur namen, ",
+        "src_label": "vielen",
+        "base_label": "viel",
+        "base_subject_number": "singular"
+    },
+    "364": {
+        "src": "de professor die de student aansprak , ",
+        "base": "de professoren die de student aanspraken, ",
+        "src_label": "zetten",
+        "base_label": "zette",
+        "base_subject_number": "singular"
+    },
+    "365": {
+        "src": "de ministers die de student deden, ",
+        "base": "de minister die de student deed , ",
+        "src_label": "rende",
+        "base_label": "renden",
+        "base_subject_number": "plural"
+    },
+    "366": {
+        "src": "de klanten die de minister maten, ",
+        "base": "de klant die de minister mat , ",
+        "src_label": "nam",
+        "base_label": "namen",
+        "base_subject_number": "plural"
+    },
+    "367": {
+        "src": "de klanten die de professor aankeken, ",
+        "base": "de klant die de professor aankeek , ",
+        "src_label": "gaf",
+        "base_label": "gaven",
+        "base_subject_number": "plural"
+    },
+    "368": {
+        "src": "de klant die de professor hielp , ",
+        "base": "de klanten die de professor hielpen, ",
+        "src_label": "werden",
+        "base_label": "werd",
+        "base_subject_number": "singular"
+    },
+    "369": {
+        "src": "de klanten die de directeur zagen, ",
+        "base": "de klant die de directeur zag , ",
+        "src_label": "rende",
+        "base_label": "renden",
+        "base_subject_number": "plural"
+    },
+    "370": {
+        "src": "de ministers die de professor begrepen, ",
+        "base": "de minister die de professor begreep , ",
+        "src_label": "rende",
+        "base_label": "renden",
+        "base_subject_number": "plural"
+    },
+    "371": {
+        "src": "de minister die de student keek , ",
+        "base": "de ministers die de student keken, ",
+        "src_label": "vielen",
+        "base_label": "viel",
+        "base_subject_number": "singular"
+    },
+    "372": {
+        "src": "de professoren die de klant schreven, ",
+        "base": "de professor die de klant schreef , ",
+        "src_label": "ging",
+        "base_label": "gingen",
+        "base_subject_number": "plural"
+    },
+    "373": {
+        "src": "de klant die de minister hielp , ",
+        "base": "de klanten die de minister hielpen, ",
+        "src_label": "reden",
+        "base_label": "reed",
+        "base_subject_number": "singular"
+    },
+    "374": {
+        "src": "de klant die de directeur wist , ",
+        "base": "de klanten die de directeur wisten, ",
+        "src_label": "lagen",
+        "base_label": "lag",
+        "base_subject_number": "singular"
+    },
+    "375": {
+        "src": "de klanten die de professor renden, ",
+        "base": "de klant die de professor rende , ",
+        "src_label": "rende",
+        "base_label": "renden",
+        "base_subject_number": "plural"
+    },
+    "376": {
+        "src": "de directeurs die de student zeiden, ",
+        "base": "de directeur die de student zei , ",
+        "src_label": "reed",
+        "base_label": "reden",
+        "base_subject_number": "plural"
+    },
+    "377": {
+        "src": "de professor die de student zette , ",
+        "base": "de professoren die de student zetten, ",
+        "src_label": "namen",
+        "base_label": "nam",
+        "base_subject_number": "singular"
+    },
+    "378": {
+        "src": "de ministers die de directeur namen, ",
+        "base": "de minister die de directeur nam , ",
+        "src_label": "gold",
+        "base_label": "golden",
+        "base_subject_number": "plural"
+    },
+    "379": {
+        "src": "de minister die de professor aankeek , ",
+        "base": "de ministers die de professor aankeken, ",
+        "src_label": "werden",
+        "base_label": "werd",
+        "base_subject_number": "singular"
+    },
+    "380": {
+        "src": "de student die de professor deed , ",
+        "base": "de studenten die de professor deden, ",
+        "src_label": "werden",
+        "base_label": "werd",
+        "base_subject_number": "singular"
+    },
+    "381": {
+        "src": "de studenten die de minister hielpen, ",
+        "base": "de student die de minister hielp , ",
+        "src_label": "lag",
+        "base_label": "lagen",
+        "base_subject_number": "plural"
+    },
+    "382": {
+        "src": "de klant die de minister vergat , ",
+        "base": "de klanten die de minister vergaten, ",
+        "src_label": "gingen",
+        "base_label": "ging",
+        "base_subject_number": "singular"
+    },
+    "383": {
+        "src": "de directeurs die de student namen, ",
+        "base": "de directeur die de student nam , ",
+        "src_label": "was",
+        "base_label": "waren",
+        "base_subject_number": "plural"
+    },
+    "384": {
+        "src": "de directeur die de student beet , ",
+        "base": "de directeurs die de student beten, ",
+        "src_label": "gingen",
+        "base_label": "ging",
+        "base_subject_number": "singular"
+    },
+    "385": {
+        "src": "de studenten die de klant kenden, ",
+        "base": "de student die de klant kende , ",
+        "src_label": "ging",
+        "base_label": "gingen",
+        "base_subject_number": "plural"
+    },
+    "386": {
+        "src": "de ministers die de klant begrepen, ",
+        "base": "de minister die de klant begreep , ",
+        "src_label": "zette",
+        "base_label": "zetten",
+        "base_subject_number": "plural"
+    },
+    "387": {
+        "src": "de klant die de minister nam , ",
+        "base": "de klanten die de minister namen, ",
+        "src_label": "lagen",
+        "base_label": "lag",
+        "base_subject_number": "singular"
+    },
+    "388": {
+        "src": "de minister die de student las , ",
+        "base": "de ministers die de student lazen, ",
+        "src_label": "namen",
+        "base_label": "nam",
+        "base_subject_number": "singular"
+    },
+    "389": {
+        "src": "de student die de directeur aanviel , ",
+        "base": "de studenten die de directeur aanvielen, ",
+        "src_label": "beten",
+        "base_label": "beet",
+        "base_subject_number": "singular"
+    },
+    "390": {
+        "src": "de klant die de professor keek , ",
+        "base": "de klanten die de professor keken, ",
+        "src_label": "werden",
+        "base_label": "werd",
+        "base_subject_number": "singular"
+    },
+    "391": {
+        "src": "de directeur die de minister mat , ",
+        "base": "de directeurs die de minister maten, ",
+        "src_label": "gingen",
+        "base_label": "ging",
+        "base_subject_number": "singular"
+    },
+    "392": {
+        "src": "de minister die de directeur zei , ",
+        "base": "de ministers die de directeur zeiden, ",
+        "src_label": "gaven",
+        "base_label": "gaf",
+        "base_subject_number": "singular"
+    },
+    "393": {
+        "src": "de klanten die de minister aankeken, ",
+        "base": "de klant die de minister aankeek , ",
+        "src_label": "lag",
+        "base_label": "lagen",
+        "base_subject_number": "plural"
+    },
+    "394": {
+        "src": "de professor die de student deed , ",
+        "base": "de professoren die de student deden, ",
+        "src_label": "waren",
+        "base_label": "was",
+        "base_subject_number": "singular"
+    },
+    "395": {
+        "src": "de studenten die de minister maten, ",
+        "base": "de student die de minister mat , ",
+        "src_label": "was",
+        "base_label": "waren",
+        "base_subject_number": "plural"
+    },
+    "396": {
+        "src": "de professor die de directeur zette , ",
+        "base": "de professoren die de directeur zetten, ",
+        "src_label": "golden",
+        "base_label": "gold",
+        "base_subject_number": "singular"
+    },
+    "397": {
+        "src": "de directeurs die de student schreven, ",
+        "base": "de directeur die de student schreef , ",
+        "src_label": "gold",
+        "base_label": "golden",
+        "base_subject_number": "plural"
+    },
+    "398": {
+        "src": "de minister die de klant vergat , ",
+        "base": "de ministers die de klant vergaten, ",
+        "src_label": "gaven",
+        "base_label": "gaf",
+        "base_subject_number": "singular"
+    },
+    "399": {
+        "src": "de professor die de directeur aansprak , ",
+        "base": "de professoren die de directeur aanspraken, ",
+        "src_label": "renden",
+        "base_label": "rende",
+        "base_subject_number": "singular"
+    },
+    "400": {
+        "src": "de studenten die de minister beten, ",
+        "base": "de student die de minister beet , ",
+        "src_label": "ging",
+        "base_label": "gingen",
+        "base_subject_number": "plural"
+    },
+    "401": {
+        "src": "de student die de minister wist , ",
+        "base": "de studenten die de minister wisten, ",
+        "src_label": "aten",
+        "base_label": "at",
+        "base_subject_number": "singular"
+    },
+    "402": {
+        "src": "de studenten die de klant zetten, ",
+        "base": "de student die de klant zette , ",
+        "src_label": "nam",
+        "base_label": "namen",
+        "base_subject_number": "plural"
+    },
+    "403": {
+        "src": "de directeur die de student sprak , ",
+        "base": "de directeurs die de student spraken, ",
+        "src_label": "golden",
+        "base_label": "gold",
+        "base_subject_number": "singular"
+    },
+    "404": {
+        "src": "de professoren die de klant zeiden, ",
+        "base": "de professor die de klant zei , ",
+        "src_label": "nam",
+        "base_label": "namen",
+        "base_subject_number": "plural"
+    },
+    "405": {
+        "src": "de professor die de minister mat , ",
+        "base": "de professoren die de minister maten, ",
+        "src_label": "zetten",
+        "base_label": "zette",
+        "base_subject_number": "singular"
+    },
+    "406": {
+        "src": "de minister die de student vergat , ",
+        "base": "de ministers die de student vergaten, ",
+        "src_label": "namen",
+        "base_label": "nam",
+        "base_subject_number": "singular"
+    },
+    "407": {
+        "src": "de professoren die de minister lazen, ",
+        "base": "de professor die de minister las , ",
+        "src_label": "mat",
+        "base_label": "maten",
+        "base_subject_number": "plural"
+    },
+    "408": {
+        "src": "de professoren die de klant maten, ",
+        "base": "de professor die de klant mat , ",
+        "src_label": "reed",
+        "base_label": "reden",
+        "base_subject_number": "plural"
+    },
+    "409": {
+        "src": "de directeurs die de klant deden, ",
+        "base": "de directeur die de klant deed , ",
+        "src_label": "werd",
+        "base_label": "werden",
+        "base_subject_number": "plural"
+    },
+    "410": {
+        "src": "de klant die de directeur aanviel , ",
+        "base": "de klanten die de directeur aanvielen, ",
+        "src_label": "namen",
+        "base_label": "nam",
+        "base_subject_number": "singular"
+    },
+    "411": {
+        "src": "de directeurs die de minister wisten, ",
+        "base": "de directeur die de minister wist , ",
+        "src_label": "gold",
+        "base_label": "golden",
+        "base_subject_number": "plural"
+    },
+    "412": {
+        "src": "de studenten die de professor dachten, ",
+        "base": "de student die de professor dacht , ",
+        "src_label": "nam",
+        "base_label": "namen",
+        "base_subject_number": "plural"
+    },
+    "413": {
+        "src": "de professor die de minister aansprak , ",
+        "base": "de professoren die de minister aanspraken, ",
+        "src_label": "gingen",
+        "base_label": "ging",
+        "base_subject_number": "singular"
+    },
+    "414": {
+        "src": "de professoren die de klant hoorden, ",
+        "base": "de professor die de klant hoorde , ",
+        "src_label": "ging",
+        "base_label": "gingen",
+        "base_subject_number": "plural"
+    },
+    "415": {
+        "src": "de student die de professor begreep , ",
+        "base": "de studenten die de professor begrepen, ",
+        "src_label": "reden",
+        "base_label": "reed",
+        "base_subject_number": "singular"
+    },
+    "416": {
+        "src": "de ministers die de professor zagen, ",
+        "base": "de minister die de professor zag , ",
+        "src_label": "gold",
+        "base_label": "golden",
+        "base_subject_number": "plural"
+    },
+    "417": {
+        "src": "de ministers die de directeur aanvielen, ",
+        "base": "de minister die de directeur aanviel , ",
+        "src_label": "gold",
+        "base_label": "golden",
+        "base_subject_number": "plural"
+    },
+    "418": {
+        "src": "de professor die de directeur kende , ",
+        "base": "de professoren die de directeur kenden, ",
+        "src_label": "werden",
+        "base_label": "werd",
+        "base_subject_number": "singular"
+    },
+    "419": {
+        "src": "de studenten die de directeur maten, ",
+        "base": "de student die de directeur mat , ",
+        "src_label": "werd",
+        "base_label": "werden",
+        "base_subject_number": "plural"
+    },
+    "420": {
+        "src": "de klant die de student zag , ",
+        "base": "de klanten die de student zagen, ",
+        "src_label": "reden",
+        "base_label": "reed",
+        "base_subject_number": "singular"
+    },
+    "421": {
+        "src": "de minister die de klant mat , ",
+        "base": "de ministers die de klant maten, ",
+        "src_label": "waren",
+        "base_label": "was",
+        "base_subject_number": "singular"
+    },
+    "422": {
+        "src": "de klant die de student las , ",
+        "base": "de klanten die de student lazen, ",
+        "src_label": "werden",
+        "base_label": "werd",
+        "base_subject_number": "singular"
+    },
+    "423": {
+        "src": "de student die de professor keek , ",
+        "base": "de studenten die de professor keken, ",
+        "src_label": "golden",
+        "base_label": "gold",
+        "base_subject_number": "singular"
+    },
+    "424": {
+        "src": "de professoren die de minister zeiden, ",
+        "base": "de professor die de minister zei , ",
+        "src_label": "gold",
+        "base_label": "golden",
+        "base_subject_number": "plural"
+    }
+}

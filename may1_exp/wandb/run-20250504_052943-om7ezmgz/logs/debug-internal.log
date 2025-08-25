@@ -1,0 +1,16 @@
+{"time":"2025-05-04T05:29:43.776446833-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/n/home06/drooryck/circuits_languages_2/may1_exp/wandb/run-20250504_052943-om7ezmgz/logs/debug-core.log"}
+{"time":"2025-05-04T05:29:44.226858882-04:00","level":"INFO","msg":"created new stream","id":"om7ezmgz"}
+{"time":"2025-05-04T05:29:44.226874088-04:00","level":"INFO","msg":"stream: started","id":"om7ezmgz"}
+{"time":"2025-05-04T05:29:44.227021422-04:00","level":"INFO","msg":"handler: started","stream_id":"om7ezmgz"}
+{"time":"2025-05-04T05:29:44.22703349-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"om7ezmgz"}
+{"time":"2025-05-04T05:29:44.230116728-04:00","level":"INFO","msg":"sender: started","stream_id":"om7ezmgz"}
+{"time":"2025-05-04T05:29:44.409385122-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-04T05:49:59.825971287-04:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/drooryck10-harvard-university/huggingface/om7ezmgz/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-05-04T07:49:55.282395313-04:00","level":"INFO","msg":"stream: closing","id":"om7ezmgz"}
+{"time":"2025-05-04T07:49:55.282492547-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-04T07:49:55.285017279-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-04T07:49:55.673746828-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-04T07:49:55.782469819-04:00","level":"INFO","msg":"handler: closed","stream_id":"om7ezmgz"}
+{"time":"2025-05-04T07:49:55.78248075-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"om7ezmgz"}
+{"time":"2025-05-04T07:49:55.782597058-04:00","level":"INFO","msg":"sender: closed","stream_id":"om7ezmgz"}
+{"time":"2025-05-04T07:49:55.785816151-04:00","level":"INFO","msg":"stream: closed","id":"om7ezmgz"}

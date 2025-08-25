@@ -1,0 +1,842 @@
+{
+    "0": {
+        "src": "El pintor que puso al ingeniero",
+        "base": "Los pintores que pusieron al ingeniero",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "1": {
+        "src": "Los ministros que pusieron al detective",
+        "base": "El ministro que puso al detective",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "2": {
+        "src": "El ministro que dio al maestro",
+        "base": "Los ministros que dieron al maestro",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "3": {
+        "src": "Los maestros que dieron al ingeniero",
+        "base": "El maestro que dio al ingeniero",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "4": {
+        "src": "Los ministros que dieron al detective",
+        "base": "El ministro que dio al detective",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "5": {
+        "src": "Los ingenieros que encontraron al maestro",
+        "base": "El ingeniero que encontró al maestro",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "6": {
+        "src": "El ministro que dio al detective",
+        "base": "Los ministros que dieron al detective",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "7": {
+        "src": "El ministro que puso al maestro",
+        "base": "Los ministros que pusieron al maestro",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "8": {
+        "src": "Los maestros que encontraron al pintor",
+        "base": "El maestro que encontró al pintor",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "9": {
+        "src": "El maestro que puso al detective",
+        "base": "Los maestros que pusieron al detective",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "10": {
+        "src": "El ingeniero que dio al maestro",
+        "base": "Los ingenieros que dieron al maestro",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "11": {
+        "src": "El ministro que encontró al maestro",
+        "base": "Los ministros que encontraron al maestro",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "12": {
+        "src": "Los ministros que dieron al pintor",
+        "base": "El ministro que dio al pintor",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "13": {
+        "src": "Los ingenieros que pusieron al pintor",
+        "base": "El ingeniero que puso al pintor",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "14": {
+        "src": "Los pintores que dieron al ingeniero",
+        "base": "El pintor que dio al ingeniero",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "15": {
+        "src": "Los detectives que pusieron al maestro",
+        "base": "El detective que puso al maestro",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "16": {
+        "src": "Los ministros que pusieron al ingeniero",
+        "base": "El ministro que puso al ingeniero",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "17": {
+        "src": "El maestro que encontró al pintor",
+        "base": "Los maestros que encontraron al pintor",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "18": {
+        "src": "El detective que encontró al ingeniero",
+        "base": "Los detectives que encontraron al ingeniero",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "19": {
+        "src": "Los detectives que dieron al ministro",
+        "base": "El detective que dio al ministro",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "20": {
+        "src": "Los pintores que pusieron al ingeniero",
+        "base": "El pintor que puso al ingeniero",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "21": {
+        "src": "El detective que puso al ministro",
+        "base": "Los detectives que pusieron al ministro",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "22": {
+        "src": "Los maestros que encontraron al ingeniero",
+        "base": "El maestro que encontró al ingeniero",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "23": {
+        "src": "Los maestros que pusieron al detective",
+        "base": "El maestro que puso al detective",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "24": {
+        "src": "El pintor que encontró al maestro",
+        "base": "Los pintores que encontraron al maestro",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "25": {
+        "src": "El pintor que encontró al ingeniero",
+        "base": "Los pintores que encontraron al ingeniero",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "26": {
+        "src": "Los ministros que encontraron al maestro",
+        "base": "El ministro que encontró al maestro",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "27": {
+        "src": "Los detectives que dieron al maestro",
+        "base": "El detective que dio al maestro",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "28": {
+        "src": "Los ingenieros que encontraron al detective",
+        "base": "El ingeniero que encontró al detective",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "29": {
+        "src": "Los ministros que pusieron al pintor",
+        "base": "El ministro que puso al pintor",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "30": {
+        "src": "El pintor que dio al ministro",
+        "base": "Los pintores que dieron al ministro",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "31": {
+        "src": "Los detectives que encontraron al ministro",
+        "base": "El detective que encontró al ministro",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "32": {
+        "src": "El ingeniero que dio al pintor",
+        "base": "Los ingenieros que dieron al pintor",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "33": {
+        "src": "Los detectives que encontraron al ingeniero",
+        "base": "El detective que encontró al ingeniero",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "34": {
+        "src": "Los detectives que dieron al ingeniero",
+        "base": "El detective que dio al ingeniero",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "35": {
+        "src": "El ingeniero que puso al maestro",
+        "base": "Los ingenieros que pusieron al maestro",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "36": {
+        "src": "El detective que dio al ingeniero",
+        "base": "Los detectives que dieron al ingeniero",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "37": {
+        "src": "Los ingenieros que pusieron al detective",
+        "base": "El ingeniero que puso al detective",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "38": {
+        "src": "Los detectives que pusieron al ministro",
+        "base": "El detective que puso al ministro",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "39": {
+        "src": "Los ingenieros que pusieron al maestro",
+        "base": "El ingeniero que puso al maestro",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "40": {
+        "src": "El detective que puso al ingeniero",
+        "base": "Los detectives que pusieron al ingeniero",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "41": {
+        "src": "El detective que encontró al maestro",
+        "base": "Los detectives que encontraron al maestro",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "42": {
+        "src": "Los ministros que encontraron al detective",
+        "base": "El ministro que encontró al detective",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "43": {
+        "src": "Los pintores que dieron al maestro",
+        "base": "El pintor que dio al maestro",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "44": {
+        "src": "El detective que puso al maestro",
+        "base": "Los detectives que pusieron al maestro",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "45": {
+        "src": "El detective que dio al pintor",
+        "base": "Los detectives que dieron al pintor",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "46": {
+        "src": "El pintor que dio al maestro",
+        "base": "Los pintores que dieron al maestro",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "47": {
+        "src": "Los ingenieros que dieron al pintor",
+        "base": "El ingeniero que dio al pintor",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "48": {
+        "src": "El maestro que encontró al ingeniero",
+        "base": "Los maestros que encontraron al ingeniero",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "49": {
+        "src": "Los maestros que dieron al pintor",
+        "base": "El maestro que dio al pintor",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "50": {
+        "src": "Los ingenieros que encontraron al pintor",
+        "base": "El ingeniero que encontró al pintor",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "51": {
+        "src": "Los pintores que encontraron al maestro",
+        "base": "El pintor que encontró al maestro",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "52": {
+        "src": "Los detectives que pusieron al pintor",
+        "base": "El detective que puso al pintor",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "53": {
+        "src": "Los ministros que dieron al ingeniero",
+        "base": "El ministro que dio al ingeniero",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "54": {
+        "src": "Los pintores que dieron al detective",
+        "base": "El pintor que dio al detective",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "55": {
+        "src": "El detective que encontró al pintor",
+        "base": "Los detectives que encontraron al pintor",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "56": {
+        "src": "Los maestros que dieron al ministro",
+        "base": "El maestro que dio al ministro",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "57": {
+        "src": "Los ingenieros que dieron al detective",
+        "base": "El ingeniero que dio al detective",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "58": {
+        "src": "Los pintores que encontraron al detective",
+        "base": "El pintor que encontró al detective",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "59": {
+        "src": "El maestro que encontró al ministro",
+        "base": "Los maestros que encontraron al ministro",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "60": {
+        "src": "Los ministros que encontraron al pintor",
+        "base": "El ministro que encontró al pintor",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "61": {
+        "src": "El ministro que encontró al pintor",
+        "base": "Los ministros que encontraron al pintor",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "62": {
+        "src": "Los ingenieros que pusieron al ministro",
+        "base": "El ingeniero que puso al ministro",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "63": {
+        "src": "Los ingenieros que dieron al maestro",
+        "base": "El ingeniero que dio al maestro",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "64": {
+        "src": "El ingeniero que puso al ministro",
+        "base": "Los ingenieros que pusieron al ministro",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "65": {
+        "src": "Los pintores que pusieron al detective",
+        "base": "El pintor que puso al detective",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "66": {
+        "src": "Los ministros que encontraron al ingeniero",
+        "base": "El ministro que encontró al ingeniero",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "67": {
+        "src": "El pintor que puso al maestro",
+        "base": "Los pintores que pusieron al maestro",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "68": {
+        "src": "Los detectives que pusieron al ingeniero",
+        "base": "El detective que puso al ingeniero",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "69": {
+        "src": "El pintor que encontró al ministro",
+        "base": "Los pintores que encontraron al ministro",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "70": {
+        "src": "El ingeniero que puso al pintor",
+        "base": "Los ingenieros que pusieron al pintor",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "71": {
+        "src": "Los ingenieros que dieron al ministro",
+        "base": "El ingeniero que dio al ministro",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "72": {
+        "src": "El ingeniero que dio al ministro",
+        "base": "Los ingenieros que dieron al ministro",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "73": {
+        "src": "Los pintores que pusieron al ministro",
+        "base": "El pintor que puso al ministro",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "74": {
+        "src": "Los detectives que encontraron al pintor",
+        "base": "El detective que encontró al pintor",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "75": {
+        "src": "El maestro que encontró al detective",
+        "base": "Los maestros que encontraron al detective",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "76": {
+        "src": "Los maestros que pusieron al ministro",
+        "base": "El maestro que puso al ministro",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "77": {
+        "src": "El maestro que dio al ministro",
+        "base": "Los maestros que dieron al ministro",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "78": {
+        "src": "Los maestros que encontraron al detective",
+        "base": "El maestro que encontró al detective",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "79": {
+        "src": "El pintor que dio al detective",
+        "base": "Los pintores que dieron al detective",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "80": {
+        "src": "El ministro que puso al detective",
+        "base": "Los ministros que pusieron al detective",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "81": {
+        "src": "El ingeniero que dio al detective",
+        "base": "Los ingenieros que dieron al detective",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "82": {
+        "src": "Los maestros que pusieron al pintor",
+        "base": "El maestro que puso al pintor",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "83": {
+        "src": "Los pintores que dieron al ministro",
+        "base": "El pintor que dio al ministro",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "84": {
+        "src": "Los pintores que encontraron al ingeniero",
+        "base": "El pintor que encontró al ingeniero",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "85": {
+        "src": "El maestro que dio al ingeniero",
+        "base": "Los maestros que dieron al ingeniero",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "86": {
+        "src": "El maestro que puso al pintor",
+        "base": "Los maestros que pusieron al pintor",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "87": {
+        "src": "El detective que puso al pintor",
+        "base": "Los detectives que pusieron al pintor",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "88": {
+        "src": "El maestro que dio al pintor",
+        "base": "Los maestros que dieron al pintor",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "89": {
+        "src": "El detective que encontró al ministro",
+        "base": "Los detectives que encontraron al ministro",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "90": {
+        "src": "El maestro que puso al ingeniero",
+        "base": "Los maestros que pusieron al ingeniero",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "91": {
+        "src": "El ministro que dio al pintor",
+        "base": "Los ministros que dieron al pintor",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "92": {
+        "src": "El ministro que puso al ingeniero",
+        "base": "Los ministros que pusieron al ingeniero",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "93": {
+        "src": "El ministro que dio al ingeniero",
+        "base": "Los ministros que dieron al ingeniero",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "94": {
+        "src": "El ingeniero que encontró al pintor",
+        "base": "Los ingenieros que encontraron al pintor",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "95": {
+        "src": "El detective que dio al maestro",
+        "base": "Los detectives que dieron al maestro",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "96": {
+        "src": "Los maestros que encontraron al ministro",
+        "base": "El maestro que encontró al ministro",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "97": {
+        "src": "El ministro que encontró al detective",
+        "base": "Los ministros que encontraron al detective",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "98": {
+        "src": "Los detectives que dieron al pintor",
+        "base": "El detective que dio al pintor",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "99": {
+        "src": "El ingeniero que encontró al ministro",
+        "base": "Los ingenieros que encontraron al ministro",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "100": {
+        "src": "El ingeniero que encontró al detective",
+        "base": "Los ingenieros que encontraron al detective",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "101": {
+        "src": "Los maestros que pusieron al ingeniero",
+        "base": "El maestro que puso al ingeniero",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "102": {
+        "src": "El maestro que dio al detective",
+        "base": "Los maestros que dieron al detective",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "103": {
+        "src": "Los pintores que encontraron al ministro",
+        "base": "El pintor que encontró al ministro",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "104": {
+        "src": "Los detectives que encontraron al maestro",
+        "base": "El detective que encontró al maestro",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "105": {
+        "src": "El ministro que encontró al ingeniero",
+        "base": "Los ministros que encontraron al ingeniero",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "106": {
+        "src": "El pintor que puso al detective",
+        "base": "Los pintores que pusieron al detective",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "107": {
+        "src": "El detective que dio al ministro",
+        "base": "Los detectives que dieron al ministro",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "108": {
+        "src": "El maestro que puso al ministro",
+        "base": "Los maestros que pusieron al ministro",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "109": {
+        "src": "Los ministros que pusieron al maestro",
+        "base": "El ministro que puso al maestro",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "110": {
+        "src": "El pintor que puso al ministro",
+        "base": "Los pintores que pusieron al ministro",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "111": {
+        "src": "Los maestros que dieron al detective",
+        "base": "El maestro que dio al detective",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "112": {
+        "src": "El pintor que dio al ingeniero",
+        "base": "Los pintores que dieron al ingeniero",
+        "src_label": "dio",
+        "base_label": "dieron",
+        "base_subject_number": "plural"
+    },
+    "113": {
+        "src": "Los ingenieros que encontraron al ministro",
+        "base": "El ingeniero que encontró al ministro",
+        "src_label": "tienen",
+        "base_label": "tiene",
+        "base_subject_number": "singular"
+    },
+    "114": {
+        "src": "El ingeniero que encontró al maestro",
+        "base": "Los ingenieros que encontraron al maestro",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "115": {
+        "src": "El ingeniero que puso al detective",
+        "base": "Los ingenieros que pusieron al detective",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    },
+    "116": {
+        "src": "Los ministros que dieron al maestro",
+        "base": "El ministro que dio al maestro",
+        "src_label": "dieron",
+        "base_label": "dio",
+        "base_subject_number": "singular"
+    },
+    "117": {
+        "src": "El pintor que encontró al detective",
+        "base": "Los pintores que encontraron al detective",
+        "src_label": "tiene",
+        "base_label": "tienen",
+        "base_subject_number": "plural"
+    },
+    "118": {
+        "src": "Los pintores que pusieron al maestro",
+        "base": "El pintor que puso al maestro",
+        "src_label": "tuvieron",
+        "base_label": "tuvo",
+        "base_subject_number": "singular"
+    },
+    "119": {
+        "src": "El ministro que puso al pintor",
+        "base": "Los ministros que pusieron al pintor",
+        "src_label": "tuvo",
+        "base_label": "tuvieron",
+        "base_subject_number": "plural"
+    }
+}

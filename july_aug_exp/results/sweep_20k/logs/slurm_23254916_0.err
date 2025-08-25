@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/n/sw/Mambaforge-23.11.0-0/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/n/sw/Mambaforge-23.11.0-0/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/n/home06/drooryck/circuits_languages_2/jul_1/src/run_single.py", line 53, in <module>
+    main()
+  File "/n/home06/drooryck/circuits_languages_2/jul_1/src/run_single.py", line 39, in main
+    metrics = Metrics(Path(args.data_dir) / "lexicon_new.json")
+  File "/n/home06/drooryck/circuits_languages_2/jul_1/src/metrics.py", line 21, in __init__
+    self.lexicon = json.load(open(lexicon_path, encoding="utf-8"))
+FileNotFoundError: [Errno 2] No such file or directory: 'data/lexicon_new.json'

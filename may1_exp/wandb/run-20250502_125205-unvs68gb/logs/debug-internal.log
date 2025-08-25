@@ -1,0 +1,15 @@
+{"time":"2025-05-02T12:52:06.098600079-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/n/home06/drooryck/circuits_languages_2/may1_exp/wandb/run-20250502_125205-unvs68gb/logs/debug-core.log"}
+{"time":"2025-05-02T12:52:06.551577537-04:00","level":"INFO","msg":"created new stream","id":"unvs68gb"}
+{"time":"2025-05-02T12:52:06.551591857-04:00","level":"INFO","msg":"stream: started","id":"unvs68gb"}
+{"time":"2025-05-02T12:52:06.551726724-04:00","level":"INFO","msg":"handler: started","stream_id":"unvs68gb"}
+{"time":"2025-05-02T12:52:06.551737439-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"unvs68gb"}
+{"time":"2025-05-02T12:52:06.551891352-04:00","level":"INFO","msg":"sender: started","stream_id":"unvs68gb"}
+{"time":"2025-05-02T12:52:07.171186384-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-02T12:53:01.443370331-04:00","level":"INFO","msg":"stream: closing","id":"unvs68gb"}
+{"time":"2025-05-02T12:53:01.443475641-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-02T12:53:01.445831523-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-02T12:53:01.984764642-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-02T12:53:02.323894995-04:00","level":"INFO","msg":"handler: closed","stream_id":"unvs68gb"}
+{"time":"2025-05-02T12:53:02.323908806-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"unvs68gb"}
+{"time":"2025-05-02T12:53:02.324017832-04:00","level":"INFO","msg":"sender: closed","stream_id":"unvs68gb"}
+{"time":"2025-05-02T12:53:02.332036551-04:00","level":"INFO","msg":"stream: closed","id":"unvs68gb"}

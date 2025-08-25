@@ -1,0 +1,51 @@
+  0%|          | 0/200000 [00:00<?, ?it/s]`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+  0%|          | 1000/200000 [00:51<2:12:55, 24.95Traceback (most recent call last):
+{'loss': 1.5956, 'grad_norm': 1.169895052909851, 'learning_rate': 9.900000000000002e-06, 'epoch': 0.31}
+{'loss': 0.5093, 'grad_norm': 0.7335140109062195, 'learning_rate': 1.9900000000000003e-05, 'epoch': 0.62}
+{'loss': 0.3772, 'grad_norm': 0.45374852418899536, 'learning_rate': 2.9900000000000002e-05, 'epoch': 0.92}
+{'loss': 0.3456, 'grad_norm': 0.3878311812877655, 'learning_rate': 3.99e-05, 'epoch': 1.23}
+{'loss': 0.3247, 'grad_norm': 0.40680161118507385, 'learning_rate': 4.99e-05, 'epoch': 1.54}
+{'loss': 0.3085, 'grad_norm': 0.32184362411499023, 'learning_rate': 5.99e-05, 'epoch': 1.85}
+{'loss': 0.3058, 'grad_norm': 0.3175928294658661, 'learning_rate': 6.99e-05, 'epoch': 2.15}
+{'loss': 0.3011, 'grad_norm': 0.29706066846847534, 'learning_rate': 7.99e-05, 'epoch': 2.46}
+{'loss': 0.3011, 'grad_norm': 0.22445398569107056, 'learning_rate': 8.99e-05, 'epoch': 2.77}
+{'loss': 0.2982, 'grad_norm': 0.2584311068058014, 'learning_rate': 9.99e-05, 'epoch': 3.08}
+  File "/n/home06/drooryck/circuits_languages_2/may1_exp/train_tense_model.py", line 114, in <module>
+    trainer.train()
+  File "/n/home06/drooryck/circuits_languages_2/venv39/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/n/home06/drooryck/circuits_languages_2/venv39/lib/python3.10/site-packages/transformers/trainer.py", line 2627, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/n/home06/drooryck/circuits_languages_2/venv39/lib/python3.10/site-packages/transformers/trainer.py", line 3096, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+  File "/n/home06/drooryck/circuits_languages_2/venv39/lib/python3.10/site-packages/transformers/trainer.py", line 3045, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+  File "/n/home06/drooryck/circuits_languages_2/venv39/lib/python3.10/site-packages/transformers/trainer.py", line 4154, in evaluate
+    output = eval_loop(
+  File "/n/home06/drooryck/circuits_languages_2/venv39/lib/python3.10/site-packages/transformers/trainer.py", line 4443, in evaluation_loop
+    metrics = self.compute_metrics(
+  File "/n/home06/drooryck/circuits_languages_2/may1_exp/train_tense_model.py", line 102, in compute_metrics
+    out.update(token_accuracy(eval_pred))
+  File "/n/home06/drooryck/circuits_languages_2/may1_exp/train_tense_model.py", line 96, in token_accuracy
+    acc = (preds == labels)[mask].float().mean()
+AttributeError: 'numpy.ndarray' object has no attribute 'float'. Did you mean: 'flat'?
+Traceback (most recent call last):
+  File "/n/home06/drooryck/circuits_languages_2/may1_exp/train_tense_model.py", line 114, in <module>
+    trainer.train()
+  File "/n/home06/drooryck/circuits_languages_2/venv39/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/n/home06/drooryck/circuits_languages_2/venv39/lib/python3.10/site-packages/transformers/trainer.py", line 2627, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/n/home06/drooryck/circuits_languages_2/venv39/lib/python3.10/site-packages/transformers/trainer.py", line 3096, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+  File "/n/home06/drooryck/circuits_languages_2/venv39/lib/python3.10/site-packages/transformers/trainer.py", line 3045, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+  File "/n/home06/drooryck/circuits_languages_2/venv39/lib/python3.10/site-packages/transformers/trainer.py", line 4154, in evaluate
+    output = eval_loop(
+  File "/n/home06/drooryck/circuits_languages_2/venv39/lib/python3.10/site-packages/transformers/trainer.py", line 4443, in evaluation_loop
+    metrics = self.compute_metrics(
+  File "/n/home06/drooryck/circuits_languages_2/may1_exp/train_tense_model.py", line 102, in compute_metrics
+    out.update(token_accuracy(eval_pred))
+  File "/n/home06/drooryck/circuits_languages_2/may1_exp/train_tense_model.py", line 96, in token_accuracy
+    acc = (preds == labels)[mask].float().mean()
+AttributeError: 'numpy.ndarray' object has no attribute 'float'. Did you mean: 'flat'?
