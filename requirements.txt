@@ -9,13 +9,10 @@ tokenizers>=0.15.0
 numpy>=1.24.0
 pandas>=2.0.0
 
-# Circuit analysis (for interpretability research)
-transformer-lens>=2.0.0
-neel-plotly>=0.0.1
-
 # Visualization
 plotly>=5.0.0
 matplotlib>=3.7.0
+seaborn
 
 # Utilities
 tqdm>=4.65.0
@@ -25,3 +22,7 @@ pathlib2>=2.3.7
 # Optional but recommended
 wandb>=0.15.0  # for experiment tracking
 jupyter>=1.0.0  # for notebook execution
+
+ipykernel
+
+accelerate

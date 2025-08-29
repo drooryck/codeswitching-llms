@@ -89,8 +89,21 @@ class Experiment:
 
         # Load data
         self.logger.info("Loading data...")
-        train_df = pd.read_csv(self.data_manager.data_dir / "new_train.csv")
+        train_full = pd.read_csv(self.data_manager.data_dir / "new_train.csv")
         test_df = pd.read_csv(self.data_manager.data_dir / "new_test.csv")
+        
+        # Apply proportion to training data
+        df_fr = train_full[train_full.lang == "fr"]
+        df_nl = train_full[train_full.lang == "nl"]
+        want_fr = min(int(len(train_full) * prop), len(df_fr))
+        want_nl = min(len(train_full) - want_fr, len(df_nl))
+        
+        train_df = pd.concat([
+            df_fr.sample(want_fr, random_state=run_id),
+            df_nl.sample(want_nl, random_state=run_id)
+        ]).sample(frac=1, random_state=run_id).reset_index(drop=True)
+        
+        self.logger.info(f"Train set: {len(train_df)} rows ({want_fr} FR, {want_nl} NL)")
 
         # Sample test data if needed
         if eval_prop < 1.0:

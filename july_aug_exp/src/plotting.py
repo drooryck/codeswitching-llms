@@ -7,7 +7,6 @@ capabilities:
 
 1. Exact Match: Tests perfect reproduction of target sequences
 2. Token Accuracy: Measures local token prediction quality
-3. BLEU Score: Evaluates overall translation quality
 4. Word Order: Analyzes syntactic structure learning
 5. Token Distribution: Examines language mixing and separation
 
@@ -106,53 +105,46 @@ class BilingualPlotter:
         """
         self.setup_plot_style()
 
-        # Aggregate by proportion
-        agg_df = self.results_df.groupby('prop').agg({
-            col: ['mean', 'std'] for col in metric_cols
-        }).reset_index()
-
-        # Flatten column names
-        agg_df.columns = ['prop'] + [
-            f"{col[0]}_{col[1]}" for col in agg_df.columns[1:]
-        ]
-
         # Create plot
-        plt.figure()
+        plt.figure(figsize=(10, 6))
 
-        markers = ['o', 's', '^']  # Different marker for each line
+        # Plot lines with confidence intervals for each metric
+        colors = ['blue', 'orange', 'green']  # Add more colors if needed
         for i, (col, label) in enumerate(zip(metric_cols, metric_labels)):
-            mean_col = f"{col}_mean"
-            std_col = f"{col}_std"
+            # Create temporary dataframe for this metric
+            plot_df = self.results_df[['prop', col]].copy()
+            
+            # Plot line with shaded confidence interval
+            sns.lineplot(
+                data=plot_df,
+                x='prop',
+                y=col,
+                label=label,
+                ci='sd',
+                err_style='band',
+                color=colors[i]
+            )
 
-            plt.errorbar(agg_df['prop'],
-                        agg_df[mean_col],
-                        yerr=agg_df[std_col],
-                        label=label,
-                        marker=markers[i],
-                        capsize=4)
+            # Calculate and plot mean points
+            means_df = self.results_df.groupby('prop')[col].mean()
+            plt.plot(means_df.index, means_df.values, 'o', 
+                    color=colors[i], markersize=8)
 
-        # Get number of runs per proportion
-        n_runs = self.results_df.groupby('prop').size()
-
-                # Get x-axis positions
-        props = agg_df['prop'].values.astype(float)
-
-        # Create labels with n-values
-        xlabels = [f"{p:.2f}\nn={n_runs[p]}" for p in props]
-
-        # Set x-ticks and labels
-        plt.xticks(props, xlabels)
-
+        # Customize plot
         plt.xlabel('French Proportion')
         plt.ylabel(ylabel)
         plt.title(title)
         if ylim:
             plt.ylim(ylim)
-        plt.legend()
         plt.grid(True, alpha=0.3)
 
-        # Add more bottom margin for the n-value labels
-        plt.subplots_adjust(bottom=0.15)
+        # Add text for number of runs in bottom right
+        n_runs = self.results_df.groupby('prop').size().iloc[0]
+        plt.text(0.95, 0.02, f'{n_runs} runs per proportion', 
+                horizontalalignment='right',
+                transform=plt.gca().transAxes,
+                fontsize=10)
+
         plt.tight_layout()
 
         # Save plot
