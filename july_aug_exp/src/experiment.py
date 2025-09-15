@@ -294,7 +294,11 @@ class Experiment:
             # Load modules and activate environment
             f.write("# Load modules and activate environment\n")
             f.write("module load python/3.10.9-fasrc01\n")
-            f.write("source /n/home06/drooryck/circuits_languages_2/venv39/bin/activate\n\n")
+            f.write("source /n/home06/drooryck/envs/codeswitching-py310/bin/activate\n\n")
+
+            # Add project root to PYTHONPATH
+            f.write("# Add project root to PYTHONPATH\n")
+            f.write("export PYTHONPATH=/n/home06/drooryck/codeswitching-llms:$PYTHONPATH\n\n")
 
             # Create job mapping
             f.write("# Job mapping\n")
@@ -310,12 +314,13 @@ class Experiment:
             # Write run command
             f.write("# Run experiment\n")
             cmd = [
-                "python", "-m", "src.run_single",  # Use module path instead of script
-                "--config", str(self.output_dir / "model_config.json"),  # Fixed config path
+                "python", "-m", "july_aug_exp.src.run_single",
+                "--config", str(self.output_dir / "model_config.json"),
                 "--output-dir", str(self.output_dir),
                 "--prop", "$PROP",
                 "--run-id", "$RUN_ID",
-                "--eval-prop", str(eval_prop)
+                "--eval-prop", str(eval_prop),
+                "--data-dir", str(Path("/n/home06/drooryck/codeswitching-llms/july_aug_exp/data"))
             ]
             f.write(" ".join(cmd) + "\n")
 

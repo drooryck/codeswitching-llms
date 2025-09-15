@@ -113,49 +113,215 @@ class Metrics:
         """
         return pred.strip() == gold.strip()
 
-    def compute_all_metrics(self, predictions: List[Dict[str, Any]]) -> Dict[str, Any]:
-        """Compute all metrics for a list of predictions.
-
+    ###
+    # metrics from monday september 15
+    ###
+    def verb_consistency_metrics(self, input_text: str, pred_text: str, lang: str) -> Dict[str, bool]:
+        """Check if the verb in present tense is correctly transformed in perfect tense.
+        
         Args:
-            predictions: List of dicts with keys: 'language', 'prediction', 'gold'
-
+            input_text: Original present tense sentence
+            pred_text: Generated perfect tense sentence
+            lang: Language code ("fr" or "nl")
+            
         Returns:
-            Dictionary of computed metrics
+            Dictionary with metrics:
+            - verb_lang_correct: Is auxiliary verb in correct language
+            - verb_choice_correct: Is the participle derived from input verb
+            - aux_form_correct: Is auxiliary verb form correct (a/heeft vs. ont/hebben)
         """
-        records = []
+        input_tokens = self.tokenize(input_text)
+        pred_tokens = self.tokenize(pred_text)
+        
+        # Get verb from input (assuming it's the first verb found)
+        input_verb = None
+        verb_info = None
+        for token in input_tokens:
+            for v in self.lexicon["VERBS"][lang].values():
+                if token in v["present"].values():
+                    input_verb = token
+                    verb_info = v
+                    break
+            if input_verb:
+                break
+                
+        if not input_verb:
+            return {
+                "verb_lang_correct": False,
+                "verb_choice_correct": False, 
+                "aux_form_correct": False
+            }
+            
+        # Find corresponding participle
+        expected_participle = verb_info["participle"] 
+                
+        # Check auxiliary verb
+        aux_correct = False
+        if lang == "fr":
+            aux_correct = any(aux in pred_tokens for aux in ["a", "ont"])
+        else:  # nl
+            aux_correct = any(aux in pred_tokens for aux in ["heeft", "hebben"])
+            
+        # Check if participle appears and is correct
+        participle_correct = expected_participle in pred_tokens
+        
+        # Check language of auxiliary
+        aux_lang_correct = False
+        if lang == "fr":
+            aux_lang_correct = any(aux in pred_tokens for aux in self.aux_fr)
+        else:
+            aux_lang_correct = any(aux in pred_tokens for aux in self.aux_nl)
+            
+        return {
+            "verb_lang_correct": aux_lang_correct,
+            "verb_choice_correct": participle_correct,
+            "aux_form_correct": aux_correct
+        }
 
+    def determiner_metrics(self, text: str, lang: str) -> Dict[str, bool]:
+        """Analyze determiner usage and agreement.
+        
+        Args:
+            text: Generated text
+            lang: Language code ("fr" or "nl")
+            
+        Returns:
+            Dictionary with metrics:
+            - det_lang_correct: Are determiners from correct language
+            - det_agreement: Do determiners agree with nouns in number
+        """
+        tokens = self.tokenize(text)
+        
+        # Get determiners for each language
+        fr_dets = set(self.lexicon["DET"]["fr"].values())
+        nl_dets = set(self.lexicon["DET"]["nl"].values())
+        
+        # Check if determiners are from correct language
+        found_dets = [t for t in tokens if t in fr_dets or t in nl_dets]
+        det_lang_correct = all(t in (fr_dets if lang == "fr" else nl_dets) 
+                            for t in found_dets)
+        
+        # Check noun-determiner agreement
+        # This requires looking at pairs of det+noun and checking number agreement
+        agreement_correct = True
+        for i, token in enumerate(tokens[:-1]):  # Look at adjacent pairs
+            if token in (fr_dets if lang == "fr" else nl_dets):
+                next_token = tokens[i+1]
+                # Check if next token is noun and get its number
+                for noun_forms in self.lexicon["NOUNS"][lang].values():
+                    if isinstance(noun_forms, dict):
+                        if next_token == noun_forms["sgl"]:
+                            # Check if determiner is singular
+                            if lang == "fr" and token not in ["le", "la"]:
+                                agreement_correct = False
+                            elif lang == "nl" and token not in ["de", "het"]:
+                                agreement_correct = False
+                        elif next_token == noun_forms["pl"]:
+                            # Check if determiner is plural
+                            if lang == "fr" and token != "les":
+                                agreement_correct = False
+                            elif lang == "nl" and token != "de":
+                                agreement_correct = False
+                                
+        return {
+            "det_lang_correct": det_lang_correct,
+            "det_agreement": agreement_correct
+        }
+
+    # TODO: these metrics are useless.
+    def word_order_metrics(self, text: str, lang: str) -> Dict[str, bool]:
+        """Analyze word order patterns specific to each language.
+        
+        Args:
+            text: Generated text
+            lang: Language code ("fr" or "nl")
+            
+        Returns:
+            Dictionary with metrics about word order correctness
+        """
+        # TODO: this is useless rn
+        tokens = self.tokenize(text)
+        
+        if lang == "nl":
+            # Check verb-final in subordinate clauses
+            # Check verb-second in main clauses
+            # Check separable verb particles
+            verb_second = False
+            verb_final = False
+            particle_correct = False
+            
+            # Implementation details...
+            
+        else:  # fr
+            # Check SVO order
+            # Check adjective position (usually after noun)
+            # Check negation structure (ne...pas)
+            svo_order = False
+            adj_position = False
+            negation_correct = False
+            
+            # Implementation details...
+        
+        return {
+            "verb_position": verb_second if lang == "nl" else svo_order,
+            "complex_structure": verb_final if lang == "nl" else negation_correct,
+            "modifiers": particle_correct if lang == "nl" else adj_position
+        }
+
+    def compute_all_metrics(self, predictions: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """Enhanced version of compute_all_metrics with new grammatical metrics."""
+        records = []
+        
         for pred_dict in predictions:
             lang = pred_dict['language']
             pred = pred_dict['prediction']
             gold = pred_dict['gold']
-
+            input_text = pred_dict['input']
+            
+            # Basic metrics
             tokens = self.tokenize(pred)
             exact = self.exact_match(pred, gold)
             fr, nl = self.token_lang_frac(tokens)
             part_final = self.is_participle_final(tokens, lang)
-
+            
+            # New metrics
+            verb_metrics = self.verb_consistency_metrics(input_text, pred, lang)
+            det_metrics = self.determiner_metrics(pred, lang)
+            # order_metrics = self.word_order_metrics(pred, lang)
+            
             records.append({
                 'lang': lang,
                 'exact': exact,
                 'fr_share': fr,
                 'nl_share': nl,
-                'part_final': part_final
+                'part_final': part_final,
+                **verb_metrics,
+                **det_metrics
+                # **order_metrics
             })
-
-        # Aggregate metrics by language
+        
+        # Aggregate metrics by language as before
         df = pd.DataFrame(records)
         metrics = {}
-
+        
         for lang in df['lang'].unique():
             sub = df[df['lang'] == lang]
+            # Original metrics
             metrics[f"{lang}_exact"] = float(sub['exact'].mean())
             metrics[f"{lang}_avg_fr"] = float(sub['fr_share'].mean())
             metrics[f"{lang}_avg_nl"] = float(sub['nl_share'].mean())
             metrics[f"{lang}_part_final"] = float(sub['part_final'].mean())
-
-        # Overall metrics
+            
+            # New grammatical metrics
+            metrics[f"{lang}_verb_lang"] = float(sub['verb_lang_correct'].mean())
+            metrics[f"{lang}_verb_choice"] = float(sub['verb_choice_correct'].mean())
+            metrics[f"{lang}_aux_form"] = float(sub['aux_form_correct'].mean())
+            metrics[f"{lang}_det_lang"] = float(sub['det_lang_correct'].mean())
+            metrics[f"{lang}_det_agreement"] = float(sub['det_agreement'].mean())
+            # metrics[f"{lang}_word_order"] = float(sub['verb_position'].mean())
+            
         metrics['overall_exact'] = float(df['exact'].mean())
-
+        
         return metrics
 
     def save_metrics(self, metrics: Dict[str, Any], output_path: Path) -> None:

@@ -94,7 +94,7 @@ class BilingualPlotter:
                                 output_path: Path,
                                 ylim: Optional[tuple[float, float]] = None) -> None:
         """Create line plot showing metric values by French proportion.
-
+        
         Args:
             metric_cols: List of column names to plot
             metric_labels: Labels for each metric
@@ -104,53 +104,66 @@ class BilingualPlotter:
             ylim: Optional y-axis limits (min, max)
         """
         self.setup_plot_style()
-
+        
         # Create plot
         plt.figure(figsize=(10, 6))
-
-        # Plot lines with confidence intervals for each metric
-        colors = ['blue', 'orange', 'green']  # Add more colors if needed
+        
+        # Colors for different metrics (excluding 'overall')
+        colors = ['#1f77b4', '#ff7f0e', '#2ca02c']  # Blue, Orange, Green
+        
         for i, (col, label) in enumerate(zip(metric_cols, metric_labels)):
-            # Create temporary dataframe for this metric
-            plot_df = self.results_df[['prop', col]].copy()
+            if 'overall' in col:  # Skip overall metrics
+                continue
+                
+            # Plot individual points with transparency
+            plt.scatter(self.results_df['prop'], 
+                    self.results_df[col],
+                    color=colors[i],
+                    alpha=0.3,  # Make individual points transparent
+                    label=f"{label} (individual runs)")
             
-            # Plot line with shaded confidence interval
-            sns.lineplot(
-                data=plot_df,
-                x='prop',
-                y=col,
-                label=label,
-                ci='sd',
-                err_style='band',
-                color=colors[i]
-            )
-
-            # Calculate and plot mean points
-            means_df = self.results_df.groupby('prop')[col].mean()
-            plt.plot(means_df.index, means_df.values, 'o', 
-                    color=colors[i], markersize=8)
-
+            # Calculate and plot median line
+            medians = self.results_df.groupby('prop')[col].median()
+            plt.plot(medians.index, 
+                    medians.values,
+                    color=colors[i],
+                    linewidth=2,
+                    label=f"{label} (median)")
+            
+            # Add median points
+            plt.scatter(medians.index,
+                    medians.values,
+                    color=colors[i],
+                    s=100,  # Larger size for median points
+                    zorder=5)  # Ensure median points are on top
+        
         # Customize plot
-        plt.xlabel('French Proportion')
+        plt.xlabel('Proportion of French in Training Data')
         plt.ylabel(ylabel)
         plt.title(title)
         if ylim:
             plt.ylim(ylim)
         plt.grid(True, alpha=0.3)
-
+        
         # Add text for number of runs in bottom right
         n_runs = self.results_df.groupby('prop').size().iloc[0]
         plt.text(0.95, 0.02, f'{n_runs} runs per proportion', 
                 horizontalalignment='right',
                 transform=plt.gca().transAxes,
                 fontsize=10)
-
+        
+        # Adjust legend to show only median lines
+        handles, labels = plt.gca().get_legend_handles_labels()
+        median_handles = handles[1::2]  # Take only median entries
+        median_labels = labels[1::2]
+        plt.legend(median_handles, median_labels)
+        
         plt.tight_layout()
-
+        
         # Save plot
         plt.savefig(output_path, dpi=300, bbox_inches='tight')
         plt.close()
-
+        
         logger.info(f"Saved plot to {output_path}")
 
     def plot_exact_match(self) -> None:
@@ -171,12 +184,13 @@ class BilingualPlotter:
         """
         self._plot_metric_by_proportion(
             metric_cols=['overall_exact', 'fr_exact', 'nl_exact'],
-            metric_labels=['Overall', 'French', 'Dutch'],
-            title='Exact Match Accuracy by French Proportion',
+            metric_labels=['average', 'french test sentences', 'dutch test sentences'],
+            title='Exact Match Accuracy by proportion of french training sentences',
             ylabel='Exact Match Accuracy',
             output_path=self.output_dir / "exact_match.png",
             ylim=(0, 1)
         )
+        # TODO : have x axis say 'proportion of french in training data
 
     def plot_word_order(self) -> None:
         """Plot participle position analysis by French proportion.
@@ -249,13 +263,71 @@ class BilingualPlotter:
             ylim=(0, 1)
         )
 
-    def create_all_plots(self) -> None:
-        """Create all visualization plots from results.
-
-        This is a convenience method that creates all available plot types in one call.
-        Each plot analyzes different aspects of the model's bilingual capabilities based
-        on its generated test outputs.
+    # plots from sept 15
+    def plot_verb_metrics(self) -> None:
+        """Plot verb-related metrics by French proportion.
+        
+        These metrics analyze the model's handling of verbs in perfect tense transformation:
+        - verb_lang_correct: Is auxiliary verb in correct language
+        - verb_choice_correct: Is the participle derived from input verb
+        - aux_form_correct: Is auxiliary verb form correct (a/heeft vs. ont/hebben)
+        
+        High values indicate the model has learned:
+        - Language-specific auxiliary verb systems
+        - Correct participle derivation
+        - Proper auxiliary verb forms for each language
         """
+        # Plot French verb metrics
+        self._plot_metric_by_proportion(
+            metric_cols=['fr_verb_lang', 'fr_verb_choice', 'fr_aux_form'],
+            metric_labels=['Auxiliary Language', 'Participle Choice', 'Auxiliary Form'],
+            title='French Verb Metrics',
+            ylabel='Accuracy',
+            output_path=self.output_dir / "french_verb_metrics.png",
+            ylim=(0, 1)
+        )
+
+    def plot_determiner_metrics(self) -> None:
+        """Plot determiner-related metrics by French proportion.
+        
+        These metrics analyze the model's handling of determiners:
+        - det_lang_correct: Are determiners from correct language
+        - det_agreement: Do determiners agree with nouns in number
+        
+        High values indicate the model has learned:
+        - Language-specific determiner systems
+        - Number agreement rules for each language
+        """
+        self._plot_metric_by_proportion(
+            metric_cols=['fr_det_lang', 'fr_det_agreement'],
+            metric_labels=['Determiner Language', 'Number Agreement'],
+            title='French Determiner Metrics',
+            ylabel='Accuracy',
+            output_path=self.output_dir / "french_det_metrics.png",
+            ylim=(0, 1)
+        )
+        
+        self._plot_metric_by_proportion(
+            metric_cols=['nl_det_lang', 'nl_det_agreement'],
+            metric_labels=['Determiner Language', 'Number Agreement'],
+            title='Dutch Determiner Metrics',
+            ylabel='Accuracy',
+            output_path=self.output_dir / "dutch_det_metrics.png",
+            ylim=(0, 1)
+        )
+        
+        # Plot Dutch verb metrics
+        self._plot_metric_by_proportion(
+            metric_cols=['nl_verb_lang', 'nl_verb_choice', 'nl_aux_form'],
+            metric_labels=['Auxiliary Language', 'Participle Choice', 'Auxiliary Form'],
+            title='Dutch Verb Metrics',
+            ylabel='Accuracy',
+            output_path=self.output_dir / "dutch_verb_metrics.png",
+            ylim=(0, 1)
+        )
+
+    def create_all_plots(self) -> None:
+        """Create all visualization plots from results."""
         try:
             logger.info("Creating exact match plot...")
             self.plot_exact_match()
@@ -268,6 +340,13 @@ class BilingualPlotter:
 
             logger.info("Creating Dutch token distribution plot...")
             self.plot_dutch_token_dist()
+            
+            # Add new plots
+            logger.info("Creating verb metrics plots...")
+            self.plot_verb_metrics()
+            
+            logger.info("Creating determiner metrics plots...")
+            self.plot_determiner_metrics()
 
             logger.info(f"All plots saved to {self.output_dir}")
 
