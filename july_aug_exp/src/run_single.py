@@ -26,6 +26,8 @@ def main():
                        help="Proportion of test data to use for evaluation")
     parser.add_argument("--data-dir", type=str, default="data",
                        help="Directory containing data files")
+    parser.add_argument("--lexicon-path", type=str, required=True,
+                    help="Path to lexicon JSON file")
 
     args = parser.parse_args()
 
@@ -35,7 +37,7 @@ def main():
     config = ModelConfig(**config_dict)
 
     # Setup components
-    data_manager = DatasetManager(args.data_dir, config)
+    data_manager = DatasetManager(args.data_dir, config, lexicon_path=args.lexicon_path)
     metrics = Metrics(Path(args.data_dir) / "lexicon_new.json")
 
     # Create and run experiment

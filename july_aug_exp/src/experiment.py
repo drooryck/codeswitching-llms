@@ -17,6 +17,7 @@ from transformers import (
     set_seed
 )
 from sklearn.model_selection import train_test_split
+import wandb
 
 from .metrics import Metrics
 from .dataset_manager import DatasetManager
@@ -84,12 +85,24 @@ class Experiment:
         run_dir = self.output_dir / f"p{prop*100:04.1f}_run{run_id}"
         run_dir.mkdir(parents=True, exist_ok=True)
 
+        # Initialize wandb
+        wandb.init(
+            project="codeswitching-llms",
+            name=f"prop{prop*100:04.1f}_run{run_id}",
+            config={
+                "prop": prop,
+                "run_id": run_id,
+                "eval_prop": eval_prop,
+                "device": "cuda" if torch.cuda.is_available() else "cpu"
+            }
+        )
+
         self.logger.info(f"Starting experiment: prop={prop}, run_id={run_id}")
 
         # Load data
         self.logger.info("Loading data...")
-        train_full = pd.read_csv(self.data_manager.data_dir / "new_train.csv")
-        test_df = pd.read_csv(self.data_manager.data_dir / "new_test.csv")
+        train_full = pd.read_csv(self.data_manager.data_dir / "train.csv")
+        test_df = pd.read_csv(self.data_manager.data_dir / "test.csv")
 
         # Apply proportion to training data (intentional constant-size budget across props)
         df_fr = train_full[train_full.lang == "fr"]
@@ -118,6 +131,13 @@ class Experiment:
         train_df = train_df.reset_index(drop=True)
         val_df = val_df.reset_index(drop=True)
 
+        wandb.log({
+            "train_size": len(train_df),
+            "val_size": len(val_df),
+            "test_size": len(test_df),
+            "fr_train_samples": len(fr_take),
+            "nl_train_samples": len(nl_take)
+        })
         self.logger.info(f"Final train size: {len(train_df)} | Val size: {len(val_df)}")
 
         # Keep an untouched copy of the full test set for FINAL metrics after training
@@ -171,6 +191,7 @@ class Experiment:
         # Create trainer (NO early stopping; eval on validation split)
         self.logger.info("Creating trainer...")
         training_args = self.config.to_training_args(run_dir)
+        training_args.report_to = ["wandb"]
         trainer = Trainer(
             model=model,
             args=training_args,
@@ -211,12 +232,14 @@ class Experiment:
             self.logger.info(f"Computing final metrics for ablation={ablation_type}...")
             type_preds = pred_df[pred_df["ablation"] == ablation_type].to_dict("records")
             metrics = self.metrics.compute_all_metrics(type_preds, ablation_type)
+            wandb.log({f"{ablation_type}_{k}": v for k, v in metrics.items()})
             self.metrics.save_metrics(
                 metrics, run_dir / f"ablation_{ablation_type}_metrics.json"
             )
 
         # Save configuration
         self.config.save(run_dir / "config.json")
+        wandb.finish()
 
         self.logger.info(f"Experiment completed. Results saved to {run_dir}")
         return run_dir
@@ -309,6 +332,10 @@ class Experiment:
         """Submit jobs to SLURM."""
         logging.info("Submitting %d jobs to SLURM...", len(props) * len(runs))
 
+        # make the logs directory
+        logs_dir = self.output_dir / "logs"
+        logs_dir.mkdir(parents=True, exist_ok=True)
+
         # Create submit script
         script_path = self.output_dir / "submit_jobs.sh"
         with open(script_path, "w") as f:
@@ -359,7 +386,8 @@ class Experiment:
                 "--prop", "$PROP",
                 "--run-id", "$RUN_ID",
                 "--eval-prop", str(eval_prop),
-                "--data-dir", str(Path("/n/home06/drooryck/codeswitching-llms/july_aug_exp/data"))
+                "--data-dir", str(Path("/n/home06/drooryck/codeswitching-llms/july_aug_exp/data")),
+                "--lexicon-path", str(self.data_manager.lexicon_path)
             ]
             f.write(" ".join(cmd) + "\n")
 

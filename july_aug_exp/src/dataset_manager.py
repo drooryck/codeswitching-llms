@@ -19,7 +19,7 @@ import itertools
 class DatasetManager:
     """Manage datasets, lexicons, and tokenizers for language experiments."""
 
-    def __init__(self, data_dir: str, config: ModelConfig):
+    def __init__(self, data_dir: str, config: ModelConfig, lexicon_path: str):
         """Initialize with data directory and model config.
 
         Args:
@@ -31,6 +31,7 @@ class DatasetManager:
         self.tokenizer = None
         self.lexicon = None
         self.datasets = {}
+        self.lexicon_path = Path(lexicon_path)
 
         # Ensure data directory exists
         self.data_dir.mkdir(parents=True, exist_ok=True)
@@ -45,8 +46,7 @@ class DatasetManager:
     def load_lexicon(self) -> dict:
         """Load lexicon from JSON file"""
         if self.lexicon is None:
-            lexicon_path = self.data_dir / "lexicon_new.json"
-            with open(lexicon_path, 'r') as f:
+            with open(self.lexicon_path, 'r') as f:
                 self.lexicon = json.load(f)
         return self.lexicon
 
@@ -58,7 +58,7 @@ class DatasetManager:
             path: Path to save lexicon (defaults to data_dir/lexicon_new.json)
         """
         if path is None:
-            path = self.data_dir / "lexicon_new.json"
+            path = self.lexicon_path
 
         with open(path, 'w', encoding='utf-8') as f:
             json.dump(lexicon, f, ensure_ascii=False, indent=2)
@@ -120,8 +120,8 @@ class DatasetManager:
             return self.tokenizer
 
         # Load datasets to build vocabulary
-        train_df = pd.read_csv(self.data_dir / "new_train.csv")
-        test_df = pd.read_csv(self.data_dir / "new_test.csv")
+        train_df = pd.read_csv(self.data_dir / "train.csv")
+        test_df = pd.read_csv(self.data_dir / "test.csv")
 
         # Build vocabulary
         def tok(s):
@@ -191,7 +191,7 @@ class DatasetManager:
             part = verb_info["participle"]
 
             # important couple lines
-            aux_key = "hij" if lang == "nl" else "il"
+            aux_key = ("zijpl" if plural else "hij") if lang == "nl" else ("ils" if plural else "il")
             inp = f"{det} {s} {pres} {det} {o}"
             tgt = (f"{det} {s} {AUX[lang][aux_key]} {part} {det} {o}"
                    if lang=='fr'
@@ -234,9 +234,9 @@ class DatasetManager:
         train_df = pd.DataFrame(train_rows).reset_index(drop=True)
         test_df = pd.DataFrame(test_rows).reset_index(drop=True)
 
-        # Save datasets
-        train_df.to_csv(self.data_dir / "new_train.csv", index=False)
-        test_df.to_csv(self.data_dir / "new_test.csv", index=False)
+        # Save datasets - TODO: this shouldnt be hardcoded to new_train or new_test
+        train_df.to_csv(self.data_dir / "train.csv", index=False)
+        test_df.to_csv(self.data_dir / "test.csv", index=False)
 
         return train_df, test_df
 

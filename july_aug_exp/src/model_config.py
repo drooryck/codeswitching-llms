@@ -196,8 +196,8 @@ class SlurmConfig:
     cpus_per_task: int = 4
     gpus: int = 1
     job_name: str = "lang_exp"
-    output_pattern: str = "logs/slurm_%A_%a.out"
-    error_pattern: str = "logs/slurm_%A_%a.err"
+    output_pattern: str = "%x/logs/slurm_%A_%a.out"
+    error_pattern: str = "%x/logs/slurm_%A_%a.err"
 
     # Additional SLURM parameters
     additional_params: Dict[str, Any] = field(default_factory=dict)
