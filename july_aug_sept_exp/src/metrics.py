@@ -12,6 +12,7 @@ class Metrics:
     """Compute various metrics for generated sentences."""
 
     def __init__(self, lexicon_path: Path):
+        # TODO: dont init every calculation. also have more of these to save compute.
         self.lexicon_path = lexicon_path
         self.lexicon = json.load(open(lexicon_path, encoding="utf-8"))
 
@@ -24,12 +25,19 @@ class Metrics:
                         for form in ([forms] if isinstance(forms, str) else forms.values()))
         self.det_nl = set(form for forms in self.lexicon["DET"]["nl"].values() 
                         for form in ([forms] if isinstance(forms, str) else forms.values()))
+        self.det_sgl = {self.lexicon["DET"]["fr"]["sgl"], self.lexicon["DET"]["nl"]["sgl"]}
+        self.det_pl = {self.lexicon["DET"]["fr"]["pl"], self.lexicon["DET"]["nl"]["pl"]}
 
         # Pre-compute nouns (all forms)
         self.nouns_fr = {form for noun in self.lexicon["NOUNS"]["fr"].values() 
                         for form in [noun["sgl"], noun["pl"]]}
         self.nouns_nl = {form for noun in self.lexicon["NOUNS"]["nl"].values() 
                         for form in [noun["sgl"], noun["pl"]]}
+
+        self.noun_sgl_fr = {noun_data["sgl"] for noun_data in self.lexicon["NOUNS"]["fr"].values()}
+        self.noun_pl_fr = {noun_data["pl"] for noun_data in self.lexicon["NOUNS"]["fr"].values()}
+        self.noun_sgl_nl = {noun_data["sgl"] for noun_data in self.lexicon["NOUNS"]["nl"].values()}
+        self.noun_pl_nl = {noun_data["pl"] for noun_data in self.lexicon["NOUNS"]["nl"].values()}
 
         # Pre-compute verb forms (present tense)
         self.verbs_fr = {form for verb in self.lexicon["VERBS"]["fr"].values() 
@@ -44,6 +52,19 @@ class Metrics:
         # Pre-compute auxiliaries
         self.aux_fr = set(self.lexicon["AUX"]["fr"].values())
         self.aux_nl = set(self.lexicon["AUX"]["nl"].values())
+
+        # Pre-compute verb-to-participle mappings (for present → present perfect conversion)
+        self.verb_to_participle_fr = {}
+        for verb_data in self.lexicon["VERBS"]["fr"].values():
+            participle = verb_data["participle"]
+            for present_form in verb_data["present"].values():
+                self.verb_to_participle_fr[present_form] = participle
+        
+        self.verb_to_participle_nl = {}
+        for verb_data in self.lexicon["VERBS"]["nl"].values():
+            participle = verb_data["participle"]
+            for present_form in verb_data["present"].values():
+                self.verb_to_participle_nl[present_form] = participle
 
     def _extract_words(self, lang: str) -> Set[str]:
         """Extract all words for a given language from the lexicon into a set."""
@@ -134,144 +155,92 @@ class Metrics:
     # metrics from monday september 15
     ###
     def verb_consistency_metrics(self, input_text: str, pred_text: str, lang: str) -> Dict[str, bool]:
-        """Check if the verb in present tense is correctly transformed in perfect tense.
-        
-        Args:
-            input_text: Original present tense sentence
-            pred_text: Generated perfect tense sentence
-            lang: Language code ("fr" or "nl")
-            
-        Returns:
-            Dictionary with metrics:
-            - verb_lang_correct: Is auxiliary verb in correct language
-            - verb_choice_correct: Is the participle derived from input verb
-            - aux_form_correct: Is auxiliary verb form correct (a/heeft vs. ont/hebben)
-        """
+        """Check if the verb in present tense is correctly transformed in perfect tense."""
         input_tokens = self.tokenize(input_text)
         pred_tokens = self.tokenize(pred_text)
         
-        # Get verb from input (assuming it's the first verb found)
-        input_verb = None
-        verb_info = None
-        for token in input_tokens:
-            for v in self.lexicon["VERBS"][lang].values():
-                if token in v["present"].values():
-                    input_verb = token
-                    verb_info = v
-                    break
-            if input_verb:
-                break
-                
-        if not input_verb:
+        # Get input verb from position 2 (assume well-formed input)
+        input_verb = input_tokens[2]
+        
+        # Get subject from position 1 to check singular/plural
+        subject = input_tokens[1]
+        
+        # Get expected participle using existing mapping
+        verb_to_participle = self.verb_to_participle_fr if lang == "fr" else self.verb_to_participle_nl
+        expected_participle = verb_to_participle.get(input_verb)
+        
+        if not expected_participle:
             return {
                 "verb_lang_correct": False,
                 "verb_choice_correct": False, 
                 "aux_form_correct": False
             }
-            
-        # Find corresponding participle
-        expected_participle = verb_info["participle"] 
-                
-        # Check auxiliary verb
-        # TODO: dont make this hardcoded
-        aux_correct = False
-        if lang == "fr":
-            aux_correct = any(aux in pred_tokens for aux in ["a", "ont"])
-        else:  # nl
-            aux_correct = any(aux in pred_tokens for aux in ["heeft", "hebben"])
-            
-        # Check if participle appears and is correct
-        participle_correct = expected_participle in pred_tokens
         
-        # Check language of auxiliary
-        aux_lang_correct = False
+        # Find all auxiliaries and participles in prediction
+        pred_auxes = [t for t in pred_tokens if t in (self.aux_fr | self.aux_nl)]
+        pred_parts = [t for t in pred_tokens if t in (self.part_fr | self.part_nl)]
+        
+        # Check if auxiliary is in correct language
+        aux_lang_correct = any(aux in (self.aux_fr if lang == "fr" else self.aux_nl) for aux in pred_auxes)
+        
+        # Check if participle matches input verb
+        participle_correct = expected_participle in pred_parts
+        
+        # Check auxiliary form (singular vs plural) - hardcoded for now
+        aux_form_correct = False
         if lang == "fr":
-            aux_lang_correct = any(aux in pred_tokens for aux in self.aux_fr)
-        else:
-            aux_lang_correct = any(aux in pred_tokens for aux in self.aux_nl)
-            
+            # Check if subject is singular or plural, then check corresponding aux form
+            if subject in self.noun_sgl_fr:
+                aux_form_correct = "a" in pred_auxes  # singular: "a"
+            elif subject in self.noun_pl_fr:
+                aux_form_correct = "ont" in pred_auxes  # plural: "ont"
+        else:  # nl
+            if subject in self.noun_sgl_nl:
+                aux_form_correct = "heeft" in pred_auxes  # singular: "heeft"
+            elif subject in self.noun_pl_nl:
+                aux_form_correct = "hebben" in pred_auxes  # plural: "hebben"
+        
         return {
             "verb_lang_correct": aux_lang_correct,
             "verb_choice_correct": participle_correct,
-            "aux_form_correct": aux_correct
+            "aux_form_correct": aux_form_correct
         }
 
-    ## TODO: this is a bit long, gpt5
     def determiner_metrics(self, text: str, lang: str) -> Dict[str, bool]:
-        """Analyze determiner usage and agreement by scanning DET+NOUN bigrams.
-
-        Args:
-            text: Generated text
-            lang: Language code ("fr" or "nl")
-
-        Returns:
-            {
-                "det_lang_correct": bool,  # are all found determiners from the requested language
-                "det_agreement": bool      # for every DET+NOUN bigram, does number agree
-            }
-        """
+        """Analyze determiner usage and agreement by scanning DET+NOUN bigrams."""
         tokens = self.tokenize(text)
-
-        # --- 1) determiners & nouns from lexicon (no hardcoding) -----------------
-        # determiners by language
-        fr_det_sgl = {self.lexicon["DET"]["fr"]["sgl"]}
-        fr_det_pl  = {self.lexicon["DET"]["fr"]["pl"]}
-        nl_det_sgl = {self.lexicon["DET"]["nl"]["sgl"]}
-        nl_det_pl  = {self.lexicon["DET"]["nl"]["pl"]}
-
-        fr_dets_all = fr_det_sgl | fr_det_pl
-        nl_dets_all = nl_det_sgl | nl_det_pl
-
-        # which set is "correct" for this call
-        correct_lang_dets = fr_dets_all if lang == "fr" else nl_dets_all
-        other_lang_dets   = nl_dets_all if lang == "fr" else fr_dets_all
-
-        # map every determiner surface form -> possible numbers ("sgl", "pl")
-        # note: a form may map to both (e.g., NL 'de' in your data)
-        det_to_numbers: Dict[str, set] = {}
-        def add_det(form: str, num: str):
-            det_to_numbers.setdefault(form, set()).add(num)
-
-        for form in fr_det_sgl: add_det(form, "sgl")
-        for form in fr_det_pl:  add_det(form, "pl")
-        for form in nl_det_sgl: add_det(form, "sgl")
-        for form in nl_det_pl:  add_det(form, "pl")
-
-        # noun index: surface form -> possible numbers it can represent
-        # (handles invariant nouns where sgl == pl)
-        noun_to_numbers: Dict[str, set] = {}
-        for noun_forms in self.lexicon["NOUNS"][lang].values():
-            if not isinstance(noun_forms, dict):
-                continue
-            sgl_form = noun_forms["sgl"]
-            pl_form  = noun_forms["pl"]
-            noun_to_numbers.setdefault(sgl_form, set()).add("sgl")
-            noun_to_numbers.setdefault(pl_form, set()).add("pl")
-
-        # --- 2) language check for found determiners ------------------------------
-        found_dets = [t for t in tokens if t in fr_dets_all or t in nl_dets_all]
+        
+        # Get the correct noun sets for this language
+        noun_sgl = self.noun_sgl_fr if lang == "fr" else self.noun_sgl_nl
+        noun_pl = self.noun_pl_fr if lang == "fr" else self.noun_pl_nl
+        
+        # --- Language check for found determiners ---
+        found_dets = [t for t in tokens if t in self.det_fr or t in self.det_nl]
+        correct_lang_dets = self.det_fr if lang == "fr" else self.det_nl
+        other_lang_dets = self.det_nl if lang == "fr" else self.det_fr
+        
         det_lang_correct = all(t in correct_lang_dets for t in found_dets) and \
                         not any(t in other_lang_dets for t in found_dets)
-
-        # --- 3) scan for DET + NOUN bigrams, verify agreement --------------------
+        
+        # --- Check DET+NOUN agreement ---
         agreement_correct = True
         for i in range(len(tokens) - 1):
             det = tokens[i]
             noun = tokens[i + 1]
-
-            # only evaluate explicit DET+NOUN pairs
-            if det not in det_to_numbers or noun not in noun_to_numbers:
-                continue
-
-            det_nums  = det_to_numbers[det]     # e.g., {"sgl"} or {"pl"} or {"sgl","pl"}
-            noun_nums = noun_to_numbers[noun]   # same idea (invariant nouns -> both)
-
-            # Agreement holds if there is any overlap in intended number(s)
-            if det_nums.isdisjoint(noun_nums):
-                agreement_correct = False
-                # keep scanning to report aggregate result; break early if you prefer
-                # break
-
+            
+            # Only check if both are in our sets
+            if det in (self.det_fr | self.det_nl) and noun in (noun_sgl | noun_pl):
+                # Check agreement: both singular OR both plural
+                det_sgl = det in self.det_sgl
+                det_pl = det in self.det_pl
+                noun_sgl_match = noun in noun_sgl
+                noun_pl_match = noun in noun_pl
+                
+                # Agreement fails if determiner and noun don't match in number
+                if not ((det_sgl and noun_sgl_match) or (det_pl and noun_pl_match)):
+                    agreement_correct = False
+                    break
+        
         return {
             "det_lang_correct": det_lang_correct,
             "det_agreement": agreement_correct
@@ -338,7 +307,7 @@ class Metrics:
             len(token_types) == 6 and
             token_types[0].startswith('det') and
             token_types[1].startswith('noun') and
-            token_types[2] == 'aux_fr' and
+            token_types[2].startswith('aux') and
             token_types[3].startswith('part') and
             token_types[4].startswith('det') and
             token_types[5].startswith('noun')
@@ -349,7 +318,7 @@ class Metrics:
             len(token_types) == 6 and
             token_types[0].startswith('det') and
             token_types[1].startswith('noun') and
-            token_types[2] == 'aux_nl' and
+            token_types[2].startswith('aux') and
             token_types[3].startswith('det') and
             token_types[4].startswith('noun') and
             token_types[5].startswith('part')
@@ -367,64 +336,46 @@ class Metrics:
         
         Args:
             pred: Predicted text
-            input: Input text with ablation
-            ablation_type: Type of ablation ('subject', 'verb', 'object')
+            input: Input text with ablation (present tense structure: DET NOUN VERB DET NOUN)
+            ablation_type: Type of ablation ('subject', 'verb', 'object', 'none')
         
         Returns:
             Dictionary with metrics about the ablated word:
             - keeps_ablated: Whether ablated word appears in prediction
-            - translates_back: Whether word was translated back to original language
+
+        For edge cases where the subject and object is the same this is wrong, ignoring for now.
         """
         pred_tokens = self.tokenize(pred.lower())
         input_tokens = self.tokenize(input.lower())
         
+        # Handle 'none' ablation type - no ablation occurred
+        if ablation_type == 'none':
+            return {'keeps_ablated': False}
+        
         if ablation_type == 'subject':
-            # Subject is second token (after determiner)
+            # Subject is second token (position 1) in DET NOUN VERB DET NOUN
             input_subj = input_tokens[1]
-            # Check if subject was kept
             keeps_ablated = input_subj in pred_tokens
-            # Check if it was translated (appears in either fr or nl nouns)
-            in_fr = input_subj in self.nouns_fr
-            in_nl = input_subj in self.nouns_nl
-            # If input was Dutch and prediction has French, or vice versa
-            translates_back = (in_fr and any(t in self.nouns_nl for t in pred_tokens)) or \
-                            (in_nl and any(t in self.nouns_fr for t in pred_tokens))
             
         elif ablation_type == 'verb':
-            # Find auxiliary and participle in input
-            input_aux = next((t for t in input_tokens if t in (self.aux_fr | self.aux_nl)), None)
-            input_part = next((t for t in input_tokens if t in (self.part_fr | self.part_nl)), None)
-            
-            # Check if they're kept in prediction
-            keeps_aux = input_aux in pred_tokens if input_aux else False
-            keeps_part = input_part in pred_tokens if input_part else False
-            keeps_ablated = keeps_aux or keeps_part
-            
-            # Check if translated back
-            if input_aux in self.aux_fr:
-                translates_back = any(t in self.aux_nl for t in pred_tokens)
-            elif input_aux in self.aux_nl:
-                translates_back = any(t in self.aux_fr for t in pred_tokens)
-            else:
-                translates_back = False
+            # Verb is third token (position 2) in DET NOUN VERB DET NOUN
+            input_verb = input_tokens[2]
+            participle = self.verb_to_participle_fr.get(input_verb) or \
+                         self.verb_to_participle_nl.get(input_verb)
+
+            # check for the participle version of this verb
+            keeps_ablated = participle in pred_tokens if participle else False
                 
         elif ablation_type == 'object':
-            # Object is last token
-            input_obj = input_tokens[-1]
-            # Check if object was kept
+            # Object is fifth token (position 4) in DET NOUN VERB DET NOUN
+            input_obj = input_tokens[4]
             keeps_ablated = input_obj in pred_tokens
-            # Check if it was translated
-            in_fr = input_obj in self.nouns_fr
-            in_nl = input_obj in self.nouns_nl
-            translates_back = (in_fr and any(t in self.nouns_nl for t in pred_tokens)) or \
-                            (in_nl and any(t in self.nouns_fr for t in pred_tokens))
         
         else:
-            return {'keeps_ablated': False, 'translates_back': False}
+            return {'keeps_ablated': False}
         
         return {
-            'keeps_ablated': keeps_ablated,
-            'translates_back': translates_back
+            'keeps_ablated': keeps_ablated
         }
 
     def check_aux_verb_consistency(self, pred: str, input: str, input_lang: str) -> Dict[str, bool]:
@@ -539,7 +490,6 @@ class Metrics:
             
             # Ablation metrics
             metrics[f"{prefix}_keeps_ablated"] = float(sub['keeps_ablated'].mean())
-            metrics[f"{prefix}_translates_back"] = float(sub['translates_back'].mean())
             metrics[f"{prefix}_aux_matches_input"] = float(sub['aux_matches_input'].mean())
             metrics[f"{prefix}_aux_matches_verb"] = float(sub['aux_matches_verb'].mean())
         
