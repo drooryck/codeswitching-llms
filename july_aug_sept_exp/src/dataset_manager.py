@@ -180,22 +180,25 @@ class DatasetManager:
             else:  # fr
                 return verb_info["present"]["ils" if plural else "il"]
 
-        def make_pair(lang, subj, obj, verb_key, plural):
-            det = DET[lang]["pl" if plural else "sgl"]
-            s = NOUNS[lang][subj]["pl" if plural else "sgl"]
-            o = NOUNS[lang][obj]["pl" if plural else "sgl"]
+        def make_pair(lang, subj, obj, verb_key, subj_plural, obj_plural):
+            # Separate determiners for subject and object
+            subj_det = DET[lang]["pl" if subj_plural else "sgl"]
+            obj_det = DET[lang]["pl" if obj_plural else "sgl"]
+            
+            s = NOUNS[lang][subj]["pl" if subj_plural else "sgl"]
+            o = NOUNS[lang][obj]["pl" if obj_plural else "sgl"]
 
-            # Get verb forms
+            # Get verb forms (verb agrees with SUBJECT)
             verb_info = VERBS[lang][verb_key]
-            pres = get_verb_form(verb_info, lang, plural)
+            pres = get_verb_form(verb_info, lang, subj_plural)
             part = verb_info["participle"]
 
-            # important couple lines
-            aux_key = ("zijpl" if plural else "hij") if lang == "nl" else ("ils" if plural else "il")
-            inp = f"{det} {s} {pres} {det} {o}"
-            tgt = (f"{det} {s} {AUX[lang][aux_key]} {part} {det} {o}"
+            # Auxiliary agrees with SUBJECT
+            aux_key = ("zijpl" if subj_plural else "hij") if lang == "nl" else ("ils" if subj_plural else "il")
+            inp = f"{subj_det} {s} {pres} {obj_det} {o}"
+            tgt = (f"{subj_det} {s} {AUX[lang][aux_key]} {part} {obj_det} {o}"
                    if lang=='fr'
-                   else f"{det} {s} {AUX[lang][aux_key]} {det} {o} {part}")
+                   else f"{subj_det} {s} {AUX[lang][aux_key]} {obj_det} {o} {part}")
             return inp, tgt
 
         rows = []
@@ -207,18 +210,22 @@ class DatasetManager:
             for subj, obj, verb_key in itertools.product(nouns, nouns, verbs):
                 if subj == obj:
                     continue
-                for plural in (False, True):
-                    inp, tgt = make_pair(lang, subj, obj, verb_key, plural)
-                    rows.append({
-                        'input': inp,
-                        'target': tgt,
-                        'lang': lang,
-                        'plural': plural,
-                        'subj': subj,
-                        'obj': obj,
-                        'verb': verb_key
-                    })
-                    pair_ids.append((lang, subj, verb_key))  # key for split
+                # Iterate over all 4 combinations of subject/object plurality
+                for subj_plural in (False, True):
+                    for obj_plural in (False, True):
+                        inp, tgt = make_pair(lang, subj, obj, verb_key, subj_plural, obj_plural)
+                        rows.append({
+                            'input': inp,
+                            'target': tgt,
+                            'lang': lang,
+                            'plural': subj_plural,  # Keep for compatibility (refers to subject)
+                            'subj_plural': subj_plural,
+                            'obj_plural': obj_plural,
+                            'subj': subj,
+                            'obj': obj,
+                            'verb': verb_key
+                        })
+                        pair_ids.append((lang, subj, verb_key))  # key for split
 
         # Split by unseen (subject, verb) combinations
         import random
@@ -330,12 +337,18 @@ class DatasetManager:
         tgt_lang = 'nl' if src_lang == 'fr' else 'fr'
         
         # Parse the original sentence components
-        plural = sentence_row['plural']
-        det_type = "pl" if plural else "sgl"
+        # Use new fields if available, fallback to old 'plural' field
+        subj_plural = sentence_row.get('subj_plural', sentence_row['plural'])
+        obj_plural = sentence_row.get('obj_plural', sentence_row['plural'])
+        
+        subj_det_type = "pl" if subj_plural else "sgl"
+        obj_det_type = "pl" if obj_plural else "sgl"
         
         # Get determiners
-        src_det = self.lexicon["DET"][src_lang][det_type]
-        tgt_det = self.lexicon["DET"][tgt_lang][det_type]
+        src_subj_det = self.lexicon["DET"][src_lang][subj_det_type]
+        tgt_subj_det = self.lexicon["DET"][tgt_lang][subj_det_type]
+        src_obj_det = self.lexicon["DET"][src_lang][obj_det_type]
+        tgt_obj_det = self.lexicon["DET"][tgt_lang][obj_det_type]
         
         # Get nouns using parallel indices
         src_nouns = list(self.lexicon["NOUNS"][src_lang].keys())
@@ -344,14 +357,14 @@ class DatasetManager:
         # Get subject translations
         subj_idx = src_nouns.index(sentence_row['subj'])
         tgt_subj_key = tgt_nouns[subj_idx]
-        src_subj = self.lexicon["NOUNS"][src_lang][sentence_row['subj']][det_type]
-        tgt_subj = self.lexicon["NOUNS"][tgt_lang][tgt_subj_key][det_type]
+        src_subj = self.lexicon["NOUNS"][src_lang][sentence_row['subj']][subj_det_type]
+        tgt_subj = self.lexicon["NOUNS"][tgt_lang][tgt_subj_key][subj_det_type]
         
         # Get object translations
         obj_idx = src_nouns.index(sentence_row['obj'])
         tgt_obj_key = tgt_nouns[obj_idx]
-        src_obj = self.lexicon["NOUNS"][src_lang][sentence_row['obj']][det_type]
-        tgt_obj = self.lexicon["NOUNS"][tgt_lang][tgt_obj_key][det_type]
+        src_obj = self.lexicon["NOUNS"][src_lang][sentence_row['obj']][obj_det_type]
+        tgt_obj = self.lexicon["NOUNS"][tgt_lang][tgt_obj_key][obj_det_type]
         
         # Get verb forms
         verb_key = sentence_row['verb']
@@ -366,19 +379,22 @@ class DatasetManager:
             else:  # fr
                 return verb_info["present"]["ils" if is_plural else "il"]
         
-        src_verb = get_verb_form(self.lexicon["VERBS"][src_lang][verb_key], src_lang, plural)
-        tgt_verb = get_verb_form(self.lexicon["VERBS"][tgt_lang][tgt_verb_key], tgt_lang, plural)
+        # Verb agrees with SUBJECT
+        src_verb = get_verb_form(self.lexicon["VERBS"][src_lang][verb_key], src_lang, subj_plural)
+        tgt_verb = get_verb_form(self.lexicon["VERBS"][tgt_lang][tgt_verb_key], tgt_lang, subj_plural)
         
         # Create ablated versions
         ablated = []
         
         # Original sentence
-        base_sentence = f"{src_det} {src_subj} {src_verb} {src_det} {src_obj}"
+        base_sentence = f"{src_subj_det} {src_subj} {src_verb} {src_obj_det} {src_obj}"
         ablated.append({
             'input': base_sentence,
             'target': sentence_row['target'],
             'lang': src_lang,
-            'plural': plural,
+            'plural': subj_plural,  # For compatibility
+            'subj_plural': subj_plural,
+            'obj_plural': obj_plural,
             'ablation': 'none',
             'subj': sentence_row['subj'],
             'obj': sentence_row['obj'],
@@ -386,12 +402,14 @@ class DatasetManager:
         })
         
         # 1. Subject ablation (determinant + noun)
-        subj_ablated = f"{tgt_det} {tgt_subj} {src_verb} {src_det} {src_obj}"
+        subj_ablated = f"{tgt_subj_det} {tgt_subj} {src_verb} {src_obj_det} {src_obj}"
         ablated.append({
             'input': subj_ablated,
             'target': sentence_row['target'],
             'lang': src_lang,
-            'plural': plural,
+            'plural': subj_plural,
+            'subj_plural': subj_plural,
+            'obj_plural': obj_plural,
             'ablation': 'subject',
             'subj': sentence_row['subj'],
             'obj': sentence_row['obj'],
@@ -399,12 +417,14 @@ class DatasetManager:
         })
         
         # 2. Verb ablation
-        verb_ablated = f"{src_det} {src_subj} {tgt_verb} {src_det} {src_obj}"
+        verb_ablated = f"{src_subj_det} {src_subj} {tgt_verb} {src_obj_det} {src_obj}"
         ablated.append({
             'input': verb_ablated,
             'target': sentence_row['target'],
             'lang': src_lang,
-            'plural': plural,
+            'plural': subj_plural,
+            'subj_plural': subj_plural,
+            'obj_plural': obj_plural,
             'ablation': 'verb',
             'subj': sentence_row['subj'],
             'obj': sentence_row['obj'],
@@ -412,12 +432,14 @@ class DatasetManager:
         })
         
         # 3. Object ablation (determinant + noun)
-        obj_ablated = f"{src_det} {src_subj} {src_verb} {tgt_det} {tgt_obj}"
+        obj_ablated = f"{src_subj_det} {src_subj} {src_verb} {tgt_obj_det} {tgt_obj}"
         ablated.append({
             'input': obj_ablated,
             'target': sentence_row['target'],
             'lang': src_lang,
-            'plural': plural,
+            'plural': subj_plural,
+            'subj_plural': subj_plural,
+            'obj_plural': obj_plural,
             'ablation': 'object',
             'subj': sentence_row['subj'],
             'obj': sentence_row['obj'],
