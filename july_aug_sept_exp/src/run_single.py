@@ -38,7 +38,7 @@ def main():
 
     # Setup components
     data_manager = DatasetManager(args.data_dir, config, lexicon_path=args.lexicon_path)
-    metrics = Metrics(Path(args.data_dir) / "lexicon_new.json")
+    metrics = Metrics(args.lexicon_path)
 
     # Create and run experiment
     experiment = Experiment(

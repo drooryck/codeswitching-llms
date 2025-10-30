@@ -5,11 +5,15 @@ import json
 import logging
 import subprocess
 import tempfile
+import warnings
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Any
 import pandas as pd
 import torch
 import numpy as np
+
+# Suppress common warnings
+warnings.filterwarnings("ignore", message="Setting `pad_token_id`")
 from transformers import (
     GPT2LMHeadModel,
     Trainer,
@@ -17,6 +21,7 @@ from transformers import (
     set_seed
 )
 from sklearn.model_selection import train_test_split
+from torch.utils.data import DataLoader, SequentialSampler
 import wandb
 
 from .metrics import Metrics
@@ -46,10 +51,8 @@ class Experiment:
         self.metrics = metrics
         self.output_dir = Path(output_dir)
 
-        # Ensure output directory exists
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
-        # Setup logging
         self._setup_logging()
 
     def _setup_logging(self) -> None:
@@ -66,18 +69,15 @@ class Experiment:
         )
 
         self.logger = logging.getLogger(__name__)
+    
 
     def run_single(self,
                 prop: float,
                 run_id: int,
                 eval_prop: float = 0.05) -> Path:
         """Run single experiment with given parameters.
+        High level:
 
-        Changes vs. previous version:
-        - Create a validation split **from the training set** (size = eval_prop).
-        - Remove early stopping entirely.
-        - Log actual post-sampling counts for FR/NL.
-        - Keep the full test set untouched for final metrics (no downsampling).
         """
         set_seed(run_id)
 
@@ -99,58 +99,59 @@ class Experiment:
 
         self.logger.info(f"Starting experiment: prop={prop}, run_id={run_id}")
 
-        # Load data
         self.logger.info("Loading data...")
-        train_full = pd.read_csv(self.data_manager.data_dir / "train.csv")
-        test_df = pd.read_csv(self.data_manager.data_dir / "test.csv")
+        train_df_full = pd.read_csv(self.data_manager.data_dir / "train.csv")
+        test_df_full = pd.read_csv(self.data_manager.data_dir / "test.csv")
 
-        # Apply proportion to training data (intentional constant-size budget across props)
-        df_fr = train_full[train_full.lang == "fr"]
-        df_nl = train_full[train_full.lang == "nl"]
+        rng = np.random.RandomState(run_id)
+        train_df_full["global_key"] = rng.random(len(train_df_full))
+        train_df_full["orig_idx"] = np.arange(len(train_df_full))
 
-        total_budget = min(len(df_fr), len(df_nl))
+        # for any run, the eval rows will be the same. not stratified by language though.
+        eval_mask = train_df_full["global_key"] < eval_prop
+        val_df = train_df_full[eval_mask].reset_index(drop=True)
+        train_df_full = train_df_full[~eval_mask].reset_index(drop=True)
+
+        train_df_full["lang_rank"] = (
+            train_df_full.groupby("lang")["global_key"]
+                        .rank(method="first")
+                        .astype(int)
+        )
+
+        total_budget = min(
+            (train_df_full.lang == "fr").sum(),
+            (train_df_full.lang == "nl").sum()
+        )
+
         want_fr = int(total_budget * prop)
         want_nl = total_budget - want_fr
 
-        fr_take = df_fr.sample(want_fr, random_state=run_id)
-        nl_take = df_nl.sample(want_nl, random_state=run_id)
+        fr_take = train_df_full[
+            (train_df_full.lang == "fr") & (train_df_full.lang_rank <= want_fr)
+        ]
+        nl_take = train_df_full[
+            (train_df_full.lang == "nl") & (train_df_full.lang_rank <= want_nl)
+        ]
+
         train_df = (
-            pd.concat([fr_take, nl_take])
-            .sample(frac=1, random_state=run_id)
+            pd.concat([fr_take, nl_take], ignore_index=True)
+            .sort_values(["global_key","orig_idx"], kind="mergesort")
             .reset_index(drop=True)
         )
-
-        self.logger.info(f"Train set (post-sampling): {len(train_df)} rows (FR={len(fr_take)}, NL={len(nl_take)})")
-        self.logger.info(f"Full held-out test set: {len(test_df)} rows")
-
-        # === Validation split from TRAIN ===
-        # Use eval_prop as the validation fraction of the training data.
-        train_df, val_df = train_test_split(
-            train_df, test_size=eval_prop, random_state=run_id, shuffle=True
-        )
-        train_df = train_df.reset_index(drop=True)
-        val_df = val_df.reset_index(drop=True)
 
         wandb.log({
             "train_size": len(train_df),
             "val_size": len(val_df),
-            "test_size": len(test_df),
+            "test_size": len(test_df_full),
             "fr_train_samples": len(fr_take),
             "nl_train_samples": len(nl_take)
         })
         self.logger.info(f"Final train size: {len(train_df)} | Val size: {len(val_df)}")
 
-        # Keep an untouched copy of the full test set for FINAL metrics after training
-        full_test_df_for_final = test_df.copy()
-
-        # Create tokenizer and datasets
         self.logger.info("Creating tokenizer and datasets...")
         tokenizer = self.data_manager.build_tokenizer()
-        train_dataset, _ = self.data_manager.create_pytorch_datasets(
-            train_df, train_df, tokenizer
-        )
-        _, val_dataset = self.data_manager.create_pytorch_datasets(
-            val_df, val_df, tokenizer
+        train_dataset, val_dataset = self.data_manager.create_pytorch_datasets(
+            train_df, val_df, tokenizer
         )
         collator = self.data_manager.create_collator(tokenizer)
 
@@ -199,7 +200,18 @@ class Experiment:
             eval_dataset=val_dataset,
             data_collator=collator,
             compute_metrics=compute_metrics,
-            callbacks=[]  # explicitly no early stopping
+            callbacks=[],
+        )
+
+        # monkey patch the trainer to use the SequentialSampler
+        trainer.get_train_dataloader = lambda: DataLoader(
+            train_dataset,
+            batch_size=training_args.train_batch_size,
+            sampler=SequentialSampler(train_dataset),
+            collate_fn=collator,
+            drop_last=training_args.dataloader_drop_last,
+            num_workers=training_args.dataloader_num_workers,
+            pin_memory=training_args.dataloader_pin_memory,
         )
 
         # Train model
@@ -211,23 +223,18 @@ class Experiment:
         trainer.save_model(final_dir)
         tokenizer.save_pretrained(final_dir)
 
-        # === Final evaluation on FULL held-out test (with ablations) ===
         self.logger.info("Preparing full held-out test data with ablations for final metrics...")
-        final_test = full_test_df_for_final.copy()
-        final_test["ablation"] = "none"
-        ablated_df = self.data_manager.create_ablated_dataset(final_test)
+        test_df_full["ablation"] = "none"
+        ablated_df = self.data_manager.create_ablated_dataset(test_df_full)
         full_eval_df = ablated_df
         self.logger.info(f"Created ablated final eval set with {len(full_eval_df)} total examples")
 
-        # Run inference on full eval set
         self.logger.info("Running inference on final eval set...")
         predictions = self._run_inference(model, tokenizer, full_eval_df, device)
 
-        # Save predictions
         pred_df = pd.DataFrame(predictions)
         pred_df.to_csv(run_dir / "ablation_predictions.csv", index=False)
 
-        # Compute and save metrics for each ablation type (on full held-out test)
         for ablation_type in ["none", "subject", "verb", "object"]:
             self.logger.info(f"Computing final metrics for ablation={ablation_type}...")
             type_preds = pred_df[pred_df["ablation"] == ablation_type].to_dict("records")
@@ -237,14 +244,11 @@ class Experiment:
                 metrics, run_dir / f"ablation_{ablation_type}_metrics.json"
             )
 
-        # Save configuration
         self.config.save(run_dir / "config.json")
         wandb.finish()
 
         self.logger.info(f"Experiment completed. Results saved to {run_dir}")
         return run_dir
-
-
 
     def _run_inference(self,
                     model: GPT2LMHeadModel,
@@ -264,41 +268,47 @@ class Experiment:
         """
         model.eval()
         predictions = []
-
-        # Set pad token ID to avoid warnings
+        batch_size = 1024
+        
+        # Ensure pad token is set for batched generation
         if tokenizer.pad_token_id is None:
             tokenizer.pad_token = tokenizer.eos_token
-            model.config.pad_token_id = model.config.eos_token_id
 
-        for row in test_df.itertuples():
-            prompt = f"<sos> {row.input} <sep>"
-
+        # Process in batches
+        for i in range(0, len(test_df), batch_size):
+            batch_df = test_df.iloc[i:i+batch_size]
+            prompts = [f"<sos> {row.input} <sep>" for row in batch_df.itertuples()]
+            
             with torch.no_grad():
-                inputs = tokenizer(prompt, return_tensors="pt").to(device)
+                inputs = tokenizer(prompts, return_tensors="pt").to(device)
+                
                 outputs = model.generate(
                     **inputs,
                     max_new_tokens=20,
                     do_sample=False,
                     num_beams=4,
-                    eos_token_id=tokenizer.eos_token_id
+                    eos_token_id=tokenizer.eos_token_id,
+                    pad_token_id=tokenizer.pad_token_id
                 )
-
-            pred = tokenizer.decode(outputs[0], skip_special_tokens=False)
-            pred = pred.split("<sep>")[1].replace("<eos>", "").strip()
-
-            pred_dict = {
-                'language': row.lang,
-                'input': row.input,
-                'gold': row.target,
-                'prediction': pred
-            }
             
-            # need to handle ablation calls and normal calls.
-            if hasattr(row, 'ablation'):
-                pred_dict['ablation'] = row.ablation
-
-            predictions.append(pred_dict)
-
+            # Decode batch
+            decoded = tokenizer.batch_decode(outputs, skip_special_tokens=False)
+            
+            for j, (pred_text, row) in enumerate(zip(decoded, batch_df.itertuples())):
+                pred = pred_text.split("<sep>")[1].replace("<eos>", "").strip()
+                
+                pred_dict = {
+                    'language': row.lang,
+                    'input': row.input,
+                    'gold': row.target,
+                    'prediction': pred
+                }
+                
+                if hasattr(row, 'ablation'):
+                    pred_dict['ablation'] = row.ablation
+                
+                predictions.append(pred_dict)
+        
         return predictions
 
     def run_sweep(self,
@@ -380,13 +390,13 @@ class Experiment:
             # Write run command
             f.write("# Run experiment\n")
             cmd = [
-                "python", "-m", "july_aug_exp.src.run_single",
+                "python", "-m", "july_aug_sept_exp.src.run_single",
                 "--config", str(self.output_dir / "model_config.json"),
                 "--output-dir", str(self.output_dir),
                 "--prop", "$PROP",
                 "--run-id", "$RUN_ID",
                 "--eval-prop", str(eval_prop),
-                "--data-dir", str(Path("/n/home06/drooryck/codeswitching-llms/july_aug_exp/data")),
+                "--data-dir", str(self.data_manager.data_dir),
                 "--lexicon-path", str(self.data_manager.lexicon_path)
             ]
             f.write(" ".join(cmd) + "\n")
@@ -403,67 +413,3 @@ class Experiment:
         logging.info("Submitted job array %s", job_id)
 
         return [job_id]
-
-    # TODO: should this go in data mangement 
-    def collect_results(self, run_dirs: List[Path]) -> pd.DataFrame:
-        """Collect metrics from multiple experiment runs.
-
-        Args:
-            run_dirs: List of experiment output directories
-
-        Returns:
-            DataFrame with aggregated results
-        """
-        results = []
-
-        for run_dir in run_dirs:
-            metrics_file = run_dir / "metrics.json"
-            if not metrics_file.exists():
-                self.logger.warning(f"No metrics found in {run_dir}")
-                continue
-
-            with open(metrics_file, 'r') as f:
-                metrics = json.load(f)
-
-            # Extract run parameters from directory name
-            dir_name = run_dir.name
-            if dir_name.startswith("p") and "_run" in dir_name:
-                parts = dir_name.split("_run")
-                prop = int(parts[0][1:]) / 100.0
-                run_id = int(parts[1])
-            else:
-                prop = None
-                run_id = None
-
-            result = {
-                'prop': prop,
-                'run_id': run_id,
-                'run_dir': str(run_dir),
-                **metrics
-            }
-            results.append(result)
-
-        return pd.DataFrame(results)
-
-    def save_summary(self, results_df: pd.DataFrame,
-                    output_path: Optional[Path] = None) -> None:
-        """Save experiment summary.
-
-        Args:
-            results_df: Results dataframe
-            output_path: Path to save summary (defaults to output_dir/summary.csv)
-        """
-        if output_path is None:
-            output_path = self.output_dir / "summary.csv"
-
-        results_df.to_csv(output_path, index=False)
-        self.logger.info(f"Summary saved to {output_path}")
-
-    def create_plots(self, results_df: pd.DataFrame) -> None:
-        """Create visualization plots from results.
-
-        Args:
-            results_df: Results dataframe with metrics computed on model outputs
-        """
-        plotter = BilingualPlotter(results_df, self.output_dir / "plots")
-        plotter.create_all_plots()

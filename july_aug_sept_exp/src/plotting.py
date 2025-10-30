@@ -317,6 +317,28 @@ class BilingualPlotter:
             ylim=(0, 1)
         )
     
+    def plot_language_orientation(self) -> None:
+        """
+        Plot language orientation score by French proportion.
+        
+        Score ranges from 0 (pure Dutch) to 1 (pure French), based on:
+        - Sentence structure (FR vs NL word order)
+        - Auxiliary verb language
+        - Participle language
+        - Determiner language
+        - Noun language
+        """
+        self._plot_metric_by_proportion(
+            fr_metrics=['fr_orientation'],
+            fr_labels=['Language orientation (0=Dutch, 1=French)'],
+            nl_metrics=['nl_orientation'],
+            nl_labels=['Language orientation (0=Dutch, 1=French)'],
+            title='Language Orientation Score',
+            ylabel='Orientation Score (0=Dutch, 1=French)',
+            output_path=self.output_dir / "orientation.png",
+            ylim=(0, 1)
+        )
+    
     ## TODO: you need to massively clean up what your plots look like.
     def create_all_plots(self) -> None:
         """Create all visualization plots from results."""
@@ -338,6 +360,9 @@ class BilingualPlotter:
             
             logger.info("Creating ablation word tracking plots...")
             self.plot_ablation_word_tracking()
+            
+            logger.info("Creating language orientation plot...")
+            self.plot_language_orientation()
 
             logger.info(f"All plots saved to {self.output_dir}")
 

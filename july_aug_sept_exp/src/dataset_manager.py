@@ -133,7 +133,7 @@ class DatasetManager:
                 for text in df[col]:
                     vocab.update(tok(text))
 
-        special_tokens = ['<pad>', '<sos>', '<eos>', '<unk>']
+        special_tokens = ['<pad>', '<sos>', '<eos>', '<unk>', '<sep>']
         vocab = special_tokens + sorted(vocab)
 
         # Create tokenizer

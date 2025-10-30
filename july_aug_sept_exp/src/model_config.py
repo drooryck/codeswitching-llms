@@ -3,7 +3,7 @@ Model configuration for language experiments.
 """
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, Union
 from transformers import GPT2Config, TrainingArguments
 
 
@@ -15,7 +15,6 @@ class ModelConfig:
     n_layer: int
     n_head: int 
     n_embd: int
-    max_steps: int
     batch_size: int
     learning_rate: float
     warmup_steps: int
@@ -23,6 +22,9 @@ class ModelConfig:
     eval_steps: int
     
     # Optional parameters (explicit None)
+    # Training duration: use either max_steps OR num_train_epochs (not both)
+    max_steps: Optional[int] = None
+    num_train_epochs: Optional[float] = None
     vocab_size: Optional[int] = None
     early_stopping_patience: Optional[int] = None
     metric_for_best_model: Optional[str] = None
@@ -81,30 +83,41 @@ class ModelConfig:
         Returns:
             TrainingArguments object
         """
-        return TrainingArguments(
-            output_dir=str(output_dir),
-            max_steps=self.max_steps,
-            per_device_train_batch_size=self.batch_size,
-            per_device_eval_batch_size=self.batch_size,
-            gradient_accumulation_steps=self.grad_accumulation_steps,
-            fp16=self.fp16,
-            learning_rate=self.learning_rate,
-            warmup_steps=self.warmup_steps,
-            lr_scheduler_type=self.lr_scheduler_type,
-            weight_decay=self.weight_decay,
-            eval_strategy=self.eval_strategy,
-            eval_steps=self.eval_steps,
-            save_strategy=self.save_strategy,
-            save_steps=self.save_steps,
-            save_total_limit=self.save_total_limit,
-            logging_steps=self.logging_steps,
-            load_best_model_at_end=self.load_best_model_at_end,
-            metric_for_best_model=self.metric_for_best_model,
-            greater_is_better=self.greater_is_better,
-            report_to=self.report_to,
-            run_name=self.run_name,
-            dataloader_num_workers=self.dataloader_num_workers,
-        )
+        # Build arguments dict
+        args_dict = {
+            "output_dir": str(output_dir),
+            "per_device_train_batch_size": self.batch_size,
+            "per_device_eval_batch_size": self.batch_size,
+            "gradient_accumulation_steps": self.grad_accumulation_steps,
+            "fp16": self.fp16,
+            "learning_rate": self.learning_rate,
+            "warmup_steps": self.warmup_steps,
+            "lr_scheduler_type": self.lr_scheduler_type,
+            "weight_decay": self.weight_decay,
+            "eval_strategy": self.eval_strategy,
+            "eval_steps": self.eval_steps,
+            "save_strategy": self.save_strategy,
+            "save_steps": self.save_steps,
+            "save_total_limit": self.save_total_limit,
+            "logging_steps": self.logging_steps,
+            "load_best_model_at_end": self.load_best_model_at_end,
+            "metric_for_best_model": self.metric_for_best_model,
+            "greater_is_better": self.greater_is_better,
+            "report_to": self.report_to,
+            "run_name": self.run_name,
+            "dataloader_num_workers": self.dataloader_num_workers,
+        }
+        
+        # Add training duration parameter (use num_train_epochs if set, otherwise max_steps)
+        if self.num_train_epochs is not None:
+            args_dict["num_train_epochs"] = self.num_train_epochs
+        elif self.max_steps is not None:
+            args_dict["max_steps"] = self.max_steps
+        else:
+            # Default to 1 epoch if neither is specified
+            args_dict["num_train_epochs"] = 1.0
+            
+        return TrainingArguments(**args_dict)
 
     def save(self, path: Path) -> None:
         """Save configuration to JSON file.
@@ -121,6 +134,7 @@ class ModelConfig:
             'n_head': self.n_head,
             'n_positions': self.n_positions,
             'max_steps': self.max_steps,
+            'num_train_epochs': self.num_train_epochs,
             'batch_size': self.batch_size,
             'grad_accumulation_steps': self.grad_accumulation_steps,
             'learning_rate': self.learning_rate,
@@ -194,7 +208,7 @@ class SlurmConfig:
     time: str = "02:00:00"
     mem: str = "16G"
     cpus_per_task: int = 4
-    gpus: int = 1
+    gpus: Optional[Union[int, str]] = None  # Can be int (e.g., 1) or string (e.g., "nvidia_h200:2")
     job_name: str = "lang_exp"
     output_pattern: str = "%x/logs/slurm_%A_%a.out"
     error_pattern: str = "%x/logs/slurm_%A_%a.err"

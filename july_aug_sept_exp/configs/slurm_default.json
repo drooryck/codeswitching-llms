@@ -5,5 +5,5 @@
     "time": "12:00:00",
     "mem": "16G",
     "cpus_per_task": 4,
-    "gpus": 1
+    "gpus": "nvidia_h200:1"
 }

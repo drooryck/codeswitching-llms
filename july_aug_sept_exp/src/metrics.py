@@ -416,7 +416,85 @@ class Metrics:
             'aux_matches_input': aux_matches_input,
             'aux_matches_verb': aux_matches_verb
         }
-        
+
+    ## get language orientation score over prediction sentences
+    def language_orientation_score(
+        self,
+        pred: str,
+        ablation_type: str | None = None,
+        input_lang: str | None = None,
+        return_breakdown: bool = False
+    ):
+        """
+        Frenchiness in [0,1]: 0 = strongly Dutch, 1 = strongly French.
+        Weights: structure(0.35) > aux(0.30) > participle(0.20) > det(0.10) > noun(0.05).
+        Missing/unrecognized cues contribute 0.5 (neutral).
+        """
+        NEU = 0.5
+        w_struct, w_aux, w_part, w_det, w_noun = 0.2, 0.2, 0.20, 0.20, 0.2
+
+        tokens = self.tokenize(pred.lower())
+
+        # --- Structure: FR=1, NL=0, neither=0.5
+        st = self.check_structure_conformity(pred)
+        if   st.get("follows_fr_structure"): s_struct = 1.0
+        elif st.get("follows_nl_structure"): s_struct = 0.0
+        else:                                s_struct = NEU
+
+        # --- Aux: FR=1, NL=0, missing=0.5
+        aux = next((t for t in tokens if t in (self.aux_fr | self.aux_nl)), None)
+        if   aux is None:           s_aux = NEU
+        elif aux in self.aux_fr:    s_aux = 1.0
+        elif aux in self.aux_nl:    s_aux = 0.0
+        else:                       s_aux = NEU
+
+        # --- Participle: FR=1, NL=0, missing=0.5
+        part = next((t for t in tokens if t in (self.part_fr | self.part_nl)), None)
+        if   part is None:          s_part = NEU
+        elif part in self.part_fr:  s_part = 1.0
+        elif part in self.part_nl:  s_part = 0.0
+        else:                       s_part = NEU
+
+        # --- Determiners: fraction FR among recognized dets; none -> 0.5
+        dets = [t for t in tokens if t in (self.det_fr | self.det_nl)]
+        if dets:
+            fr = sum(t in self.det_fr for t in dets)
+            nl = sum(t in self.det_nl for t in dets)
+            s_det = (fr / (fr + nl)) if (fr + nl) > 0 else NEU
+        else:
+            s_det = NEU
+
+        # --- Nouns: fraction FR among recognized nouns; none -> 0.5
+        nouns = [t for t in tokens if t in (self.nouns_fr | self.nouns_nl)]
+        if nouns:
+            fr = sum(t in self.nouns_fr for t in nouns)
+            nl = sum(t in self.nouns_nl for t in nouns)
+            s_noun = (fr / (fr + nl)) if (fr + nl) > 0 else NEU
+        else:
+            s_noun = NEU
+            
+        score = (
+            w_struct * s_struct +
+            w_aux    * s_aux +
+            w_part   * s_part +
+            w_det    * s_det +
+            w_noun   * s_noun
+        )
+
+        if return_breakdown:
+            return {
+                'score': float(max(0.0, min(1.0, score))),
+                'components': {
+                    'structure': s_struct,
+                    'aux': s_aux,
+                    'participle': s_part,
+                    'determiner': s_det,
+                    'noun': s_noun
+                }
+            }
+
+        return float(max(0.0, min(1.0, score)))
+            
     def compute_all_metrics(self, predictions: List[Dict[str, Any]], ablation_type: str = 'none') -> Dict[str, Any]:
         """
         Compute all metrics including structure and ablation metrics regardless of type.
@@ -449,12 +527,16 @@ class Metrics:
             ablation = self.track_ablated_word(pred, input_text, ablation_type)
             aux_metrics = self.check_aux_verb_consistency(pred, input_text, lang)
             
+            # Language orientation score
+            orientation = self.language_orientation_score(pred)
+            
             records.append({
                 'lang': lang,
                 'exact': exact,
                 'fr_share': fr,
                 'nl_share': nl,
                 'part_final': part_final,
+                'orientation_score': orientation,
                 **structure,
                 **verb_metrics,
                 **det_metrics,
@@ -475,6 +557,7 @@ class Metrics:
             metrics[f"{prefix}_avg_fr"] = float(sub['fr_share'].mean())
             metrics[f"{prefix}_avg_nl"] = float(sub['nl_share'].mean())
             metrics[f"{prefix}_part_final"] = float(sub['part_final'].mean())
+            metrics[f"{prefix}_orientation"] = float(sub['orientation_score'].mean())
             
             # Verb and determiner metrics
             metrics[f"{prefix}_verb_lang"] = float(sub['verb_lang_correct'].mean())
