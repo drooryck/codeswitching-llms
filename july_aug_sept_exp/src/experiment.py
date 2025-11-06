@@ -102,6 +102,14 @@ class Experiment:
         self.logger.info("Loading data...")
         train_df_full = pd.read_csv(self.data_manager.data_dir / "train.csv")
         test_df_full = pd.read_csv(self.data_manager.data_dir / "test.csv")
+        
+        # Log initial dataset sizes and language counts
+        self.logger.info(f"Initial train set: {len(train_df_full)} total | "
+                        f"FR: {(train_df_full['lang'] == 'fr').sum()} | "
+                        f"NL: {(train_df_full['lang'] == 'nl').sum()}")
+        self.logger.info(f"Test set: {len(test_df_full)} total | "
+                        f"FR: {(test_df_full['lang'] == 'fr').sum()} | "
+                        f"NL: {(test_df_full['lang'] == 'nl').sum()}")
 
         rng = np.random.RandomState(run_id)
         train_df_full["global_key"] = rng.random(len(train_df_full))
@@ -111,6 +119,14 @@ class Experiment:
         eval_mask = train_df_full["global_key"] < eval_prop
         val_df = train_df_full[eval_mask].reset_index(drop=True)
         train_df_full = train_df_full[~eval_mask].reset_index(drop=True)
+        
+        # Log validation split
+        self.logger.info(f"Validation set: {len(val_df)} total | "
+                        f"FR: {(val_df['lang'] == 'fr').sum()} | "
+                        f"NL: {(val_df['lang'] == 'nl').sum()}")
+        self.logger.info(f"Remaining train set after val split: {len(train_df_full)} total | "
+                        f"FR: {(train_df_full['lang'] == 'fr').sum()} | "
+                        f"NL: {(train_df_full['lang'] == 'nl').sum()}")
 
         train_df_full["lang_rank"] = (
             train_df_full.groupby("lang")["global_key"]
@@ -138,15 +154,26 @@ class Experiment:
             .sort_values(["global_key","orig_idx"], kind="mergesort")
             .reset_index(drop=True)
         )
+        
+        # Log final training set composition
+        self.logger.info(f"Final training set (after proportion selection):")
+        self.logger.info(f"  Total: {len(train_df)} | FR: {len(fr_take)} ({len(fr_take)/len(train_df)*100:.1f}%) | "
+                        f"NL: {len(nl_take)} ({len(nl_take)/len(train_df)*100:.1f}%)")
+        self.logger.info(f"  Target proportion: FR={prop*100:.1f}%, NL={100-prop*100:.1f}%")
 
         wandb.log({
             "train_size": len(train_df),
             "val_size": len(val_df),
             "test_size": len(test_df_full),
             "fr_train_samples": len(fr_take),
-            "nl_train_samples": len(nl_take)
+            "nl_train_samples": len(nl_take),
+            "fr_train_pct": len(fr_take) / len(train_df) * 100,
+            "nl_train_pct": len(nl_take) / len(train_df) * 100,
+            "fr_val_samples": (val_df['lang'] == 'fr').sum(),
+            "nl_val_samples": (val_df['lang'] == 'nl').sum(),
+            "fr_test_samples": (test_df_full['lang'] == 'fr').sum(),
+            "nl_test_samples": (test_df_full['lang'] == 'nl').sum()
         })
-        self.logger.info(f"Final train size: {len(train_df)} | Val size: {len(val_df)}")
 
         self.logger.info("Creating tokenizer and datasets...")
         tokenizer = self.data_manager.build_tokenizer()

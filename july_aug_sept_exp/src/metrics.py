@@ -429,20 +429,46 @@ class Metrics:
         Frenchiness in [0,1]: 0 = strongly Dutch, 1 = strongly French.
         Weights: structure(0.35) > aux(0.30) > participle(0.20) > det(0.10) > noun(0.05).
         Missing/unrecognized cues contribute 0.5 (neutral).
+        
+        When return_breakdown=True, also returns quality metrics (no weight in score):
+        - structure_bad: 1.0 if neither FR nor NL structure, 0.0 otherwise
+        - aux_missing: 1.0 if no auxiliary found
+        - participle_missing: 1.0 if no participle found
+        - determiners_missing: 1.0 if no determiners found
+        - nouns_missing: 1.0 if no nouns found
+        - wrong_token_count: 1.0 if not exactly 6 tokens (expected structure)
+        - wrong_noun_count: 1.0 if not exactly 2 nouns (duplicate/missing nouns)
+        - wrong_det_count: 1.0 if not exactly 2 determiners
+        - wrong_aux_count: 1.0 if not exactly 1 auxiliary
+        - wrong_part_count: 1.0 if not exactly 1 participle
         """
         NEU = 0.5
         w_struct, w_aux, w_part, w_det, w_noun = 0.2, 0.2, 0.20, 0.20, 0.2
 
         tokens = self.tokenize(pred.lower())
+        
+        # Count token types for quality checks
+        n_tokens = len(tokens)
+        n_nouns = len([t for t in tokens if t in (self.nouns_fr | self.nouns_nl)])
+        n_dets = len([t for t in tokens if t in (self.det_fr | self.det_nl)])
+        n_auxes = len([t for t in tokens if t in (self.aux_fr | self.aux_nl)])
+        n_parts = len([t for t in tokens if t in (self.part_fr | self.part_nl)])
 
         # --- Structure: FR=1, NL=0, neither=0.5
         st = self.check_structure_conformity(pred)
-        if   st.get("follows_fr_structure"): s_struct = 1.0
-        elif st.get("follows_nl_structure"): s_struct = 0.0
-        else:                                s_struct = NEU
+        if   st.get("follows_fr_structure"): 
+            s_struct = 1.0
+            s_struct_bad = 0.0
+        elif st.get("follows_nl_structure"): 
+            s_struct = 0.0
+            s_struct_bad = 0.0
+        else:
+            s_struct = NEU
+            s_struct_bad = 1.0  # Bad: follows neither structure
 
         # --- Aux: FR=1, NL=0, missing=0.5
         aux = next((t for t in tokens if t in (self.aux_fr | self.aux_nl)), None)
+        aux_missing = 1.0 if aux is None else 0.0
         if   aux is None:           s_aux = NEU
         elif aux in self.aux_fr:    s_aux = 1.0
         elif aux in self.aux_nl:    s_aux = 0.0
@@ -450,6 +476,7 @@ class Metrics:
 
         # --- Participle: FR=1, NL=0, missing=0.5
         part = next((t for t in tokens if t in (self.part_fr | self.part_nl)), None)
+        part_missing = 1.0 if part is None else 0.0
         if   part is None:          s_part = NEU
         elif part in self.part_fr:  s_part = 1.0
         elif part in self.part_nl:  s_part = 0.0
@@ -457,6 +484,7 @@ class Metrics:
 
         # --- Determiners: fraction FR among recognized dets; none -> 0.5
         dets = [t for t in tokens if t in (self.det_fr | self.det_nl)]
+        dets_missing = 1.0 if not dets else 0.0
         if dets:
             fr = sum(t in self.det_fr for t in dets)
             nl = sum(t in self.det_nl for t in dets)
@@ -466,6 +494,7 @@ class Metrics:
 
         # --- Nouns: fraction FR among recognized nouns; none -> 0.5
         nouns = [t for t in tokens if t in (self.nouns_fr | self.nouns_nl)]
+        nouns_missing = 1.0 if not nouns else 0.0
         if nouns:
             fr = sum(t in self.nouns_fr for t in nouns)
             nl = sum(t in self.nouns_nl for t in nouns)
@@ -490,6 +519,18 @@ class Metrics:
                     'participle': s_part,
                     'determiner': s_det,
                     'noun': s_noun
+                },
+                'quality': {
+                    'structure_bad': s_struct_bad,
+                    'aux_missing': aux_missing,
+                    'participle_missing': part_missing,
+                    'determiners_missing': dets_missing,
+                    'nouns_missing': nouns_missing,
+                    'wrong_token_count': 1.0 if n_tokens != 6 else 0.0,
+                    'wrong_noun_count': 1.0 if n_nouns != 2 else 0.0,
+                    'wrong_det_count': 1.0 if n_dets != 2 else 0.0,
+                    'wrong_aux_count': 1.0 if n_auxes != 1 else 0.0,
+                    'wrong_part_count': 1.0 if n_parts != 1 else 0.0
                 }
             }
 
