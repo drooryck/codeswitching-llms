@@ -301,6 +301,31 @@ class BilingualPlotter:
             ylim=(0, 1)
         )
 
+    def plot_nov11_structure_lexical(self) -> None:
+        """
+        Plot structure conformity and lexical orientation metrics (Nov 11 analysis).
+        """
+        self._plot_metric_by_proportion(
+            fr_metrics=['fr_follows_fr', 'fr_follows_nl', 'fr_follows_either', 'fr_lexical_score'],
+            fr_labels=[
+                'follows French structure',
+                'follows Dutch structure',
+                'follows either structure',
+                'lexical orientation (0=dutch, 1=french)'
+            ],
+            nl_metrics=['nl_follows_fr', 'nl_follows_nl', 'nl_follows_either', 'nl_lexical_score'],
+            nl_labels=[
+                'follows French structure',
+                'follows Dutch structure',
+                'follows either structure',
+                'lexical orientation (0=dutch, 1=french)'
+            ],
+            title='Structure Conformity & Lexical Orientation (Nov 11)',
+            ylabel='Median across runs',
+            output_path=self.output_dir / "nov11_structure_lexical.png",
+            ylim=(0, 1)
+        )
+
     def plot_ablation_word_tracking(self) -> None:
         """
         Plot metrics tracking what happens to ablated words.

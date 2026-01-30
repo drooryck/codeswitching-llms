@@ -154,9 +154,9 @@ class DatasetManager:
         """Create and save train/test splits with complex subject-verb pair splitting.
 
         This method implements the sophisticated data splitting logic where training and testing sets
-        are split to ensure (language, subject, verb) combinations don't appear in both sets.
+        are split to ensure (subject, verb) combinations don't appear in both sets (shared across languages).
         This prevents the model from memorizing specific subject-verb pairs and forces it to generalize.
-        The resulting datasets are saved to new_train.csv and new_test.csv.
+        The resulting datasets are saved to train.csv and test.csv.
 
         Args:
             test_size: Proportion of data to use for testing (default 0.2)
@@ -184,7 +184,7 @@ class DatasetManager:
             # Separate determiners for subject and object
             subj_det = DET[lang]["pl" if subj_plural else "sgl"]
             obj_det = DET[lang]["pl" if obj_plural else "sgl"]
-            
+
             s = NOUNS[lang][subj]["pl" if subj_plural else "sgl"]
             o = NOUNS[lang][obj]["pl" if obj_plural else "sgl"]
 
@@ -197,42 +197,69 @@ class DatasetManager:
             aux_key = ("zijpl" if subj_plural else "hij") if lang == "nl" else ("ils" if subj_plural else "il")
             inp = f"{subj_det} {s} {pres} {obj_det} {o}"
             tgt = (f"{subj_det} {s} {AUX[lang][aux_key]} {part} {obj_det} {o}"
-                   if lang=='fr'
+                   if lang == 'fr'
                    else f"{subj_det} {s} {AUX[lang][aux_key]} {obj_det} {o} {part}")
             return inp, tgt
 
-        rows = []
-        pair_ids = []  # keep (lang, subj, verb) for later split
+        # --- NEW: build language-agnostic indices for nouns and verbs ---
+        langs = ("fr", "nl")
 
-        for lang in ('fr', 'nl'):
-            nouns = list(NOUNS[lang])
-            verbs = list(VERBS[lang])
+        noun_keys = {lang: list(NOUNS[lang].keys()) for lang in langs}
+        verb_keys = {lang: list(VERBS[lang].keys()) for lang in langs}
+
+        # Sanity checks: require parallel lexicon sizes
+        if len(noun_keys["fr"]) != len(noun_keys["nl"]):
+            raise ValueError("NOUNS lexicon is not parallel between fr and nl")
+        if len(verb_keys["fr"]) != len(verb_keys["nl"]):
+            raise ValueError("VERBS lexicon is not parallel between fr and nl")
+
+        # Map each language-specific noun/verb key to a shared index
+        noun_idx = {
+            lang: {noun: i for i, noun in enumerate(noun_keys[lang])}
+            for lang in langs
+        }
+        verb_idx = {
+            lang: {verb: i for i, verb in enumerate(verb_keys[lang])}
+            for lang in langs
+        }
+
+        rows = []
+        pair_ids = []  # keep (subj_idx, verb_idx) for split
+
+        for lang in langs:
+            nouns = noun_keys[lang]
+            verbs = verb_keys[lang]
             for subj, obj, verb_key in itertools.product(nouns, nouns, verbs):
                 if subj == obj:
                     continue
-                # Iterate over all 4 combinations of subject/object plurality
+                # Iterate over matching plurality (subject and object must match)
                 for subj_plural in (False, True):
-                    for obj_plural in (False, True):
-                        inp, tgt = make_pair(lang, subj, obj, verb_key, subj_plural, obj_plural)
-                        rows.append({
-                            'input': inp,
-                            'target': tgt,
-                            'lang': lang,
-                            'plural': subj_plural,  # Keep for compatibility (refers to subject)
-                            'subj_plural': subj_plural,
-                            'obj_plural': obj_plural,
-                            'subj': subj,
-                            'obj': obj,
-                            'verb': verb_key
-                        })
-                        pair_ids.append((lang, subj, verb_key))  # key for split
+                    obj_plural = subj_plural  # Constraint: object plurality matches subject plurality
+                    inp, tgt = make_pair(lang, subj, obj, verb_key, subj_plural, obj_plural)
+                    rows.append({
+                        'input': inp,
+                        'target': tgt,
+                        'lang': lang,
+                        'plural': subj_plural,  # Keep for compatibility (refers to subject)
+                        'subj_plural': subj_plural,
+                        'obj_plural': obj_plural,
+                        'subj': subj,
+                        'obj': obj,
+                        'verb': verb_key
+                    })
+                    # Language-agnostic split key: index of subj & verb in parallel lists
+                    subj_id = noun_idx[lang][subj]
+                    verb_id = verb_idx[lang][verb_key]
+                    pair_ids.append((subj_id, verb_id))
 
-        # Split by unseen (subject, verb) combinations
+        # Split by unseen (subject, verb) index combinations
         import random
         pair_ids_unique = list(set(pair_ids))
         random.seed(random_seed)
-        test_pairs = set(random.sample(pair_ids_unique,
-                                     int(test_size * len(pair_ids_unique))))
+        test_pairs = set(random.sample(
+            pair_ids_unique,
+            int(test_size * len(pair_ids_unique))
+        ))
 
         train_rows, test_rows = [], []
         for row, pid in zip(rows, pair_ids):
@@ -241,11 +268,12 @@ class DatasetManager:
         train_df = pd.DataFrame(train_rows).reset_index(drop=True)
         test_df = pd.DataFrame(test_rows).reset_index(drop=True)
 
-        # Save datasets - TODO: this shouldnt be hardcoded to new_train or new_test
+        # Save datasets
         train_df.to_csv(self.data_dir / "train.csv", index=False)
         test_df.to_csv(self.data_dir / "test.csv", index=False)
 
         return train_df, test_df
+
 
     def create_pytorch_datasets(self, train_df: pd.DataFrame, test_df: pd.DataFrame,
                        tokenizer: Optional[PreTrainedTokenizerFast] = None) -> Tuple[torch.utils.data.Dataset, torch.utils.data.Dataset]:

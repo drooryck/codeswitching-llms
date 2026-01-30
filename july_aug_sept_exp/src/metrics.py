@@ -2,14 +2,22 @@
 Metrics for evaluating generated sentences in language experiments.
 """
 import json
+import logging
+import math
 import re
 from pathlib import Path
 from typing import Dict, List, Tuple, Set, Any
 import pandas as pd
 
 
+logger = logging.getLogger(__name__)
+
+
 class Metrics:
     """Compute various metrics for generated sentences."""
+
+    TOKEN_PATTERN = re.compile(r"<[^>\s]+>|\w+|[^\s\w]")
+    SPECIAL_TOKEN_PATTERN = re.compile(r"<[^>\s]+>")
 
     def __init__(self, lexicon_path: Path):
         # TODO: dont init every calculation. also have more of these to save compute.
@@ -53,6 +61,13 @@ class Metrics:
         self.aux_fr = set(self.lexicon["AUX"]["fr"].values())
         self.aux_nl = set(self.lexicon["AUX"]["nl"].values())
 
+        # Expected token length for present perfect template:
+        # DET NOUN AUX PART DET NOUN
+        self.expected_token_len = 6
+
+        # Track which tokens we've already warned about during lexical scoring
+        self._lexical_warning_tokens: Set[str] = set()
+
         # Pre-compute verb-to-participle mappings (for present → present perfect conversion)
         self.verb_to_participle_fr = {}
         for verb_data in self.lexicon["VERBS"]["fr"].values():
@@ -89,7 +104,65 @@ class Metrics:
 
     def tokenize(self, text: str) -> List[str]:
         """Simple tokenization for metric computation."""
-        return re.findall(r"\w+|[^\s\w]", text.lower())
+        return self.TOKEN_PATTERN.findall(text.lower())
+
+    def lexical_mixture_score(self, tokens: List[str]) -> float:
+        """
+        Measure how French-leaning the sentence is based on token lexicon membership.
+
+        Returns:
+            Score in [0, 1] where 1 means all tokens are uniquely French,
+            0 means all tokens are uniquely Dutch, and 0.5 represents ambiguous/OOV tokens.
+        """
+        if not tokens:
+            return 0.0
+
+        score = 0.0
+        valid_count = 0
+        for tok in tokens:
+            if self.SPECIAL_TOKEN_PATTERN.fullmatch(tok):
+                # Treat special tokens (e.g., <pad>) as neutral; skip them entirely.
+                continue
+
+            is_fr = tok in self.fr_words
+            is_nl = tok in self.nl_words
+
+            if is_fr and not is_nl:
+                score += 1.0
+                valid_count += 1
+            elif is_nl and not is_fr:
+                score += 0.0
+                valid_count += 1
+            elif is_fr and is_nl:
+                # Token exists in both lexicons; treat as neutral but keep in denominator.
+                self._log_lexical_warning(tok, is_fr, is_nl)
+                score += 0.5
+                valid_count += 1
+            else:
+                # Unknown token; skip it entirely (does not affect score or count).
+                self._log_lexical_warning(tok, is_fr, is_nl)
+
+        if valid_count == 0:
+            return 0.0
+
+        return score / valid_count
+
+    def _log_lexical_warning(self, token: str, is_fr: bool, is_nl: bool) -> None:
+        """Log a warning once per token when it doesn't map cleanly to either lexicon."""
+        if token in self._lexical_warning_tokens:
+            return
+        self._lexical_warning_tokens.add(token)
+
+        if is_fr and is_nl:
+            logger.warning(
+                "Lexical metric: token '%s' appears in both FR and NL lexicons; treating as neutral (0.5).",
+                token,
+            )
+        else:
+            logger.warning(
+                "Lexical metric: token '%s' not found in FR/NL lexicons; treating as neutral (0.5).",
+                token,
+            )
 
     def token_lang_frac(self, tokens: List[str]) -> Tuple[float, float]:
         """Calculate fraction of tokens in French/Dutch using simple set membership.
@@ -553,6 +626,9 @@ class Metrics:
             
             # Basic metrics
             tokens = self.tokenize(pred)
+            token_count = len(tokens)
+            tokens_expected_len = int(token_count == self.expected_token_len)
+            lexical_score = self.lexical_mixture_score(tokens)
             exact = self.exact_match(pred, gold)
             fr, nl = self.token_lang_frac(tokens)
             part_final = self.is_participle_final(tokens, lang)
@@ -578,6 +654,8 @@ class Metrics:
                 'nl_share': nl,
                 'part_final': part_final,
                 'orientation_score': orientation,
+                'lexical_score': lexical_score,
+                'tokens_expected_len': tokens_expected_len,
                 **structure,
                 **verb_metrics,
                 **det_metrics,
@@ -591,7 +669,7 @@ class Metrics:
         
         for lang in df['lang'].unique():
             sub = df[df['lang'] == lang]
-            prefix = lang  # Just use language as prefix, no ablation type needed
+            prefix = lang 
             
             # Standard metrics
             metrics[f"{prefix}_exact"] = float(sub['exact'].mean())
@@ -599,6 +677,8 @@ class Metrics:
             metrics[f"{prefix}_avg_nl"] = float(sub['nl_share'].mean())
             metrics[f"{prefix}_part_final"] = float(sub['part_final'].mean())
             metrics[f"{prefix}_orientation"] = float(sub['orientation_score'].mean())
+            metrics[f"{prefix}_lexical_score"] = float(sub['lexical_score'].mean())
+            metrics[f"{prefix}_pct_expected_len"] = float(sub['tokens_expected_len'].mean())
             
             # Verb and determiner metrics
             metrics[f"{prefix}_verb_lang"] = float(sub['verb_lang_correct'].mean())
@@ -621,6 +701,8 @@ class Metrics:
         metrics['overall_exact'] = float(df['exact'].mean())
         metrics['overall_follows_structure'] = float(df['follows_either_structure'].mean())
         metrics['overall_keeps_ablated'] = float(df['keeps_ablated'].mean())
+        metrics['overall_lexical'] = float(df['lexical_score'].mean())
+        metrics['overall_pct_expected_len'] = float(df['tokens_expected_len'].mean())
         
         return metrics
     
