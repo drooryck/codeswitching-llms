@@ -25,6 +25,3 @@ srun --pty -p seas_gpu --gres=gpu:1 --mem=16G -t 0-02:00 /bin/bash
 # Check GPU/node availability
 sinfo -p seas_gpu
 
-
-# todos:
-in prepare_and_run_slurm_example i dont want to have to put the fucking slurm config that should be in slurm_default.
