@@ -1,9 +1,0 @@
-{
-    "job_name": "lang_exp",
-    "partition": "seas_gpu",
-    "account": "dam_lab",
-    "time": "12:00:00",
-    "mem": "16G",
-    "cpus_per_task": 4,
-    "gpus": "nvidia_h200:1"
-}

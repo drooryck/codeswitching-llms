@@ -1,99 +1,16 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+################################
+# Ignore everything
+################################
+*
 
-# Jupyter Notebook
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
-
-# Virtual Environment
-venv/
-env/
-ENV/
-.env
-.venv
-
-# IDE specific files
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# OS specific files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# ML specific
-wandb/
-logs/
-*.pt
-*.pth
-*.ckpt
-*.h5
-*.hdf5
-*.pkl
-*.model
-
-# Project specific
-*_exp/logs/
-*_exp/results/
-datasets/**/corrupted_*
-datasets/**/final_*
-
-# Model outputs and checkpoints
-checkpoint-*/
-final/
-*.bin
-tokenizer.json
-special_tokens_map.json
-tokenizer_config.json
-config.json
-generation_config.json
-trainer_state.json
-
-# Data and results
-*.csv
-*.json
-!requirements.json
-!package.json
-!datasets/word_lists/*.txt
-*.log
-*.png
-*.jpg
-*.jpeg
-*.pdf
-
-# Slurm outputs
-slurm-*.out
-slurm-*.err
-**/logs/*.out
-**/logs/*.err
-
-# Keep specific files that should be version controlled
-!requirements.txt
-!README.md
+################################
+# But keep git metadata
+################################
 !.gitignore
-!.gitattributes
-!**/configs/*.json
+!README.md
+
+################################
+# Allow the experiment you want tracked
+################################
+!feb-exp/
+!feb-exp/**
