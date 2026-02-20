@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=feb19_sweep
+#SBATCH --job-name=feb20_sweep
 #SBATCH --partition=seas_gpu
 #SBATCH --gres=gpu
 #SBATCH --time=12:00:00
 #SBATCH --mem=32G
 #SBATCH --cpus-per-task=4
-#SBATCH --output=/n/home06/drooryck/codeswitching-llms/feb_exp/results/feb19/logs/slurm_%A_%a.out
-#SBATCH --error=/n/home06/drooryck/codeswitching-llms/feb_exp/results/feb19/logs/slurm_%A_%a.err
+#SBATCH --output=/n/home06/drooryck/codeswitching-llms/feb_exp/results/feb20/logs/slurm_%A_%a.out
+#SBATCH --error=/n/home06/drooryck/codeswitching-llms/feb_exp/results/feb20/logs/slurm_%A_%a.err
 
 # PROPS=(0.000 0.001 0.005 0.010 0.015 0.020 0.025 0.030 0.040 0.050 0.075 0.100 0.150 0.200 0.250 0.300 0.400 0.450 0.500 0.550 0.600 0.650 0.700 0.750 0.800 0.850 0.900 0.925 0.950 0.960 0.970 0.980 0.985 0.990 0.995 0.999 1.000)
 # RUNS=(1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20)
@@ -14,9 +14,9 @@ PROPS=(0.5)
 RUNS=(1)
 EVAL_PROP=0.05
 
-OUTPUT_ROOT=/n/home06/drooryck/codeswitching-llms/feb_exp/results/feb19
+OUTPUT_ROOT=/n/home06/drooryck/codeswitching-llms/feb_exp/results/feb20
 CONFIG_JSON=/n/home06/drooryck/codeswitching-llms/feb_exp/configs/default_model.json
-DATA_DIR=/n/home06/drooryck/codeswitching-llms/feb_exp/data/data_no_plurality_mixing
+DATA_DIR=/n/home06/drooryck/codeswitching-llms/feb_exp/data
 LEXICON=/n/home06/drooryck/codeswitching-llms/feb_exp/data/lexicon_sep22.json
 PY_ENV=/n/home06/drooryck/envs/codeswitching-py310/bin/activate
 
