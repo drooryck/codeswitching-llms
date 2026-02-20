@@ -1,0 +1,1254 @@
+{
+  "DET": {
+    "fr": {
+      "sgl": "le",
+      "pl": "les"
+    },
+    "nl": {
+      "sgl": "de",
+      "pl": "de"
+    }
+  },
+  "NOUNS": {
+    "fr": {
+      "chien": {
+        "sgl": "chien",
+        "pl": "chiens"
+      },
+      "loup": {
+        "sgl": "loup",
+        "pl": "loups"
+      },
+      "chat": {
+        "sgl": "chat",
+        "pl": "chats"
+      },
+      "tigre": {
+        "sgl": "tigre",
+        "pl": "tigres"
+      },
+      "singe": {
+        "sgl": "singe",
+        "pl": "singes"
+      },
+      "cheval": {
+        "sgl": "cheval",
+        "pl": "chevaux"
+      },
+      "souris": {
+        "sgl": "souris",
+        "pl": "souris"
+      },
+      "éléphant": {
+        "sgl": "éléphant",
+        "pl": "éléphants"
+      },
+      "renard": {
+        "sgl": "renard",
+        "pl": "renards"
+      },
+      "oiseau": {
+        "sgl": "oiseau",
+        "pl": "oiseaux"
+      },
+      "enfant": {
+        "sgl": "enfant",
+        "pl": "enfants"
+      },
+      "docteur": {
+        "sgl": "docteur",
+        "pl": "docteurs"
+      },
+      "fille": {
+        "sgl": "fille",
+        "pl": "filles"
+      },
+      "garçon": {
+        "sgl": "garçon",
+        "pl": "garçons"
+      },
+      "femme": {
+        "sgl": "femme",
+        "pl": "femmes"
+      },
+      "homme": {
+        "sgl": "homme",
+        "pl": "hommes"
+      },
+      "professeur": {
+        "sgl": "professeur",
+        "pl": "professeurs"
+      },
+      "ami": {
+        "sgl": "ami",
+        "pl": "amis"
+      },
+      "ennemi": {
+        "sgl": "ennemi",
+        "pl": "ennemis"
+      },
+      "ours": {
+        "sgl": "ours",
+        "pl": "ours"
+      },
+      "poisson": {
+        "sgl": "poisson",
+        "pl": "poissons"
+      },
+      "lion": {
+        "sgl": "lion",
+        "pl": "lions"
+      },
+      "lapin": {
+        "sgl": "lapin",
+        "pl": "lapins"
+      },
+      "cerf": {
+        "sgl": "cerf",
+        "pl": "cerfs"
+      },
+      "canard": {
+        "sgl": "canard",
+        "pl": "canards"
+      },
+      "poule": {
+        "sgl": "poule",
+        "pl": "poules"
+      },
+      "cochon": {
+        "sgl": "cochon",
+        "pl": "cochons"
+      },
+      "âne": {
+        "sgl": "âne",
+        "pl": "ânes"
+      },
+      "oie": {
+        "sgl": "oie",
+        "pl": "oies"
+      },
+      "mouton": {
+        "sgl": "mouton",
+        "pl": "moutons"
+      },
+      "chèvre": {
+        "sgl": "chèvre",
+        "pl": "chèvres"
+      },
+      "pigeon": {
+        "sgl": "pigeon",
+        "pl": "pigeons"
+      },
+      "corbeau": {
+        "sgl": "corbeau",
+        "pl": "corbeaux"
+      },
+      "serpent": {
+        "sgl": "serpent",
+        "pl": "serpents"
+      },
+      "grenouille": {
+        "sgl": "grenouille",
+        "pl": "grenouilles"
+      },
+      "hibou": {
+        "sgl": "hibou",
+        "pl": "hiboux"
+      },
+      "cygne": {
+        "sgl": "cygne",
+        "pl": "cygnes"
+      },
+      "dauphin": {
+        "sgl": "dauphin",
+        "pl": "dauphins"
+      },
+      "requin": {
+        "sgl": "requin",
+        "pl": "requins"
+      },
+      "crabe": {
+        "sgl": "crabe",
+        "pl": "crabes"
+      },
+      "tortue": {
+        "sgl": "tortue",
+        "pl": "tortues"
+      },
+      "aigle": {
+        "sgl": "aigle",
+        "pl": "aigles"
+      },
+      "moustique": {
+        "sgl": "moustique",
+        "pl": "moustiques"
+      },
+      "abeille": {
+        "sgl": "abeille",
+        "pl": "abeilles"
+      },
+      "papillon": {
+        "sgl": "papillon",
+        "pl": "papillons"
+      },
+      "lézard": {
+        "sgl": "lézard",
+        "pl": "lézards"
+      },
+      "araignée": {
+        "sgl": "araignée",
+        "pl": "araignées"
+      }
+    },
+    "nl": {
+      "hond": {
+        "sgl": "hond",
+        "pl": "honden"
+      },
+      "wolf": {
+        "sgl": "wolf",
+        "pl": "wolven"
+      },
+      "kat": {
+        "sgl": "kat",
+        "pl": "katten"
+      },
+      "tijger": {
+        "sgl": "tijger",
+        "pl": "tijgers"
+      },
+      "aap": {
+        "sgl": "aap",
+        "pl": "apen"
+      },
+      "paard": {
+        "sgl": "paard",
+        "pl": "paarden"
+      },
+      "muis": {
+        "sgl": "muis",
+        "pl": "muizen"
+      },
+      "olifant": {
+        "sgl": "olifant",
+        "pl": "olifanten"
+      },
+      "vos": {
+        "sgl": "vos",
+        "pl": "vossen"
+      },
+      "vogel": {
+        "sgl": "vogel",
+        "pl": "vogels"
+      },
+      "kind": {
+        "sgl": "kind",
+        "pl": "kinderen"
+      },
+      "dokter": {
+        "sgl": "dokter",
+        "pl": "dokters"
+      },
+      "meisje": {
+        "sgl": "meisje",
+        "pl": "meisjes"
+      },
+      "jongen": {
+        "sgl": "jongen",
+        "pl": "jongens"
+      },
+      "vrouw": {
+        "sgl": "vrouw",
+        "pl": "vrouwen"
+      },
+      "man": {
+        "sgl": "man",
+        "pl": "mannen"
+      },
+      "leraar": {
+        "sgl": "leraar",
+        "pl": "leraars"
+      },
+      "vriend": {
+        "sgl": "vriend",
+        "pl": "vrienden"
+      },
+      "vijand": {
+        "sgl": "vijand",
+        "pl": "vijanden"
+      },
+      "beer": {
+        "sgl": "beer",
+        "pl": "beren"
+      },
+      "vis": {
+        "sgl": "vis",
+        "pl": "vissen"
+      },
+      "leeuw": {
+        "sgl": "leeuw",
+        "pl": "leeuwen"
+      },
+      "konijn": {
+        "sgl": "konijn",
+        "pl": "konijnen"
+      },
+      "hert": {
+        "sgl": "hert",
+        "pl": "herten"
+      },
+      "eend": {
+        "sgl": "eend",
+        "pl": "eenden"
+      },
+      "kip": {
+        "sgl": "kip",
+        "pl": "kippen"
+      },
+      "varken": {
+        "sgl": "varken",
+        "pl": "varkens"
+      },
+      "ezel": {
+        "sgl": "ezel",
+        "pl": "ezels"
+      },
+      "gans": {
+        "sgl": "gans",
+        "pl": "ganzen"
+      },
+      "schaap": {
+        "sgl": "schaap",
+        "pl": "schapen"
+      },
+      "geit": {
+        "sgl": "geit",
+        "pl": "geiten"
+      },
+      "duif": {
+        "sgl": "duif",
+        "pl": "duiven"
+      },
+      "kraai": {
+        "sgl": "kraai",
+        "pl": "kraaien"
+      },
+      "slang": {
+        "sgl": "slang",
+        "pl": "slangen"
+      },
+      "kikker": {
+        "sgl": "kikker",
+        "pl": "kikkers"
+      },
+      "uil": {
+        "sgl": "uil",
+        "pl": "uilen"
+      },
+      "zwaan": {
+        "sgl": "zwaan",
+        "pl": "zwanen"
+      },
+      "dolfijn": {
+        "sgl": "dolfijn",
+        "pl": "dolfijnen"
+      },
+      "haai": {
+        "sgl": "haai",
+        "pl": "haaien"
+      },
+      "krab": {
+        "sgl": "krab",
+        "pl": "krabben"
+      },
+      "schildpad": {
+        "sgl": "schildpad",
+        "pl": "schildpadden"
+      },
+      "adelaar": {
+        "sgl": "adelaar",
+        "pl": "adelaren"
+      },
+      "mug": {
+        "sgl": "mug",
+        "pl": "muggen"
+      },
+      "bij": {
+        "sgl": "bij",
+        "pl": "bijen"
+      },
+      "vlinder": {
+        "sgl": "vlinder",
+        "pl": "vlinders"
+      },
+      "hagedis": {
+        "sgl": "hagedis",
+        "pl": "hagedissen"
+      },
+      "spin": {
+        "sgl": "spin",
+        "pl": "spinnen"
+      }
+    }
+  },
+  "AUX": {
+    "fr": {
+      "je": "ai",
+      "tu": "as",
+      "il": "a",
+      "nous": "avons",
+      "vous": "avez",
+      "ils": "ont"
+    },
+    "nl": {
+      "ik": "heb",
+      "jij": "hebt",
+      "hij": "heeft",
+      "wij": "hebben",
+      "jullie": "hebben",
+      "zijpl": "hebben"
+    }
+  },
+  "VERBS": {
+    "fr": {
+      "mange": {
+        "present": {
+          "je": "mange",
+          "tu": "manges",
+          "il": "mange",
+          "nous": "mangeons",
+          "vous": "mangez",
+          "ils": "mangent"
+        },
+        "participle": "mangé"
+      },
+      "voit": {
+        "present": {
+          "je": "vois",
+          "tu": "vois",
+          "il": "voit",
+          "nous": "voyons",
+          "vous": "voyez",
+          "ils": "voient"
+        },
+        "participle": "vu"
+      },
+      "aime": {
+        "present": {
+          "je": "aime",
+          "tu": "aimes",
+          "il": "aime",
+          "nous": "aimons",
+          "vous": "aimez",
+          "ils": "aiment"
+        },
+        "participle": "aimé"
+      },
+      "cherche": {
+        "present": {
+          "je": "cherche",
+          "tu": "cherches",
+          "il": "cherche",
+          "nous": "cherchons",
+          "vous": "cherchez",
+          "ils": "cherchent"
+        },
+        "participle": "cherché"
+      },
+      "aide": {
+        "present": {
+          "je": "aide",
+          "tu": "aides",
+          "il": "aide",
+          "nous": "aidons",
+          "vous": "aidez",
+          "ils": "aident"
+        },
+        "participle": "aidé"
+      },
+      "suit": {
+        "present": {
+          "je": "suis",
+          "tu": "suis",
+          "il": "suit",
+          "nous": "suivons",
+          "vous": "suivez",
+          "ils": "suivent"
+        },
+        "participle": "suivi"
+      },
+      "frappe": {
+        "present": {
+          "je": "frappe",
+          "tu": "frappes",
+          "il": "frappe",
+          "nous": "frapons",
+          "vous": "frappez",
+          "ils": "frappent"
+        },
+        "participle": "frappé"
+      },
+      "porte": {
+        "present": {
+          "je": "porte",
+          "tu": "portes",
+          "il": "porte",
+          "nous": "portons",
+          "vous": "portez",
+          "ils": "portent"
+        },
+        "participle": "porté"
+      },
+      "embrasse": {
+        "present": {
+          "je": "embrasse",
+          "tu": "embrasses",
+          "il": "embrasse",
+          "nous": "embrassons",
+          "vous": "embrassez",
+          "ils": "embrassent"
+        },
+        "participle": "embrassé"
+      },
+      "chasse": {
+        "present": {
+          "je": "chasse",
+          "tu": "chasses",
+          "il": "chasse",
+          "nous": "chassons",
+          "vous": "chassez",
+          "ils": "chassent"
+        },
+        "participle": "chassé"
+      },
+      "observe": {
+        "present": {
+          "je": "observe",
+          "tu": "observes",
+          "il": "observe",
+          "nous": "observons",
+          "vous": "observez",
+          "ils": "observent"
+        },
+        "participle": "observé"
+      },
+      "soigne": {
+        "present": {
+          "je": "soigne",
+          "tu": "soignes",
+          "il": "soigne",
+          "nous": "soignons",
+          "vous": "soignez",
+          "ils": "soignent"
+        },
+        "participle": "soigné"
+      },
+      "poursuit": {
+        "present": {
+          "je": "poursuis",
+          "tu": "poursuis",
+          "il": "poursuit",
+          "nous": "poursuivons",
+          "vous": "poursuivez",
+          "ils": "poursuivent"
+        },
+        "participle": "poursuivi"
+      },
+      "attaque": {
+        "present": {
+          "je": "attaque",
+          "tu": "attaques",
+          "il": "attaque",
+          "nous": "attaquons",
+          "vous": "attaquez",
+          "ils": "attaquent"
+        },
+        "participle": "attaqué"
+      },
+      "sauve": {
+        "present": {
+          "je": "sauve",
+          "tu": "sauves",
+          "il": "sauve",
+          "nous": "sauvons",
+          "vous": "sauvez",
+          "ils": "sauvent"
+        },
+        "participle": "sauvé"
+      },
+      "réconforte": {
+        "present": {
+          "je": "réconforte",
+          "tu": "réconfortes",
+          "il": "réconforte",
+          "nous": "réconfortons",
+          "vous": "réconfortez",
+          "ils": "réconfortent"
+        },
+        "participle": "réconforté"
+      },
+      "repousse": {
+        "present": {
+          "je": "repousse",
+          "tu": "repousses",
+          "il": "repousse",
+          "nous": "repoussons",
+          "vous": "repoussez",
+          "ils": "repoussent"
+        },
+        "participle": "repoussé"
+      },
+      "regarde": {
+        "present": {
+          "je": "regarde",
+          "tu": "regardes",
+          "il": "regarde",
+          "nous": "regardons",
+          "vous": "regardez",
+          "ils": "regardent"
+        },
+        "participle": "regardé"
+      },
+      "ignore": {
+        "present": {
+          "je": "ignore",
+          "tu": "ignores",
+          "il": "ignore",
+          "nous": "ignorons",
+          "vous": "ignorez",
+          "ils": "ignorent"
+        },
+        "participle": "ignoré"
+      },
+      "donne": {
+        "present": {
+          "je": "donne",
+          "tu": "donnes",
+          "il": "donne",
+          "nous": "donnons",
+          "vous": "donnez",
+          "ils": "donnent"
+        },
+        "participle": "donné"
+      },
+      "prend": {
+        "present": {
+          "je": "prends",
+          "tu": "prends",
+          "il": "prend",
+          "nous": "prenons",
+          "vous": "prenez",
+          "ils": "prennent"
+        },
+        "participle": "pris"
+      },
+      "ouvre": {
+        "present": {
+          "je": "ouvre",
+          "tu": "ouvres",
+          "il": "ouvre",
+          "nous": "ouvrons",
+          "vous": "ouvrez",
+          "ils": "ouvrent"
+        },
+        "participle": "ouvert"
+      },
+      "ferme": {
+        "present": {
+          "je": "ferme",
+          "tu": "fermes",
+          "il": "ferme",
+          "nous": "fermons",
+          "vous": "fermez",
+          "ils": "ferment"
+        },
+        "participle": "fermé"
+      },
+      "trouve": {
+        "present": {
+          "je": "trouve",
+          "tu": "trouves",
+          "il": "trouve",
+          "nous": "trouvons",
+          "vous": "trouvez",
+          "ils": "trouvent"
+        },
+        "participle": "trouvé"
+      },
+      "perd": {
+        "present": {
+          "je": "perds",
+          "tu": "perds",
+          "il": "perd",
+          "nous": "perdons",
+          "vous": "perdez",
+          "ils": "perdent"
+        },
+        "participle": "perdu"
+      },
+      "attrape": {
+        "present": {
+          "je": "attrape",
+          "tu": "attrapes",
+          "il": "attrape",
+          "nous": "attrapons",
+          "vous": "attrapez",
+          "ils": "attrapent"
+        },
+        "participle": "attrapé"
+      },
+      "tire": {
+        "present": {
+          "je": "tire",
+          "tu": "tires",
+          "il": "tire",
+          "nous": "tirons",
+          "vous": "tirez",
+          "ils": "tirent"
+        },
+        "participle": "tiré"
+      },
+      "lance": {
+        "present": {
+          "je": "lance",
+          "tu": "lances",
+          "il": "lance",
+          "nous": "lançons",
+          "vous": "lancez",
+          "ils": "lancent"
+        },
+        "participle": "lancé"
+      },
+      "casse": {
+        "present": {
+          "je": "casse",
+          "tu": "casses",
+          "il": "casse",
+          "nous": "cassons",
+          "vous": "cassez",
+          "ils": "cassent"
+        },
+        "participle": "cassé"
+      },
+      "garde": {
+        "present": {
+          "je": "garde",
+          "tu": "gardes",
+          "il": "garde",
+          "nous": "gardons",
+          "vous": "gardez",
+          "ils": "gardent"
+        },
+        "participle": "gardé"
+      },
+      "construit": {
+        "present": {
+          "je": "construis",
+          "tu": "construis",
+          "il": "construit",
+          "nous": "construisons",
+          "vous": "construisez",
+          "ils": "construisent"
+        },
+        "participle": "construit"
+      },
+      "détruit": {
+        "present": {
+          "je": "détruis",
+          "tu": "détruis",
+          "il": "détruit",
+          "nous": "détruisons",
+          "vous": "détruisez",
+          "ils": "détruisent"
+        },
+        "participle": "détruit"
+      },
+      "protège": {
+        "present": {
+          "je": "protège",
+          "tu": "protèges",
+          "il": "protège",
+          "nous": "protégeons",
+          "vous": "protégez",
+          "ils": "protègent"
+        },
+        "participle": "protégé"
+      },
+      "enseigne": {
+        "present": {
+          "je": "enseigne",
+          "tu": "enseignes",
+          "il": "enseigne",
+          "nous": "enseignons",
+          "vous": "enseignez",
+          "ils": "enseignent"
+        },
+        "participle": "enseigné"
+      },
+      "écoute": {
+        "present": {
+          "je": "écoute",
+          "tu": "écoutes",
+          "il": "écoute",
+          "nous": "écoutons",
+          "vous": "écoutez",
+          "ils": "écoutent"
+        },
+        "participle": "écouté"
+      },
+      "parle": {
+        "present": {
+          "je": "parle",
+          "tu": "parles",
+          "il": "parle",
+          "nous": "parlons",
+          "vous": "parlez",
+          "ils": "parlent"
+        },
+        "participle": "parlé"
+      },
+      "répond": {
+        "present": {
+          "je": "réponds",
+          "tu": "réponds",
+          "il": "répond",
+          "nous": "répondons",
+          "vous": "répondez",
+          "ils": "répondent"
+        },
+        "participle": "répondu"
+      },
+      "attend": {
+        "present": {
+          "je": "attends",
+          "tu": "attends",
+          "il": "attend",
+          "nous": "attendons",
+          "vous": "attendez",
+          "ils": "attendent"
+        },
+        "participle": "attendu"
+      }
+    },
+    "nl": {
+      "eet": {
+        "present": {
+          "ik": "eet",
+          "jij": "eet",
+          "hij": "eet",
+          "wij": "eten",
+          "jullie": "eten",
+          "zijpl": "eten"
+        },
+        "participle": "gegeten"
+      },
+      "ziet": {
+        "present": {
+          "ik": "zie",
+          "jij": "ziet",
+          "hij": "ziet",
+          "wij": "zien",
+          "jullie": "zien",
+          "zijpl": "zien"
+        },
+        "participle": "gezien"
+      },
+      "mag": {
+        "present": {
+          "ik": "mag",
+          "jij": "mag",
+          "hij": "mag",
+          "wij": "mogen",
+          "jullie": "mogen",
+          "zijpl": "mogen"
+        },
+        "participle": "gemogen"
+      },
+      "zoekt": {
+        "present": {
+          "ik": "zoek",
+          "jij": "zoekt",
+          "hij": "zoekt",
+          "wij": "zoeken",
+          "jullie": "zoeken",
+          "zijpl": "zoeken"
+        },
+        "participle": "gezocht"
+      },
+      "helpt": {
+        "present": {
+          "ik": "help",
+          "jij": "helpt",
+          "hij": "helpt",
+          "wij": "helpen",
+          "jullie": "helpen",
+          "zijpl": "helpen"
+        },
+        "participle": "geholpen"
+      },
+      "volgt": {
+        "present": {
+          "ik": "volg",
+          "jij": "volgt",
+          "hij": "volgt",
+          "wij": "volgen",
+          "jullie": "volgen",
+          "zijpl": "volgen"
+        },
+        "participle": "gevolgd"
+      },
+      "slaat": {
+        "present": {
+          "ik": "sla",
+          "jij": "slaat",
+          "hij": "slaat",
+          "wij": "slaan",
+          "jullie": "slaan",
+          "zijpl": "slaan"
+        },
+        "participle": "geslagen"
+      },
+      "draagt": {
+        "present": {
+          "ik": "draag",
+          "jij": "draagt",
+          "hij": "draagt",
+          "wij": "dragen",
+          "jullie": "dragen",
+          "zijpl": "dragen"
+        },
+        "participle": "gedragen"
+      },
+      "zoent": {
+        "present": {
+          "ik": "zoen",
+          "jij": "zoent",
+          "hij": "zoent",
+          "wij": "zoenen",
+          "jullie": "zoenen",
+          "zijpl": "zoenen"
+        },
+        "participle": "gezoend"
+      },
+      "jaagt": {
+        "present": {
+          "ik": "jaag",
+          "jij": "jaagt",
+          "hij": "jaagt",
+          "wij": "jagen",
+          "jullie": "jagen",
+          "zijpl": "jagen"
+        },
+        "participle": "gejaagd"
+      },
+      "observeert": {
+        "present": {
+          "ik": "observeer",
+          "jij": "observeert",
+          "hij": "observeert",
+          "wij": "observeren",
+          "jullie": "observeren",
+          "zijpl": "observeren"
+        },
+        "participle": "geobserveerd"
+      },
+      "verzorgt": {
+        "present": {
+          "ik": "verzorg",
+          "jij": "verzorgt",
+          "hij": "verzorgt",
+          "wij": "verzorgen",
+          "jullie": "verzorgen",
+          "zijpl": "verzorgen"
+        },
+        "participle": "verzorgd"
+      },
+      "achtervolgt": {
+        "present": {
+          "ik": "achtervolg",
+          "jij": "achtervolgt",
+          "hij": "achtervolgt",
+          "wij": "achtervolgen",
+          "jullie": "achtervolgen",
+          "zijpl": "achtervolgen"
+        },
+        "participle": "achtervolgd"
+      },
+      "valt": {
+        "present": {
+          "ik": "val",
+          "jij": "valt",
+          "hij": "valt",
+          "wij": "vallen",
+          "jullie": "vallen",
+          "zijpl": "vallen"
+        },
+        "participle": "aangevallen"
+      },
+      "redt": {
+        "present": {
+          "ik": "red",
+          "jij": "redt",
+          "hij": "redt",
+          "wij": "redden",
+          "jullie": "redden",
+          "zijpl": "redden"
+        },
+        "participle": "gered"
+      },
+      "troost": {
+        "present": {
+          "ik": "troost",
+          "jij": "troost",
+          "hij": "troost",
+          "wij": "troosten",
+          "jullie": "troosten",
+          "zijpl": "troosten"
+        },
+        "participle": "getroost"
+      },
+      "duwt": {
+        "present": {
+          "ik": "duw",
+          "jij": "duwt",
+          "hij": "duwt",
+          "wij": "duwen",
+          "jullie": "duwen",
+          "zijpl": "duwen"
+        },
+        "participle": "geduwd"
+      },
+      "bekijkt": {
+        "present": {
+          "ik": "bekijk",
+          "jij": "bekijkt",
+          "hij": "bekijkt",
+          "wij": "bekijken",
+          "jullie": "bekijken",
+          "zijpl": "bekijken"
+        },
+        "participle": "bekeken"
+      },
+      "negeert": {
+        "present": {
+          "ik": "negeer",
+          "jij": "negeert",
+          "hij": "negeert",
+          "wij": "negeren",
+          "jullie": "negeren",
+          "zijpl": "negeren"
+        },
+        "participle": "genegeerd"
+      },
+      "geeft": {
+        "present": {
+          "ik": "geef",
+          "jij": "geeft",
+          "hij": "geeft",
+          "wij": "geven",
+          "jullie": "geven",
+          "zijpl": "geven"
+        },
+        "participle": "gegeven"
+      },
+      "neemt": {
+        "present": {
+          "ik": "neem",
+          "jij": "neemt",
+          "hij": "neemt",
+          "wij": "nemen",
+          "jullie": "nemen",
+          "zijpl": "nemen"
+        },
+        "participle": "genomen"
+      },
+      "opent": {
+        "present": {
+          "ik": "open",
+          "jij": "opent",
+          "hij": "opent",
+          "wij": "openen",
+          "jullie": "openen",
+          "zijpl": "openen"
+        },
+        "participle": "geopend"
+      },
+      "sluit": {
+        "present": {
+          "ik": "sluit",
+          "jij": "sluit",
+          "hij": "sluit",
+          "wij": "sluiten",
+          "jullie": "sluiten",
+          "zijpl": "sluiten"
+        },
+        "participle": "gesloten"
+      },
+      "vindt": {
+        "present": {
+          "ik": "vind",
+          "jij": "vindt",
+          "hij": "vindt",
+          "wij": "vinden",
+          "jullie": "vinden",
+          "zijpl": "vinden"
+        },
+        "participle": "gevonden"
+      },
+      "verliest": {
+        "present": {
+          "ik": "verlies",
+          "jij": "verliest",
+          "hij": "verliest",
+          "wij": "verliezen",
+          "jullie": "verliezen",
+          "zijpl": "verliezen"
+        },
+        "participle": "verloren"
+      },
+      "vangt": {
+        "present": {
+          "ik": "vang",
+          "jij": "vangt",
+          "hij": "vangt",
+          "wij": "vangen",
+          "jullie": "vangen",
+          "zijpl": "vangen"
+        },
+        "participle": "gevangen"
+      },
+      "trekt": {
+        "present": {
+          "ik": "trek",
+          "jij": "trekt",
+          "hij": "trekt",
+          "wij": "trekken",
+          "jullie": "trekken",
+          "zijpl": "trekken"
+        },
+        "participle": "getrokken"
+      },
+      "gooit": {
+        "present": {
+          "ik": "gooi",
+          "jij": "gooit",
+          "hij": "gooit",
+          "wij": "gooien",
+          "jullie": "gooien",
+          "zijpl": "gooien"
+        },
+        "participle": "gegooid"
+      },
+      "breekt": {
+        "present": {
+          "ik": "breek",
+          "jij": "breekt",
+          "hij": "breekt",
+          "wij": "breken",
+          "jullie": "breken",
+          "zijpl": "breken"
+        },
+        "participle": "gebroken"
+      },
+      "bewaart": {
+        "present": {
+          "ik": "bewaard",
+          "jij": "bewaart",
+          "hij": "bewaart",
+          "wij": "bewaren",
+          "jullie": "bewaren",
+          "zijpl": "bewaren"
+        },
+        "participle": "bewaard"
+      },
+      "bouwt": {
+        "present": {
+          "ik": "bouw",
+          "jij": "bouwt",
+          "hij": "bouwt",
+          "wij": "bouwen",
+          "jullie": "bouwen",
+          "zijpl": "bouwen"
+        },
+        "participle": "gebouwd"
+      },
+      "vernietigt": {
+        "present": {
+          "ik": "vernietig",
+          "jij": "vernietigt",
+          "hij": "vernietigt",
+          "wij": "vernietigen",
+          "jullie": "vernietigen",
+          "zijpl": "vernietigen"
+        },
+        "participle": "vernietigd"
+      },
+      "beschermt": {
+        "present": {
+          "ik": "bescherm",
+          "jij": "beschermt",
+          "hij": "beschermt",
+          "wij": "beschermen",
+          "jullie": "beschermen",
+          "zijpl": "beschermen"
+        },
+        "participle": "beschermd"
+      },
+      "onderwijst": {
+        "present": {
+          "ik": "onderwijs",
+          "jij": "onderwijst",
+          "hij": "onderwijst",
+          "wij": "onderwijzen",
+          "jullie": "onderwijzen",
+          "zijpl": "onderwijzen"
+        },
+        "participle": "onderwezen"
+      },
+      "luistert": {
+        "present": {
+          "ik": "luister",
+          "jij": "luistert",
+          "hij": "luistert",
+          "wij": "luisteren",
+          "jullie": "luisteren",
+          "zijpl": "luisteren"
+        },
+        "participle": "geluisterd"
+      },
+      "spreekt": {
+        "present": {
+          "ik": "spreek",
+          "jij": "spreekt",
+          "hij": "spreekt",
+          "wij": "spreken",
+          "jullie": "spreken",
+          "zijpl": "spreken"
+        },
+        "participle": "gesproken"
+      },
+      "antwoordt": {
+        "present": {
+          "ik": "antwoord",
+          "jij": "antwoordt",
+          "hij": "antwoordt",
+          "wij": "antwoorden",
+          "jullie": "antwoorden",
+          "zijpl": "antwoorden"
+        },
+        "participle": "geantwoord"
+      },
+      "wacht": {
+        "present": {
+          "ik": "wacht",
+          "jij": "wacht",
+          "hij": "wacht",
+          "wij": "wachten",
+          "jullie": "wachten",
+          "zijpl": "wachten"
+        },
+        "participle": "gewacht"
+      }
+    }
+  }
+}
