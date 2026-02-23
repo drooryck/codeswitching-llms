@@ -8,7 +8,7 @@ PROPS=(0.5)
 RUNS=(1)
 EVAL_PROP=0.05
 
-OUTPUT_ROOT=/n/home06/drooryck/codeswitching-llms/feb_exp/results/feb19
+OUTPUT_ROOT=/n/netscratch/dam_lab/Lab/drooryck/codeswitching-llms/feb_exp/results/feb20
 CONFIG_JSON=/n/home06/drooryck/codeswitching-llms/feb_exp/configs/default_model.json
 DATA_DIR=/n/home06/drooryck/codeswitching-llms/feb_exp/data/data_no_plurality_mixing
 LEXICON=/n/home06/drooryck/codeswitching-llms/feb_exp/data/lexicon_sep22.json

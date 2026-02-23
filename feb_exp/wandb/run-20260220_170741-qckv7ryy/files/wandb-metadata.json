@@ -1,0 +1,78 @@
+{
+  "os": "Linux-4.18.0-553.44.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "python": "CPython 3.10.13",
+  "startedAt": "2026-02-20T22:07:41.799625Z",
+  "program": "<stdin>",
+  "git": {
+    "remote": "git@github.com:drooryck/codeswitching-llms.git",
+    "commit": "ec1028aaf837941c16872e2308b1873502a17cd6"
+  },
+  "email": "drooryck10@gmail.com",
+  "root": "/n/home06/drooryck/codeswitching-llms/feb_exp",
+  "host": "holygpu8a25205.rc.fas.harvard.edu",
+  "executable": "/n/home06/drooryck/envs/codeswitching-py310/bin/python",
+  "cpu_count": 64,
+  "cpu_count_logical": 64,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "53660876800",
+      "used": "20882120704"
+    }
+  },
+  "memory": {
+    "total": "540131713024"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-fd037616-2c33-21df-e054-df4a68f25b3a"
+    }
+  ],
+  "cudaVersion": "12.9",
+  "slurm": {
+    "cluster_name": "odyssey",
+    "conf": "/etc/slurm/slurm.conf",
+    "cpus_on_node": "4",
+    "cpus_per_task": "4",
+    "gpus_on_node": "1",
+    "gtids": "0",
+    "job_account": "dam_lab",
+    "job_cpus_per_node": "4",
+    "job_end_time": "1771653959",
+    "job_gid": "10830",
+    "job_gpus": "1",
+    "job_id": "61378927",
+    "job_name": "feb20_sweep_no_plura",
+    "job_nodelist": "holygpu8a25205",
+    "job_num_nodes": "1",
+    "job_partition": "seas_gpu",
+    "job_qos": "normal",
+    "job_start_time": "1771610759",
+    "job_uid": "63854",
+    "job_user": "drooryck",
+    "jobid": "61378927",
+    "localid": "0",
+    "mem_per_node": "32768",
+    "nnodes": "1",
+    "nodeid": "0",
+    "nodelist": "holygpu8a25205",
+    "oom_kill_step": "0",
+    "prio_process": "0",
+    "procid": "0",
+    "script_context": "prolog_task",
+    "stepmgr": "holygpu8a25205",
+    "submit_dir": "/n/home06/drooryck/codeswitching-llms/feb_exp",
+    "submit_host": "holylogin07.rc.fas.harvard.edu",
+    "task_pid": "350938",
+    "tasks_per_node": "1",
+    "topology_addr": "main.holyoke.holyhdr.holygpu8a25205",
+    "topology_addr_pattern": "switch.switch.switch.node",
+    "tres_per_task": "cpu=4"
+  },
+  "writerId": "6bv26i00n2ks0givkt5l3up69dbn6v3r"
+}

@@ -177,7 +177,177 @@ class BilingualPlotter:
         plt.close(fig)
         logger.info(f"Saved plot to {output_path}")
 
+    def _plot_dual_panel_with_runs(
+        self,
+        fr_col: str,
+        nl_col: str,
+        title: str,
+        ylabel: str,
+        output_path: Path,
+        ylim: Optional[tuple[float, float]] = (0, 1),
+    ) -> None:
+        """Two side-by-side panels (French / Dutch test sentences) with one metric each.
+        Plots individual run trajectories, median (thick black dashed), and mean (red dotted)."""
+        self.setup_plot_style()
+        df = self.results_df.sort_values(["prop", "run_id"])
 
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
+        plt.rcParams.update({
+            "axes.titlesize": 14,
+            "axes.labelsize": 12,
+            "xtick.labelsize": 10,
+            "ytick.labelsize": 10,
+        })
+
+        def plot_panel(ax, col: str, subtitle: str):
+            run_ids = df["run_id"].unique()
+            for run_id in run_ids:
+                run_df = df[df["run_id"] == run_id].sort_values("prop")
+                ax.plot(
+                    run_df["prop"],
+                    run_df[col],
+                    color="gray",
+                    alpha=0.4,
+                    linewidth=1,
+                    zorder=1,
+                )
+            medians = df.groupby("prop")[col].median()
+            means = df.groupby("prop")[col].mean()
+            ax.plot(
+                medians.index,
+                medians.values,
+                color="black",
+                linewidth=2.5,
+                linestyle="--",
+                label="Median",
+                zorder=3,
+            )
+            ax.plot(
+                means.index,
+                means.values,
+                color="red",
+                linewidth=1.5,
+                linestyle=":",
+                label="Mean",
+                zorder=2,
+            )
+            ax.set_title(subtitle, fontsize=13, pad=10, fontweight="semibold")
+            ax.set_xlabel("Proportion of French in Training Data")
+            ax.set_ylabel(ylabel)
+            ax.set_ylim(ylim)
+            ax.grid(True, linestyle="--", alpha=0.3)
+            ax.legend(loc="upper left", fontsize=10)
+
+        plot_panel(ax1, fr_col, "French test sentences")
+        plot_panel(ax2, nl_col, "Dutch test sentences")
+
+        n_runs = df.groupby("prop").size().iloc[0] if len(df) else 0
+        fig.suptitle(f"{title}\n({n_runs} runs per proportion)", fontsize=16, fontweight="bold", y=1.02)
+        fig.tight_layout()
+        fig.savefig(output_path, dpi=300, bbox_inches="tight")
+        plt.close(fig)
+        logger.info(f"Saved plot to {output_path}")
+
+    def _plot_dual_panel_multi_series(
+        self,
+        fr_series: list[tuple[str, str]],
+        nl_series: list[tuple[str, str]],
+        title: str,
+        ylabel: str,
+        output_path: Path,
+        ylim: Optional[tuple[float, float]] = (0, 1),
+    ) -> None:
+        """Two side-by-side panels; each panel has multiple series (col, label), each with median + mean."""
+        self.setup_plot_style()
+        df = self.results_df.sort_values(["prop", "run_id"])
+
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
+        plt.rcParams.update({
+            "axes.titlesize": 14,
+            "axes.labelsize": 12,
+            "xtick.labelsize": 10,
+            "ytick.labelsize": 10,
+        })
+        colors = ["#1f77b4", "#ff7f0e", "#2ca02c"]
+
+        def plot_panel(ax, series_list: list[tuple[str, str]], subtitle: str):
+            for idx, (col, label) in enumerate(series_list):
+                color = colors[idx % len(colors)]
+                medians = df.groupby("prop")[col].median()
+                means = df.groupby("prop")[col].mean()
+                ax.plot(
+                    medians.index,
+                    medians.values,
+                    color=color,
+                    linewidth=2.5,
+                    linestyle="--",
+                    label=f"{label} (median)",
+                    zorder=3,
+                )
+                ax.plot(
+                    means.index,
+                    means.values,
+                    color=color,
+                    linewidth=1.5,
+                    linestyle=":",
+                    label=f"{label} (mean)",
+                    zorder=2,
+                )
+            ax.set_title(subtitle, fontsize=13, pad=10, fontweight="semibold")
+            ax.set_xlabel("Proportion of French in Training Data")
+            ax.set_ylabel(ylabel)
+            ax.set_ylim(ylim)
+            ax.grid(True, linestyle="--", alpha=0.3)
+            ax.legend(loc="upper left", fontsize=9)
+
+        plot_panel(ax1, fr_series, "French test sentences")
+        plot_panel(ax2, nl_series, "Dutch test sentences")
+
+        n_runs = df.groupby("prop").size().iloc[0] if len(df) else 0
+        fig.suptitle(f"{title}\n({n_runs} runs per proportion)", fontsize=16, fontweight="bold", y=1.02)
+        fig.tight_layout()
+        fig.savefig(output_path, dpi=300, bbox_inches="tight")
+        plt.close(fig)
+        logger.info(f"Saved plot to {output_path}")
+
+    def plot_token_share_by_proportion(self, suffix: Optional[str] = None) -> None:
+        """Plot token share (proportion of tokens in expected language) by French training proportion.
+        Left: French test sentences (fr_avg_fr). Right: Dutch test sentences (nl_avg_nl).
+        If suffix is set (e.g. 'subject'), filename and title include it for ablation-specific plots."""
+        base = "token_share_by_proportion"
+        fname = f"{base}_{suffix}.png" if suffix else f"{base}.png"
+        title = f"Token share (expected language) - {suffix} ablation" if suffix else "Token share (expected language)"
+        self._plot_dual_panel_with_runs(
+            fr_col="fr_avg_fr",
+            nl_col="nl_avg_nl",
+            title=title,
+            ylabel="Proportion of tokens in expected language",
+            output_path=self.output_dir / fname,
+            ylim=(0, 1),
+        )
+
+    def plot_structure_followed_by_proportion(self, suffix: Optional[str] = None) -> None:
+        """Plot follows_fr, follows_nl, and follows_either (sum) by French training proportion.
+        Left: French test sentences. Right: Dutch test sentences. Three curves per panel."""
+        base = "structure_followed_by_proportion"
+        fname = f"{base}_{suffix}.png" if suffix else f"{base}.png"
+        title = f"Structure followed (FR / NL / either) - {suffix} ablation" if suffix else "Structure followed (FR / NL / either)"
+        self._plot_dual_panel_multi_series(
+            fr_series=[
+                ("fr_follows_fr", "follows FR"),
+                ("fr_follows_nl", "follows NL"),
+                ("fr_follows_either", "follows either (sum)"),
+            ],
+            nl_series=[
+                ("nl_follows_fr", "follows FR"),
+                ("nl_follows_nl", "follows NL"),
+                ("nl_follows_either", "follows either (sum)"),
+            ],
+            title=title,
+            ylabel="Proportion of test sentences",
+            output_path=self.output_dir / fname,
+            ylim=(0, 1),
+        )
 
     def plot_exact_match(self) -> None:
         """Plot exact match accuracy by French proportion."""
@@ -396,36 +566,29 @@ class BilingualPlotter:
 
     ## this prob shouldnt be a method here but whatever
     @classmethod
-    def create_plotter_from_run_metrics_dir(cls, metrics_dir: Path, plots_subdir: str = "plots") -> "BilingualPlotter":
+    def create_plotter_from_run_metrics_dir(
+        cls, metrics_dir: Path, plots_subdir: str = "plots", ablation_type: str = "none"
+    ) -> "BilingualPlotter":
         """Create plotter from a directory containing experiment run metrics.
 
         This factory method handles collecting and aggregating metrics from either:
         - A summary.csv file if it exists in the directory
-        - Or individual p*_run* directories containing metrics.json files
+        - Or individual p*_run* directories containing ablation_{ablation_type}_metrics.json (or metrics.json)
 
         The directory structure should follow the convention:
         metrics_dir/
             summary.csv  (optional)
             p20_run1/
-                metrics.json
-            p20_run2/
-                metrics.json
-            p50_run1/
-                metrics.json
+                ablation_none_metrics.json  (or ablation_subject_metrics.json, etc.)
             ...
 
         Args:
             metrics_dir: Path to directory containing experiment metrics
             plots_subdir: Name of subdirectory to save plots (default: "plots")
+            ablation_type: One of "none", "subject", "verb", "object" (default: "none")
 
         Returns:
             BilingualPlotter instance ready to create visualizations
-
-        Example:
-            ```python
-            plotter = BilingualPlotter.create_plotter_from_run_metrics_dir(Path("results/sweep"))
-            plotter.create_all_plots()
-            ```
 
         Raises:
             ValueError: If no valid results found in the directory
@@ -439,10 +602,13 @@ class BilingualPlotter:
             results_df = pd.read_csv(summary_path)
             return cls(results_df, plots_dir)
 
-        # Otherwise collect from individual runs
+        # Otherwise collect from individual runs (ablation_{ablation_type}_metrics.json or metrics.json)
         results = []
-        for run_dir in metrics_dir.glob("p*_run*"):
-            metrics_file = run_dir / "metrics.json"
+        metrics_filename = f"ablation_{ablation_type}_metrics.json"
+        for run_dir in sorted(metrics_dir.glob("p*_run*")):
+            metrics_file = run_dir / metrics_filename
+            if not metrics_file.exists():
+                metrics_file = run_dir / "metrics.json"
             if not metrics_file.exists():
                 logger.warning(f"No metrics found in {run_dir}")
                 continue
@@ -450,11 +616,14 @@ class BilingualPlotter:
             with open(metrics_file, 'r') as f:
                 metrics = json.load(f)
 
-            # Extract run parameters from directory name
+            # Extract run parameters from directory name (pXX.XX_runYY or p20_run1)
             dir_name = run_dir.name
             if dir_name.startswith("p") and "_run" in dir_name:
                 parts = dir_name.split("_run")
-                prop = int(parts[0][1:]) / 100.0
+                try:
+                    prop = float(parts[0][1:]) / 100.0
+                except ValueError:
+                    prop = int(parts[0][1:]) / 100.0
                 run_id = int(parts[1])
             else:
                 logger.warning(f"Could not parse proportion and run ID from {dir_name}")

@@ -1,0 +1,12 @@
+{"time":"2026-02-20T14:40:26.111957184-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T14:40:26.358456381-05:00","level":"INFO","msg":"stream: created new stream","id":"fdv88io3"}
+{"time":"2026-02-20T14:40:26.358478522-05:00","level":"INFO","msg":"stream: started","id":"fdv88io3"}
+{"time":"2026-02-20T14:40:26.358483824-05:00","level":"INFO","msg":"handler: started","stream_id":"fdv88io3"}
+{"time":"2026-02-20T14:40:26.358489962-05:00","level":"INFO","msg":"sender: started","stream_id":"fdv88io3"}
+{"time":"2026-02-20T14:40:26.358498266-05:00","level":"INFO","msg":"writer: started","stream_id":"fdv88io3"}
+{"time":"2026-02-20T14:44:35.489038354-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.003213672}],"total_operations":1}}
+{"time":"2026-02-20T14:44:35.953654183-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T14:44:36.121017355-05:00","level":"INFO","msg":"stream: closing","id":"fdv88io3"}
+{"time":"2026-02-20T14:44:36.121027112-05:00","level":"INFO","msg":"handler: closed","stream_id":"fdv88io3"}
+{"time":"2026-02-20T14:44:36.126495924-05:00","level":"INFO","msg":"sender: closed","stream_id":"fdv88io3"}
+{"time":"2026-02-20T14:44:36.126502241-05:00","level":"INFO","msg":"stream: closed","id":"fdv88io3"}

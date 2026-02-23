@@ -1,0 +1,12 @@
+{"time":"2026-02-20T18:01:13.544253441-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T18:01:13.789401269-05:00","level":"INFO","msg":"stream: created new stream","id":"tanxjzn9"}
+{"time":"2026-02-20T18:01:13.78942392-05:00","level":"INFO","msg":"stream: started","id":"tanxjzn9"}
+{"time":"2026-02-20T18:01:13.789431027-05:00","level":"INFO","msg":"writer: started","stream_id":"tanxjzn9"}
+{"time":"2026-02-20T18:01:13.789441742-05:00","level":"INFO","msg":"sender: started","stream_id":"tanxjzn9"}
+{"time":"2026-02-20T18:01:13.789437032-05:00","level":"INFO","msg":"handler: started","stream_id":"tanxjzn9"}
+{"time":"2026-02-20T18:05:15.70022193-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.015259778}],"total_operations":1}}
+{"time":"2026-02-20T18:05:16.187431622-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T18:05:16.384249622-05:00","level":"INFO","msg":"stream: closing","id":"tanxjzn9"}
+{"time":"2026-02-20T18:05:16.384261714-05:00","level":"INFO","msg":"handler: closed","stream_id":"tanxjzn9"}
+{"time":"2026-02-20T18:05:16.389593993-05:00","level":"INFO","msg":"sender: closed","stream_id":"tanxjzn9"}
+{"time":"2026-02-20T18:05:16.389599665-05:00","level":"INFO","msg":"stream: closed","id":"tanxjzn9"}

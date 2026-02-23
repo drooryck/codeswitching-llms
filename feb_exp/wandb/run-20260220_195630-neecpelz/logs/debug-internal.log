@@ -1,0 +1,12 @@
+{"time":"2026-02-20T19:56:31.043170969-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T19:56:31.288366258-05:00","level":"INFO","msg":"stream: created new stream","id":"neecpelz"}
+{"time":"2026-02-20T19:56:31.288386196-05:00","level":"INFO","msg":"stream: started","id":"neecpelz"}
+{"time":"2026-02-20T19:56:31.288398241-05:00","level":"INFO","msg":"writer: started","stream_id":"neecpelz"}
+{"time":"2026-02-20T19:56:31.288410554-05:00","level":"INFO","msg":"handler: started","stream_id":"neecpelz"}
+{"time":"2026-02-20T19:56:31.288402522-05:00","level":"INFO","msg":"sender: started","stream_id":"neecpelz"}
+{"time":"2026-02-20T20:08:13.929116618-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.003013201}],"total_operations":1}}
+{"time":"2026-02-20T20:08:14.333602142-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T20:08:14.500523639-05:00","level":"INFO","msg":"stream: closing","id":"neecpelz"}
+{"time":"2026-02-20T20:08:14.500532672-05:00","level":"INFO","msg":"handler: closed","stream_id":"neecpelz"}
+{"time":"2026-02-20T20:08:14.506117692-05:00","level":"INFO","msg":"sender: closed","stream_id":"neecpelz"}
+{"time":"2026-02-20T20:08:14.506129591-05:00","level":"INFO","msg":"stream: closed","id":"neecpelz"}

@@ -1,0 +1,12 @@
+{"time":"2026-02-20T22:35:23.512414763-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T22:35:23.761272331-05:00","level":"INFO","msg":"stream: created new stream","id":"elg28hwm"}
+{"time":"2026-02-20T22:35:23.761289266-05:00","level":"INFO","msg":"stream: started","id":"elg28hwm"}
+{"time":"2026-02-20T22:35:23.761297299-05:00","level":"INFO","msg":"writer: started","stream_id":"elg28hwm"}
+{"time":"2026-02-20T22:35:23.761301787-05:00","level":"INFO","msg":"sender: started","stream_id":"elg28hwm"}
+{"time":"2026-02-20T22:35:23.761308081-05:00","level":"INFO","msg":"handler: started","stream_id":"elg28hwm"}
+{"time":"2026-02-20T22:39:26.550232223-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.005556361}],"total_operations":1}}
+{"time":"2026-02-20T22:39:26.984616758-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T22:39:27.15055902-05:00","level":"INFO","msg":"stream: closing","id":"elg28hwm"}
+{"time":"2026-02-20T22:39:27.150567668-05:00","level":"INFO","msg":"handler: closed","stream_id":"elg28hwm"}
+{"time":"2026-02-20T22:39:27.155919276-05:00","level":"INFO","msg":"sender: closed","stream_id":"elg28hwm"}
+{"time":"2026-02-20T22:39:27.155925678-05:00","level":"INFO","msg":"stream: closed","id":"elg28hwm"}

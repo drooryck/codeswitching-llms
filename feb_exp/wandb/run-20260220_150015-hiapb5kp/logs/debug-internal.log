@@ -1,0 +1,12 @@
+{"time":"2026-02-20T15:00:15.729340737-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T15:00:15.973958797-05:00","level":"INFO","msg":"stream: created new stream","id":"hiapb5kp"}
+{"time":"2026-02-20T15:00:15.973977514-05:00","level":"INFO","msg":"stream: started","id":"hiapb5kp"}
+{"time":"2026-02-20T15:00:15.973985666-05:00","level":"INFO","msg":"writer: started","stream_id":"hiapb5kp"}
+{"time":"2026-02-20T15:00:15.973993146-05:00","level":"INFO","msg":"handler: started","stream_id":"hiapb5kp"}
+{"time":"2026-02-20T15:00:15.973995783-05:00","level":"INFO","msg":"sender: started","stream_id":"hiapb5kp"}
+{"time":"2026-02-20T15:04:19.370376004-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.000638998}],"total_operations":1}}
+{"time":"2026-02-20T15:04:19.762171284-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T15:04:20.02115304-05:00","level":"INFO","msg":"stream: closing","id":"hiapb5kp"}
+{"time":"2026-02-20T15:04:20.021167457-05:00","level":"INFO","msg":"handler: closed","stream_id":"hiapb5kp"}
+{"time":"2026-02-20T15:04:20.026642673-05:00","level":"INFO","msg":"sender: closed","stream_id":"hiapb5kp"}
+{"time":"2026-02-20T15:04:20.026649172-05:00","level":"INFO","msg":"stream: closed","id":"hiapb5kp"}

@@ -1,0 +1,12 @@
+{"time":"2026-02-20T20:02:07.386518642-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T20:02:07.618721204-05:00","level":"INFO","msg":"stream: created new stream","id":"huq922mq"}
+{"time":"2026-02-20T20:02:07.618743451-05:00","level":"INFO","msg":"stream: started","id":"huq922mq"}
+{"time":"2026-02-20T20:02:07.6187534-05:00","level":"INFO","msg":"writer: started","stream_id":"huq922mq"}
+{"time":"2026-02-20T20:02:07.618766076-05:00","level":"INFO","msg":"sender: started","stream_id":"huq922mq"}
+{"time":"2026-02-20T20:02:07.618760971-05:00","level":"INFO","msg":"handler: started","stream_id":"huq922mq"}
+{"time":"2026-02-20T20:06:11.470031541-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.000500191}],"total_operations":1}}
+{"time":"2026-02-20T20:06:11.939248804-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T20:06:12.11026424-05:00","level":"INFO","msg":"stream: closing","id":"huq922mq"}
+{"time":"2026-02-20T20:06:12.110276174-05:00","level":"INFO","msg":"handler: closed","stream_id":"huq922mq"}
+{"time":"2026-02-20T20:06:12.11562239-05:00","level":"INFO","msg":"sender: closed","stream_id":"huq922mq"}
+{"time":"2026-02-20T20:06:12.115637079-05:00","level":"INFO","msg":"stream: closed","id":"huq922mq"}

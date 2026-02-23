@@ -1,0 +1,12 @@
+{"time":"2026-02-20T13:50:45.696746556-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T13:50:46.751204465-05:00","level":"INFO","msg":"stream: created new stream","id":"bdjbi4ek"}
+{"time":"2026-02-20T13:50:46.751225096-05:00","level":"INFO","msg":"stream: started","id":"bdjbi4ek"}
+{"time":"2026-02-20T13:50:46.751232238-05:00","level":"INFO","msg":"writer: started","stream_id":"bdjbi4ek"}
+{"time":"2026-02-20T13:50:46.75123891-05:00","level":"INFO","msg":"sender: started","stream_id":"bdjbi4ek"}
+{"time":"2026-02-20T13:50:46.751246966-05:00","level":"INFO","msg":"handler: started","stream_id":"bdjbi4ek"}
+{"time":"2026-02-20T13:55:16.992148398-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.00306551}],"total_operations":1}}
+{"time":"2026-02-20T13:55:18.323681573-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T13:55:20.281791725-05:00","level":"INFO","msg":"stream: closing","id":"bdjbi4ek"}
+{"time":"2026-02-20T13:55:20.281803373-05:00","level":"INFO","msg":"handler: closed","stream_id":"bdjbi4ek"}
+{"time":"2026-02-20T13:55:20.287391206-05:00","level":"INFO","msg":"sender: closed","stream_id":"bdjbi4ek"}
+{"time":"2026-02-20T13:55:20.287407097-05:00","level":"INFO","msg":"stream: closed","id":"bdjbi4ek"}

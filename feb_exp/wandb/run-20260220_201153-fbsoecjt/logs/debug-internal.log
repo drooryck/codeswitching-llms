@@ -1,0 +1,12 @@
+{"time":"2026-02-20T20:11:53.730369583-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T20:11:54.009079029-05:00","level":"INFO","msg":"stream: created new stream","id":"fbsoecjt"}
+{"time":"2026-02-20T20:11:54.00910344-05:00","level":"INFO","msg":"stream: started","id":"fbsoecjt"}
+{"time":"2026-02-20T20:11:54.009115563-05:00","level":"INFO","msg":"sender: started","stream_id":"fbsoecjt"}
+{"time":"2026-02-20T20:11:54.009125267-05:00","level":"INFO","msg":"handler: started","stream_id":"fbsoecjt"}
+{"time":"2026-02-20T20:11:54.009113979-05:00","level":"INFO","msg":"writer: started","stream_id":"fbsoecjt"}
+{"time":"2026-02-20T20:15:58.678275865-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.000522712}],"total_operations":1}}
+{"time":"2026-02-20T20:15:59.07605236-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T20:15:59.218610611-05:00","level":"INFO","msg":"stream: closing","id":"fbsoecjt"}
+{"time":"2026-02-20T20:15:59.218620463-05:00","level":"INFO","msg":"handler: closed","stream_id":"fbsoecjt"}
+{"time":"2026-02-20T20:15:59.224080223-05:00","level":"INFO","msg":"sender: closed","stream_id":"fbsoecjt"}
+{"time":"2026-02-20T20:15:59.224086649-05:00","level":"INFO","msg":"stream: closed","id":"fbsoecjt"}

@@ -1,0 +1,12 @@
+{"time":"2026-02-21T00:11:54.954629789-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-21T00:11:55.197515256-05:00","level":"INFO","msg":"stream: created new stream","id":"bucbpdlp"}
+{"time":"2026-02-21T00:11:55.19753566-05:00","level":"INFO","msg":"stream: started","id":"bucbpdlp"}
+{"time":"2026-02-21T00:11:55.197544164-05:00","level":"INFO","msg":"writer: started","stream_id":"bucbpdlp"}
+{"time":"2026-02-21T00:11:55.197554213-05:00","level":"INFO","msg":"handler: started","stream_id":"bucbpdlp"}
+{"time":"2026-02-21T00:11:55.197559834-05:00","level":"INFO","msg":"sender: started","stream_id":"bucbpdlp"}
+{"time":"2026-02-21T00:23:32.399543203-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.003190243}],"total_operations":1}}
+{"time":"2026-02-21T00:23:32.877771991-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-21T00:23:33.046741757-05:00","level":"INFO","msg":"stream: closing","id":"bucbpdlp"}
+{"time":"2026-02-21T00:23:33.046750133-05:00","level":"INFO","msg":"handler: closed","stream_id":"bucbpdlp"}
+{"time":"2026-02-21T00:23:33.052217294-05:00","level":"INFO","msg":"sender: closed","stream_id":"bucbpdlp"}
+{"time":"2026-02-21T00:23:33.052222679-05:00","level":"INFO","msg":"stream: closed","id":"bucbpdlp"}

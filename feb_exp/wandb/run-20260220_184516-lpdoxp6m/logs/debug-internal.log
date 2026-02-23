@@ -1,0 +1,12 @@
+{"time":"2026-02-20T18:45:17.162111404-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T18:45:17.409534267-05:00","level":"INFO","msg":"stream: created new stream","id":"lpdoxp6m"}
+{"time":"2026-02-20T18:45:17.409555657-05:00","level":"INFO","msg":"stream: started","id":"lpdoxp6m"}
+{"time":"2026-02-20T18:45:17.409564249-05:00","level":"INFO","msg":"writer: started","stream_id":"lpdoxp6m"}
+{"time":"2026-02-20T18:45:17.409573684-05:00","level":"INFO","msg":"sender: started","stream_id":"lpdoxp6m"}
+{"time":"2026-02-20T18:45:17.409568172-05:00","level":"INFO","msg":"handler: started","stream_id":"lpdoxp6m"}
+{"time":"2026-02-20T18:49:19.406602006-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.009861341}],"total_operations":1}}
+{"time":"2026-02-20T18:49:19.822602095-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T18:49:19.989145414-05:00","level":"INFO","msg":"stream: closing","id":"lpdoxp6m"}
+{"time":"2026-02-20T18:49:19.98915607-05:00","level":"INFO","msg":"handler: closed","stream_id":"lpdoxp6m"}
+{"time":"2026-02-20T18:49:19.994449657-05:00","level":"INFO","msg":"sender: closed","stream_id":"lpdoxp6m"}
+{"time":"2026-02-20T18:49:19.994455495-05:00","level":"INFO","msg":"stream: closed","id":"lpdoxp6m"}

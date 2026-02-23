@@ -1,0 +1,12 @@
+{"time":"2026-02-20T15:54:35.889172417-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T15:54:36.137378989-05:00","level":"INFO","msg":"stream: created new stream","id":"be2swlpi"}
+{"time":"2026-02-20T15:54:36.13739999-05:00","level":"INFO","msg":"stream: started","id":"be2swlpi"}
+{"time":"2026-02-20T15:54:36.137405995-05:00","level":"INFO","msg":"writer: started","stream_id":"be2swlpi"}
+{"time":"2026-02-20T15:54:36.137411643-05:00","level":"INFO","msg":"handler: started","stream_id":"be2swlpi"}
+{"time":"2026-02-20T15:54:36.137418285-05:00","level":"INFO","msg":"sender: started","stream_id":"be2swlpi"}
+{"time":"2026-02-20T15:58:44.096043043-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.000443634}],"total_operations":1}}
+{"time":"2026-02-20T15:58:44.531541934-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T15:58:44.975448425-05:00","level":"INFO","msg":"stream: closing","id":"be2swlpi"}
+{"time":"2026-02-20T15:58:44.975462495-05:00","level":"INFO","msg":"handler: closed","stream_id":"be2swlpi"}
+{"time":"2026-02-20T15:58:44.980852997-05:00","level":"INFO","msg":"sender: closed","stream_id":"be2swlpi"}
+{"time":"2026-02-20T15:58:44.980868219-05:00","level":"INFO","msg":"stream: closed","id":"be2swlpi"}

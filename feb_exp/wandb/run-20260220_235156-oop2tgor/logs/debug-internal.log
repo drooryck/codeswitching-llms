@@ -1,0 +1,12 @@
+{"time":"2026-02-20T23:51:56.869726599-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T23:51:57.100361251-05:00","level":"INFO","msg":"stream: created new stream","id":"oop2tgor"}
+{"time":"2026-02-20T23:51:57.100378974-05:00","level":"INFO","msg":"stream: started","id":"oop2tgor"}
+{"time":"2026-02-20T23:51:57.100385845-05:00","level":"INFO","msg":"writer: started","stream_id":"oop2tgor"}
+{"time":"2026-02-20T23:51:57.100389594-05:00","level":"INFO","msg":"sender: started","stream_id":"oop2tgor"}
+{"time":"2026-02-20T23:51:57.100396384-05:00","level":"INFO","msg":"handler: started","stream_id":"oop2tgor"}
+{"time":"2026-02-20T23:56:02.872746322-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.000475096}],"total_operations":1}}
+{"time":"2026-02-20T23:56:03.285674556-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T23:56:03.444173825-05:00","level":"INFO","msg":"stream: closing","id":"oop2tgor"}
+{"time":"2026-02-20T23:56:03.444182594-05:00","level":"INFO","msg":"handler: closed","stream_id":"oop2tgor"}
+{"time":"2026-02-20T23:56:03.449530662-05:00","level":"INFO","msg":"sender: closed","stream_id":"oop2tgor"}
+{"time":"2026-02-20T23:56:03.449535402-05:00","level":"INFO","msg":"stream: closed","id":"oop2tgor"}

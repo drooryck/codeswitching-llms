@@ -1,0 +1,12 @@
+{"time":"2026-02-20T19:42:57.770450148-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T19:42:58.019058344-05:00","level":"INFO","msg":"stream: created new stream","id":"4pgrnyav"}
+{"time":"2026-02-20T19:42:58.019086806-05:00","level":"INFO","msg":"stream: started","id":"4pgrnyav"}
+{"time":"2026-02-20T19:42:58.019093685-05:00","level":"INFO","msg":"handler: started","stream_id":"4pgrnyav"}
+{"time":"2026-02-20T19:42:58.019093986-05:00","level":"INFO","msg":"writer: started","stream_id":"4pgrnyav"}
+{"time":"2026-02-20T19:42:58.019100082-05:00","level":"INFO","msg":"sender: started","stream_id":"4pgrnyav"}
+{"time":"2026-02-20T19:47:04.358869954-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.003032091}],"total_operations":1}}
+{"time":"2026-02-20T19:47:04.728421244-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T19:47:04.961344542-05:00","level":"INFO","msg":"stream: closing","id":"4pgrnyav"}
+{"time":"2026-02-20T19:47:04.961355108-05:00","level":"INFO","msg":"handler: closed","stream_id":"4pgrnyav"}
+{"time":"2026-02-20T19:47:04.96672123-05:00","level":"INFO","msg":"sender: closed","stream_id":"4pgrnyav"}
+{"time":"2026-02-20T19:47:04.966733475-05:00","level":"INFO","msg":"stream: closed","id":"4pgrnyav"}

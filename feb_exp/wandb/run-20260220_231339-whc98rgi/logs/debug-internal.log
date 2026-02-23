@@ -1,0 +1,12 @@
+{"time":"2026-02-20T23:13:40.103947951-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T23:13:40.347440119-05:00","level":"INFO","msg":"stream: created new stream","id":"whc98rgi"}
+{"time":"2026-02-20T23:13:40.347460703-05:00","level":"INFO","msg":"stream: started","id":"whc98rgi"}
+{"time":"2026-02-20T23:13:40.347470409-05:00","level":"INFO","msg":"writer: started","stream_id":"whc98rgi"}
+{"time":"2026-02-20T23:13:40.347477552-05:00","level":"INFO","msg":"sender: started","stream_id":"whc98rgi"}
+{"time":"2026-02-20T23:13:40.347473439-05:00","level":"INFO","msg":"handler: started","stream_id":"whc98rgi"}
+{"time":"2026-02-20T23:17:42.249829432-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.007519874}],"total_operations":1}}
+{"time":"2026-02-20T23:17:42.658999735-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T23:17:42.782917192-05:00","level":"INFO","msg":"stream: closing","id":"whc98rgi"}
+{"time":"2026-02-20T23:17:42.782926479-05:00","level":"INFO","msg":"handler: closed","stream_id":"whc98rgi"}
+{"time":"2026-02-20T23:17:42.788194825-05:00","level":"INFO","msg":"sender: closed","stream_id":"whc98rgi"}
+{"time":"2026-02-20T23:17:42.78820825-05:00","level":"INFO","msg":"stream: closed","id":"whc98rgi"}

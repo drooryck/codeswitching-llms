@@ -1,0 +1,256 @@
+2026-02-20 21:46:43,053 |     INFO | Starting experiment: prop=0.04, run_id=3
+2026-02-20 21:46:43,053 |     INFO | Loading data...
+2026-02-20 21:46:44,090 |     INFO | Initial train set: 591744 total | FR: 295872 | NL: 295872
+2026-02-20 21:46:44,097 |     INFO | Test set: 65504 total | FR: 32752 | NL: 32752
+2026-02-20 21:46:44,139 |     INFO | Validation set (from TEST): 6551 total | FR: 3276 | NL: 3275
+2026-02-20 21:46:44,145 |     INFO | Final eval test set (post-val split): 58953 total | FR: 29476 | NL: 29477
+2026-02-20 21:46:44,258 |     INFO | Balanced train pool (head): 591744 total | FR: 295872 | NL: 295872
+2026-02-20 21:46:44,355 |     INFO | Final training set (after proportion selection):
+2026-02-20 21:46:44,355 |     INFO |   Total: 295872 | FR: 11834 (4.0%) | NL: 284038 (96.0%)
+2026-02-20 21:46:44,355 |     INFO |   Target proportion: FR=4.0%, NL=96.0%
+2026-02-20 21:46:44,356 |     INFO | Preparing held-out test data with ablations...
+2026-02-20 21:46:48,904 |     INFO | Created ablated final eval set with 235812 total examples
+2026-02-20 21:46:48,905 |     INFO | Creating tokenizer and datasets...
+2026-02-20 21:47:16,876 |     INFO | Creating model...
+2026-02-20 21:47:16,876 |     INFO | Using device: cuda
+2026-02-20 21:47:17,250 |     INFO | Creating trainer...
+2026-02-20 21:47:17,358 |  WARNING | Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+2026-02-20 21:47:17,388 |     INFO | Starting training...
+  0%|          | 0/4623 [00:00<?, ?it/s]`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+  2%|▏         | 100/4623 [00:07<03:24, 22.15it/s]2026-02-20 21:47:25,218 |     INFO | Rich metrics callback (step=100)...
+{'loss': 3.1085, 'grad_norm': 4.696377754211426, 'learning_rate': 3.960000000000001e-05, 'epoch': 0.02}
+2026-02-20 21:47:28,475 |     INFO |   eval loss: overall=2.2987  fr=3.2234  nl=1.3737
+{'eval_loss': 2.2986555099487305, 'eval_tok_acc': 0.6349521338072704, 'eval_exact_match': 0.010380094642039383, 'eval_runtime': 2.641, 'eval_samples_per_second': 2480.514, 'eval_steps_per_second': 155.245, 'epoch': 0.02}
+2026-02-20 21:47:30,125 |     INFO |   Logged 13 metrics to wandb
+  4%|▍         | 200/4623 [00:19<03:20, 22.06it/s]2026-02-20 21:47:37,244 |     INFO | Rich metrics callback (step=200)...
+2026-02-20 21:47:40,506 |     INFO |   eval loss: overall=1.1826  fr=2.3507  nl=0.0141
+{'loss': 0.5891, 'grad_norm': 0.20572243630886078, 'learning_rate': 7.960000000000001e-05, 'epoch': 0.04}
+{'eval_loss': 1.1825617551803589, 'eval_tok_acc': 0.7817127156159365, 'eval_exact_match': 0.49626011295985345, 'eval_runtime': 2.5773, 'eval_samples_per_second': 2541.804, 'eval_steps_per_second': 159.081, 'epoch': 0.04}
+2026-02-20 21:47:42,138 |     INFO |   Logged 13 metrics to wandb
+  6%|▋         | 300/4623 [00:31<03:16, 21.99it/s]2026-02-20 21:47:49,312 |     INFO | Rich metrics callback (step=300)...
+2026-02-20 21:47:52,975 |     INFO |   eval loss: overall=1.0101  fr=2.0143  nl=0.0056
+{'loss': 0.0722, 'grad_norm': 0.39630016684532166, 'learning_rate': 0.00011960000000000001, 'epoch': 0.06}
+{'eval_loss': 1.010088324546814, 'eval_tok_acc': 0.7864012037420677, 'eval_exact_match': 0.4982445428178904, 'eval_runtime': 2.6093, 'eval_samples_per_second': 2510.632, 'eval_steps_per_second': 157.13, 'epoch': 0.06}
+2026-02-20 21:47:54,616 |     INFO |   Logged 13 metrics to wandb
+  9%|▊         | 400/4623 [00:43<03:09, 22.32it/s]2026-02-20 21:48:01,702 |     INFO | Rich metrics callback (step=400)...
+2026-02-20 21:48:04,954 |     INFO |   eval loss: overall=0.5252  fr=1.0436  nl=0.0066
+{'loss': 0.0467, 'grad_norm': 0.5331655144691467, 'learning_rate': 0.0001596, 'epoch': 0.09}
+{'eval_loss': 0.5252038240432739, 'eval_tok_acc': 0.8953703905619643, 'eval_exact_match': 0.5625095405281636, 'eval_runtime': 2.577, 'eval_samples_per_second': 2542.111, 'eval_steps_per_second': 159.1, 'epoch': 0.09}
+2026-02-20 21:48:06,583 |     INFO |   Logged 13 metrics to wandb
+ 11%|█         | 500/4623 [00:55<03:05, 22.21it/s]2026-02-20 21:48:13,682 |     INFO | Rich metrics callback (step=500)...
+2026-02-20 21:48:16,930 |     INFO |   eval loss: overall=0.4180  fr=0.8154  nl=0.0205
+{'loss': 0.0195, 'grad_norm': 0.11836528033018112, 'learning_rate': 0.0001996, 'epoch': 0.11}
+{'eval_loss': 0.41801920533180237, 'eval_tok_acc': 0.9240901061997078, 'eval_exact_match': 0.5364066554724469, 'eval_runtime': 2.5715, 'eval_samples_per_second': 2547.504, 'eval_steps_per_second': 159.438, 'epoch': 0.11}
+2026-02-20 21:48:18,579 |     INFO |   Logged 13 metrics to wandb
+ 13%|█▎        | 600/4623 [01:07<03:02, 22.09it/s]2026-02-20 21:48:25,715 |     INFO | Rich metrics callback (step=600)...
+2026-02-20 21:48:29,316 |     INFO |   eval loss: overall=0.2603  fr=0.5018  nl=0.0186
+{'loss': 0.0064, 'grad_norm': 0.0302501879632473, 'learning_rate': 0.00019971561445573696, 'epoch': 0.13}
+{'eval_loss': 0.2602521479129791, 'eval_tok_acc': 0.9369998037377063, 'eval_exact_match': 0.5992978171271561, 'eval_runtime': 2.5473, 'eval_samples_per_second': 2571.73, 'eval_steps_per_second': 160.954, 'epoch': 0.13}
+2026-02-20 21:48:30,944 |     INFO |   Logged 13 metrics to wandb
+ 15%|█▌        | 700/4623 [01:20<02:55, 22.36it/s]2026-02-20 21:48:37,993 |     INFO | Rich metrics callback (step=700)...
+2026-02-20 21:48:41,245 |     INFO |   eval loss: overall=0.2517  fr=0.4826  nl=0.0209
+{'loss': 0.0033, 'grad_norm': 0.03272883594036102, 'learning_rate': 0.0001988525944123766, 'epoch': 0.15}
+{'eval_loss': 0.25174570083618164, 'eval_tok_acc': 0.945351854678675, 'eval_exact_match': 0.6174629827507251, 'eval_runtime': 2.5437, 'eval_samples_per_second': 2575.367, 'eval_steps_per_second': 161.182, 'epoch': 0.15}
+2026-02-20 21:48:42,871 |     INFO |   Logged 13 metrics to wandb
+ 17%|█▋        | 800/4623 [01:32<02:52, 22.15it/s]2026-02-20 21:48:49,957 |     INFO | Rich metrics callback (step=800)...
+2026-02-20 21:48:53,214 |     INFO |   eval loss: overall=0.2289  fr=0.4387  nl=0.0190
+{'loss': 0.0018, 'grad_norm': 0.01207711361348629, 'learning_rate': 0.00019741591906508976, 'epoch': 0.17}
+{'eval_loss': 0.22887922823429108, 'eval_tok_acc': 0.9450029439344048, 'eval_exact_match': 0.6150206075408334, 'eval_runtime': 2.5577, 'eval_samples_per_second': 2561.249, 'eval_steps_per_second': 160.298, 'epoch': 0.17}
+2026-02-20 21:48:55,247 |     INFO |   Logged 13 metrics to wandb
+ 19%|█▉        | 900/4623 [01:44<02:47, 22.27it/s]2026-02-20 21:49:02,265 |     INFO | Rich metrics callback (step=900)...
+2026-02-20 21:49:05,495 |     INFO |   eval loss: overall=0.2264  fr=0.4317  nl=0.0211
+{'loss': 0.0014, 'grad_norm': 0.02184440940618515, 'learning_rate': 0.00019541392564000488, 'epoch': 0.19}
+{'eval_loss': 0.2263941615819931, 'eval_tok_acc': 0.9502802189414921, 'eval_exact_match': 0.6519615325904442, 'eval_runtime': 2.5234, 'eval_samples_per_second': 2596.15, 'eval_steps_per_second': 162.482, 'epoch': 0.19}
+2026-02-20 21:49:07,122 |     INFO |   Logged 13 metrics to wandb
+ 22%|██▏       | 1000/4623 [01:56<02:43, 22.12it/s2026-02-20 21:49:14,177 |     INFO | Rich metrics callback (step=1000)...
+2026-02-20 21:49:17,405 |     INFO |   eval loss: overall=0.2034  fr=0.3872  nl=0.0195
+{'loss': 0.0011, 'grad_norm': 0.016262896358966827, 'learning_rate': 0.00019285823198239503, 'epoch': 0.22}
+{'eval_loss': 0.2033924013376236, 'eval_tok_acc': 0.9528098218374512, 'eval_exact_match': 0.6696687528621584, 'eval_runtime': 2.5305, 'eval_samples_per_second': 2588.844, 'eval_steps_per_second': 162.025, 'epoch': 0.22}
+2026-02-20 21:49:19,044 |     INFO |   Logged 13 metrics to wandb
+ 24%|██▍       | 1100/4623 [02:08<02:39, 22.03it/s2026-02-20 21:49:26,133 |     INFO | Rich metrics callback (step=1100)...
+2026-02-20 21:49:29,722 |     INFO |   eval loss: overall=0.1965  fr=0.3735  nl=0.0195
+{'loss': 0.0009, 'grad_norm': 0.00450509088113904, 'learning_rate': 0.0001897636691367119, 'epoch': 0.24}
+{'eval_loss': 0.19650298357009888, 'eval_tok_acc': 0.9548596724600388, 'eval_exact_match': 0.6840177072202717, 'eval_runtime': 2.5501, 'eval_samples_per_second': 2568.872, 'eval_steps_per_second': 160.775, 'epoch': 0.24}
+2026-02-20 21:49:31,361 |     INFO |   Logged 13 metrics to wandb
+ 26%|██▌       | 1200/4623 [02:20<02:32, 22.48it/s2026-02-20 21:49:38,377 |     INFO | Rich metrics callback (step=1200)...
+2026-02-20 21:49:41,576 |     INFO |   eval loss: overall=0.1930  fr=0.3669  nl=0.0190
+{'loss': 0.0008, 'grad_norm': 0.010061248205602169, 'learning_rate': 0.0001861481952799798, 'epoch': 0.26}
+{'eval_loss': 0.19295735657215118, 'eval_tok_acc': 0.9549250932245895, 'eval_exact_match': 0.6844756525721264, 'eval_runtime': 2.5359, 'eval_samples_per_second': 2583.338, 'eval_steps_per_second': 161.68, 'epoch': 0.26}
+2026-02-20 21:49:43,209 |     INFO |   Logged 13 metrics to wandb
+ 28%|██▊       | 1300/4623 [02:32<02:30, 22.06it/s2026-02-20 21:49:50,259 |     INFO | Rich metrics callback (step=1300)...
+2026-02-20 21:49:53,497 |     INFO |   eval loss: overall=0.1755  fr=0.3323  nl=0.0187
+{'loss': 0.0007, 'grad_norm': 0.004702949430793524, 'learning_rate': 0.00018203279150800543, 'epoch': 0.28}
+{'eval_loss': 0.17551860213279724, 'eval_tok_acc': 0.9583269729812243, 'eval_exact_match': 0.7082888108685697, 'eval_runtime': 2.5434, 'eval_samples_per_second': 2575.69, 'eval_steps_per_second': 161.202, 'epoch': 0.28}
+2026-02-20 21:49:55,133 |     INFO |   Logged 13 metrics to wandb
+ 30%|███       | 1400/4623 [02:44<02:25, 22.17it/s2026-02-20 21:50:02,182 |     INFO | Rich metrics callback (step=1400)...
+2026-02-20 21:50:05,779 |     INFO |   eval loss: overall=0.1812  fr=0.3440  nl=0.0184
+{'loss': 0.0006, 'grad_norm': 0.005054420791566372, 'learning_rate': 0.00017744134007917196, 'epoch': 0.3}
+{'eval_loss': 0.18121588230133057, 'eval_tok_acc': 0.9570839784547616, 'eval_exact_match': 0.6995878491833308, 'eval_runtime': 2.5398, 'eval_samples_per_second': 2579.299, 'eval_steps_per_second': 161.428, 'epoch': 0.3}
+2026-02-20 21:50:07,414 |     INFO |   Logged 13 metrics to wandb
+ 32%|███▏      | 1500/4623 [02:56<02:21, 22.12it/s2026-02-20 21:50:14,476 |     INFO | Rich metrics callback (step=1500)...
+2026-02-20 21:50:17,706 |     INFO |   eval loss: overall=0.1801  fr=0.3403  nl=0.0198
+{'loss': 0.0005, 'grad_norm': 0.004436227958649397, 'learning_rate': 0.0001724004858223837, 'epoch': 0.32}
+{'eval_loss': 0.18005886673927307, 'eval_tok_acc': 0.9587194975685283, 'eval_exact_match': 0.7110364829796978, 'eval_runtime': 2.5561, 'eval_samples_per_second': 2562.936, 'eval_steps_per_second': 160.404, 'epoch': 0.32}
+2026-02-20 21:50:19,347 |     INFO |   Logged 13 metrics to wandb
+ 35%|███▍      | 1600/4623 [03:08<02:16, 22.10it/s2026-02-20 21:50:26,402 |     INFO | Rich metrics callback (step=1600)...
+2026-02-20 21:50:29,634 |     INFO |   eval loss: overall=0.1843  fr=0.3496  nl=0.0190
+{'loss': 0.0005, 'grad_norm': 0.0051405285485088825, 'learning_rate': 0.00016693948151343192, 'epoch': 0.35}
+{'eval_loss': 0.18431706726551056, 'eval_tok_acc': 0.9576291514926838, 'eval_exact_match': 0.7034040604487865, 'eval_runtime': 2.5357, 'eval_samples_per_second': 2583.534, 'eval_steps_per_second': 161.693, 'epoch': 0.35}
+2026-02-20 21:50:31,629 |     INFO |   Logged 13 metrics to wandb
+ 37%|███▋      | 1700/4623 [03:20<02:11, 22.31it/s2026-02-20 21:50:38,639 |     INFO | Rich metrics callback (step=1700)...
+2026-02-20 21:50:41,845 |     INFO |   eval loss: overall=0.1862  fr=0.3536  nl=0.0188
+{'loss': 0.0004, 'grad_norm': 0.0028803071472793818, 'learning_rate': 0.00016109001811708307, 'epoch': 0.37}
+{'eval_loss': 0.18621063232421875, 'eval_tok_acc': 0.9571493992193122, 'eval_exact_match': 0.7000457945351855, 'eval_runtime': 2.5218, 'eval_samples_per_second': 2597.732, 'eval_steps_per_second': 162.581, 'epoch': 0.37}
+2026-02-20 21:50:43,474 |     INFO |   Logged 13 metrics to wandb
+ 39%|███▉      | 1800/4623 [03:32<02:06, 22.37it/s2026-02-20 21:50:50,477 |     INFO | Rich metrics callback (step=1800)...
+2026-02-20 21:50:53,713 |     INFO |   eval loss: overall=0.1769  fr=0.3348  nl=0.0189
+{'loss': 0.0004, 'grad_norm': 0.002074751304462552, 'learning_rate': 0.00015488604088001868, 'epoch': 0.39}
+{'eval_loss': 0.17688949406147003, 'eval_tok_acc': 0.9592864775279674, 'eval_exact_match': 0.7150053426957717, 'eval_runtime': 2.5249, 'eval_samples_per_second': 2594.566, 'eval_steps_per_second': 162.383, 'epoch': 0.39}
+2026-02-20 21:50:55,347 |     INFO |   Logged 13 metrics to wandb
+ 41%|████      | 1900/4623 [03:44<02:03, 22.12it/s2026-02-20 21:51:02,440 |     INFO | Rich metrics callback (step=1900)...
+2026-02-20 21:51:06,066 |     INFO |   eval loss: overall=0.1707  fr=0.3226  nl=0.0188
+{'loss': 0.0004, 'grad_norm': 0.002079419558867812, 'learning_rate': 0.0001483635523418649, 'epoch': 0.41}
+{'eval_loss': 0.17070524394512177, 'eval_tok_acc': 0.960355016682295, 'eval_exact_match': 0.7224851167760648, 'eval_runtime': 2.5517, 'eval_samples_per_second': 2567.261, 'eval_steps_per_second': 160.674, 'epoch': 0.41}
+2026-02-20 21:51:07,697 |     INFO |   Logged 13 metrics to wandb
+ 43%|████▎     | 2000/4623 [03:57<01:57, 22.29it/s2026-02-20 21:51:14,754 |     INFO | Rich metrics callback (step=2000)...
+2026-02-20 21:51:17,980 |     INFO |   eval loss: overall=0.1688  fr=0.3194  nl=0.0181
+{'loss': 0.0003, 'grad_norm': 0.0070192585699260235, 'learning_rate': 0.00014156040340746604, 'epoch': 0.43}
+{'eval_loss': 0.1688089668750763, 'eval_tok_acc': 0.9605076651329132, 'eval_exact_match': 0.7235536559303923, 'eval_runtime': 2.5423, 'eval_samples_per_second': 2576.816, 'eval_steps_per_second': 161.272, 'epoch': 0.43}
+2026-02-20 21:51:19,613 |     INFO |   Logged 13 metrics to wandb
+ 45%|████▌     | 2100/4623 [04:08<01:53, 22.24it/s2026-02-20 21:51:26,686 |     INFO | Rich metrics callback (step=2100)...
+2026-02-20 21:51:29,946 |     INFO |   eval loss: overall=0.1673  fr=0.3162  nl=0.0184
+{'loss': 0.0003, 'grad_norm': 0.002122407080605626, 'learning_rate': 0.00013451607369283842, 'epoch': 0.45}
+{'eval_loss': 0.16730180382728577, 'eval_tok_acc': 0.9609656104847679, 'eval_exact_match': 0.7267592733933751, 'eval_runtime': 2.5428, 'eval_samples_per_second': 2576.283, 'eval_steps_per_second': 161.239, 'epoch': 0.45}
+2026-02-20 21:51:31,581 |     INFO |   Logged 13 metrics to wandb
+ 48%|████▊     | 2200/4623 [04:20<01:49, 22.13it/s2026-02-20 21:51:38,639 |     INFO | Rich metrics callback (step=2200)...
+2026-02-20 21:51:42,250 |     INFO |   eval loss: overall=0.1641  fr=0.3099  nl=0.0183
+{'loss': 0.0003, 'grad_norm': 0.0008753776201047003, 'learning_rate': 0.00012727144241948777, 'epoch': 0.48}
+{'eval_loss': 0.16412635147571564, 'eval_tok_acc': 0.9616416250517914, 'eval_exact_match': 0.73149137536254, 'eval_runtime': 2.5452, 'eval_samples_per_second': 2573.909, 'eval_steps_per_second': 161.09, 'epoch': 0.48}
+2026-02-20 21:51:43,881 |     INFO |   Logged 13 metrics to wandb
+ 50%|████▉     | 2300/4623 [04:33<01:44, 22.32it/s2026-02-20 21:51:50,890 |     INFO | Rich metrics callback (step=2300)...
+2026-02-20 21:51:54,103 |     INFO |   eval loss: overall=0.1658  fr=0.3133  nl=0.0182
+{'loss': 0.0003, 'grad_norm': 0.003056188579648733, 'learning_rate': 0.00011986855118662206, 'epoch': 0.5}
+{'eval_loss': 0.16579118371009827, 'eval_tok_acc': 0.9614017489151057, 'eval_exact_match': 0.7298122424057396, 'eval_runtime': 2.5369, 'eval_samples_per_second': 2582.254, 'eval_steps_per_second': 161.613, 'epoch': 0.5}
+2026-02-20 21:51:55,736 |     INFO |   Logged 13 metrics to wandb
+ 52%|█████▏    | 2400/4623 [04:45<01:40, 22.15it/s2026-02-20 21:52:02,791 |     INFO | Rich metrics callback (step=2400)...
+2026-02-20 21:52:06,057 |     INFO |   eval loss: overall=0.1638  fr=0.3092  nl=0.0182
+{'loss': 0.0003, 'grad_norm': 0.0034861506428569555, 'learning_rate': 0.00011235035999792521, 'epoch': 0.52}
+{'eval_loss': 0.16375403106212616, 'eval_tok_acc': 0.961728852737859, 'eval_exact_match': 0.732101969165013, 'eval_runtime': 2.5414, 'eval_samples_per_second': 2577.679, 'eval_steps_per_second': 161.326, 'epoch': 0.52}
+2026-02-20 21:52:08,044 |     INFO |   Logged 13 metrics to wandb
+ 54%|█████▍    | 2500/4623 [04:57<01:35, 22.20it/s2026-02-20 21:52:15,073 |     INFO | Rich metrics callback (step=2500)...
+2026-02-20 21:52:18,297 |     INFO |   eval loss: overall=0.1608  fr=0.3033  nl=0.0182
+{'loss': 0.0002, 'grad_norm': 0.0019855161663144827, 'learning_rate': 0.00010476049795870264, 'epoch': 0.54}
+{'eval_loss': 0.16077947616577148, 'eval_tok_acc': 0.9622522188542644, 'eval_exact_match': 0.7357655319798504, 'eval_runtime': 2.5281, 'eval_samples_per_second': 2591.24, 'eval_steps_per_second': 162.175, 'epoch': 0.54}
+2026-02-20 21:52:19,934 |     INFO |   Logged 13 metrics to wandb
+ 56%|█████▌    | 2600/4623 [05:09<01:31, 22.14it/s2026-02-20 21:52:27,009 |     INFO | Rich metrics callback (step=2600)...
+2026-02-20 21:52:30,239 |     INFO |   eval loss: overall=0.1606  fr=0.3028  nl=0.0183
+{'loss': 0.0002, 'grad_norm': 0.0019019158789888024, 'learning_rate': 9.714301009013711e-05, 'epoch': 0.56}
+{'eval_loss': 0.16056783497333527, 'eval_tok_acc': 0.9626447434415684, 'eval_exact_match': 0.7385132040909784, 'eval_runtime': 2.5584, 'eval_samples_per_second': 2560.592, 'eval_steps_per_second': 160.257, 'epoch': 0.56}
+2026-02-20 21:52:31,872 |     INFO |   Logged 13 metrics to wandb
+ 58%|█████▊    | 2700/4623 [05:21<01:26, 22.28it/s2026-02-20 21:52:38,912 |     INFO | Rich metrics callback (step=2700)...
+2026-02-20 21:52:42,542 |     INFO |   eval loss: overall=0.1964  fr=0.3686  nl=0.0243
+{'loss': 0.0002, 'grad_norm': 0.0006852660444565117, 'learning_rate': 8.954210172992749e-05, 'epoch': 0.58}
+{'eval_loss': 0.1964329332113266, 'eval_tok_acc': 0.9584796214318425, 'eval_exact_match': 0.7093573500228972, 'eval_runtime': 2.5413, 'eval_samples_per_second': 2577.845, 'eval_steps_per_second': 161.337, 'epoch': 0.58}
+2026-02-20 21:52:44,178 |     INFO |   Logged 13 metrics to wandb
+ 61%|██████    | 2800/4623 [05:33<01:22, 22.23it/s2026-02-20 21:52:51,222 |     INFO | Rich metrics callback (step=2800)...
+2026-02-20 21:52:54,426 |     INFO |   eval loss: overall=0.1791  fr=0.3353  nl=0.0228
+{'loss': 0.0002, 'grad_norm': 0.001526550971902907, 'learning_rate': 8.200188200258791e-05, 'epoch': 0.61}
+{'eval_loss': 0.17907553911209106, 'eval_tok_acc': 0.9624266742263995, 'eval_exact_match': 0.7369867195847962, 'eval_runtime': 2.5386, 'eval_samples_per_second': 2580.592, 'eval_steps_per_second': 161.509, 'epoch': 0.61}
+2026-02-20 21:52:56,056 |     INFO |   Logged 13 metrics to wandb
+ 63%|██████▎   | 2900/4623 [05:45<01:17, 22.25it/s2026-02-20 21:53:03,127 |     INFO | Rich metrics callback (step=2900)...
+2026-02-20 21:53:06,377 |     INFO |   eval loss: overall=0.1731  fr=0.3247  nl=0.0215
+{'loss': 0.0002, 'grad_norm': 0.0016316112596541643, 'learning_rate': 7.456610784808625e-05, 'epoch': 0.63}
+{'eval_loss': 0.17310641705989838, 'eval_tok_acc': 0.9627319711276359, 'eval_exact_match': 0.7391237978934514, 'eval_runtime': 2.5699, 'eval_samples_per_second': 2549.117, 'eval_steps_per_second': 159.539, 'epoch': 0.63}
+2026-02-20 21:53:08,361 |     INFO |   Logged 13 metrics to wandb
+ 65%|██████▍   | 3000/4623 [05:57<01:12, 22.26it/s2026-02-20 21:53:15,403 |     INFO | Rich metrics callback (step=3000)...
+2026-02-20 21:53:18,644 |     INFO |   eval loss: overall=0.1760  fr=0.3299  nl=0.0219
+{'loss': 0.0002, 'grad_norm': 0.0006529515376314521, 'learning_rate': 6.72779300942574e-05, 'epoch': 0.65}
+{'eval_loss': 0.17594772577285767, 'eval_tok_acc': 0.9623830603833656, 'eval_exact_match': 0.7366814226835597, 'eval_runtime': 2.5366, 'eval_samples_per_second': 2582.546, 'eval_steps_per_second': 161.631, 'epoch': 0.65}
+2026-02-20 21:53:20,282 |     INFO |   Logged 13 metrics to wandb
+ 67%|██████▋   | 3100/4623 [06:09<01:08, 22.33it/s2026-02-20 21:53:27,319 |     INFO | Rich metrics callback (step=3100)...
+2026-02-20 21:53:30,541 |     INFO |   eval loss: overall=0.1702  fr=0.3063  nl=0.0341
+{'loss': 0.0007, 'grad_norm': 0.00402985792607069, 'learning_rate': 6.017964304656998e-05, 'epoch': 0.67}
+{'eval_loss': 0.17023193836212158, 'eval_tok_acc': 0.9624920949909501, 'eval_exact_match': 0.7374446649366508, 'eval_runtime': 2.5176, 'eval_samples_per_second': 2602.057, 'eval_steps_per_second': 162.852, 'epoch': 0.67}
+2026-02-20 21:53:32,167 |     INFO |   Logged 13 metrics to wandb
+ 69%|██████▉   | 3200/4623 [06:21<01:04, 22.13it/s2026-02-20 21:53:39,217 |     INFO | Rich metrics callback (step=3200)...
+2026-02-20 21:53:42,900 |     INFO |   eval loss: overall=0.1086  fr=0.1883  nl=0.0288
+{'loss': 0.0009, 'grad_norm': 0.0036902891006320715, 'learning_rate': 5.331243904841069e-05, 'epoch': 0.69}
+{'eval_loss': 0.10859931260347366, 'eval_tok_acc': 0.9746167433543407, 'eval_exact_match': 0.8223172034803847, 'eval_runtime': 2.5268, 'eval_samples_per_second': 2592.634, 'eval_steps_per_second': 162.262, 'epoch': 0.69}
+2026-02-20 21:53:44,699 |     INFO |   Logged 13 metrics to wandb
+ 71%|███████▏  | 3300/4623 [06:33<00:59, 22.26it/s2026-02-20 21:53:51,702 |     INFO | Rich metrics callback (step=3300)...
+2026-02-20 21:53:54,931 |     INFO |   eval loss: overall=0.1143  fr=0.1998  nl=0.0287
+{'loss': 0.0002, 'grad_norm': 0.0015276019694283605, 'learning_rate': 4.671616943620731e-05, 'epoch': 0.71}
+{'eval_loss': 0.11429101973772049, 'eval_tok_acc': 0.9749002333340603, 'eval_exact_match': 0.8243016333384217, 'eval_runtime': 2.5059, 'eval_samples_per_second': 2614.245, 'eval_steps_per_second': 163.615, 'epoch': 0.71}
+2026-02-20 21:53:56,560 |     INFO |   Logged 13 metrics to wandb
+ 74%|███████▎  | 3400/4623 [06:45<00:54, 22.27it/s2026-02-20 21:54:03,572 |     INFO | Rich metrics callback (step=3400)...
+2026-02-20 21:54:06,803 |     INFO |   eval loss: overall=0.1204  fr=0.2124  nl=0.0284
+{'loss': 0.0002, 'grad_norm': 0.0025429558008909225, 'learning_rate': 4.042911327660114e-05, 'epoch': 0.74}
+{'eval_loss': 0.120425745844841, 'eval_tok_acc': 0.9742024118455198, 'eval_exact_match': 0.8194168829186383, 'eval_runtime': 2.5234, 'eval_samples_per_second': 2596.056, 'eval_steps_per_second': 162.476, 'epoch': 0.74}
+2026-02-20 21:54:08,437 |     INFO |   Logged 13 metrics to wandb
+ 76%|███████▌  | 3500/4623 [06:57<00:50, 22.28it/s2026-02-20 21:54:15,490 |     INFO | Rich metrics callback (step=3500)...
+2026-02-20 21:54:19,081 |     INFO |   eval loss: overall=0.1227  fr=0.2170  nl=0.0284
+{'loss': 0.0002, 'grad_norm': 0.0021899158600717783, 'learning_rate': 3.4487755227718474e-05, 'epoch': 0.76}
+{'eval_loss': 0.12271096557378769, 'eval_tok_acc': 0.9740279564733847, 'eval_exact_match': 0.8181956953136925, 'eval_runtime': 2.5399, 'eval_samples_per_second': 2579.241, 'eval_steps_per_second': 161.424, 'epoch': 0.76}
+2026-02-20 21:54:20,711 |     INFO |   Logged 13 metrics to wandb
+ 78%|███████▊  | 3600/4623 [07:10<00:46, 22.17it/s2026-02-20 21:54:27,767 |     INFO | Rich metrics callback (step=3600)...
+2026-02-20 21:54:30,995 |     INFO |   eval loss: overall=0.1249  fr=0.2214  nl=0.0283
+{'loss': 0.0002, 'grad_norm': 0.003764096414670348, 'learning_rate': 2.8926573813643886e-05, 'epoch': 0.78}
+{'eval_loss': 0.12489534914493561, 'eval_tok_acc': 0.9736136249645637, 'eval_exact_match': 0.8152953747519462, 'eval_runtime': 2.5418, 'eval_samples_per_second': 2577.261, 'eval_steps_per_second': 161.3, 'epoch': 0.78}
+2026-02-20 21:54:32,626 |     INFO |   Logged 13 metrics to wandb
+ 80%|████████  | 3700/4623 [07:21<00:41, 22.27it/s2026-02-20 21:54:39,675 |     INFO | Rich metrics callback (step=3700)...
+2026-02-20 21:54:42,915 |     INFO |   eval loss: overall=0.1252  fr=0.2222  nl=0.0282
+{'loss': 0.0002, 'grad_norm': 0.002939467551186681, 'learning_rate': 2.3777841340766982e-05, 'epoch': 0.8}
+{'eval_loss': 0.1252160519361496, 'eval_tok_acc': 0.9736136249645637, 'eval_exact_match': 0.8152953747519462, 'eval_runtime': 2.5553, 'eval_samples_per_second': 2563.716, 'eval_steps_per_second': 160.452, 'epoch': 0.8}
+2026-02-20 21:54:44,973 |     INFO |   Logged 13 metrics to wandb
+ 82%|████████▏ | 3800/4623 [07:34<00:36, 22.44it/s2026-02-20 21:54:51,978 |     INFO | Rich metrics callback (step=3800)...
+2026-02-20 21:54:55,206 |     INFO |   eval loss: overall=0.1245  fr=0.2207  nl=0.0282
+{'loss': 0.0002, 'grad_norm': 0.0027530191000550985, 'learning_rate': 1.907143661711621e-05, 'epoch': 0.82}
+{'eval_loss': 0.12450773268938065, 'eval_tok_acc': 0.9737444664936651, 'eval_exact_match': 0.8162112654556556, 'eval_runtime': 2.5273, 'eval_samples_per_second': 2592.055, 'eval_steps_per_second': 162.226, 'epoch': 0.82}
+2026-02-20 21:54:56,836 |     INFO |   Logged 13 metrics to wandb
+ 84%|████████▍ | 3900/4623 [07:46<00:32, 22.38it/s2026-02-20 21:55:03,882 |     INFO | Rich metrics callback (step=3900)...
+2026-02-20 21:55:07,126 |     INFO |   eval loss: overall=0.1261  fr=0.2240  nl=0.0282
+{'loss': 0.0002, 'grad_norm': 0.0011564666638150811, 'learning_rate': 1.4834671561495462e-05, 'epoch': 0.84}
+{'eval_loss': 0.1261400580406189, 'eval_tok_acc': 0.9735045903569793, 'eval_exact_match': 0.8145321324988551, 'eval_runtime': 2.557, 'eval_samples_per_second': 2561.957, 'eval_steps_per_second': 160.342, 'epoch': 0.84}
+2026-02-20 21:55:08,751 |     INFO |   Logged 13 metrics to wandb
+ 87%|████████▋ | 4000/4623 [07:58<00:27, 22.37it/s2026-02-20 21:55:15,811 |     INFO | Rich metrics callback (step=4000)...
+2026-02-20 21:55:19,414 |     INFO |   eval loss: overall=0.1270  fr=0.2259  nl=0.0282
+{'loss': 0.0002, 'grad_norm': 0.0015554018318653107, 'learning_rate': 1.1092132708634551e-05, 'epoch': 0.87}
+{'eval_loss': 0.12705115973949432, 'eval_tok_acc': 0.9734391695924286, 'eval_exact_match': 0.8140741871470004, 'eval_runtime': 2.5688, 'eval_samples_per_second': 2550.263, 'eval_steps_per_second': 159.61, 'epoch': 0.87}
+2026-02-20 21:55:21,043 |     INFO |   Logged 13 metrics to wandb
+ 89%|████████▊ | 4100/4623 [08:10<00:23, 22.26it/s2026-02-20 21:55:28,066 |     INFO | Rich metrics callback (step=4100)...
+2026-02-20 21:55:31,293 |     INFO |   eval loss: overall=0.1276  fr=0.2269  nl=0.0282
+{'loss': 0.0002, 'grad_norm': 0.0015624068910256028, 'learning_rate': 7.86553853012092e-06, 'epoch': 0.89}
+{'eval_loss': 0.12757070362567902, 'eval_tok_acc': 0.9733301349848442, 'eval_exact_match': 0.8133109448939093, 'eval_runtime': 2.5317, 'eval_samples_per_second': 2587.632, 'eval_steps_per_second': 161.949, 'epoch': 0.89}
+2026-02-20 21:55:32,922 |     INFO |   Logged 13 metrics to wandb
+ 91%|█████████ | 4200/4623 [08:22<00:19, 22.20it/s2026-02-20 21:55:39,980 |     INFO | Rich metrics callback (step=4200)...
+2026-02-20 21:55:43,215 |     INFO |   eval loss: overall=0.1287  fr=0.2291  nl=0.0282
+{'loss': 0.0002, 'grad_norm': 0.001734778517857194, 'learning_rate': 5.1736133990995305e-06, 'epoch': 0.91}
+{'eval_loss': 0.12866967916488647, 'eval_tok_acc': 0.9731556796127091, 'eval_exact_match': 0.8120897572889635, 'eval_runtime': 2.5455, 'eval_samples_per_second': 2573.511, 'eval_steps_per_second': 161.065, 'epoch': 0.91}
+2026-02-20 21:55:44,858 |     INFO |   Logged 13 metrics to wandb
+ 93%|█████████▎| 4300/4623 [08:34<00:14, 22.28it/s2026-02-20 21:55:51,905 |     INFO | Rich metrics callback (step=4300)...
+2026-02-20 21:55:55,552 |     INFO |   eval loss: overall=0.1301  fr=0.2320  nl=0.0282
+{'loss': 0.0002, 'grad_norm': 0.0008197655552066863, 'learning_rate': 3.0319789301406663e-06, 'epoch': 0.93}
+{'eval_loss': 0.1300995647907257, 'eval_tok_acc': 0.9726759273393375, 'eval_exact_match': 0.8087314913753625, 'eval_runtime': 2.5403, 'eval_samples_per_second': 2578.83, 'eval_steps_per_second': 161.398, 'epoch': 0.93}
+2026-02-20 21:55:57,192 |     INFO |   Logged 13 metrics to wandb
+ 95%|█████████▌| 4400/4623 [08:46<00:10, 22.12it/s2026-02-20 21:56:04,237 |     INFO | Rich metrics callback (step=4400)...
+2026-02-20 21:56:07,451 |     INFO |   eval loss: overall=0.1304  fr=0.2326  nl=0.0281
+{'loss': 0.0002, 'grad_norm': 0.0013034731382504106, 'learning_rate': 1.453063324845827e-06, 'epoch': 0.95}
+{'eval_loss': 0.1303652822971344, 'eval_tok_acc': 0.9727195411823713, 'eval_exact_match': 0.809036788276599, 'eval_runtime': 2.5387, 'eval_samples_per_second': 2580.502, 'eval_steps_per_second': 161.503, 'epoch': 0.95}
+2026-02-20 21:56:09,083 |     INFO |   Logged 13 metrics to wandb
+ 97%|█████████▋| 4500/4623 [08:58<00:05, 22.06it/s2026-02-20 21:56:16,146 |     INFO | Rich metrics callback (step=4500)...
+2026-02-20 21:56:19,369 |     INFO |   eval loss: overall=0.1304  fr=0.2327  nl=0.0281
+{'loss': 0.0002, 'grad_norm': 0.0013405242934823036, 'learning_rate': 4.4602924927165115e-07, 'epoch': 0.97}
+{'eval_loss': 0.13043074309825897, 'eval_tok_acc': 0.9726759273393375, 'eval_exact_match': 0.8087314913753625, 'eval_runtime': 2.5422, 'eval_samples_per_second': 2576.87, 'eval_steps_per_second': 161.276, 'epoch': 0.97}
+2026-02-20 21:56:21,340 |     INFO |   Logged 13 metrics to wandb
+100%|█████████▉| 4600/4623 [09:10<00:01, 22.31it/s2026-02-20 21:56:28,381 |     INFO | Rich metrics callback (step=4600)...
+2026-02-20 21:56:31,591 |     INFO |   eval loss: overall=0.1304  fr=0.2327  nl=0.0281
+{'loss': 0.0002, 'grad_norm': 0.0008820766815915704, 'learning_rate': 1.6720661708946595e-08, 'epoch': 1.0}
+{'eval_loss': 0.13044357299804688, 'eval_tok_acc': 0.9726541204178206, 'eval_exact_match': 0.8085788429247444, 'eval_runtime': 2.5239, 'eval_samples_per_second': 2595.637, 'eval_steps_per_second': 162.45, 'epoch': 1.0}
+2026-02-20 21:56:33,220 |     INFO |   Logged 13 metrics to wandb
+100%|██████████| 4623/4623 [09:16<00:00,  8.31it/s]
+2026-02-20 21:56:34,547 |     INFO | Running inference on final eval set...
+{'train_runtime': 556.5248, 'train_samples_per_second': 531.642, 'train_steps_per_second': 8.307, 'train_loss': 0.08353879821786736, 'epoch': 1.0}
+2026-02-20 21:57:11,770 |     INFO | Computing final metrics for ablation=none...
+2026-02-20 21:57:18,247 |     INFO | Computing final metrics for ablation=subject...
+2026-02-20 21:57:24,826 |     INFO | Computing final metrics for ablation=verb...
+2026-02-20 21:57:31,387 |     INFO | Computing final metrics for ablation=object...

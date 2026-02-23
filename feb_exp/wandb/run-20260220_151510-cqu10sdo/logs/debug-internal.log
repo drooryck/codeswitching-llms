@@ -1,0 +1,12 @@
+{"time":"2026-02-20T15:15:10.788631497-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T15:15:12.044572145-05:00","level":"INFO","msg":"stream: created new stream","id":"cqu10sdo"}
+{"time":"2026-02-20T15:15:12.044595244-05:00","level":"INFO","msg":"stream: started","id":"cqu10sdo"}
+{"time":"2026-02-20T15:15:12.044601624-05:00","level":"INFO","msg":"writer: started","stream_id":"cqu10sdo"}
+{"time":"2026-02-20T15:15:12.044608531-05:00","level":"INFO","msg":"handler: started","stream_id":"cqu10sdo"}
+{"time":"2026-02-20T15:15:12.044613925-05:00","level":"INFO","msg":"sender: started","stream_id":"cqu10sdo"}
+{"time":"2026-02-20T15:19:16.471712173-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.000531574}],"total_operations":1}}
+{"time":"2026-02-20T15:19:17.593905668-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T15:19:18.516233972-05:00","level":"INFO","msg":"stream: closing","id":"cqu10sdo"}
+{"time":"2026-02-20T15:19:18.516243516-05:00","level":"INFO","msg":"handler: closed","stream_id":"cqu10sdo"}
+{"time":"2026-02-20T15:19:18.521582928-05:00","level":"INFO","msg":"sender: closed","stream_id":"cqu10sdo"}
+{"time":"2026-02-20T15:19:18.521596369-05:00","level":"INFO","msg":"stream: closed","id":"cqu10sdo"}

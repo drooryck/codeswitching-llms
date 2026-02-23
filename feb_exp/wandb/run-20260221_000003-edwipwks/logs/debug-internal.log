@@ -1,0 +1,12 @@
+{"time":"2026-02-21T00:00:04.334969399-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-21T00:00:04.587071292-05:00","level":"INFO","msg":"stream: created new stream","id":"edwipwks"}
+{"time":"2026-02-21T00:00:04.587090452-05:00","level":"INFO","msg":"stream: started","id":"edwipwks"}
+{"time":"2026-02-21T00:00:04.587099962-05:00","level":"INFO","msg":"writer: started","stream_id":"edwipwks"}
+{"time":"2026-02-21T00:00:04.587107809-05:00","level":"INFO","msg":"sender: started","stream_id":"edwipwks"}
+{"time":"2026-02-21T00:00:04.587115463-05:00","level":"INFO","msg":"handler: started","stream_id":"edwipwks"}
+{"time":"2026-02-21T00:11:10.403103844-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.010532722}],"total_operations":1}}
+{"time":"2026-02-21T00:11:10.825434185-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-21T00:11:11.021251294-05:00","level":"INFO","msg":"stream: closing","id":"edwipwks"}
+{"time":"2026-02-21T00:11:11.0212635-05:00","level":"INFO","msg":"handler: closed","stream_id":"edwipwks"}
+{"time":"2026-02-21T00:11:11.026606413-05:00","level":"INFO","msg":"sender: closed","stream_id":"edwipwks"}
+{"time":"2026-02-21T00:11:11.026612962-05:00","level":"INFO","msg":"stream: closed","id":"edwipwks"}

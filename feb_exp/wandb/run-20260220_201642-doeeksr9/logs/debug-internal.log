@@ -1,0 +1,12 @@
+{"time":"2026-02-20T20:16:42.591856178-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T20:16:42.839671889-05:00","level":"INFO","msg":"stream: created new stream","id":"doeeksr9"}
+{"time":"2026-02-20T20:16:42.839692748-05:00","level":"INFO","msg":"stream: started","id":"doeeksr9"}
+{"time":"2026-02-20T20:16:42.839702673-05:00","level":"INFO","msg":"writer: started","stream_id":"doeeksr9"}
+{"time":"2026-02-20T20:16:42.839706346-05:00","level":"INFO","msg":"sender: started","stream_id":"doeeksr9"}
+{"time":"2026-02-20T20:16:42.839714146-05:00","level":"INFO","msg":"handler: started","stream_id":"doeeksr9"}
+{"time":"2026-02-20T20:20:43.719582214-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.010073017}],"total_operations":1}}
+{"time":"2026-02-20T20:20:44.153499382-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T20:20:44.336968925-05:00","level":"INFO","msg":"stream: closing","id":"doeeksr9"}
+{"time":"2026-02-20T20:20:44.336978469-05:00","level":"INFO","msg":"handler: closed","stream_id":"doeeksr9"}
+{"time":"2026-02-20T20:20:44.342362102-05:00","level":"INFO","msg":"sender: closed","stream_id":"doeeksr9"}
+{"time":"2026-02-20T20:20:44.342367804-05:00","level":"INFO","msg":"stream: closed","id":"doeeksr9"}

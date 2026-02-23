@@ -1,0 +1,12 @@
+{"time":"2026-02-20T18:25:13.80929501-05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2026-02-20T18:25:14.058954625-05:00","level":"INFO","msg":"stream: created new stream","id":"k9sopvap"}
+{"time":"2026-02-20T18:25:14.05897492-05:00","level":"INFO","msg":"stream: started","id":"k9sopvap"}
+{"time":"2026-02-20T18:25:14.058981157-05:00","level":"INFO","msg":"writer: started","stream_id":"k9sopvap"}
+{"time":"2026-02-20T18:25:14.058995618-05:00","level":"INFO","msg":"sender: started","stream_id":"k9sopvap"}
+{"time":"2026-02-20T18:25:14.058997776-05:00","level":"INFO","msg":"handler: started","stream_id":"k9sopvap"}
+{"time":"2026-02-20T18:29:29.035339038-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":0.000523707}],"total_operations":1}}
+{"time":"2026-02-20T18:29:29.455436545-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T18:29:29.622613704-05:00","level":"INFO","msg":"stream: closing","id":"k9sopvap"}
+{"time":"2026-02-20T18:29:29.622623206-05:00","level":"INFO","msg":"handler: closed","stream_id":"k9sopvap"}
+{"time":"2026-02-20T18:29:29.62795081-05:00","level":"INFO","msg":"sender: closed","stream_id":"k9sopvap"}
+{"time":"2026-02-20T18:29:29.627964062-05:00","level":"INFO","msg":"stream: closed","id":"k9sopvap"}
