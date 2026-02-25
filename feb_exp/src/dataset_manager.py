@@ -165,113 +165,23 @@ class DatasetManager:
         Returns:
             tuple: (train_df, test_df) pandas DataFrames
         """
+        import random as rnd
         lexicon = self.load_lexicon()
+        rows, pair_ids = build_rows_and_pair_ids(lexicon, plurality_mixing=False)
 
-        # Extract lexicon components
-        DET = lexicon["DET"]
-        NOUNS = lexicon["NOUNS"]
-        VERBS = lexicon["VERBS"]
-        AUX = lexicon["AUX"]
-
-        def get_verb_form(verb_info: dict, lang: str, plural: bool) -> str:
-            """Get the appropriate verb form based on language and plurality."""
-            if lang == "nl":
-                return verb_info["present"]["zijpl" if plural else "hij"]
-            else:  # fr
-                return verb_info["present"]["ils" if plural else "il"]
-
-        def make_pair(lang, subj, obj, verb_key, subj_plural, obj_plural):
-            # Separate determiners for subject and object
-            subj_det = DET[lang]["pl" if subj_plural else "sgl"]
-            obj_det = DET[lang]["pl" if obj_plural else "sgl"]
-
-            s = NOUNS[lang][subj]["pl" if subj_plural else "sgl"]
-            o = NOUNS[lang][obj]["pl" if obj_plural else "sgl"]
-
-            # Get verb forms (verb agrees with SUBJECT)
-            verb_info = VERBS[lang][verb_key]
-            pres = get_verb_form(verb_info, lang, subj_plural)
-            part = verb_info["participle"]
-
-            # Auxiliary agrees with SUBJECT
-            aux_key = ("zijpl" if subj_plural else "hij") if lang == "nl" else ("ils" if subj_plural else "il")
-            inp = f"{subj_det} {s} {pres} {obj_det} {o}"
-            tgt = (f"{subj_det} {s} {AUX[lang][aux_key]} {part} {obj_det} {o}"
-                   if lang == 'fr'
-                   else f"{subj_det} {s} {AUX[lang][aux_key]} {obj_det} {o} {part}")
-            return inp, tgt
-
-        # --- NEW: build language-agnostic indices for nouns and verbs ---
-        langs = ("fr", "nl")
-
-        noun_keys = {lang: list(NOUNS[lang].keys()) for lang in langs}
-        verb_keys = {lang: list(VERBS[lang].keys()) for lang in langs}
-
-        # Sanity checks: require parallel lexicon sizes
-        if len(noun_keys["fr"]) != len(noun_keys["nl"]):
-            raise ValueError("NOUNS lexicon is not parallel between fr and nl")
-        if len(verb_keys["fr"]) != len(verb_keys["nl"]):
-            raise ValueError("VERBS lexicon is not parallel between fr and nl")
-
-        # Map each language-specific noun/verb key to a shared index
-        noun_idx = {
-            lang: {noun: i for i, noun in enumerate(noun_keys[lang])}
-            for lang in langs
-        }
-        verb_idx = {
-            lang: {verb: i for i, verb in enumerate(verb_keys[lang])}
-            for lang in langs
-        }
-
-        rows = []
-        pair_ids = []  # keep (subj_idx, verb_idx) for split
-
-        for lang in langs:
-            nouns = noun_keys[lang]
-            verbs = verb_keys[lang]
-            for subj, obj, verb_key in itertools.product(nouns, nouns, verbs):
-                if subj == obj:
-                    continue
-                # Iterate over matching plurality (subject and object must match)
-                for subj_plural in (False, True):
-                    obj_plural = subj_plural  # Constraint: object plurality matches subject plurality
-                    inp, tgt = make_pair(lang, subj, obj, verb_key, subj_plural, obj_plural)
-                    rows.append({
-                        'input': inp,
-                        'target': tgt,
-                        'lang': lang,
-                        'plural': subj_plural,  # Keep for compatibility (refers to subject)
-                        'subj_plural': subj_plural,
-                        'obj_plural': obj_plural,
-                        'subj': subj,
-                        'obj': obj,
-                        'verb': verb_key
-                    })
-                    # Language-agnostic split key: index of subj & verb in parallel lists
-                    subj_id = noun_idx[lang][subj]
-                    verb_id = verb_idx[lang][verb_key]
-                    pair_ids.append((subj_id, verb_id))
-
-        # Split by unseen (subject, verb) index combinations
-        import random
         pair_ids_unique = list(set(pair_ids))
-        random.seed(random_seed)
-        test_pairs = set(random.sample(
+        rnd.seed(random_seed)
+        test_pairs = set(rnd.sample(
             pair_ids_unique,
             int(test_size * len(pair_ids_unique))
         ))
-
-        train_rows, test_rows = [], []
-        for row, pid in zip(rows, pair_ids):
-            (test_rows if pid in test_pairs else train_rows).append(row)
+        train_rows = [row for row, pid in zip(rows, pair_ids) if pid not in test_pairs]
+        test_rows = [row for row, pid in zip(rows, pair_ids) if pid in test_pairs]
 
         train_df = pd.DataFrame(train_rows).reset_index(drop=True)
         test_df = pd.DataFrame(test_rows).reset_index(drop=True)
-
-        # Save datasets
         train_df.to_csv(self.data_dir / "train.csv", index=False)
         test_df.to_csv(self.data_dir / "test.csv", index=False)
-
         return train_df, test_df
 
 

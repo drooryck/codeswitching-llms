@@ -30,6 +30,17 @@ PLURALITY_RUNS_DIR = Path(
 )
 REPO_ROOT = Path(__file__).resolve().parents[2]
 PLURALITY_OUTPUT_DIR = REPO_ROOT / "feb_exp" / "results" / "feb20-plurality"
+NETSCRATCH_RESULTS = Path(
+    "/n/netscratch/dam_lab/Lab/drooryck/codeswitching-llms/feb_exp/results"
+)
+FEB23_OUTPUT_ROOT = REPO_ROOT / "feb_exp" / "results" / "feb23"
+# (output_subdir_name, netscratch folder name under feb_exp/results)
+FEB23_PRESETS = [
+    ("feb23-v1-no-plurality", "feb23-v1-no-plurality"),
+    ("feb23-v2-no-plurality", "feb23-v2-no-plurality"),
+    ("feb23-v1-plurality-mixing", "feb23-v1-plurality-mixing"),
+    ("feb23-v2-plurality-mixing", "feb23-v2-plurality-mixing"),
+]
 ABLATION_TYPES = ("none", "subject", "verb", "object")
 
 
@@ -61,7 +72,33 @@ def main():
         action="store_true",
         help="Use feb20/runs (plurality mixed data) and save to feb_exp/results/feb20-plurality",
     )
+    parser.add_argument(
+        "--feb23",
+        action="store_true",
+        help="Run for all 4 feb23 folders; save to feb_exp/results/feb23/<folder_name>",
+    )
     args = parser.parse_args()
+
+    if args.feb23:
+        FEB23_OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
+        for out_name, netscratch_name in FEB23_PRESETS:
+            runs_dir = (NETSCRATCH_RESULTS / netscratch_name / "runs").resolve()
+            output_dir = (FEB23_OUTPUT_ROOT / out_name).resolve()
+            if not runs_dir.exists():
+                logger.warning("Skipping %s: runs dir not found: %s", out_name, runs_dir)
+                continue
+            output_dir.mkdir(parents=True, exist_ok=True)
+            logger.info("=== %s -> %s ===", runs_dir, output_dir)
+            for ablation_type in ABLATION_TYPES:
+                plotter = BilingualPlotter.create_plotter_from_run_metrics_dir(
+                    runs_dir, plots_subdir=args.plots_subdir, ablation_type=ablation_type
+                )
+                plotter.output_dir = output_dir
+                logger.info("  Ablation %s: loaded %d runs", ablation_type, len(plotter.results_df))
+                plotter.plot_token_share_by_proportion(suffix=ablation_type)
+                plotter.plot_structure_followed_by_proportion(suffix=ablation_type)
+            logger.info("  All 8 plots saved to %s", output_dir)
+        return
 
     if args.plurality:
         runs_dir = PLURALITY_RUNS_DIR.resolve()

@@ -1,23 +1,23 @@
 #!/bin/bash
-#SBATCH --job-name=feb20_sweep_plurality
+#SBATCH --job-name=feb23_balanced_data_v2_plurality_mixing
 #SBATCH --partition=seas_gpu
 #SBATCH --gres=gpu
 #SBATCH --time=24:00:00
 #SBATCH --mem=32G
 #SBATCH --cpus-per-task=4
-#SBATCH --output=/n/netscratch/dam_lab/Lab/drooryck/codeswitching-llms/feb_exp/results/feb20/logs/slurm_%A_%a.out
-#SBATCH --error=/n/netscratch/dam_lab/Lab/drooryck/codeswitching-llms/feb_exp/results/feb20/logs/slurm_%A_%a.err
+#SBATCH --output=/n/netscratch/dam_lab/Lab/drooryck/codeswitching-llms/feb_exp/results/feb23-v2-plurality-mixing/logs/slurm_%A_%a.out
+#SBATCH --error=/n/netscratch/dam_lab/Lab/drooryck/codeswitching-llms/feb_exp/results/feb23-v2-plurality-mixing/logs/slurm_%A_%a.err
 
 # Proportion sweep 10% through 100%, with plurality mixing (main data)
-PROPS=(0.100 0.150 0.200 0.250 0.300 0.400 0.450 0.500 0.550 0.600 0.650 0.700 0.750 0.800 0.850 0.900 0.925 0.950 0.960 0.970 0.980 0.985 0.990 0.995 0.999 1.000)
-RUNS=(1 2 3 4 5)
+PROPS=(0 0.5 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.95 1.0)
+RUNS=(1)
 # PROPS=(0.5)
 # RUNS=(1)
 EVAL_PROP=0.1
 
-OUTPUT_ROOT=/n/netscratch/dam_lab/Lab/drooryck/codeswitching-llms/feb_exp/results/feb20
+OUTPUT_ROOT=/n/netscratch/dam_lab/Lab/drooryck/codeswitching-llms/feb_exp/results/feb23-v2-plurality-mixing
 CONFIG_JSON=/n/home06/drooryck/codeswitching-llms/feb_exp/configs/default_model.json
-DATA_DIR=/n/home06/drooryck/codeswitching-llms/feb_exp/data
+DATA_DIR=/n/home06/drooryck/codeswitching-llms/feb_exp/data/balanced_data_feb23/version2_plurality_mixing
 LEXICON=/n/home06/drooryck/codeswitching-llms/feb_exp/data/lexicon_sep22.json
 PY_ENV=/n/home06/drooryck/envs/codeswitching-py310/bin/activate
 
