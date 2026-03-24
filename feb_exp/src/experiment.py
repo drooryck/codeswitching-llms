@@ -65,6 +65,102 @@ class Experiment:
 
         self.logger = logging.getLogger(__name__)
 
+    def _debug_tokenizer_vocab(self, tokenizer) -> None:
+        """Print tokenizer vocabulary (id -> token) that the model sees."""
+        self.logger.info("[DEBUG] Tokenizer vocabulary (id -> token):")
+        vocab = tokenizer.get_vocab()
+        id2tok = {v: k for k, v in vocab.items()}
+        for idx in sorted(id2tok.keys()):
+            self.logger.info("  %d -> %r", idx, id2tok[idx])
+        self.logger.info("[DEBUG] vocab_size = %d", len(vocab))
+
+    def _debug_batches_pre_tokenization(self, train_df: pd.DataFrame, val_df: pd.DataFrame, num_rows: int = 5) -> None:
+        """Print sample train and val rows (pre-tokenization)."""
+        self.logger.info("[DEBUG] Train batch (pre-tokenization), first %d rows:", num_rows)
+        for i, row in train_df.head(num_rows).iterrows():
+            self.logger.info("  [%d] lang=%s input=%r target=%r", i, row.get("lang", "?"), row["input"], row["target"])
+        self.logger.info("[DEBUG] Eval/val batch (pre-tokenization), first %d rows:", num_rows)
+        for i, row in val_df.head(num_rows).iterrows():
+            self.logger.info("  [%d] lang=%s input=%r target=%r", i, row.get("lang", "?"), row["input"], row["target"])
+
+    def _debug_batches_post_tokenization(self, train_dataset, val_dataset, tokenizer, num_examples: int = 3) -> None:
+        """Print sample examples from datasets (post-tokenization): input_ids and decoded text."""
+        self.logger.info("[DEBUG] Train examples (post-tokenization):")
+        for i in range(min(num_examples, len(train_dataset))):
+            ex = train_dataset[i]
+            ids = ex["input_ids"]
+            labels = ex["labels"]
+            decoded = tokenizer.decode(ids, skip_special_tokens=False)
+            label_ids = [x for x in labels if x != -100]
+            decoded_labels = tokenizer.decode(label_ids, skip_special_tokens=False) if label_ids else ""
+            self.logger.info("  [%d] input_ids len=%d: %s", i, len(ids), decoded)
+            self.logger.info("       labels (non-masked) decoded: %s", decoded_labels)
+        self.logger.info("[DEBUG] Eval/val examples (post-tokenization):")
+        for i in range(min(num_examples, len(val_dataset))):
+            ex = val_dataset[i]
+            ids = ex["input_ids"]
+            decoded = tokenizer.decode(ids, skip_special_tokens=False)
+            self.logger.info("  [%d] input_ids len=%d: %s", i, len(ids), decoded)
+
+    def _debug_first_batches_and_loss(self, trainer, train_dataset, val_dataset, collator, training_args, tokenizer, device: str) -> None:
+        """Print first train and eval batches (decoded) and per-example loss on first train batch."""
+        batch_size = getattr(training_args, "per_device_train_batch_size", 16)
+        train_loader = DataLoader(
+            train_dataset,
+            batch_size=batch_size,
+            sampler=SequentialSampler(train_dataset),
+            collate_fn=collator,
+            drop_last=False,
+        )
+        eval_batch_size = getattr(training_args, "per_device_eval_batch_size", batch_size)
+        eval_loader = DataLoader(
+            val_dataset,
+            batch_size=eval_batch_size,
+            collate_fn=collator,
+        )
+        model = trainer.model
+        model.eval()
+
+        # First train batch
+        train_iter = iter(train_loader)
+        batch_train = next(train_iter)
+        batch_train = {k: v.to(device) for k, v in batch_train.items()}
+        self.logger.info("[DEBUG] First TRAIN batch (decoded), batch_size=%d:", batch_train["input_ids"].size(0))
+        for i in range(batch_train["input_ids"].size(0)):
+            ids = batch_train["input_ids"][i].tolist()
+            decoded = tokenizer.decode(ids, skip_special_tokens=False)
+            self.logger.info("  [%d] %s", i, decoded)
+
+        # First eval batch
+        eval_iter = iter(eval_loader)
+        batch_eval = next(eval_iter)
+        batch_eval = {k: v.to(device) for k, v in batch_eval.items()}
+        self.logger.info("[DEBUG] First EVAL batch (decoded), batch_size=%d:", batch_eval["input_ids"].size(0))
+        for i in range(batch_eval["input_ids"].size(0)):
+            ids = batch_eval["input_ids"][i].tolist()
+            decoded = tokenizer.decode(ids, skip_special_tokens=False)
+            self.logger.info("  [%d] %s", i, decoded)
+
+        # Per-example loss on first train batch
+        with torch.no_grad():
+            out = model(**batch_train)
+            logits = out.logits  # (B, T, V)
+            labels = batch_train["labels"]  # (B, T)
+            shift_logits = logits[:, :-1, :].contiguous().view(-1, logits.size(-1))
+            shift_labels = labels[:, 1:].contiguous().view(-1)
+            loss_per_token = torch.nn.functional.cross_entropy(
+                shift_logits, shift_labels, ignore_index=-100, reduction="none"
+            )
+            B, T = labels.size(0), labels.size(1)
+            loss_per_token = loss_per_token.view(B, T - 1)
+            mask = (labels[:, 1:] != -100)
+            loss_per_example = (loss_per_token * mask.float()).sum(dim=1) / mask.float().sum(dim=1).clamp(min=1)
+            self.logger.info("[DEBUG] Loss for first train batch (per example):")
+            for i in range(loss_per_example.size(0)):
+                self.logger.info("  example %d: loss = %.4f", i, loss_per_example[i].item())
+            self.logger.info("[DEBUG] batch mean loss = %.4f", loss_per_example.mean().item())
+
+        model.train()
 
     WANDB_RICH_KEYS = frozenset({
         "nl_follows_fr", "nl_follows_nl", "nl_follows_either",
@@ -145,9 +241,11 @@ class Experiment:
     def run_single(self,
                 prop: float,
                 run_id: int,
-                eval_prop: float = 0.05) -> Path:
+                eval_prop: float = 0.05,
+                debug: bool = False) -> Path:
         """Run single experiment with given parameters.
         Uses data_prep_debug logic: balanced dataset, stratified validation, shuffled training.
+        When debug=True: prints train/eval batches, pre/post tokenization, tokenizer vocab, and loss for sample batches.
         """
         set_seed(run_id)
 
@@ -210,9 +308,19 @@ class Experiment:
             f"FR: {(test_df_eval['lang'] == 'fr').sum()} | NL: {(test_df_eval['lang'] == 'nl').sum()}"
         )
 
-        # --- 2) Train set balancing by taking FIRST min_count from each language ---
-        train_fr = train_df_full[train_df_full["lang"] == "fr"].reset_index(drop=True)
-        train_nl = train_df_full[train_df_full["lang"] == "nl"].reset_index(drop=True)
+        # --- 2) Train set balancing: shuffle within each language, then take min_count ---
+        # We first shuffle the full per-language pools using the run-specific seed,
+        # and only then take subsets, so that any truncation respects the seed.
+        train_fr = (
+            train_df_full[train_df_full["lang"] == "fr"]
+            .sample(frac=1, random_state=run_id)
+            .reset_index(drop=True)
+        )
+        train_nl = (
+            train_df_full[train_df_full["lang"] == "nl"]
+            .sample(frac=1, random_state=run_id)
+            .reset_index(drop=True)
+        )
 
         fr_count = len(train_fr)
         nl_count = len(train_nl)
@@ -269,9 +377,16 @@ class Experiment:
 
         self.logger.info("Creating tokenizer and datasets...")
         tokenizer = self.data_manager.build_tokenizer()
+        if debug:
+            self._debug_tokenizer_vocab(tokenizer)
+            self._debug_batches_pre_tokenization(train_df, val_df)
         train_dataset, val_dataset = self.data_manager.create_pytorch_datasets(
             train_df, val_df, tokenizer
         )
+        if debug:
+            self._debug_batches_post_tokenization(
+                train_dataset, val_dataset, tokenizer, num_examples=3
+            )
         collator = self.data_manager.create_collator(tokenizer)
 
         # Create model
@@ -331,13 +446,18 @@ class Experiment:
         # monkey patch the trainer to use the SequentialSampler
         trainer.get_train_dataloader = lambda: DataLoader(
             train_dataset,
-            batch_size=training_args.train_batch_size,
+            batch_size=training_args.per_device_train_batch_size,
             sampler=SequentialSampler(train_dataset),
             collate_fn=collator,
             drop_last=training_args.dataloader_drop_last,
             num_workers=training_args.dataloader_num_workers,
             pin_memory=training_args.dataloader_pin_memory,
         )
+
+        if debug:
+            self._debug_first_batches_and_loss(
+                trainer, train_dataset, val_dataset, collator, training_args, tokenizer, device,
+            )
 
         # Train model
         self.logger.info("Starting training...")

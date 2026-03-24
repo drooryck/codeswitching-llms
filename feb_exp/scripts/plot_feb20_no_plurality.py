@@ -41,6 +41,11 @@ FEB23_PRESETS = [
     ("feb23-v1-plurality-mixing", "feb23-v1-plurality-mixing"),
     ("feb23-v2-plurality-mixing", "feb23-v2-plurality-mixing"),
 ]
+MAR4_OUTPUT_ROOT = REPO_ROOT / "feb_exp" / "results" / "mar4"
+MAR4_PRESETS = [
+    ("mar4-v1-no-plurality", "mar4/version1_no_plurality_mixing"),
+    ("mar4-v1-plurality-mixing", "mar4/version1_plurality_mixing"),
+]
 ABLATION_TYPES = ("none", "subject", "verb", "object")
 
 
@@ -77,13 +82,20 @@ def main():
         action="store_true",
         help="Run for all 4 feb23 folders; save to feb_exp/results/feb23/<folder_name>",
     )
+    parser.add_argument(
+        "--mar4",
+        action="store_true",
+        help="Run for mar4 sweeps; save to feb_exp/results/mar4/<folder_name>",
+    )
     args = parser.parse_args()
 
-    if args.feb23:
-        FEB23_OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
-        for out_name, netscratch_name in FEB23_PRESETS:
+    if args.feb23 or args.mar4:
+        presets = FEB23_PRESETS if args.feb23 else MAR4_PRESETS
+        output_root = FEB23_OUTPUT_ROOT if args.feb23 else MAR4_OUTPUT_ROOT
+        output_root.mkdir(parents=True, exist_ok=True)
+        for out_name, netscratch_name in presets:
             runs_dir = (NETSCRATCH_RESULTS / netscratch_name / "runs").resolve()
-            output_dir = (FEB23_OUTPUT_ROOT / out_name).resolve()
+            output_dir = (output_root / out_name).resolve()
             if not runs_dir.exists():
                 logger.warning("Skipping %s: runs dir not found: %s", out_name, runs_dir)
                 continue

@@ -6,7 +6,7 @@ import logging
 import math
 import re
 from pathlib import Path
-from typing import Dict, List, Tuple, Set, Any
+from typing import Dict, List, Optional, Tuple, Set, Any
 import pandas as pd
 
 
@@ -18,6 +18,7 @@ class Metrics:
 
     TOKEN_PATTERN = re.compile(r"<[^>\s]+>|\w+|[^\s\w]")
     SPECIAL_TOKEN_PATTERN = re.compile(r"<[^>\s]+>")
+    FR_TEMPLATE_456 = ("part", "det", "noun")
 
     def __init__(self, lexicon_path: Path):
         # TODO: dont init every calculation. also have more of these to save compute.
@@ -609,6 +610,45 @@ class Metrics:
 
         return float(max(0.0, min(1.0, score)))
             
+    def _get_token_role(self, token: str) -> str:
+        """Classify a token into its grammatical role."""
+        t = token.lower()
+        if t in self.det_fr or t in self.det_nl:
+            return "det"
+        if t in self.nouns_fr or t in self.nouns_nl:
+            return "noun"
+        if t in self.aux_fr or t in self.aux_nl:
+            return "aux"
+        if t in self.part_fr or t in self.part_nl:
+            return "part"
+        return "unknown"
+
+    def compute_syntax_score(self, prediction: str) -> Optional[float]:
+        """Compute syntax score (0=NL word order, 1=FR word order) from positions 4-6.
+
+        Returns None if the prediction doesn't have exactly 6 tokens or
+        positions 1-3 don't follow the shared prefix (det noun aux).
+        """
+        tokens = self.tokenize(prediction.lower())
+        if len(tokens) != 6:
+            return None
+        roles = [self._get_token_role(t) for t in tokens]
+        if roles[0] != "det" or roles[1] != "noun" or roles[2] != "aux":
+            return None
+        score = 0.0
+        for i, fr_role in enumerate(self.FR_TEMPLATE_456):
+            if roles[3 + i] == fr_role:
+                score += 1.0 / 3.0
+        return score
+
+    def compute_morphology_score(self, prediction: str) -> float:
+        """Compute morphology score = fraction of tokens that are French."""
+        tokens = self.tokenize(prediction.lower())
+        if not tokens:
+            return 0.0
+        fr_frac, _ = self.token_lang_frac(tokens)
+        return fr_frac
+
     def compute_all_metrics(self, predictions: List[Dict[str, Any]], ablation_type: str = 'none') -> Dict[str, Any]:
         """
         Compute all metrics including structure and ablation metrics regardless of type.
@@ -646,7 +686,12 @@ class Metrics:
             
             # Language orientation score
             orientation = self.language_orientation_score(pred)
-            
+
+            # Alignment metrics (syntax = word order, morphology = token language)
+            syntax_score = self.compute_syntax_score(pred)
+            morphology_score = self.compute_morphology_score(pred)
+            alignment_score = ((syntax_score + morphology_score) / 2.0) if syntax_score is not None else None
+
             records.append({
                 'lang': lang,
                 'exact': exact,
@@ -656,6 +701,9 @@ class Metrics:
                 'orientation_score': orientation,
                 'lexical_score': lexical_score,
                 'tokens_expected_len': tokens_expected_len,
+                'syntax_score': syntax_score,
+                'morphology_score': morphology_score,
+                'alignment_score': alignment_score,
                 **structure,
                 **verb_metrics,
                 **det_metrics,
@@ -696,6 +744,14 @@ class Metrics:
             metrics[f"{prefix}_keeps_ablated"] = float(sub['keeps_ablated'].mean())
             metrics[f"{prefix}_aux_matches_input"] = float(sub['aux_matches_input'].mean())
             metrics[f"{prefix}_aux_matches_verb"] = float(sub['aux_matches_verb'].mean())
+
+            # Alignment metrics
+            valid_syntax = sub['syntax_score'].dropna()
+            metrics[f"{prefix}_syntax_score"] = float(valid_syntax.mean()) if len(valid_syntax) else None
+            metrics[f"{prefix}_morphology_score"] = float(sub['morphology_score'].mean())
+            valid_align = sub['alignment_score'].dropna()
+            metrics[f"{prefix}_alignment_score"] = float(valid_align.mean()) if len(valid_align) else None
+            metrics[f"{prefix}_syntax_valid_pct"] = float(len(valid_syntax) / len(sub)) if len(sub) else 0.0
         
         # Overall metrics (no ablation type needed in names)
         metrics['overall_exact'] = float(df['exact'].mean())

@@ -534,6 +534,48 @@ class BilingualPlotter:
             ylim=(0, 1)
         )
     
+    def plot_syntax_score_by_proportion(self, suffix: Optional[str] = None) -> None:
+        """Plot syntax score (word order, 0=NL, 1=FR) by French training proportion."""
+        base = "syntax_score_by_proportion"
+        fname = f"{base}_{suffix}.png" if suffix else f"{base}.png"
+        title = f"Syntax score (word order) - {suffix} ablation" if suffix else "Syntax score (word order)"
+        self._plot_dual_panel_with_runs(
+            fr_col="fr_syntax_score",
+            nl_col="nl_syntax_score",
+            title=title,
+            ylabel="Syntax score (0=NL order, 1=FR order)",
+            output_path=self.output_dir / fname,
+            ylim=(0, 1),
+        )
+
+    def plot_morphology_score_by_proportion(self, suffix: Optional[str] = None) -> None:
+        """Plot morphology score (French token share) by French training proportion."""
+        base = "morphology_score_by_proportion"
+        fname = f"{base}_{suffix}.png" if suffix else f"{base}.png"
+        title = f"Morphology score (French token share) - {suffix} ablation" if suffix else "Morphology score (French token share)"
+        self._plot_dual_panel_with_runs(
+            fr_col="fr_morphology_score",
+            nl_col="nl_morphology_score",
+            title=title,
+            ylabel="Morphology score (0=Dutch, 1=French)",
+            output_path=self.output_dir / fname,
+            ylim=(0, 1),
+        )
+
+    def plot_alignment_score_by_proportion(self, suffix: Optional[str] = None) -> None:
+        """Plot alignment score (syntax + morphology average) by French training proportion."""
+        base = "alignment_score_by_proportion"
+        fname = f"{base}_{suffix}.png" if suffix else f"{base}.png"
+        title = f"Alignment (syntax + morphology) - {suffix} ablation" if suffix else "Alignment (syntax + morphology)"
+        self._plot_dual_panel_with_runs(
+            fr_col="fr_alignment_score",
+            nl_col="nl_alignment_score",
+            title=title,
+            ylabel="Alignment score (0=Dutch, 1=French)",
+            output_path=self.output_dir / fname,
+            ylim=(0, 1),
+        )
+
     ## TODO: you need to massively clean up what your plots look like.
     def create_all_plots(self) -> None:
         """Create all visualization plots from results."""
@@ -558,6 +600,15 @@ class BilingualPlotter:
             
             logger.info("Creating language orientation plot...")
             self.plot_language_orientation()
+
+            logger.info("Creating syntax score plot...")
+            self.plot_syntax_score_by_proportion()
+
+            logger.info("Creating morphology score plot...")
+            self.plot_morphology_score_by_proportion()
+
+            logger.info("Creating alignment score plot...")
+            self.plot_alignment_score_by_proportion()
 
             logger.info(f"All plots saved to {self.output_dir}")
 

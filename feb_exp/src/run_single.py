@@ -28,6 +28,8 @@ def main():
                        help="Directory containing data files")
     parser.add_argument("--lexicon-path", type=str, required=True,
                     help="Path to lexicon JSON file")
+    parser.add_argument("--debug", action="store_true",
+                    help="Print train/eval batches, pre/post tokenization, tokenizer vocab, and per-example loss for sanity checking")
 
     args = parser.parse_args()
 
@@ -48,7 +50,7 @@ def main():
         output_dir=Path(args.output_dir)
     )
 
-    experiment.run_single(args.prop, args.run_id, args.eval_prop)
+    experiment.run_single(args.prop, args.run_id, args.eval_prop, debug=args.debug)
 
 
 if __name__ == "__main__":
