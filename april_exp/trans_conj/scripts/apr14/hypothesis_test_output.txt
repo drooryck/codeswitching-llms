@@ -1,0 +1,153 @@
+Building vocabulary sets...
+  FR-only: 326 words, NL-only: 245 words
+  Processed 5/50 configs...
+  Processed 10/50 configs...
+  Processed 15/50 configs...
+  Processed 20/50 configs...
+  Processed 25/50 configs...
+  Processed 30/50 configs...
+  Processed 35/50 configs...
+  Processed 40/50 configs...
+  Processed 45/50 configs...
+  Processed 50/50 configs...
+
+Processed 50 configs, 5,911,900 total sentence pairs
+
+================================================================================
+GLOBAL PAIRED TEST: mask vs nomask lexical score (all sentences pooled)
+  H0: mean(mask_lexical - nomask_lexical) = 0
+  Positive diff → mask has MORE FR tokens in output
+================================================================================
+  N sentence pairs:        5,911,900
+  Mean diff (mask-nomask): -0.022131
+  Std of diffs:            0.231486
+  SE:                      0.000095
+  t-statistic:             -232.4591
+  p-value (two-sided):     0.00e+00
+  95% CI:                  [-0.022318, -0.021945]
+  Significant at α=0.05?   YES
+  Direction: NOMASK has higher FR lexical (more CS in NL outputs)
+
+================================================================================
+BY OUTPUT LANGUAGE
+  NL outputs: higher lexical = more FR words in Dutch = more codeswitching
+  FR outputs: lower lexical = more NL words in French = more codeswitching
+================================================================================
+
+  ── NL outputs ──
+  N sentence pairs:        2,955,950
+  Mean diff (mask-nomask): -0.093929
+  Std of diffs:            0.252685
+  SE:                      0.000147
+  t-statistic:             -639.1009
+  p-value (two-sided):     0.00e+00
+  95% CI:                  [-0.094217, -0.093641]
+  Significant at α=0.05?   YES
+  Direction: NOMASK has higher FR lexical (more CS in NL outputs)
+
+  ── FR outputs ──
+  N sentence pairs:        2,955,950
+  Mean diff (mask-nomask): +0.049666
+  Std of diffs:            0.181691
+  SE:                      0.000106
+  t-statistic:             469.9783
+  p-value (two-sided):     0.00e+00
+  95% CI:                  [+0.049459, +0.049874]
+  Significant at α=0.05?   YES
+  Direction: MASK has higher FR lexical (more CS in NL outputs)
+
+================================================================================
+BY TRANSLATION LEVEL
+================================================================================
+
+  ── tense_separate ──
+  N sentence pairs:        2,955,950
+  Mean diff (mask-nomask): -0.044169
+  Std of diffs:            0.322946
+  SE:                      0.000188
+  t-statistic:             -235.1464
+  p-value (two-sided):     0.00e+00
+  95% CI:                  [-0.044537, -0.043801]
+  Significant at α=0.05?   YES
+  Direction: NOMASK has higher FR lexical (more CS in NL outputs)
+
+  ── full_sequence ──
+  N sentence pairs:        2,955,950
+  Mean diff (mask-nomask): -0.000093
+  Std of diffs:            0.043657
+  SE:                      0.000025
+  t-statistic:             -3.6799
+  p-value (two-sided):     2.33e-04
+  95% CI:                  [-0.000143, -0.000044]
+  Significant at α=0.05?   YES
+  Direction: NOMASK has higher FR lexical (more CS in NL outputs)
+
+================================================================================
+TENSE_SEPARATE: BY TF BUCKET
+================================================================================
+
+  ── low tf (0.01, 0.1) ──
+  N sentence pairs:        1,182,380
+  Mean diff (mask-nomask): -0.001133
+  Std of diffs:            0.041307
+  SE:                      0.000038
+  t-statistic:             -29.8194
+  p-value (two-sided):     0.00e+00
+  95% CI:                  [-0.001207, -0.001058]
+  Significant at α=0.05?   YES
+  Direction: NOMASK has higher FR lexical (more CS in NL outputs)
+
+  ── mid tf (0.5) ──
+  N sentence pairs:        591,190
+  Mean diff (mask-nomask): +0.004810
+  Std of diffs:            0.037925
+  SE:                      0.000049
+  t-statistic:             97.5097
+  p-value (two-sided):     0.00e+00
+  95% CI:                  [+0.004713, +0.004906]
+  Significant at α=0.05?   YES
+  Direction: MASK has higher FR lexical (more CS in NL outputs)
+
+  ── high tf (0.9, 0.99) ──
+  N sentence pairs:        1,182,380
+  Mean diff (mask-nomask): -0.111695
+  Std of diffs:            0.500698
+  SE:                      0.000460
+  t-statistic:             -242.5697
+  p-value (two-sided):     0.00e+00
+  95% CI:                  [-0.112597, -0.110792]
+  Significant at α=0.05?   YES
+  Direction: NOMASK has higher FR lexical (more CS in NL outputs)
+
+================================================================================
+PER-CONFIG RESULTS (top 20 by |effect|)
+================================================================================
+
+  35 / 100 configs significant at α=0.05
+  17 where mask > nomask (mask has more FR tokens)
+  18 where nomask > mask (nomask has more FR tokens)
+
+  level               prop    tf lang  mask_lex   no_lex     diff      std          p sig
+  ----------------------------------------------------------------------------------------
+  tense_separate      0.10  0.99   nl    0.0000   0.9143  -0.9143   0.1118   0.00e+00 * 
+  tense_separate      0.99  0.99   nl    0.0000   0.8999  -0.8999   0.1265   0.00e+00 * 
+  tense_separate      0.50  0.99   fr    1.0000   0.1992  +0.8008   0.1850   0.00e+00 * 
+  tense_separate      0.50  0.99   nl    0.0000   0.7750  -0.7750   0.0928   0.00e+00 * 
+  tense_separate      0.90  0.99   fr    1.0000   0.2571  +0.7429   0.1776   0.00e+00 * 
+  tense_separate      0.01  0.99   nl    0.0000   0.6444  -0.6444   0.1774   0.00e+00 * 
+  tense_separate      0.99  0.90   nl    0.0000   0.5678  -0.5678   0.2201   0.00e+00 * 
+  tense_separate      0.90  0.99   nl    0.0000   0.5181  -0.5181   0.1653   0.00e+00 * 
+  tense_separate      0.01  0.99   fr    0.9825   0.6264  +0.3561   0.2062   0.00e+00 * 
+  tense_separate      0.50  0.90   nl    0.0000   0.3127  -0.3127   0.2287   0.00e+00 * 
+  tense_separate      0.90  0.90   fr    1.0000   0.6928  +0.3072   0.2543   0.00e+00 * 
+  tense_separate      0.99  0.99   fr    1.0000   0.8225  +0.1775   0.2000   0.00e+00 * 
+  full_sequence       0.01  0.99   fr    0.9057   1.0000  -0.0943   0.2079   0.00e+00 * 
+  full_sequence       0.99  0.99   nl    0.0757   0.0017  +0.0739   0.1423   0.00e+00 * 
+  tense_separate      0.99  0.01   nl    0.0000   0.0643  -0.0643   0.1507   0.00e+00 * 
+  tense_separate      0.90  0.90   nl    0.0000   0.0562  -0.0562   0.1493   0.00e+00 * 
+  tense_separate      0.01  0.50   fr    1.0000   0.9519  +0.0481   0.1109   0.00e+00 * 
+  tense_separate      0.01  0.10   fr    1.0000   0.9583  +0.0417   0.0741   0.00e+00 * 
+  tense_separate      0.01  0.90   fr    1.0000   0.9599  +0.0401   0.0858   0.00e+00 * 
+  tense_separate      0.50  0.90   fr    1.0000   0.9752  +0.0248   0.1107   0.00e+00 * 
+
+Full per-config results saved to /n/home06/drooryck/codeswitching-llms/april_exp/trans_conj/scripts/apr14/hypothesis_test_results.csv

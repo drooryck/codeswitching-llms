@@ -1,0 +1,1186 @@
+{
+  "DET": {
+    "en": {
+      "sgl": "the",
+      "pl": "the"
+    },
+    "nl_de": {
+      "sgl": "de",
+      "pl": "de"
+    },
+    "nl_het": {
+      "sgl": "het",
+      "pl": "de"
+    }
+  },
+  "NOUNS": {
+    "dog": {
+      "en": {
+        "sgl": "dog",
+        "pl": "dogs"
+      },
+      "nl": {
+        "sgl": "hond",
+        "pl": "honden",
+        "gender": "de"
+      }
+    },
+    "wolf": {
+      "en": {
+        "sgl": "wolf",
+        "pl": "wolves"
+      },
+      "nl": {
+        "sgl": "wolf",
+        "pl": "wolven",
+        "gender": "de"
+      }
+    },
+    "cat": {
+      "en": {
+        "sgl": "cat",
+        "pl": "cats"
+      },
+      "nl": {
+        "sgl": "kat",
+        "pl": "katten",
+        "gender": "de"
+      }
+    },
+    "tiger": {
+      "en": {
+        "sgl": "tiger",
+        "pl": "tigers"
+      },
+      "nl": {
+        "sgl": "tijger",
+        "pl": "tijgers",
+        "gender": "de"
+      }
+    },
+    "monkey": {
+      "en": {
+        "sgl": "monkey",
+        "pl": "monkeys"
+      },
+      "nl": {
+        "sgl": "aap",
+        "pl": "apen",
+        "gender": "de"
+      }
+    },
+    "horse": {
+      "en": {
+        "sgl": "horse",
+        "pl": "horses"
+      },
+      "nl": {
+        "sgl": "paard",
+        "pl": "paarden",
+        "gender": "het"
+      }
+    },
+    "mouse": {
+      "en": {
+        "sgl": "mouse",
+        "pl": "mice"
+      },
+      "nl": {
+        "sgl": "muis",
+        "pl": "muizen",
+        "gender": "de"
+      }
+    },
+    "elephant": {
+      "en": {
+        "sgl": "elephant",
+        "pl": "elephants"
+      },
+      "nl": {
+        "sgl": "olifant",
+        "pl": "olifanten",
+        "gender": "de"
+      }
+    },
+    "fox": {
+      "en": {
+        "sgl": "fox",
+        "pl": "foxes"
+      },
+      "nl": {
+        "sgl": "vos",
+        "pl": "vossen",
+        "gender": "de"
+      }
+    },
+    "bird": {
+      "en": {
+        "sgl": "bird",
+        "pl": "birds"
+      },
+      "nl": {
+        "sgl": "vogel",
+        "pl": "vogels",
+        "gender": "de"
+      }
+    },
+    "child": {
+      "en": {
+        "sgl": "child",
+        "pl": "children"
+      },
+      "nl": {
+        "sgl": "kind",
+        "pl": "kinderen",
+        "gender": "het"
+      }
+    },
+    "doctor": {
+      "en": {
+        "sgl": "doctor",
+        "pl": "doctors"
+      },
+      "nl": {
+        "sgl": "dokter",
+        "pl": "dokters",
+        "gender": "de"
+      }
+    },
+    "girl": {
+      "en": {
+        "sgl": "girl",
+        "pl": "girls"
+      },
+      "nl": {
+        "sgl": "meisje",
+        "pl": "meisjes",
+        "gender": "het"
+      }
+    },
+    "boy": {
+      "en": {
+        "sgl": "boy",
+        "pl": "boys"
+      },
+      "nl": {
+        "sgl": "jongen",
+        "pl": "jongens",
+        "gender": "de"
+      }
+    },
+    "woman": {
+      "en": {
+        "sgl": "woman",
+        "pl": "women"
+      },
+      "nl": {
+        "sgl": "vrouw",
+        "pl": "vrouwen",
+        "gender": "de"
+      }
+    },
+    "man": {
+      "en": {
+        "sgl": "man",
+        "pl": "men"
+      },
+      "nl": {
+        "sgl": "man",
+        "pl": "mannen",
+        "gender": "de"
+      }
+    },
+    "teacher": {
+      "en": {
+        "sgl": "teacher",
+        "pl": "teachers"
+      },
+      "nl": {
+        "sgl": "leraar",
+        "pl": "leraars",
+        "gender": "de"
+      }
+    },
+    "friend": {
+      "en": {
+        "sgl": "friend",
+        "pl": "friends"
+      },
+      "nl": {
+        "sgl": "vriend",
+        "pl": "vrienden",
+        "gender": "de"
+      }
+    },
+    "enemy": {
+      "en": {
+        "sgl": "enemy",
+        "pl": "enemies"
+      },
+      "nl": {
+        "sgl": "vijand",
+        "pl": "vijanden",
+        "gender": "de"
+      }
+    },
+    "bear": {
+      "en": {
+        "sgl": "bear",
+        "pl": "bears"
+      },
+      "nl": {
+        "sgl": "beer",
+        "pl": "beren",
+        "gender": "de"
+      }
+    },
+    "fish": {
+      "en": {
+        "sgl": "fish",
+        "pl": "fish"
+      },
+      "nl": {
+        "sgl": "vis",
+        "pl": "vissen",
+        "gender": "de"
+      }
+    },
+    "lion": {
+      "en": {
+        "sgl": "lion",
+        "pl": "lions"
+      },
+      "nl": {
+        "sgl": "leeuw",
+        "pl": "leeuwen",
+        "gender": "de"
+      }
+    },
+    "rabbit": {
+      "en": {
+        "sgl": "rabbit",
+        "pl": "rabbits"
+      },
+      "nl": {
+        "sgl": "konijn",
+        "pl": "konijnen",
+        "gender": "het"
+      }
+    },
+    "deer": {
+      "en": {
+        "sgl": "deer",
+        "pl": "deer"
+      },
+      "nl": {
+        "sgl": "hert",
+        "pl": "herten",
+        "gender": "het"
+      }
+    },
+    "duck": {
+      "en": {
+        "sgl": "duck",
+        "pl": "ducks"
+      },
+      "nl": {
+        "sgl": "eend",
+        "pl": "eenden",
+        "gender": "de"
+      }
+    },
+    "chicken": {
+      "en": {
+        "sgl": "chicken",
+        "pl": "chickens"
+      },
+      "nl": {
+        "sgl": "kip",
+        "pl": "kippen",
+        "gender": "de"
+      }
+    },
+    "pig": {
+      "en": {
+        "sgl": "pig",
+        "pl": "pigs"
+      },
+      "nl": {
+        "sgl": "varken",
+        "pl": "varkens",
+        "gender": "het"
+      }
+    },
+    "donkey": {
+      "en": {
+        "sgl": "donkey",
+        "pl": "donkeys"
+      },
+      "nl": {
+        "sgl": "ezel",
+        "pl": "ezels",
+        "gender": "de"
+      }
+    },
+    "goose": {
+      "en": {
+        "sgl": "goose",
+        "pl": "geese"
+      },
+      "nl": {
+        "sgl": "gans",
+        "pl": "ganzen",
+        "gender": "de"
+      }
+    },
+    "sheep": {
+      "en": {
+        "sgl": "sheep",
+        "pl": "sheep"
+      },
+      "nl": {
+        "sgl": "schaap",
+        "pl": "schapen",
+        "gender": "het"
+      }
+    },
+    "goat": {
+      "en": {
+        "sgl": "goat",
+        "pl": "goats"
+      },
+      "nl": {
+        "sgl": "geit",
+        "pl": "geiten",
+        "gender": "de"
+      }
+    },
+    "pigeon": {
+      "en": {
+        "sgl": "pigeon",
+        "pl": "pigeons"
+      },
+      "nl": {
+        "sgl": "duif",
+        "pl": "duiven",
+        "gender": "de"
+      }
+    },
+    "crow": {
+      "en": {
+        "sgl": "crow",
+        "pl": "crows"
+      },
+      "nl": {
+        "sgl": "kraai",
+        "pl": "kraaien",
+        "gender": "de"
+      }
+    },
+    "snake": {
+      "en": {
+        "sgl": "snake",
+        "pl": "snakes"
+      },
+      "nl": {
+        "sgl": "slang",
+        "pl": "slangen",
+        "gender": "de"
+      }
+    },
+    "frog": {
+      "en": {
+        "sgl": "frog",
+        "pl": "frogs"
+      },
+      "nl": {
+        "sgl": "kikker",
+        "pl": "kikkers",
+        "gender": "de"
+      }
+    },
+    "owl": {
+      "en": {
+        "sgl": "owl",
+        "pl": "owls"
+      },
+      "nl": {
+        "sgl": "uil",
+        "pl": "uilen",
+        "gender": "de"
+      }
+    },
+    "swan": {
+      "en": {
+        "sgl": "swan",
+        "pl": "swans"
+      },
+      "nl": {
+        "sgl": "zwaan",
+        "pl": "zwanen",
+        "gender": "de"
+      }
+    },
+    "dolphin": {
+      "en": {
+        "sgl": "dolphin",
+        "pl": "dolphins"
+      },
+      "nl": {
+        "sgl": "dolfijn",
+        "pl": "dolfijnen",
+        "gender": "de"
+      }
+    },
+    "shark": {
+      "en": {
+        "sgl": "shark",
+        "pl": "sharks"
+      },
+      "nl": {
+        "sgl": "haai",
+        "pl": "haaien",
+        "gender": "de"
+      }
+    },
+    "crab": {
+      "en": {
+        "sgl": "crab",
+        "pl": "crabs"
+      },
+      "nl": {
+        "sgl": "krab",
+        "pl": "krabben",
+        "gender": "de"
+      }
+    },
+    "turtle": {
+      "en": {
+        "sgl": "turtle",
+        "pl": "turtles"
+      },
+      "nl": {
+        "sgl": "schildpad",
+        "pl": "schildpadden",
+        "gender": "de"
+      }
+    },
+    "eagle": {
+      "en": {
+        "sgl": "eagle",
+        "pl": "eagles"
+      },
+      "nl": {
+        "sgl": "adelaar",
+        "pl": "adelaren",
+        "gender": "de"
+      }
+    },
+    "mosquito": {
+      "en": {
+        "sgl": "mosquito",
+        "pl": "mosquitoes"
+      },
+      "nl": {
+        "sgl": "mug",
+        "pl": "muggen",
+        "gender": "de"
+      }
+    },
+    "bee": {
+      "en": {
+        "sgl": "bee",
+        "pl": "bees"
+      },
+      "nl": {
+        "sgl": "bij",
+        "pl": "bijen",
+        "gender": "de"
+      }
+    },
+    "butterfly": {
+      "en": {
+        "sgl": "butterfly",
+        "pl": "butterflies"
+      },
+      "nl": {
+        "sgl": "vlinder",
+        "pl": "vlinders",
+        "gender": "de"
+      }
+    },
+    "lizard": {
+      "en": {
+        "sgl": "lizard",
+        "pl": "lizards"
+      },
+      "nl": {
+        "sgl": "hagedis",
+        "pl": "hagedissen",
+        "gender": "de"
+      }
+    },
+    "spider": {
+      "en": {
+        "sgl": "spider",
+        "pl": "spiders"
+      },
+      "nl": {
+        "sgl": "spin",
+        "pl": "spinnen",
+        "gender": "de"
+      }
+    }
+  },
+  "VERBS": {
+    "eat": {
+      "en": {
+        "present": {
+          "sg": "eats",
+          "pl": "eat"
+        },
+        "participle": "eaten"
+      },
+      "nl": {
+        "present": {
+          "sg": "eet",
+          "pl": "eten"
+        },
+        "participle": "gegeten"
+      }
+    },
+    "see": {
+      "en": {
+        "present": {
+          "sg": "sees",
+          "pl": "see"
+        },
+        "participle": "seen"
+      },
+      "nl": {
+        "present": {
+          "sg": "ziet",
+          "pl": "zien"
+        },
+        "participle": "gezien"
+      }
+    },
+    "like": {
+      "en": {
+        "present": {
+          "sg": "likes",
+          "pl": "like"
+        },
+        "participle": "liked"
+      },
+      "nl": {
+        "present": {
+          "sg": "mag",
+          "pl": "mogen"
+        },
+        "participle": "gemogen"
+      }
+    },
+    "seek": {
+      "en": {
+        "present": {
+          "sg": "seeks",
+          "pl": "seek"
+        },
+        "participle": "sought"
+      },
+      "nl": {
+        "present": {
+          "sg": "zoekt",
+          "pl": "zoeken"
+        },
+        "participle": "gezocht"
+      }
+    },
+    "help": {
+      "en": {
+        "present": {
+          "sg": "helps",
+          "pl": "help"
+        },
+        "participle": "helped"
+      },
+      "nl": {
+        "present": {
+          "sg": "helpt",
+          "pl": "helpen"
+        },
+        "participle": "geholpen"
+      }
+    },
+    "follow": {
+      "en": {
+        "present": {
+          "sg": "follows",
+          "pl": "follow"
+        },
+        "participle": "followed"
+      },
+      "nl": {
+        "present": {
+          "sg": "volgt",
+          "pl": "volgen"
+        },
+        "participle": "gevolgd"
+      }
+    },
+    "hit": {
+      "en": {
+        "present": {
+          "sg": "hits",
+          "pl": "hit"
+        },
+        "participle": "hit"
+      },
+      "nl": {
+        "present": {
+          "sg": "slaat",
+          "pl": "slaan"
+        },
+        "participle": "geslagen"
+      }
+    },
+    "carry": {
+      "en": {
+        "present": {
+          "sg": "carries",
+          "pl": "carry"
+        },
+        "participle": "carried"
+      },
+      "nl": {
+        "present": {
+          "sg": "draagt",
+          "pl": "dragen"
+        },
+        "participle": "gedragen"
+      }
+    },
+    "kiss": {
+      "en": {
+        "present": {
+          "sg": "kisses",
+          "pl": "kiss"
+        },
+        "participle": "kissed"
+      },
+      "nl": {
+        "present": {
+          "sg": "zoent",
+          "pl": "zoenen"
+        },
+        "participle": "gezoend"
+      }
+    },
+    "chase": {
+      "en": {
+        "present": {
+          "sg": "chases",
+          "pl": "chase"
+        },
+        "participle": "chased"
+      },
+      "nl": {
+        "present": {
+          "sg": "jaagt",
+          "pl": "jagen"
+        },
+        "participle": "gejaagd"
+      }
+    },
+    "observe": {
+      "en": {
+        "present": {
+          "sg": "observes",
+          "pl": "observe"
+        },
+        "participle": "observed"
+      },
+      "nl": {
+        "present": {
+          "sg": "observeert",
+          "pl": "observeren"
+        },
+        "participle": "geobserveerd"
+      }
+    },
+    "treat": {
+      "en": {
+        "present": {
+          "sg": "treats",
+          "pl": "treat"
+        },
+        "participle": "treated"
+      },
+      "nl": {
+        "present": {
+          "sg": "verzorgt",
+          "pl": "verzorgen"
+        },
+        "participle": "verzorgd"
+      }
+    },
+    "pursue": {
+      "en": {
+        "present": {
+          "sg": "pursues",
+          "pl": "pursue"
+        },
+        "participle": "pursued"
+      },
+      "nl": {
+        "present": {
+          "sg": "achtervolgt",
+          "pl": "achtervolgen"
+        },
+        "participle": "achtervolgd"
+      }
+    },
+    "attack": {
+      "en": {
+        "present": {
+          "sg": "attacks",
+          "pl": "attack"
+        },
+        "participle": "attacked"
+      },
+      "nl": {
+        "present": {
+          "sg": "valt",
+          "pl": "vallen"
+        },
+        "participle": "aangevallen"
+      }
+    },
+    "rescue": {
+      "en": {
+        "present": {
+          "sg": "rescues",
+          "pl": "rescue"
+        },
+        "participle": "rescued"
+      },
+      "nl": {
+        "present": {
+          "sg": "redt",
+          "pl": "redden"
+        },
+        "participle": "gered"
+      }
+    },
+    "comfort": {
+      "en": {
+        "present": {
+          "sg": "comforts",
+          "pl": "comfort"
+        },
+        "participle": "comforted"
+      },
+      "nl": {
+        "present": {
+          "sg": "troost",
+          "pl": "troosten"
+        },
+        "participle": "getroost"
+      }
+    },
+    "push": {
+      "en": {
+        "present": {
+          "sg": "pushes",
+          "pl": "push"
+        },
+        "participle": "pushed"
+      },
+      "nl": {
+        "present": {
+          "sg": "duwt",
+          "pl": "duwen"
+        },
+        "participle": "geduwd"
+      }
+    },
+    "watch": {
+      "en": {
+        "present": {
+          "sg": "watches",
+          "pl": "watch"
+        },
+        "participle": "watched"
+      },
+      "nl": {
+        "present": {
+          "sg": "bekijkt",
+          "pl": "bekijken"
+        },
+        "participle": "bekeken"
+      }
+    },
+    "ignore": {
+      "en": {
+        "present": {
+          "sg": "ignores",
+          "pl": "ignore"
+        },
+        "participle": "ignored"
+      },
+      "nl": {
+        "present": {
+          "sg": "negeert",
+          "pl": "negeren"
+        },
+        "participle": "genegeerd"
+      }
+    },
+    "give": {
+      "en": {
+        "present": {
+          "sg": "gives",
+          "pl": "give"
+        },
+        "participle": "given"
+      },
+      "nl": {
+        "present": {
+          "sg": "geeft",
+          "pl": "geven"
+        },
+        "participle": "gegeven"
+      }
+    },
+    "take": {
+      "en": {
+        "present": {
+          "sg": "takes",
+          "pl": "take"
+        },
+        "participle": "taken"
+      },
+      "nl": {
+        "present": {
+          "sg": "neemt",
+          "pl": "nemen"
+        },
+        "participle": "genomen"
+      }
+    },
+    "open": {
+      "en": {
+        "present": {
+          "sg": "opens",
+          "pl": "open"
+        },
+        "participle": "opened"
+      },
+      "nl": {
+        "present": {
+          "sg": "opent",
+          "pl": "openen"
+        },
+        "participle": "geopend"
+      }
+    },
+    "close": {
+      "en": {
+        "present": {
+          "sg": "closes",
+          "pl": "close"
+        },
+        "participle": "closed"
+      },
+      "nl": {
+        "present": {
+          "sg": "sluit",
+          "pl": "sluiten"
+        },
+        "participle": "gesloten"
+      }
+    },
+    "find": {
+      "en": {
+        "present": {
+          "sg": "finds",
+          "pl": "find"
+        },
+        "participle": "found"
+      },
+      "nl": {
+        "present": {
+          "sg": "vindt",
+          "pl": "vinden"
+        },
+        "participle": "gevonden"
+      }
+    },
+    "lose": {
+      "en": {
+        "present": {
+          "sg": "loses",
+          "pl": "lose"
+        },
+        "participle": "lost"
+      },
+      "nl": {
+        "present": {
+          "sg": "verliest",
+          "pl": "verliezen"
+        },
+        "participle": "verloren"
+      }
+    },
+    "catch": {
+      "en": {
+        "present": {
+          "sg": "catches",
+          "pl": "catch"
+        },
+        "participle": "caught"
+      },
+      "nl": {
+        "present": {
+          "sg": "vangt",
+          "pl": "vangen"
+        },
+        "participle": "gevangen"
+      }
+    },
+    "pull": {
+      "en": {
+        "present": {
+          "sg": "pulls",
+          "pl": "pull"
+        },
+        "participle": "pulled"
+      },
+      "nl": {
+        "present": {
+          "sg": "trekt",
+          "pl": "trekken"
+        },
+        "participle": "getrokken"
+      }
+    },
+    "throw": {
+      "en": {
+        "present": {
+          "sg": "throws",
+          "pl": "throw"
+        },
+        "participle": "thrown"
+      },
+      "nl": {
+        "present": {
+          "sg": "gooit",
+          "pl": "gooien"
+        },
+        "participle": "gegooid"
+      }
+    },
+    "break": {
+      "en": {
+        "present": {
+          "sg": "breaks",
+          "pl": "break"
+        },
+        "participle": "broken"
+      },
+      "nl": {
+        "present": {
+          "sg": "breekt",
+          "pl": "breken"
+        },
+        "participle": "gebroken"
+      }
+    },
+    "keep": {
+      "en": {
+        "present": {
+          "sg": "keeps",
+          "pl": "keep"
+        },
+        "participle": "kept"
+      },
+      "nl": {
+        "present": {
+          "sg": "bewaart",
+          "pl": "bewaren"
+        },
+        "participle": "bewaard"
+      }
+    },
+    "build": {
+      "en": {
+        "present": {
+          "sg": "builds",
+          "pl": "build"
+        },
+        "participle": "built"
+      },
+      "nl": {
+        "present": {
+          "sg": "bouwt",
+          "pl": "bouwen"
+        },
+        "participle": "gebouwd"
+      }
+    },
+    "destroy": {
+      "en": {
+        "present": {
+          "sg": "destroys",
+          "pl": "destroy"
+        },
+        "participle": "destroyed"
+      },
+      "nl": {
+        "present": {
+          "sg": "vernietigt",
+          "pl": "vernietigen"
+        },
+        "participle": "vernietigd"
+      }
+    },
+    "protect": {
+      "en": {
+        "present": {
+          "sg": "protects",
+          "pl": "protect"
+        },
+        "participle": "protected"
+      },
+      "nl": {
+        "present": {
+          "sg": "beschermt",
+          "pl": "beschermen"
+        },
+        "participle": "beschermd"
+      }
+    },
+    "teach": {
+      "en": {
+        "present": {
+          "sg": "teaches",
+          "pl": "teach"
+        },
+        "participle": "taught"
+      },
+      "nl": {
+        "present": {
+          "sg": "onderwijst",
+          "pl": "onderwijzen"
+        },
+        "participle": "onderwezen"
+      }
+    },
+    "hear": {
+      "en": {
+        "present": {
+          "sg": "hears",
+          "pl": "hear"
+        },
+        "participle": "heard"
+      },
+      "nl": {
+        "present": {
+          "sg": "luistert",
+          "pl": "luisteren"
+        },
+        "participle": "geluisterd"
+      }
+    },
+    "greet": {
+      "en": {
+        "present": {
+          "sg": "greets",
+          "pl": "greet"
+        },
+        "participle": "greeted"
+      },
+      "nl": {
+        "present": {
+          "sg": "spreekt",
+          "pl": "spreken"
+        },
+        "participle": "gesproken"
+      }
+    },
+    "answer": {
+      "en": {
+        "present": {
+          "sg": "answers",
+          "pl": "answer"
+        },
+        "participle": "answered"
+      },
+      "nl": {
+        "present": {
+          "sg": "antwoordt",
+          "pl": "antwoorden"
+        },
+        "participle": "geantwoord"
+      }
+    },
+    "await": {
+      "en": {
+        "present": {
+          "sg": "awaits",
+          "pl": "await"
+        },
+        "participle": "awaited"
+      },
+      "nl": {
+        "present": {
+          "sg": "wacht",
+          "pl": "wachten"
+        },
+        "participle": "gewacht"
+      }
+    }
+  },
+  "AUX": {
+    "en": {
+      "sg": "has",
+      "pl": "have"
+    },
+    "nl": {
+      "sg": "heeft",
+      "pl": "hebben"
+    }
+  },
+  "PREP": {
+    "in": {
+      "en": "in",
+      "nl": "in"
+    },
+    "on": {
+      "en": "on",
+      "nl": "op"
+    },
+    "with": {
+      "en": "with",
+      "nl": "met"
+    },
+    "under": {
+      "en": "under",
+      "nl": "onder"
+    },
+    "behind": {
+      "en": "behind",
+      "nl": "achter"
+    },
+    "beside": {
+      "en": "beside",
+      "nl": "naast"
+    }
+  },
+  "REL": {
+    "en": "that",
+    "nl_de": "die",
+    "nl_het": "dat"
+  }
+}
