@@ -14,3 +14,12 @@
 ################################
 !feb_exp/
 !feb_exp/**
+!april_exp/
+!april_exp/**
+
+################################
+# Re-ignore junk inside allowlisted experiment dirs
+################################
+**/__pycache__/
+*.pyc
+**/.ipynb_checkpoints/
